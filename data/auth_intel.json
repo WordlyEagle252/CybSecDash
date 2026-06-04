@@ -1,0 +1,92 @@
+[
+    {
+        "id": "6a21aa7d (OTX)",
+        "severity": "HIGH",
+        "date": "2026-06-04",
+        "product": "Various Endpoints",
+        "source": "AlienVault OTX",
+        "desc": "ClickFix Deno Abuse to CastleRAT",
+        "remediation": "Review OTX pulse indicators (IOCs) and block associated IPs/Domains at the perimeter."
+    },
+    {
+        "id": "69f9f99c (OTX)",
+        "severity": "HIGH",
+        "date": "2026-06-04",
+        "product": "Various Endpoints",
+        "source": "AlienVault OTX",
+        "desc": "CloudZ RAT potentially steals OTP messages using Pheno plugin",
+        "remediation": "Review OTX pulse indicators (IOCs) and block associated IPs/Domains at the perimeter."
+    },
+    {
+        "id": "69f9f99c (OTX)",
+        "severity": "HIGH",
+        "date": "2026-06-04",
+        "product": "Various Endpoints",
+        "source": "AlienVault OTX",
+        "desc": "UAT-8302 and its box full of malware",
+        "remediation": "Review OTX pulse indicators (IOCs) and block associated IPs/Domains at the perimeter."
+    },
+    {
+        "id": "6a214338 (OTX)",
+        "severity": "HIGH",
+        "date": "2026-06-04",
+        "product": "Various Endpoints",
+        "source": "AlienVault OTX",
+        "desc": "Argamal: Malware hidden in hentai games",
+        "remediation": "Review OTX pulse indicators (IOCs) and block associated IPs/Domains at the perimeter."
+    },
+    {
+        "id": "6a214311 (OTX)",
+        "severity": "HIGH",
+        "date": "2026-06-04",
+        "product": "Various Endpoints",
+        "source": "AlienVault OTX",
+        "desc": "Preinstall to persistence: Inside the npm Miasma credential-stealing campaign",
+        "remediation": "Review OTX pulse indicators (IOCs) and block associated IPs/Domains at the perimeter."
+    },
+    {
+        "id": "6a20e718 (OTX)",
+        "severity": "HIGH",
+        "date": "2026-06-04",
+        "product": "Various Endpoints",
+        "source": "AlienVault OTX",
+        "desc": "Browser Spy-Ons: Threat Actor's Extension Hijack Your AI Conversations",
+        "remediation": "Review OTX pulse indicators (IOCs) and block associated IPs/Domains at the perimeter."
+    },
+    {
+        "id": "6a20a73f (OTX)",
+        "severity": "HIGH",
+        "date": "2026-06-04",
+        "product": "Various Endpoints",
+        "source": "AlienVault OTX",
+        "desc": "Inside the Cross-Platform Propagation of a New Gafgyt Variant C0XMO",
+        "remediation": "Review OTX pulse indicators (IOCs) and block associated IPs/Domains at the perimeter."
+    },
+    {
+        "id": "6a20a73f (OTX)",
+        "severity": "HIGH",
+        "date": "2026-06-04",
+        "product": "Various Endpoints",
+        "source": "AlienVault OTX",
+        "desc": "The Demon Arrives Later: A Havoc Stager Hides Behind Microsoft Defender DLP",
+        "remediation": "Review OTX pulse indicators (IOCs) and block associated IPs/Domains at the perimeter."
+    },
+    {
+        "id": "6a20679f (OTX)",
+        "severity": "HIGH",
+        "date": "2026-06-04",
+        "product": "Various Endpoints",
+        "source": "AlienVault OTX",
+        "desc": "Impersonation, Click Hijacking, and TDS: Inside a Malware Distribution Ecosystem",
+        "remediation": "Review OTX pulse indicators (IOCs) and block associated IPs/Domains at the perimeter."
+    },
+    {
+        "id": "6a2067cb (OTX)",
+        "severity": "HIGH",
+        "date": "2026-06-04",
+        "product": "Various Endpoints",
+        "source": "AlienVault OTX",
+        "desc": "PCPJack Hijacked 230 AWS, GCP, and Azure Servers to Run a Hidden SMTP Relay Network",
+        "remediation": "Review OTX pulse indicators (IOCs) and block associated IPs/Domains at the perimeter."
+    }
+]
