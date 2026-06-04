@@ -15,10 +15,13 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Fetch CISA KEV Data
+      - name: Fetch OSINT Data
         run: |
-          mkdir -p data
-          curl -sL "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json" -o data/cisa_kev.json
+              mkdir -p data
+              # Fetch CISA (Exploited)
+              curl -sL "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json" -o data/cisa_kev.json
+              # Fetch CIRCL NVD Mirror (Latest Published)
+              curl -sL "https://cve.circl.lu/api/last" -o data/latest_cves.json
 
       - name: Commit and Push Changes
         run: |

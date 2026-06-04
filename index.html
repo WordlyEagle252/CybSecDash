@@ -145,112 +145,80 @@
         ];
 
         let globalThreatData = [];
+const CISA_URL = "./data/cisa_kev.json";
+        const CIRCL_URL = "./data/latest_cves.json"; 
 
         async function fetchFeeds() {
             try {
-                document.getElementById('status-text').innerText = "Establishing direct connections to OSINT APIs...";
-
+                document.getElementById('status-text').innerText = "Loading local repository data...";
                 let unifiedData = [];
-                let cisaSuccess = false;
 
-                // 1. Attempt to fetch CISA KEV Natively
-                try {
-                    const cisaRes = await fetch(CISA_URL);
-                    if (cisaRes.ok) {
-                        const data = await cisaRes.json();
-                        const cisaVulns = data.vulnerabilities || [];
-                        cisaVulns.reverse().slice(0, 30).forEach(vuln => {
-                            unifiedData.push({
-                                id: vuln.cveID,
-                                severity: "CRITICAL", 
-                                date: vuln.dateAdded,
-                                product: `${vuln.vendorProject} ${vuln.product}`,
-                                source: "CISA KEV",
-                                desc: vuln.shortDescription,
-                                remediation: vuln.requiredAction || "Apply vendor updates immediately."
-                            });
+                // Fetch both local files concurrently
+                const [cisaRes, circlRes] = await Promise.allSettled([
+                    fetch(CISA_URL).then(r => r.json()),
+                    fetch(CIRCL_URL).then(r => r.json())
+                ]);
+
+                // 1. Process CISA
+                if (cisaRes.status === 'fulfilled') {
+                    const cisaVulns = cisaRes.value.vulnerabilities || [];
+                    cisaVulns.reverse().slice(0, 20).forEach(vuln => {
+                        unifiedData.push({
+                            id: vuln.cveID,
+                            severity: "CRITICAL", 
+                            date: vuln.dateAdded,
+                            product: `${vuln.vendorProject} ${vuln.product}`,
+                            source: "CISA KEV",
+                            desc: vuln.shortDescription,
+                            remediation: vuln.requiredAction
                         });
-                        cisaSuccess = true;
-                    }
-                } catch (e) {
-                    console.warn("Direct CISA fetch blocked by browser/network. Preparing fallback.");
+                    });
                 }
 
-                // 2. Evaluate Data State & Fallback
-                if (cisaSuccess && unifiedData.length > 0) {
-                    globalThreatData = unifiedData;
-                    document.getElementById('status-text').innerText = "Live OSINT feeds synchronized successfully.";
-                    document.getElementById('status-light').style.backgroundColor = 'var(--low)';
-                    document.getElementById('status-light').style.boxShadow = '0 0 10px var(--low)';
-                } else {
-                    // Inject Fallback Dataset if APIs fail
-                    globalThreatData = fallbackData;
-                    document.getElementById('status-text').innerText = "Network blocked API calls. Displaying cached simulation dataset.";
-                    document.getElementById('status-light').style.backgroundColor = 'var(--med)';
-                    document.getElementById('status-light').style.boxShadow = '0 0 10px var(--med)';
+                // 2. Process NVD (Latest)
+                if (circlRes.status === 'fulfilled') {
+                    const circlVulns = circlRes.value || [];
+                    circlVulns.forEach(vuln => {
+                        let sev = "MEDIUM";
+                        if (vuln.cvss) {
+                            if (vuln.cvss >= 9.0) sev = "CRITICAL";
+                            else if (vuln.cvss >= 7.0) sev = "HIGH";
+                        }
+
+                        let productStr = "Multiple Endpoints";
+                        if (vuln.vulnerable_configuration && vuln.vulnerable_configuration.length > 0) {
+                            const cpe = vuln.vulnerable_configuration[0].split(':');
+                            if (cpe.length >= 5) productStr = `${cpe[3]} ${cpe[4]}`.replace(/_/g, ' ');
+                        }
+
+                        unifiedData.push({
+                            id: vuln.id,
+                            severity: sev,
+                            date: vuln.Published ? vuln.Published.split('T')[0] : "Unknown",
+                            product: productStr,
+                            source: "NVD Feed",
+                            desc: vuln.summary,
+                            remediation: "Review CVE documentation and apply vendor-provided patches."
+                        });
+                    });
                 }
 
+                // Sort everything by date descending (Newest first)
+                unifiedData.sort((a, b) => new Date(b.date) - new Date(a.date));
+                
+                // Keep the top 50 to prevent UI lag
+                globalThreatData = unifiedData.slice(0, 50);
+                
+                document.getElementById('status-text').innerText = "Data loaded successfully.";
+                document.getElementById('status-light').style.backgroundColor = 'var(--low)';
+                document.getElementById('status-light').style.boxShadow = '0 0 10px var(--low)';
+                
                 updateDashboard();
 
             } catch (error) {
-                console.error(error);
+                console.error("Failed to load local data files.", error);
             }
         }
-
-        function updateDashboard() {
-            let exploitedCount = 0;
-            let highCount = 0;
-
-            globalThreatData.forEach(t => {
-                if(t.source.includes("CISA")) exploitedCount++;
-                if(t.severity === "HIGH") highCount++;
-            });
-
-            document.getElementById('kpi-total').innerText = globalThreatData.length;
-            document.getElementById('kpi-exploited').innerText = exploitedCount;
-            document.getElementById('kpi-recent').innerText = highCount;
-
-            const tbody = document.getElementById('feed-table-body');
-            tbody.innerHTML = '';
-
-            globalThreatData.forEach(threat => {
-                const tr = document.createElement('tr');
-                
-                let sevBadge = `<span class="badge bg-med">${threat.severity}</span>`;
-                if(threat.severity === 'CRITICAL') sevBadge = `<span class="badge bg-crit">CRITICAL</span>`;
-                if(threat.severity === 'HIGH') sevBadge = `<span class="badge bg-high">HIGH</span>`;
-
-                tr.innerHTML = `
-                    <td><strong>${threat.id}</strong></td>
-                    <td>${sevBadge}</td>
-                    <td>${threat.product}</td>
-                    <td>${threat.date}</td>
-                    <td><span class="badge bg-osint">${threat.source}</span></td>
-                `;
-
-                tr.addEventListener('click', () => showDetails(threat));
-                tbody.appendChild(tr);
-            });
-        }
-
-        function showDetails(threat) {
-            document.getElementById('remediation-panel').classList.add('active');
-            document.getElementById('panel-cve').innerText = threat.id;
-            
-            const sevEl = document.getElementById('panel-severity');
-            sevEl.innerText = threat.severity;
-            sevEl.className = 'badge';
-            if(threat.severity === 'CRITICAL') sevEl.classList.add('bg-crit');
-            else if(threat.severity === 'HIGH') sevEl.classList.add('bg-high');
-            else sevEl.classList.add('bg-med');
-
-            document.getElementById('panel-date').innerText = threat.date;
-            document.getElementById('panel-product').innerText = threat.product;
-            document.getElementById('panel-source').innerText = threat.source;
-            document.getElementById('panel-desc').innerText = threat.desc;
-            document.getElementById('panel-remediation').innerText = threat.remediation;
-        }
-
         // Initialize
         fetchFeeds();
     </script>
