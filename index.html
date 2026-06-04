@@ -131,22 +131,7 @@
     </div>
 
     <script>
-        // Direct Native APIs (No Proxies)        
-       // const CISA_URL = "./data/cisa_kev.json";       
-        // const CIRCL_URL = "https://cve.circl.lu/api/last"; 
-
-        // Fallback Dataset: Guarantees the dashboard will render data even if network constraints block the API calls.
-        const fallbackData = [
-            { id: "CVE-2024-3400", severity: "CRITICAL", date: "2024-04-12", product: "Palo Alto Networks PAN-OS", source: "CISA KEV", desc: "A command injection vulnerability in the GlobalProtect feature of Palo Alto Networks PAN-OS software allows an unauthenticated attacker to execute arbitrary code with root privileges on the firewall.", remediation: "Apply vendor mitigations immediately. Upgrade to PAN-OS 10.2.9-h1, 11.0.4-h1, or 11.1.2-h3. Verify Threat Prevention subscription is active and blocking." },
-            { id: "CVE-2024-21887", severity: "CRITICAL", date: "2024-01-10", product: "Ivanti Connect Secure", source: "CISA KEV", desc: "A command injection vulnerability in web components of Ivanti Connect Secure allows an authenticated administrator to send specially crafted requests and execute arbitrary commands.", remediation: "Import the mitigated XML file provided by Ivanti via the administrator portal. Plan for full firmware upgrade during the next maintenance window." },
-            { id: "CVE-2023-46805", severity: "HIGH", date: "2024-01-10", product: "Ivanti Policy Secure", source: "CISA KEV", desc: "An authentication bypass vulnerability in the web component of Ivanti ICS and IPS allows a remote attacker to access restricted resources by bypassing control checks.", remediation: "Run the Ivanti Integrity Checker Tool. Factory reset the appliance if compromise is suspected before applying the latest patch." },
-            { id: "CVE-2024-21412", severity: "HIGH", date: "2024-02-13", product: "Microsoft Windows Server", source: "NVD Feed", desc: "Internet Shortcut Files Security Feature Bypass Vulnerability allowing attackers to bypass Mark of the Web (MotW) defenses.", remediation: "Deploy Windows Update KB5034765. > Get-HotFix -Id 'KB5034765' to verify installation." },
-            { id: "CVE-2024-3094", severity: "CRITICAL", date: "2024-03-29", product: "XZ Utils (Linux)", source: "NVD Feed", desc: "Malicious code injected into xz/liblzma versions 5.6.0 and 5.6.1 that modifies the sshd execution path, enabling remote code execution.", remediation: "Downgrade xz-utils to version 5.4.x immediately. Restart the SSH daemon. > sudo apt-get install xz-utils=5.4.1" }
-        ];
-
-        let globalThreatData = [];
-
-        // Define paths to all three locally ingested datasets
+    // Define paths to all three locally ingested datasets
         const CISA_URL = "./data/cisa_kev.json";
         const CIRCL_URL = "./data/latest_cves.json"; 
         const AUTH_INTEL_URL = "./data/auth_intel.json"; 
@@ -164,72 +149,83 @@
                 ]);
 
                 // 1. Ingest CISA KEV (Actively Exploited)
-                if (cisaRes.status === 'fulfilled' && cisaRes.value) {
+                if (cisaRes.status === 'fulfilled' && cisaRes.value && cisaRes.value.vulnerabilities) {
                     const cisaVulns = cisaRes.value.vulnerabilities || [];
                     cisaVulns.reverse().slice(0, 25).forEach(vuln => {
-                        unifiedData.push({
-                            id: vuln.cveID,
-                            severity: "CRITICAL", 
-                            date: vuln.dateAdded,
-                            product: `${vuln.vendorProject} ${vuln.product}`,
-                            source: "CISA KEV",
-                            desc: vuln.shortDescription,
-                            remediation: vuln.requiredAction || "Patch immediately."
-                        });
+                        if (vuln && vuln.cveID) {
+                            unifiedData.push({
+                                id: vuln.cveID,
+                                severity: "CRITICAL", 
+                                date: vuln.dateAdded || new Date().toISOString().split('T')[0],
+                                product: `${vuln.vendorProject || 'Generic'} ${vuln.product || 'Software'}`,
+                                source: "CISA KEV",
+                                desc: vuln.shortDescription || "No description provided.",
+                                remediation: vuln.requiredAction || "Patch immediately."
+                            });
+                        }
                     });
                 }
 
                 // 2. Ingest NVD (Latest Publications)
-                if (circlRes.status === 'fulfilled' && circlRes.value) {
-                    const circlVulns = circlRes.value || [];
+                if (circlRes.status === 'fulfilled' && circlRes.value && Array.isArray(circlRes.value)) {
+                    const circlVulns = circlRes.value;
                     circlVulns.forEach(vuln => {
-                        let sev = "MEDIUM";
-                        if (vuln.cvss) {
-                            if (vuln.cvss >= 9.0) sev = "CRITICAL";
-                            else if (vuln.cvss >= 7.0) sev = "HIGH";
-                        }
+                        if (vuln && vuln.id) {
+                            let sev = "MEDIUM";
+                            if (vuln.cvss) {
+                                if (vuln.cvss >= 9.0) sev = "CRITICAL";
+                                else if (vuln.cvss >= 7.0) sev = "HIGH";
+                            }
 
-                        let productStr = "Multiple Endpoints";
-                        if (vuln.vulnerable_configuration && vuln.vulnerable_configuration.length > 0) {
-                            const cpe = vuln.vulnerable_configuration[0].split(':');
-                            if (cpe.length >= 5) productStr = `${cpe[3]} ${cpe[4]}`.replace(/_/g, ' ');
-                        }
+                            let productStr = "Multiple Endpoints";
+                            if (vuln.vulnerable_configuration && vuln.vulnerable_configuration.length > 0) {
+                                const cpe = vuln.vulnerable_configuration[0].split(':');
+                                if (cpe.length >= 5) productStr = `${cpe[3]} ${cpe[4]}`.replace(/_/g, ' ');
+                            }
 
-                        unifiedData.push({
-                            id: vuln.id,
-                            severity: sev,
-                            date: vuln.Published ? vuln.Published.split('T')[0] : "Unknown",
-                            product: productStr,
-                            source: "NVD Feed",
-                            desc: vuln.summary,
-                            remediation: "Review CVE documentation and apply vendor patches."
-                        });
+                            unifiedData.push({
+                                id: vuln.id,
+                                severity: sev,
+                                date: vuln.Published ? vuln.Published.split('T')[0] : new Date().toISOString().split('T')[0],
+                                product: productStr,
+                                source: "NVD Feed",
+                                desc: vuln.summary || "No description available.",
+                                remediation: "Review CVE documentation and apply vendor patches."
+                            });
+                        }
                     });
                 }
 
                 // 3. Ingest Premium Authenticated Intel (VirusTotal / AlienVault)
-                if (authRes.status === 'fulfilled' && authRes.value) {
-                    const premiumVulns = authRes.value || [];
+                if (authRes.status === 'fulfilled' && authRes.value && Array.isArray(authRes.value)) {
+                    const premiumVulns = authRes.value;
                     premiumVulns.forEach(item => {
-                        unifiedData.push({
-                            id: item.id,
-                            severity: item.severity || "HIGH",
-                            date: item.date,
-                            product: item.product,
-                            source: item.source,
-                            desc: item.desc,
-                            remediation: item.remediation
-                        });
+                        if (item) {
+                            unifiedData.push({
+                                id: item.id || "UNKNOWN",
+                                severity: item.severity || "HIGH",
+                                date: item.date || new Date().toISOString().split('T')[0],
+                                product: item.product || "Various Endpoints",
+                                source: item.source || "Premium Threat Intel",
+                                desc: item.desc || "Threat intelligence signature detected.",
+                                remediation: item.remediation || "Analyze endpoint indicators."
+                            });
+                        }
                     });
                 }
 
-                // Sort the entire multi-source array by date descending (Newest First)
-                unifiedData.sort((a, b) => new Date(b.date) - new Date(a.date));
+                // Fallback check if all feeds are blank/404ing right now
+                if (unifiedData.length === 0) {
+                    document.getElementById('status-text').innerText = "Data directory empty. Waiting for initial pipeline ingestion execution...";
+                    document.getElementById('status-light').style.backgroundColor = 'var(--high)';
+                    return;
+                }
+
+                // Sort by date safely
+                unifiedData.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
                 
-                // Limit to 60 total rows to optimize DOM rendering performance
                 globalThreatData = unifiedData.slice(0, 60);
                 
-                // Update UI Status indicators
                 document.getElementById('status-text').innerText = "Enterprise data mesh fully synchronized.";
                 document.getElementById('status-light').style.backgroundColor = 'var(--low)';
                 document.getElementById('status-light').style.boxShadow = '0 0 10px var(--low)';
@@ -238,8 +234,51 @@
 
             } catch (error) {
                 console.error("Critical error building unified threat mesh:", error);
-                document.getElementById('status-text').innerText = "Data sync failed.";
+                document.getElementById('status-text').innerText = "Data processing error.";
+                document.getElementById('status-light').style.backgroundColor = 'var(--crit)';
             }
+        }
+
+        function updateDashboard() {
+            let exploitedCount = 0;
+            let highCount = 0;
+
+            if (!globalThreatData) return;
+
+            globalThreatData.forEach(t => {
+                // Safeguard against missing or undefined properties
+                const sourceStr = t.source || "";
+                const sevStr = t.severity || "";
+                
+                if(sourceStr.includes("CISA")) exploitedCount++;
+                if(sevStr === "HIGH" || sevStr === "CRITICAL") highCount++;
+            });
+
+            document.getElementById('kpi-total').innerText = globalThreatData.length;
+            document.getElementById('kpi-exploited').innerText = exploitedCount;
+            document.getElementById('kpi-recent').innerText = highCount;
+
+            const tbody = document.getElementById('feed-table-body');
+            tbody.innerHTML = '';
+
+            globalThreatData.forEach(threat => {
+                const tr = document.createElement('tr');
+                
+                let sevBadge = `<span class="badge bg-med">${threat.severity}</span>`;
+                if(threat.severity === 'CRITICAL') sevBadge = `<span class="badge bg-crit">CRITICAL</span>`;
+                if(threat.severity === 'HIGH') sevBadge = `<span class="badge bg-high">HIGH</span>`;
+
+                tr.innerHTML = `
+                    <td><strong>${threat.id}</strong></td>
+                    <td>${sevBadge}</td>
+                    <td>${threat.product}</td>
+                    <td>${threat.date}</td>
+                    <td><span class="badge bg-osint">${threat.source}</span></td>
+                `;
+
+                tr.addEventListener('click', () => showDetails(threat));
+                tbody.appendChild(tr);
+            });
         }
         // Initialize
         fetchFeeds();
