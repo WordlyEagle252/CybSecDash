@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise OSINT Cyber Risk Dashboard</title>
+    <style>
+        :root {
+            --bg-base: #0f172a;
+            --bg-panel: #1e293b;
+            --bg-hover: #334155;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #3b82f6;
+            --border: #334155;
+            --crit: #ef4444;
+            --high: #f97316;
+            --med: #eab308;
+            --low: #22c55e;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-base);
+            color: var(--text-main);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Top Navigation & KPIs */
+        .header {
+            background-color: var(--bg-panel);
+            padding: 15px 30px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 { margin: 0; font-size: 1.5rem; display: flex; align-items: center; gap: 10px; }
+        .live-indicator { width: 10px; height: 10px; background-color: var(--crit); border-radius: 50%; box-shadow: 0 0 10px var(--crit); animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
+
+        .kpi-container { display: flex; gap: 20px; padding: 20px 30px; }
+        .kpi-card { background: var(--bg-panel); border: 1px solid var(--border); border-radius: 8px; padding: 20px; flex: 1; text-align: center; }
+        .kpi-value { font-size: 2rem; font-weight: bold; margin-bottom: 5px; }
+        .kpi-label { color: var(--text-muted); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        .kpi-crit { color: var(--crit); }
+        .kpi-high { color: var(--high); }
+
+        /* Main Workspace */
+        .workspace {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+            padding: 0 30px 30px 30px;
+            gap: 20px;
+        }
+
+        /* Data Grid */
+        .data-grid-container {
+            flex: 2;
+            background: var(--bg-panel);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .table-header { padding: 15px; background: rgba(0,0,0,0.2); border-bottom: 1px solid var(--border); font-weight: bold; color: var(--text-muted); }
+        .table-wrap { overflow-y: auto; flex: 1; }
+        
+        table { width: 100%; border-collapse: collapse; text-align: left; }
+        th, td { padding: 12px 15px; border-bottom: 1px solid var(--border); font-size: 0.95rem; }
+        th { position: sticky; top: 0; background: var(--bg-panel); color: var(--text-muted); text-transform: uppercase; font-size: 0.8rem; z-index: 10; }
+        tr { transition: background 0.2s; cursor: pointer; }
+        tr:hover { background-color: var(--bg-hover); }
+
+        .badge { padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; color: #fff; }
+        .bg-crit { background-color: rgba(239, 68, 68, 0.2); color: var(--crit); border: 1px solid var(--crit); }
+        .bg-high { background-color: rgba(249, 115, 22, 0.2); color: var(--high); border: 1px solid var(--high); }
+        .bg-med { background-color: rgba(234, 179, 8, 0.2); color: var(--med); border: 1px solid var(--med); }
+        .bg-osint { background-color: rgba(59, 130, 246, 0.2); color: var(--accent); border: 1px solid var(--accent); }
+
+        /* Remediation Side Panel */
+        .side-panel {
+            flex: 1;
+            background: var(--bg-panel);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 25px;
+            overflow-y: auto;
+            display: none;
+            flex-direction: column;
+        }
+
+        .side-panel.active { display: flex; }
+        .panel-meta { margin: 20px 0; padding: 15px; background: rgba(0,0,0,0.2); border-radius: 6px; }
+        .panel-meta p { margin: 5px 0; color: var(--text-muted); }
+        .panel-meta strong { color: var(--text-main); }
+        
+        .remediation-box {
+            background: rgba(34, 197, 94, 0.1);
+            border-left: 4px solid var(--low);
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 0 6px 6px 0;
+            line-height: 1.5;
+        }
+
+        .loader { text-align: center; padding: 40px; color: var(--text-muted); font-style: italic; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1><div class="live-indicator"></div> OSINT Threat Aggregation Matrix</h1>
+        <div id="status-text" style="color: var(--text-muted); font-size: 0.9rem;">Initializing feeds...</div>
+    </div>
+
+    <div class="kpi-container">
+        <div class="kpi-card">
+            <div class="kpi-value" id="kpi-total">0</div>
+            <div class="kpi-label">Total Threats Ingested</div>
+        </div>
+        <div class="kpi-card">
+            <div class="kpi-value kpi-crit" id="kpi-exploited">0</div>
+            <div class="kpi-label">Actively Exploited (CISA KEV)</div>
+        </div>
+        <div class="kpi-card">
+            <div class="kpi-value kpi-high" id="kpi-recent">0</div>
+            <div class="kpi-label">New in Last 24 Hours</div>
+        </div>
+    </div>
+
+    <div class="workspace">
+        <div class="data-grid-container">
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Vulnerability ID</th>
+                            <th>Severity / Risk</th>
+                            <th>Affected Endpoint / Platform</th>
+                            <th>Release Date</th>
+                            <th>OSINT Source</th>
+                        </tr>
+                    </thead>
+                    <tbody id="feed-table-body">
+                        <tr><td colspan="5" class="loader">Fetching live data from CISA and NVD mirrors...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="side-panel" id="remediation-panel">
+            <h2 id="panel-cve" style="margin-top: 0;">Select a Threat</h2>
+            <div><span id="panel-severity" class="badge bg-crit">CRITICAL</span></div>
+            
+            <div class="panel-meta">
+                <p><strong>Published:</strong> <span id="panel-date">-</span></p>
+                <p><strong>Target Platform:</strong> <span id="panel-product">-</span></p>
+                <p><strong>Intelligence Source:</strong> <span id="panel-source">-</span></p>
+            </div>
+
+            <h3 style="border-bottom: 1px solid var(--border); padding-bottom: 8px;">Technical Description</h3>
+            <p id="panel-desc" style="line-height: 1.6; color: var(--text-muted);">-</p>
+
+            <h3 style="border-bottom: 1px solid var(--border); padding-bottom: 8px; margin-top: 30px;">Required Patching & Remediation</h3>
+            <div class="remediation-box" id="panel-remediation">
+                -
+            </div>
+        </div>
+    </div>
+<script>
+        // We are wrapping the target URLs in a CORS Proxy (allorigins.win) 
+        // This bypasses the browser blocks for local testing.
+        const CISA_TARGET = encodeURIComponent("https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json");
+        const CISA_URL = `https://api.allorigins.win/raw?url=${CISA_TARGET}`;
+        
+        const CIRCL_TARGET = encodeURIComponent("https://cve.circl.lu/api/last");
+        const CIRCL_URL = `https://api.allorigins.win/raw?url=${CIRCL_TARGET}`; 
+
+        let globalThreatData = [];
+
+        async function fetchFeeds() {
+            try {
+                document.getElementById('status-text').innerText = "Connecting to external OSINT APIs via Proxy...";
+
+                // Fetch feeds concurrently.
+                const [cisaRes, circlRes] = await Promise.allSettled([
+                    fetch(CISA_URL).then(r => {
+                        if (!r.ok) throw new Error("CISA Proxy failed");
+                        return r.json();
+                    }),
+                    fetch(CIRCL_URL).then(r => {
+                        if (!r.ok) throw new Error("CIRCL Proxy failed");
+                        return r.json();
+                    })
+                ]);
+
+                let unifiedData = [];
+                let exploitedCount = 0;
+                let recentCount = 0;
+                const twentyFourHoursAgo = new Date(Date.now() - 86400000);
+
+                // 1. Process CISA KEV Data (Actively Exploited)
+                if (cisaRes.status === 'fulfilled') {
+                    const cisaVulns = cisaRes.value.vulnerabilities || [];
+                    
+                    // Grab the 50 most recent KEVs for performance
+                    cisaVulns.reverse().slice(0, 50).forEach(vuln => {
+                        exploitedCount++;
+                        unifiedData.push({
+                            id: vuln.cveID,
+                            severity: "CRITICAL", 
+                            date: vuln.dateAdded,
+                            product: `${vuln.vendorProject} ${vuln.product}`,
+                            source: "CISA KEV",
+                            desc: vuln.shortDescription,
+                            remediation: vuln.requiredAction || "Apply vendor updates immediately."
+                        });
+                    });
+                } else {
+                    console.error("Failed to fetch CISA feed:", cisaRes.reason);
+                }
+
+                // 2. Process CIRCL Data (Latest NVD Publications)
+                if (circlRes.status === 'fulfilled') {
+                    const circlVulns = circlRes.value || [];
+                    
+                    circlVulns.forEach(vuln => {
+                        let sev = "UNKNOWN";
+                        let sevClass = "bg-med";
+                        if (vuln.cvss) {
+                            if (vuln.cvss >= 9.0) { sev = "CRITICAL"; sevClass = "bg-crit"; }
+                            else if (vuln.cvss >= 7.0) { sev = "HIGH"; sevClass = "bg-high"; }
+                            else { sev = "MEDIUM"; sevClass = "bg-med"; }
+                        }
+
+                        let productStr = "Multiple Endpoints";
+                        if (vuln.vulnerable_configuration && vuln.vulnerable_configuration.length > 0) {
+                            const cpe = vuln.vulnerable_configuration[0].split(':');
+                            if (cpe.length >= 5) productStr = `${cpe[3]} ${cpe[4]}`.replace(/_/g, ' ');
+                        }
+
+                        const pubDate = vuln.Published ? vuln.Published.split('T')[0] : "Unknown";
+                        if (new Date(pubDate) > twentyFourHoursAgo) recentCount++;
+
+                        unifiedData.push({
+                            id: vuln.id,
+                            severity: sev,
+                            date: pubDate,
+                            product: productStr,
+                            source: "NVD (CIRCL Mirror)",
+                            desc: vuln.summary,
+                            remediation: "Review CVE documentation and apply vendor-provided patches. Implement internal firewall restrictions if patch is unavailable."
+                        });
+                    });
+                } else {
+                    console.error("Failed to fetch CIRCL feed:", circlRes.reason);
+                }
+
+                // If both failed, trigger the catch block
+                if (unifiedData.length === 0) {
+                    throw new Error("Both data feeds failed to load.");
+                }
+
+                // Sort unified array by date descending
+                unifiedData.sort((a, b) => new Date(b.date) - new Date(a.date));
+                globalThreatData = unifiedData;
+
+                // Update UI
+                document.getElementById('kpi-total').innerText = unifiedData.length;
+                document.getElementById('kpi-exploited').innerText = exploitedCount;
+                document.getElementById('kpi-recent').innerText = recentCount;
+                document.getElementById('status-text').innerText = "Feeds synchronized. Live monitoring active.";
+
+                renderTable();
+
+            } catch (error) {
+                console.error(error);
+                document.getElementById('feed-table-body').innerHTML = `<tr><td colspan="5" class="loader" style="color: #ef4444;">Network error: Unable to fetch feeds. The public proxy might be overloaded, or your network is blocking it. Check F12 console for details.</td></tr>`;
+                document.getElementById('status-text').innerText = "Connection failed.";
+            }
+        }
+
+        function renderTable() {
+            const tbody = document.getElementById('feed-table-body');
+            tbody.innerHTML = '';
+
+            globalThreatData.forEach(threat => {
+                const tr = document.createElement('tr');
+                
+                let sevBadge = `<span class="badge bg-med">${threat.severity}</span>`;
+                if(threat.severity === 'CRITICAL') sevBadge = `<span class="badge bg-crit">CRITICAL</span>`;
+                if(threat.severity === 'HIGH') sevBadge = `<span class="badge bg-high">HIGH</span>`;
+
+                tr.innerHTML = `
+                    <td><strong>${threat.id}</strong></td>
+                    <td>${sevBadge}</td>
+                    <td>${threat.product}</td>
+                    <td>${threat.date}</td>
+                    <td><span class="badge bg-osint">${threat.source}</span></td>
+                `;
+
+                tr.addEventListener('click', () => showDetails(threat));
+                tbody.appendChild(tr);
+            });
+        }
+
+        function showDetails(threat) {
+            document.getElementById('remediation-panel').classList.add('active');
+            document.getElementById('panel-cve').innerText = threat.id;
+            
+            const sevEl = document.getElementById('panel-severity');
+            sevEl.innerText = threat.severity;
+            sevEl.className = 'badge';
+            if(threat.severity === 'CRITICAL') sevEl.classList.add('bg-crit');
+            else if(threat.severity === 'HIGH') sevEl.classList.add('bg-high');
+            else sevEl.classList.add('bg-med');
+
+            document.getElementById('panel-date').innerText = threat.date;
+            document.getElementById('panel-product').innerText = threat.product;
+            document.getElementById('panel-source').innerText = threat.source;
+            document.getElementById('panel-desc').innerText = threat.desc;
+            document.getElementById('panel-remediation').innerText = threat.remediation;
+        }
+
+        // Initialize
+        fetchFeeds();
+
+        // Refresh feeds every 5 minutes
+        setInterval(fetchFeeds, 300000);
+    </script>
+</body>
+</html>
