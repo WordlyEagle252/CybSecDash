@@ -2,21 +2,20 @@ name: Threat Intel Ingestion Pipeline
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # Runs every 6 hours
-  workflow_dispatch: # Allows you to trigger it manually
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
 
 jobs:
   fetch-and-update:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-
-steps:
+    steps:
       - name: Checkout Repository
-        uses: actions/checkout@v6 # Updated to v6
+        uses: actions/checkout@v6
 
       - name: Setup Python
-        uses: actions/setup-python@v6 # Updated to v6
+        uses: actions/setup-python@v6
         with:
           python-version: '3.10'
 
