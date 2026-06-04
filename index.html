@@ -30,6 +30,7 @@
             overflow: hidden;
         }
 
+        /* Top Navigation & KPIs */
         .header { background-color: var(--bg-panel); padding: 15px 30px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
         .header h1 { margin: 0; font-size: 1.5rem; display: flex; align-items: center; gap: 10px; }
         .live-indicator { width: 10px; height: 10px; background-color: var(--low); border-radius: 50%; box-shadow: 0 0 10px var(--low); animation: pulse 2s infinite; }
@@ -42,13 +43,18 @@
         .kpi-crit { color: var(--crit); }
         .kpi-high { color: var(--high); }
 
+        /* Main Workspace & Search Bar */
         .workspace { display: flex; flex: 1; overflow: hidden; padding: 0 30px 30px 30px; gap: 20px; }
-        .data-grid-container { flex: 2; background: var(--bg-panel); border: 1px solid var(--border); border-radius: 8px; display: flex; flex-direction: column; overflow: hidden; }
-        .table-wrap { overflow-y: auto; flex: 1; }
+        .data-grid-container { flex: 2; display: flex; flex-direction: column; overflow: hidden; }
         
+        .filter-bar { display: flex; gap: 15px; margin-bottom: 15px; flex-wrap: wrap; }
+        .filter-bar input, .filter-bar select { padding: 10px; border-radius: 4px; border: 1px solid var(--border); background: var(--bg-panel); color: var(--text-main); }
+        .filter-bar input { flex: 1; }
+
+        .table-wrap { background: var(--bg-panel); border: 1px solid var(--border); border-radius: 8px; overflow-y: auto; flex: 1; }
         table { width: 100%; border-collapse: collapse; text-align: left; }
         th, td { padding: 12px 15px; border-bottom: 1px solid var(--border); font-size: 0.95rem; }
-        th { position: sticky; top: 0; background: var(--bg-panel); color: var(--text-muted); text-transform: uppercase; font-size: 0.8rem; z-index: 10; }
+        th { position: sticky; top: 0; background: var(--bg-panel); color: var(--text-muted); text-transform: uppercase; font-size: 0.8rem; z-index: 10; border-bottom: 2px solid var(--border); }
         tr { transition: background 0.2s; cursor: pointer; }
         tr:hover { background-color: var(--bg-hover); }
 
@@ -58,6 +64,7 @@
         .bg-med { background-color: rgba(234, 179, 8, 0.2); color: var(--med); border: 1px solid var(--med); }
         .bg-osint { background-color: rgba(59, 130, 246, 0.2); color: var(--accent); border: 1px solid var(--accent); }
 
+        /* Side Panel */
         .side-panel { flex: 1; background: var(--bg-panel); border: 1px solid var(--border); border-radius: 8px; padding: 25px; overflow-y: auto; display: none; flex-direction: column; }
         .side-panel.active { display: flex; }
         .panel-meta { margin: 20px 0; padding: 15px; background: rgba(0,0,0,0.2); border-radius: 6px; }
@@ -72,39 +79,61 @@
 
     <div class="header">
         <h1><div class="live-indicator" id="status-light"></div> OSINT Threat Aggregation Matrix</h1>
-        <div id="status-text" style="color: var(--text-muted); font-size: 0.9rem;">Initializing feeds...</div>
+        <div id="status-text" style="color: var(--text-muted); font-size: 0.9rem;">Initializing data pipeline...</div>
     </div>
 
     <div class="kpi-container">
         <div class="kpi-card">
             <div class="kpi-value" id="kpi-total">0</div>
-            <div class="kpi-label">Total Threats Ingested</div>
+            <div class="kpi-label">Total Threats Shown</div>
         </div>
         <div class="kpi-card">
             <div class="kpi-value kpi-crit" id="kpi-exploited">0</div>
-            <div class="kpi-label">Actively Exploited (CISA KEV)</div>
+            <div class="kpi-label">Actively Exploited (CISA)</div>
         </div>
         <div class="kpi-card">
             <div class="kpi-value kpi-high" id="kpi-recent">0</div>
-            <div class="kpi-label">High Severity Missing Patches</div>
+            <div class="kpi-label">High/Critical Severity</div>
         </div>
     </div>
 
     <div class="workspace">
         <div class="data-grid-container">
+            
+            <div class="filter-bar">
+                <input type="text" id="search-input" placeholder="Search CVE ID, product, or keywords..." oninput="filterAndRenderData()">
+                
+                <select id="severity-filter" onchange="filterAndRenderData()">
+                    <option value="ALL">All Severities</option>
+                    <option value="CRITICAL">Critical Only</option>
+                    <option value="HIGH">High & Above</option>
+                    <option value="MEDIUM">Medium</option>
+                </select>
+
+                <select id="source-filter" onchange="filterAndRenderData()">
+                    <option value="ALL">All Sources</option>
+                    <option value="CISA KEV">CISA KEV</option>
+                    <option value="NVD Feed">NVD Feed</option>
+                    <option value="ThreatFox">ThreatFox</option>
+                    <option value="URLhaus">URLhaus</option>
+                    <option value="AlienVault">AlienVault OTX</option>
+                    <option value="VirusTotal">VirusTotal</option>
+                </select>
+            </div>
+
             <div class="table-wrap">
                 <table>
                     <thead>
                         <tr>
-                            <th>Vulnerability ID</th>
-                            <th>Severity / Risk</th>
-                            <th>Affected Endpoint / Platform</th>
-                            <th>Release Date</th>
+                            <th>Vulnerability / Threat ID</th>
+                            <th>Severity</th>
+                            <th>Affected Asset / Product</th>
+                            <th>Date Logged</th>
                             <th>OSINT Source</th>
                         </tr>
                     </thead>
                     <tbody id="feed-table-body">
-                        <tr><td colspan="5" class="loader">Fetching live data from OSINT sources...</td></tr>
+                        <tr><td colspan="5" class="loader">Fetching integrated datasets from repository...</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -116,14 +145,14 @@
             
             <div class="panel-meta">
                 <p><strong>Published:</strong> <span id="panel-date">-</span></p>
-                <p><strong>Target Platform:</strong> <span id="panel-product">-</span></p>
+                <p><strong>Target Context:</strong> <span id="panel-product">-</span></p>
                 <p><strong>Intelligence Source:</strong> <span id="panel-source">-</span></p>
             </div>
 
             <h3 style="border-bottom: 1px solid var(--border); padding-bottom: 8px;">Technical Description</h3>
             <p id="panel-desc" style="line-height: 1.6; color: var(--text-muted);">-</p>
 
-            <h3 style="border-bottom: 1px solid var(--border); padding-bottom: 8px; margin-top: 30px;">Required Patching & Remediation</h3>
+            <h3 style="border-bottom: 1px solid var(--border); padding-bottom: 8px; margin-top: 30px;">Recommended Action Plan</h3>
             <div class="remediation-box" id="panel-remediation">
                 -
             </div>
@@ -131,9 +160,11 @@
     </div>
 
     <script>
-const CISA_URL = "./data/cisa_kev.json";
+        const CISA_URL = "./data/cisa_kev.json";
         const CIRCL_URL = "./data/latest_cves.json"; 
         const AUTH_INTEL_URL = "./data/auth_intel.json"; 
+
+        let globalThreatData = [];
 
         async function fetchFeeds() {
             try {
@@ -154,7 +185,6 @@ const CISA_URL = "./data/cisa_kev.json";
                     cisaRes.value.vulnerabilities.forEach(vuln => {
                         if (vuln && vuln.cveID) {
                             const dateAdded = new Date(vuln.dateAdded);
-                            // Only append if it passes our modern date filter
                             if (dateAdded >= timelineCutoff) {
                                 unifiedData.push({
                                     id: vuln.cveID,
@@ -224,12 +254,13 @@ const CISA_URL = "./data/cisa_kev.json";
                 if (unifiedData.length === 0) {
                     document.getElementById('status-text').innerText = "Vulnerability matrix clear or awaiting pipeline initialization.";
                     document.getElementById('status-light').style.backgroundColor = 'var(--high)';
+                    document.getElementById('status-light').style.boxShadow = '0 0 10px var(--high)';
                     return;
                 }
 
                 // Sort by date descending (Newest first)
                 unifiedData.sort((a, b) => new Date(b.date) - new Date(a.date));
-                globalThreatData = unifiedData.slice(0, 50);
+                globalThreatData = unifiedData.slice(0, 100); // Expanded cap slightly to accommodate filtering
                 
                 document.getElementById('status-text').innerText = "Enterprise data mesh fully synchronized.";
                 document.getElementById('status-light').style.backgroundColor = 'var(--low)';
@@ -241,18 +272,55 @@ const CISA_URL = "./data/cisa_kev.json";
                 console.error("Critical processing breakdown:", error);
                 document.getElementById('status-text').innerText = "Mesh mapping error.";
                 document.getElementById('status-light').style.backgroundColor = 'var(--crit)';
+                document.getElementById('status-light').style.boxShadow = '0 0 10px var(--crit)';
             }
         }
 
-        function updateDashboard() {
+        // Handles Live Search and Filtering 
+        function filterAndRenderData() {
+            const searchQuery = document.getElementById('search-input').value.toLowerCase().trim();
+            const severityFilter = document.getElementById('severity-filter').value;
+            const sourceFilter = document.getElementById('source-filter').value;
+
+            if (!globalThreatData) return;
+
+            const filteredData = globalThreatData.filter(threat => {
+                const matchesSearch = 
+                    (threat.id && threat.id.toLowerCase().includes(searchQuery)) ||
+                    (threat.product && threat.product.toLowerCase().includes(searchQuery)) ||
+                    (threat.desc && threat.desc.toLowerCase().includes(searchQuery));
+
+                let matchesSeverity = true;
+                if (severityFilter === "CRITICAL") {
+                    matchesSeverity = (threat.severity === "CRITICAL");
+                } else if (severityFilter === "HIGH") {
+                    matchesSeverity = (threat.severity === "HIGH" || threat.severity === "CRITICAL");
+                } else if (severityFilter === "MEDIUM") {
+                    matchesSeverity = (threat.severity === "MEDIUM");
+                }
+
+                let matchesSource = true;
+                if (sourceFilter !== "ALL") {
+                    matchesSource = (threat.source && threat.source.includes(sourceFilter));
+                }
+
+                return matchesSearch && matchesSeverity && matchesSource;
+            });
+
+            renderTableRows(filteredData);
+        }
+
+        // Draws the DOM elements dynamically
+        function renderTableRows(dataToRender) {
             let exploitedCount = 0;
             let highCount = 0;
 
             const tbody = document.getElementById('feed-table-body');
             tbody.innerHTML = '';
 
-            globalThreatData.forEach(threat => {
-                if(threat.source.includes("CISA")) exploitedCount++;
+            dataToRender.forEach(threat => {
+                const sourceStr = threat.source || "";
+                if(sourceStr.includes("CISA")) exploitedCount++;
                 if(threat.severity === "HIGH" || threat.severity === "CRITICAL") highCount++;
 
                 const tr = document.createElement('tr');
@@ -268,16 +336,21 @@ const CISA_URL = "./data/cisa_kev.json";
                     <td><span class="badge bg-osint">${threat.source}</span></td>
                 `;
 
-                // Attaching the row interaction click listener safely
                 tr.onclick = function() { showDetails(threat); };
                 tbody.appendChild(tr);
             });
 
-            document.getElementById('kpi-total').innerText = globalThreatData.length;
+            document.getElementById('kpi-total').innerText = dataToRender.length;
             document.getElementById('kpi-exploited').innerText = exploitedCount;
             document.getElementById('kpi-recent').innerText = highCount;
         }
 
+        // Wrapper function to trigger initial data load
+        function updateDashboard() {
+            filterAndRenderData();
+        }
+
+        // Side Panel details handler
         function showDetails(threat) {
             if (!threat) return;
             
@@ -298,9 +371,9 @@ const CISA_URL = "./data/cisa_kev.json";
             else if(threat.severity === 'HIGH') sevEl.classList.add('bg-high');
             else sevEl.classList.add('bg-med');
         }
-        // Initialize
-        fetchFeeds();
 
+        // Initialize Fetch
+        fetchFeeds();
     </script>
 </body>
 </html>
