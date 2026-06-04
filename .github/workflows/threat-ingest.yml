@@ -1,4 +1,17 @@
-steps:
+name: Threat Intel Ingestion Pipeline
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # Runs every 6 hours
+  workflow_dispatch: # Allows you to trigger it manually
+
+jobs:
+  fetch-and-update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
@@ -14,13 +27,13 @@ steps:
 
       - name: Run Authenticated Python Ingestion Engine
         env:
-          # This maps your secure GitHub Secrets into the Python script's environment
           VT_API_KEY: ${{ secrets.VT_API_KEY }}
           OTX_API_KEY: ${{ secrets.OTX_API_KEY }}
         run: python ingest.py
 
       - name: Fetch Open OSINT Data
         run: |
+          mkdir -p data
           curl -sL "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json" -o data/cisa_kev.json
           curl -sL "https://cve.circl.lu/api/last" -o data/latest_cves.json
 
