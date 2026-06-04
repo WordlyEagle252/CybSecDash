@@ -30,18 +30,9 @@
             overflow: hidden;
         }
 
-        /* Top Navigation & KPIs */
-        .header {
-            background-color: var(--bg-panel);
-            padding: 15px 30px;
-            border-bottom: 1px solid var(--border);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
+        .header { background-color: var(--bg-panel); padding: 15px 30px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
         .header h1 { margin: 0; font-size: 1.5rem; display: flex; align-items: center; gap: 10px; }
-        .live-indicator { width: 10px; height: 10px; background-color: var(--crit); border-radius: 50%; box-shadow: 0 0 10px var(--crit); animation: pulse 2s infinite; }
+        .live-indicator { width: 10px; height: 10px; background-color: var(--low); border-radius: 50%; box-shadow: 0 0 10px var(--low); animation: pulse 2s infinite; }
         @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
 
         .kpi-container { display: flex; gap: 20px; padding: 20px 30px; }
@@ -51,27 +42,8 @@
         .kpi-crit { color: var(--crit); }
         .kpi-high { color: var(--high); }
 
-        /* Main Workspace */
-        .workspace {
-            display: flex;
-            flex: 1;
-            overflow: hidden;
-            padding: 0 30px 30px 30px;
-            gap: 20px;
-        }
-
-        /* Data Grid */
-        .data-grid-container {
-            flex: 2;
-            background: var(--bg-panel);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-        }
-
-        .table-header { padding: 15px; background: rgba(0,0,0,0.2); border-bottom: 1px solid var(--border); font-weight: bold; color: var(--text-muted); }
+        .workspace { display: flex; flex: 1; overflow: hidden; padding: 0 30px 30px 30px; gap: 20px; }
+        .data-grid-container { flex: 2; background: var(--bg-panel); border: 1px solid var(--border); border-radius: 8px; display: flex; flex-direction: column; overflow: hidden; }
         .table-wrap { overflow-y: auto; flex: 1; }
         
         table { width: 100%; border-collapse: collapse; text-align: left; }
@@ -86,39 +58,20 @@
         .bg-med { background-color: rgba(234, 179, 8, 0.2); color: var(--med); border: 1px solid var(--med); }
         .bg-osint { background-color: rgba(59, 130, 246, 0.2); color: var(--accent); border: 1px solid var(--accent); }
 
-        /* Remediation Side Panel */
-        .side-panel {
-            flex: 1;
-            background: var(--bg-panel);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 25px;
-            overflow-y: auto;
-            display: none;
-            flex-direction: column;
-        }
-
+        .side-panel { flex: 1; background: var(--bg-panel); border: 1px solid var(--border); border-radius: 8px; padding: 25px; overflow-y: auto; display: none; flex-direction: column; }
         .side-panel.active { display: flex; }
         .panel-meta { margin: 20px 0; padding: 15px; background: rgba(0,0,0,0.2); border-radius: 6px; }
         .panel-meta p { margin: 5px 0; color: var(--text-muted); }
         .panel-meta strong { color: var(--text-main); }
         
-        .remediation-box {
-            background: rgba(34, 197, 94, 0.1);
-            border-left: 4px solid var(--low);
-            padding: 15px;
-            margin-top: 15px;
-            border-radius: 0 6px 6px 0;
-            line-height: 1.5;
-        }
-
+        .remediation-box { background: rgba(34, 197, 94, 0.1); border-left: 4px solid var(--low); padding: 15px; margin-top: 15px; border-radius: 0 6px 6px 0; line-height: 1.5; font-family: monospace; }
         .loader { text-align: center; padding: 40px; color: var(--text-muted); font-style: italic; }
     </style>
 </head>
 <body>
 
     <div class="header">
-        <h1><div class="live-indicator"></div> OSINT Threat Aggregation Matrix</h1>
+        <h1><div class="live-indicator" id="status-light"></div> OSINT Threat Aggregation Matrix</h1>
         <div id="status-text" style="color: var(--text-muted); font-size: 0.9rem;">Initializing feeds...</div>
     </div>
 
@@ -133,7 +86,7 @@
         </div>
         <div class="kpi-card">
             <div class="kpi-value kpi-high" id="kpi-recent">0</div>
-            <div class="kpi-label">New in Last 24 Hours</div>
+            <div class="kpi-label">High Severity Missing Patches</div>
         </div>
     </div>
 
@@ -151,7 +104,7 @@
                         </tr>
                     </thead>
                     <tbody id="feed-table-body">
-                        <tr><td colspan="5" class="loader">Fetching live data from CISA and NVD mirrors...</td></tr>
+                        <tr><td colspan="5" class="loader">Fetching live data from OSINT sources...</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -176,120 +129,87 @@
             </div>
         </div>
     </div>
-<script>
-        // We are wrapping the target URLs in a CORS Proxy (allorigins.win) 
-        // This bypasses the browser blocks for local testing.
-        const CISA_TARGET = encodeURIComponent("https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json");
-        const CISA_URL = `https://api.allorigins.win/raw?url=${CISA_TARGET}`;
-        
-        const CIRCL_TARGET = encodeURIComponent("https://cve.circl.lu/api/last");
-        const CIRCL_URL = `https://api.allorigins.win/raw?url=${CIRCL_TARGET}`; 
+
+    <script>
+        // Direct Native APIs (No Proxies)
+        const CISA_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json";
+        const CIRCL_URL = "https://cve.circl.lu/api/last"; 
+
+        // Fallback Dataset: Guarantees the dashboard will render data even if network constraints block the API calls.
+        const fallbackData = [
+            { id: "CVE-2024-3400", severity: "CRITICAL", date: "2024-04-12", product: "Palo Alto Networks PAN-OS", source: "CISA KEV", desc: "A command injection vulnerability in the GlobalProtect feature of Palo Alto Networks PAN-OS software allows an unauthenticated attacker to execute arbitrary code with root privileges on the firewall.", remediation: "Apply vendor mitigations immediately. Upgrade to PAN-OS 10.2.9-h1, 11.0.4-h1, or 11.1.2-h3. Verify Threat Prevention subscription is active and blocking." },
+            { id: "CVE-2024-21887", severity: "CRITICAL", date: "2024-01-10", product: "Ivanti Connect Secure", source: "CISA KEV", desc: "A command injection vulnerability in web components of Ivanti Connect Secure allows an authenticated administrator to send specially crafted requests and execute arbitrary commands.", remediation: "Import the mitigated XML file provided by Ivanti via the administrator portal. Plan for full firmware upgrade during the next maintenance window." },
+            { id: "CVE-2023-46805", severity: "HIGH", date: "2024-01-10", product: "Ivanti Policy Secure", source: "CISA KEV", desc: "An authentication bypass vulnerability in the web component of Ivanti ICS and IPS allows a remote attacker to access restricted resources by bypassing control checks.", remediation: "Run the Ivanti Integrity Checker Tool. Factory reset the appliance if compromise is suspected before applying the latest patch." },
+            { id: "CVE-2024-21412", severity: "HIGH", date: "2024-02-13", product: "Microsoft Windows Server", source: "NVD Feed", desc: "Internet Shortcut Files Security Feature Bypass Vulnerability allowing attackers to bypass Mark of the Web (MotW) defenses.", remediation: "Deploy Windows Update KB5034765. > Get-HotFix -Id 'KB5034765' to verify installation." },
+            { id: "CVE-2024-3094", severity: "CRITICAL", date: "2024-03-29", product: "XZ Utils (Linux)", source: "NVD Feed", desc: "Malicious code injected into xz/liblzma versions 5.6.0 and 5.6.1 that modifies the sshd execution path, enabling remote code execution.", remediation: "Downgrade xz-utils to version 5.4.x immediately. Restart the SSH daemon. > sudo apt-get install xz-utils=5.4.1" }
+        ];
 
         let globalThreatData = [];
 
         async function fetchFeeds() {
             try {
-                document.getElementById('status-text').innerText = "Connecting to external OSINT APIs via Proxy...";
-
-                // Fetch feeds concurrently.
-                const [cisaRes, circlRes] = await Promise.allSettled([
-                    fetch(CISA_URL).then(r => {
-                        if (!r.ok) throw new Error("CISA Proxy failed");
-                        return r.json();
-                    }),
-                    fetch(CIRCL_URL).then(r => {
-                        if (!r.ok) throw new Error("CIRCL Proxy failed");
-                        return r.json();
-                    })
-                ]);
+                document.getElementById('status-text').innerText = "Establishing direct connections to OSINT APIs...";
 
                 let unifiedData = [];
-                let exploitedCount = 0;
-                let recentCount = 0;
-                const twentyFourHoursAgo = new Date(Date.now() - 86400000);
+                let cisaSuccess = false;
 
-                // 1. Process CISA KEV Data (Actively Exploited)
-                if (cisaRes.status === 'fulfilled') {
-                    const cisaVulns = cisaRes.value.vulnerabilities || [];
-                    
-                    // Grab the 50 most recent KEVs for performance
-                    cisaVulns.reverse().slice(0, 50).forEach(vuln => {
-                        exploitedCount++;
-                        unifiedData.push({
-                            id: vuln.cveID,
-                            severity: "CRITICAL", 
-                            date: vuln.dateAdded,
-                            product: `${vuln.vendorProject} ${vuln.product}`,
-                            source: "CISA KEV",
-                            desc: vuln.shortDescription,
-                            remediation: vuln.requiredAction || "Apply vendor updates immediately."
+                // 1. Attempt to fetch CISA KEV Natively
+                try {
+                    const cisaRes = await fetch(CISA_URL);
+                    if (cisaRes.ok) {
+                        const data = await cisaRes.json();
+                        const cisaVulns = data.vulnerabilities || [];
+                        cisaVulns.reverse().slice(0, 30).forEach(vuln => {
+                            unifiedData.push({
+                                id: vuln.cveID,
+                                severity: "CRITICAL", 
+                                date: vuln.dateAdded,
+                                product: `${vuln.vendorProject} ${vuln.product}`,
+                                source: "CISA KEV",
+                                desc: vuln.shortDescription,
+                                remediation: vuln.requiredAction || "Apply vendor updates immediately."
+                            });
                         });
-                    });
+                        cisaSuccess = true;
+                    }
+                } catch (e) {
+                    console.warn("Direct CISA fetch blocked by browser/network. Preparing fallback.");
+                }
+
+                // 2. Evaluate Data State & Fallback
+                if (cisaSuccess && unifiedData.length > 0) {
+                    globalThreatData = unifiedData;
+                    document.getElementById('status-text').innerText = "Live OSINT feeds synchronized successfully.";
+                    document.getElementById('status-light').style.backgroundColor = 'var(--low)';
+                    document.getElementById('status-light').style.boxShadow = '0 0 10px var(--low)';
                 } else {
-                    console.error("Failed to fetch CISA feed:", cisaRes.reason);
+                    // Inject Fallback Dataset if APIs fail
+                    globalThreatData = fallbackData;
+                    document.getElementById('status-text').innerText = "Network blocked API calls. Displaying cached simulation dataset.";
+                    document.getElementById('status-light').style.backgroundColor = 'var(--med)';
+                    document.getElementById('status-light').style.boxShadow = '0 0 10px var(--med)';
                 }
 
-                // 2. Process CIRCL Data (Latest NVD Publications)
-                if (circlRes.status === 'fulfilled') {
-                    const circlVulns = circlRes.value || [];
-                    
-                    circlVulns.forEach(vuln => {
-                        let sev = "UNKNOWN";
-                        let sevClass = "bg-med";
-                        if (vuln.cvss) {
-                            if (vuln.cvss >= 9.0) { sev = "CRITICAL"; sevClass = "bg-crit"; }
-                            else if (vuln.cvss >= 7.0) { sev = "HIGH"; sevClass = "bg-high"; }
-                            else { sev = "MEDIUM"; sevClass = "bg-med"; }
-                        }
-
-                        let productStr = "Multiple Endpoints";
-                        if (vuln.vulnerable_configuration && vuln.vulnerable_configuration.length > 0) {
-                            const cpe = vuln.vulnerable_configuration[0].split(':');
-                            if (cpe.length >= 5) productStr = `${cpe[3]} ${cpe[4]}`.replace(/_/g, ' ');
-                        }
-
-                        const pubDate = vuln.Published ? vuln.Published.split('T')[0] : "Unknown";
-                        if (new Date(pubDate) > twentyFourHoursAgo) recentCount++;
-
-                        unifiedData.push({
-                            id: vuln.id,
-                            severity: sev,
-                            date: pubDate,
-                            product: productStr,
-                            source: "NVD (CIRCL Mirror)",
-                            desc: vuln.summary,
-                            remediation: "Review CVE documentation and apply vendor-provided patches. Implement internal firewall restrictions if patch is unavailable."
-                        });
-                    });
-                } else {
-                    console.error("Failed to fetch CIRCL feed:", circlRes.reason);
-                }
-
-                // If both failed, trigger the catch block
-                if (unifiedData.length === 0) {
-                    throw new Error("Both data feeds failed to load.");
-                }
-
-                // Sort unified array by date descending
-                unifiedData.sort((a, b) => new Date(b.date) - new Date(a.date));
-                globalThreatData = unifiedData;
-
-                // Update UI
-                document.getElementById('kpi-total').innerText = unifiedData.length;
-                document.getElementById('kpi-exploited').innerText = exploitedCount;
-                document.getElementById('kpi-recent').innerText = recentCount;
-                document.getElementById('status-text').innerText = "Feeds synchronized. Live monitoring active.";
-
-                renderTable();
+                updateDashboard();
 
             } catch (error) {
                 console.error(error);
-                document.getElementById('feed-table-body').innerHTML = `<tr><td colspan="5" class="loader" style="color: #ef4444;">Network error: Unable to fetch feeds. The public proxy might be overloaded, or your network is blocking it. Check F12 console for details.</td></tr>`;
-                document.getElementById('status-text').innerText = "Connection failed.";
             }
         }
 
-        function renderTable() {
+        function updateDashboard() {
+            let exploitedCount = 0;
+            let highCount = 0;
+
+            globalThreatData.forEach(t => {
+                if(t.source.includes("CISA")) exploitedCount++;
+                if(t.severity === "HIGH") highCount++;
+            });
+
+            document.getElementById('kpi-total').innerText = globalThreatData.length;
+            document.getElementById('kpi-exploited').innerText = exploitedCount;
+            document.getElementById('kpi-recent').innerText = highCount;
+
             const tbody = document.getElementById('feed-table-body');
             tbody.innerHTML = '';
 
@@ -333,9 +253,6 @@
 
         // Initialize
         fetchFeeds();
-
-        // Refresh feeds every 5 minutes
-        setInterval(fetchFeeds, 300000);
     </script>
 </body>
 </html>
