@@ -1,33 +1,33 @@
-name: Threat Intel Ingestion Pipeline
-
-on:
-  schedule:
-    - cron: '0 */6 * * *' # Runs every 6 hours
-  workflow_dispatch: # Allows you to trigger it manually
-
-jobs:
-  fetch-and-update:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
-    steps:
+steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Fetch OSINT Data
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Python Dependencies
         run: |
-              mkdir -p data
-              # Fetch CISA (Exploited)
-              curl -sL "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json" -o data/cisa_kev.json
-              # Fetch CIRCL NVD Mirror (Latest Published)
-              curl -sL "https://cve.circl.lu/api/last" -o data/latest_cves.json
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run Authenticated Python Ingestion Engine
+        env:
+          # This maps your secure GitHub Secrets into the Python script's environment
+          VT_API_KEY: ${{ secrets.VT_API_KEY }}
+          OTX_API_KEY: ${{ secrets.OTX_API_KEY }}
+        run: python ingest.py
+
+      - name: Fetch Open OSINT Data
+        run: |
+          curl -sL "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json" -o data/cisa_kev.json
+          curl -sL "https://cve.circl.lu/api/last" -o data/latest_cves.json
 
       - name: Commit and Push Changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/cisa_kev.json
-          # Only commit if there are changes
-          git diff --staged --quiet || git commit -m "Automated ingestion: Updated threat intel feeds"
+          git add data/
+          git diff --staged --quiet || git commit -m "Automated ingestion: Updated open and authenticated threat feeds"
           git push
