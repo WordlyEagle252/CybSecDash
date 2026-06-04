@@ -132,8 +132,8 @@
 
     <script>
         // Direct Native APIs (No Proxies)        
-        const CISA_URL = "./data/cisa_kev.json";       
-        const CIRCL_URL = "https://cve.circl.lu/api/last"; 
+       // const CISA_URL = "./data/cisa_kev.json";       
+        // const CIRCL_URL = "https://cve.circl.lu/api/last"; 
 
         // Fallback Dataset: Guarantees the dashboard will render data even if network constraints block the API calls.
         const fallbackData = [
@@ -145,24 +145,28 @@
         ];
 
         let globalThreatData = [];
-const CISA_URL = "./data/cisa_kev.json";
+
+        // Define paths to all three locally ingested datasets
+        const CISA_URL = "./data/cisa_kev.json";
         const CIRCL_URL = "./data/latest_cves.json"; 
+        const AUTH_INTEL_URL = "./data/auth_intel.json"; 
 
         async function fetchFeeds() {
             try {
-                document.getElementById('status-text').innerText = "Loading local repository data...";
+                document.getElementById('status-text').innerText = "Querying local enterprise intelligence vault...";
                 let unifiedData = [];
 
-                // Fetch both local files concurrently
-                const [cisaRes, circlRes] = await Promise.allSettled([
-                    fetch(CISA_URL).then(r => r.json()),
-                    fetch(CIRCL_URL).then(r => r.json())
+                // Fetch all three internal JSON files concurrently
+                const [cisaRes, circlRes, authRes] = await Promise.allSettled([
+                    fetch(CISA_URL).then(r => r.ok ? r.json() : null),
+                    fetch(CIRCL_URL).then(r => r.ok ? r.json() : null),
+                    fetch(AUTH_INTEL_URL).then(r => r.ok ? r.json() : null)
                 ]);
 
-                // 1. Process CISA
-                if (cisaRes.status === 'fulfilled') {
+                // 1. Ingest CISA KEV (Actively Exploited)
+                if (cisaRes.status === 'fulfilled' && cisaRes.value) {
                     const cisaVulns = cisaRes.value.vulnerabilities || [];
-                    cisaVulns.reverse().slice(0, 20).forEach(vuln => {
+                    cisaVulns.reverse().slice(0, 25).forEach(vuln => {
                         unifiedData.push({
                             id: vuln.cveID,
                             severity: "CRITICAL", 
@@ -170,13 +174,13 @@ const CISA_URL = "./data/cisa_kev.json";
                             product: `${vuln.vendorProject} ${vuln.product}`,
                             source: "CISA KEV",
                             desc: vuln.shortDescription,
-                            remediation: vuln.requiredAction
+                            remediation: vuln.requiredAction || "Patch immediately."
                         });
                     });
                 }
 
-                // 2. Process NVD (Latest)
-                if (circlRes.status === 'fulfilled') {
+                // 2. Ingest NVD (Latest Publications)
+                if (circlRes.status === 'fulfilled' && circlRes.value) {
                     const circlVulns = circlRes.value || [];
                     circlVulns.forEach(vuln => {
                         let sev = "MEDIUM";
@@ -198,25 +202,43 @@ const CISA_URL = "./data/cisa_kev.json";
                             product: productStr,
                             source: "NVD Feed",
                             desc: vuln.summary,
-                            remediation: "Review CVE documentation and apply vendor-provided patches."
+                            remediation: "Review CVE documentation and apply vendor patches."
                         });
                     });
                 }
 
-                // Sort everything by date descending (Newest first)
+                // 3. Ingest Premium Authenticated Intel (VirusTotal / AlienVault)
+                if (authRes.status === 'fulfilled' && authRes.value) {
+                    const premiumVulns = authRes.value || [];
+                    premiumVulns.forEach(item => {
+                        unifiedData.push({
+                            id: item.id,
+                            severity: item.severity || "HIGH",
+                            date: item.date,
+                            product: item.product,
+                            source: item.source,
+                            desc: item.desc,
+                            remediation: item.remediation
+                        });
+                    });
+                }
+
+                // Sort the entire multi-source array by date descending (Newest First)
                 unifiedData.sort((a, b) => new Date(b.date) - new Date(a.date));
                 
-                // Keep the top 50 to prevent UI lag
-                globalThreatData = unifiedData.slice(0, 50);
+                // Limit to 60 total rows to optimize DOM rendering performance
+                globalThreatData = unifiedData.slice(0, 60);
                 
-                document.getElementById('status-text').innerText = "Data loaded successfully.";
+                // Update UI Status indicators
+                document.getElementById('status-text').innerText = "Enterprise data mesh fully synchronized.";
                 document.getElementById('status-light').style.backgroundColor = 'var(--low)';
                 document.getElementById('status-light').style.boxShadow = '0 0 10px var(--low)';
                 
                 updateDashboard();
 
             } catch (error) {
-                console.error("Failed to load local data files.", error);
+                console.error("Critical error building unified threat mesh:", error);
+                document.getElementById('status-text').innerText = "Data sync failed.";
             }
         }
         // Initialize
