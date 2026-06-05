@@ -1,92 +1,182 @@
 [
     {
-        "id": "6a21aa7d (OTX)",
+        "id": "OTX-6a21aa7d",
         "severity": "HIGH",
         "date": "2026-06-04",
-        "product": "Various Endpoints",
+        "product": "Enterprise Infrastructure",
         "source": "AlienVault OTX",
         "desc": "ClickFix Deno Abuse to CastleRAT",
-        "remediation": "Review OTX pulse indicators (IOCs) and block associated IPs/Domains at the perimeter."
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "69f9f99c (OTX)",
+        "id": "OTX-69f9f99c",
         "severity": "HIGH",
         "date": "2026-06-04",
-        "product": "Various Endpoints",
+        "product": "Enterprise Infrastructure",
         "source": "AlienVault OTX",
         "desc": "CloudZ RAT potentially steals OTP messages using Pheno plugin",
-        "remediation": "Review OTX pulse indicators (IOCs) and block associated IPs/Domains at the perimeter."
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "69f9f99c (OTX)",
+        "id": "OTX-69f9f99c",
         "severity": "HIGH",
         "date": "2026-06-04",
-        "product": "Various Endpoints",
+        "product": "Enterprise Infrastructure",
         "source": "AlienVault OTX",
         "desc": "UAT-8302 and its box full of malware",
-        "remediation": "Review OTX pulse indicators (IOCs) and block associated IPs/Domains at the perimeter."
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "6a214338 (OTX)",
+        "id": "OTX-6a214338",
         "severity": "HIGH",
         "date": "2026-06-04",
-        "product": "Various Endpoints",
+        "product": "Enterprise Infrastructure",
         "source": "AlienVault OTX",
         "desc": "Argamal: Malware hidden in hentai games",
-        "remediation": "Review OTX pulse indicators (IOCs) and block associated IPs/Domains at the perimeter."
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "6a214311 (OTX)",
+        "id": "OTX-6a214311",
         "severity": "HIGH",
         "date": "2026-06-04",
-        "product": "Various Endpoints",
+        "product": "Enterprise Infrastructure",
         "source": "AlienVault OTX",
         "desc": "Preinstall to persistence: Inside the npm Miasma credential-stealing campaign",
-        "remediation": "Review OTX pulse indicators (IOCs) and block associated IPs/Domains at the perimeter."
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "6a20e718 (OTX)",
+        "id": "OTX-6a20e718",
         "severity": "HIGH",
         "date": "2026-06-04",
-        "product": "Various Endpoints",
+        "product": "Enterprise Infrastructure",
         "source": "AlienVault OTX",
         "desc": "Browser Spy-Ons: Threat Actor's Extension Hijack Your AI Conversations",
-        "remediation": "Review OTX pulse indicators (IOCs) and block associated IPs/Domains at the perimeter."
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "6a20a73f (OTX)",
+        "id": "OTX-6a20a73f",
         "severity": "HIGH",
         "date": "2026-06-04",
-        "product": "Various Endpoints",
+        "product": "Enterprise Infrastructure",
         "source": "AlienVault OTX",
         "desc": "Inside the Cross-Platform Propagation of a New Gafgyt Variant C0XMO",
-        "remediation": "Review OTX pulse indicators (IOCs) and block associated IPs/Domains at the perimeter."
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "6a20a73f (OTX)",
+        "id": "OTX-6a20a73f",
         "severity": "HIGH",
         "date": "2026-06-04",
-        "product": "Various Endpoints",
+        "product": "Enterprise Infrastructure",
         "source": "AlienVault OTX",
         "desc": "The Demon Arrives Later: A Havoc Stager Hides Behind Microsoft Defender DLP",
-        "remediation": "Review OTX pulse indicators (IOCs) and block associated IPs/Domains at the perimeter."
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "6a20679f (OTX)",
+        "id": "OTX-6a20679f",
         "severity": "HIGH",
         "date": "2026-06-04",
-        "product": "Various Endpoints",
+        "product": "Enterprise Infrastructure",
         "source": "AlienVault OTX",
         "desc": "Impersonation, Click Hijacking, and TDS: Inside a Malware Distribution Ecosystem",
-        "remediation": "Review OTX pulse indicators (IOCs) and block associated IPs/Domains at the perimeter."
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "6a2067cb (OTX)",
+        "id": "OTX-6a2067cb",
         "severity": "HIGH",
         "date": "2026-06-04",
-        "product": "Various Endpoints",
+        "product": "Enterprise Infrastructure",
         "source": "AlienVault OTX",
         "desc": "PCPJack Hijacked 230 AWS, GCP, and Azure Servers to Run a Hidden SMTP Relay Network",
-        "remediation": "Review OTX pulse indicators (IOCs) and block associated IPs/Domains at the perimeter."
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "VT-i-65.111",
+        "severity": "CRITICAL",
+        "date": "2026-06-05",
+        "product": "Endpoint / System Artifact",
+        "source": "VirusTotal",
+        "desc": "Observed by TSEC T-Pot honeypot network.\nAttack type: Exploit Attempt.\nServices: brute-force, exploited-host, hacking, l...",
+        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
+    },
+    {
+        "id": "VT-i-216.26",
+        "severity": "CRITICAL",
+        "date": "2026-06-05",
+        "product": "Endpoint / System Artifact",
+        "source": "VirusTotal",
+        "desc": "Observed by TSEC T-Pot honeypot network.\nAttack type: General Activity.\nServices: minimal, ssh, telnet.\nOpenCTI threat s...",
+        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
+    },
+    {
+        "id": "VT-i-209.50",
+        "severity": "CRITICAL",
+        "date": "2026-06-05",
+        "product": "Endpoint / System Artifact",
+        "source": "VirusTotal",
+        "desc": "Observed by TSEC T-Pot honeypot network.\nAttack type: General Activity.\nServices: minimal, ssh, telnet.\nOpenCTI threat s...",
+        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
+    },
+    {
+        "id": "VT-i-216.26",
+        "severity": "CRITICAL",
+        "date": "2026-06-05",
+        "product": "Endpoint / System Artifact",
+        "source": "VirusTotal",
+        "desc": "Observed by TSEC T-Pot honeypot network.\nAttack type: General Activity.\nServices: clean, ssh, telnet.\nOpenCTI threat sco...",
+        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
+    },
+    {
+        "id": "VT-i-47.252",
+        "severity": "CRITICAL",
+        "date": "2026-06-05",
+        "product": "Endpoint / System Artifact",
+        "source": "VirusTotal",
+        "desc": "Observed by TSEC T-Pot honeypot network.\nAttack type: Exploit Attempt.\nServices: brute-force, critical, exploited-host, ...",
+        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
+    },
+    {
+        "id": "VT-i-216.26",
+        "severity": "CRITICAL",
+        "date": "2026-06-05",
+        "product": "Endpoint / System Artifact",
+        "source": "VirusTotal",
+        "desc": "Observed by TSEC T-Pot honeypot network.\nAttack type: General Activity.\nServices: minimal, ssh, telnet.\nOpenCTI threat s...",
+        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
+    },
+    {
+        "id": "VT-i-209.50",
+        "severity": "CRITICAL",
+        "date": "2026-06-05",
+        "product": "Endpoint / System Artifact",
+        "source": "VirusTotal",
+        "desc": "Observed by TSEC T-Pot honeypot network.\nAttack type: General Activity.\nServices: minimal, ssh, telnet.\nOpenCTI threat s...",
+        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
+    },
+    {
+        "id": "VT-i-216.26",
+        "severity": "CRITICAL",
+        "date": "2026-06-05",
+        "product": "Endpoint / System Artifact",
+        "source": "VirusTotal",
+        "desc": "Observed by TSEC T-Pot honeypot network.\nAttack type: General Activity.\nServices: clean, ssh, telnet.\nOpenCTI threat sco...",
+        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
+    },
+    {
+        "id": "VT-i-209.50",
+        "severity": "CRITICAL",
+        "date": "2026-06-05",
+        "product": "Endpoint / System Artifact",
+        "source": "VirusTotal",
+        "desc": "Observed by TSEC T-Pot honeypot network.\nAttack type: Exploit Attempt.\nServices: brute-force, ddos, exploited-host, hack...",
+        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
+    },
+    {
+        "id": "VT-i-216.26",
+        "severity": "CRITICAL",
+        "date": "2026-06-05",
+        "product": "Endpoint / System Artifact",
+        "source": "VirusTotal",
+        "desc": "Observed by TSEC T-Pot honeypot network.\nAttack type: General Activity.\nServices: clean, ssh, telnet.\nOpenCTI threat sco...",
+        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
