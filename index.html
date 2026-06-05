@@ -43,13 +43,25 @@
         .kpi-crit { color: var(--crit); }
         .kpi-high { color: var(--high); }
 
-        /* Main Workspace & Search Bar */
+        /* Main Workspace & Panels */
         .workspace { display: flex; flex: 1; overflow: hidden; padding: 0 30px 30px 30px; gap: 20px; }
-        .data-grid-container { flex: 2; display: flex; flex-direction: column; overflow: hidden; }
+        
+        /* Asset Inventory Panel */
+        .asset-panel { flex: 0.8; background: var(--bg-panel); border: 1px solid var(--border); border-radius: 8px; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; }
+        .asset-card { background: rgba(0,0,0,0.2); padding: 12px; border-radius: 6px; border-left: 3px solid var(--med); display: flex; justify-content: space-between; align-items: center; }
+        .asset-card.critical { border-left-color: var(--crit); }
+        .asset-card.healthy { border-left-color: var(--low); }
+        .asset-name { font-size: 0.9rem; font-weight: bold; }
+        .asset-count { color: var(--text-muted); font-size: 0.8rem; margin-top: 3px; }
+
+        /* Data Grid */
+        .data-grid-container { flex: 2.5; display: flex; flex-direction: column; overflow: hidden; }
         
         .filter-bar { display: flex; gap: 15px; margin-bottom: 15px; flex-wrap: wrap; }
         .filter-bar input, .filter-bar select { padding: 10px; border-radius: 4px; border: 1px solid var(--border); background: var(--bg-panel); color: var(--text-main); }
         .filter-bar input { flex: 1; }
+        .btn-export { padding: 10px 15px; border-radius: 4px; border: none; background: var(--accent); color: #fff; cursor: pointer; font-weight: bold; transition: background 0.2s; }
+        .btn-export:hover { background: #2563eb; }
 
         .table-wrap { background: var(--bg-panel); border: 1px solid var(--border); border-radius: 8px; overflow-y: auto; flex: 1; }
         table { width: 100%; border-collapse: collapse; text-align: left; }
@@ -62,11 +74,17 @@
         .bg-crit { background-color: rgba(239, 68, 68, 0.2); color: var(--crit); border: 1px solid var(--crit); }
         .bg-high { background-color: rgba(249, 115, 22, 0.2); color: var(--high); border: 1px solid var(--high); }
         .bg-med { background-color: rgba(234, 179, 8, 0.2); color: var(--med); border: 1px solid var(--med); }
+        .bg-low { background-color: rgba(34, 197, 94, 0.2); color: var(--low); border: 1px solid var(--low); }
         .bg-osint { background-color: rgba(59, 130, 246, 0.2); color: var(--accent); border: 1px solid var(--accent); }
 
-        /* Side Panel */
-        .side-panel { flex: 1; background: var(--bg-panel); border: 1px solid var(--border); border-radius: 8px; padding: 25px; overflow-y: auto; display: none; flex-direction: column; }
+        /* Side Panel (Remediation) */
+        .side-panel { flex: 1; background: var(--bg-panel); border: 1px solid var(--border); border-radius: 8px; padding: 25px; overflow-y: auto; display: none; flex-direction: column; position: relative; }
         .side-panel.active { display: flex; }
+        
+        /* Close Button */
+        .close-btn { position: absolute; top: 20px; right: 20px; background: none; border: none; color: var(--text-muted); font-size: 1.8rem; cursor: pointer; line-height: 1; }
+        .close-btn:hover { color: var(--text-main); }
+
         .panel-meta { margin: 20px 0; padding: 15px; background: rgba(0,0,0,0.2); border-radius: 6px; }
         .panel-meta p { margin: 5px 0; color: var(--text-muted); }
         .panel-meta strong { color: var(--text-main); }
@@ -85,7 +103,7 @@
     <div class="kpi-container">
         <div class="kpi-card">
             <div class="kpi-value" id="kpi-total">0</div>
-            <div class="kpi-label">Total Threats Shown</div>
+            <div class="kpi-label">Filtered Threats Shown</div>
         </div>
         <div class="kpi-card">
             <div class="kpi-value kpi-crit" id="kpi-exploited">0</div>
@@ -98,8 +116,63 @@
     </div>
 
     <div class="workspace">
+        
+        <!-- NEW: Asset Inventory Module -->
+        <div class="asset-panel">
+            <h3 style="margin-top: 0; border-bottom: 1px solid var(--border); padding-bottom: 10px;">Asset Inventory</h3>
+            
+            <div class="asset-card critical">
+                <div>
+                    <div class="asset-name">Windows Servers (AD/Exchange)</div>
+                    <div class="asset-count">24 Instances</div>
+                </div>
+                <span class="badge bg-crit">3 Vuln</span>
+            </div>
+
+            <div class="asset-card healthy">
+                <div>
+                    <div class="asset-name">Linux Endpoints (Ubuntu/RHEL)</div>
+                    <div class="asset-count">85 Instances</div>
+                </div>
+                <span class="badge bg-low">Secure</span>
+            </div>
+
+            <div class="asset-card">
+                <div>
+                    <div class="asset-name">Cisco Edge Routers</div>
+                    <div class="asset-count">6 Devices</div>
+                </div>
+                <span class="badge bg-high">1 Vuln</span>
+            </div>
+
+            <div class="asset-card healthy">
+                <div>
+                    <div class="asset-name">Layer 3 Switches</div>
+                    <div class="asset-count">18 Devices</div>
+                </div>
+                <span class="badge bg-low">Secure</span>
+            </div>
+
+            <div class="asset-card critical">
+                <div>
+                    <div class="asset-name">Enterprise Laptops</div>
+                    <div class="asset-count">142 Devices</div>
+                </div>
+                <span class="badge bg-crit">7 Vuln</span>
+            </div>
+
+            <div class="asset-card">
+                <div>
+                    <div class="asset-name">Network Printers / MFPs</div>
+                    <div class="asset-count">12 Devices</div>
+                </div>
+                <span class="badge bg-med">2 Vuln</span>
+            </div>
+        </div>
+
         <div class="data-grid-container">
             
+            <!-- Search, Filter, and Export Console -->
             <div class="filter-bar">
                 <input type="text" id="search-input" placeholder="Search CVE ID, product, or keywords..." oninput="filterAndRenderData()">
                 
@@ -119,6 +192,9 @@
                     <option value="AlienVault">AlienVault OTX</option>
                     <option value="VirusTotal">VirusTotal</option>
                 </select>
+
+                <!-- NEW: CSV Export Feature -->
+                <button class="btn-export" onclick="exportToCSV()">Export CSV</button>
             </div>
 
             <div class="table-wrap">
@@ -140,7 +216,10 @@
         </div>
 
         <div class="side-panel" id="remediation-panel">
-            <h2 id="panel-cve" style="margin-top: 0;">Select a Threat</h2>
+            <!-- NEW: Close Button -->
+            <button class="close-btn" onclick="closeDetails()" title="Close details panel">&times;</button>
+            
+            <h2 id="panel-cve" style="margin-top: 0; padding-right: 30px;">Select a Threat</h2>
             <div><span id="panel-severity" class="badge bg-crit">CRITICAL</span></div>
             
             <div class="panel-meta">
@@ -165,13 +244,12 @@
         const AUTH_INTEL_URL = "./data/auth_intel.json"; 
 
         let globalThreatData = [];
+        let currentFilteredData = []; // Keeps track of exactly what is on the screen for CSV export
 
         async function fetchFeeds() {
             try {
                 document.getElementById('status-text').innerText = "Querying local enterprise intelligence vault...";
                 let unifiedData = [];
-                
-                // Define modern baseline timeline cutoff (Discard everything pre-2025)
                 const timelineCutoff = new Date("2025-01-01");
 
                 const [cisaRes, circlRes, authRes] = await Promise.allSettled([
@@ -200,26 +278,23 @@
                     });
                 }
 
-                // 2. Process NVD (Latest Publications)
+                // 2. Process NVD
                 if (circlRes.status === 'fulfilled' && circlRes.value && Array.isArray(circlRes.value)) {
                     circlRes.value.forEach(vuln => {
                         if (vuln && vuln.id) {
                             const pubDateStr = vuln.Published ? vuln.Published.split('T')[0] : "";
                             const pubDate = new Date(pubDateStr);
-                            
                             if (pubDateStr && pubDate >= timelineCutoff) {
                                 let sev = "MEDIUM";
                                 if (vuln.cvss) {
                                     if (vuln.cvss >= 9.0) sev = "CRITICAL";
                                     else if (vuln.cvss >= 7.0) sev = "HIGH";
                                 }
-
                                 let productStr = "Multiple Endpoints";
                                 if (vuln.vulnerable_configuration && vuln.vulnerable_configuration.length > 0) {
                                     const cpe = vuln.vulnerable_configuration[0].split(':');
                                     if (cpe.length >= 5) productStr = `${cpe[3]} ${cpe[4]}`.replace(/_/g, ' ');
                                 }
-
                                 unifiedData.push({
                                     id: vuln.id,
                                     severity: sev,
@@ -234,7 +309,7 @@
                     });
                 }
 
-                // 3. Process Premium Authenticated Intel
+                // 3. Process Authenticated Intel
                 if (authRes.status === 'fulfilled' && authRes.value && Array.isArray(authRes.value)) {
                     authRes.value.forEach(item => {
                         if (item) {
@@ -254,13 +329,11 @@
                 if (unifiedData.length === 0) {
                     document.getElementById('status-text').innerText = "Vulnerability matrix clear or awaiting pipeline initialization.";
                     document.getElementById('status-light').style.backgroundColor = 'var(--high)';
-                    document.getElementById('status-light').style.boxShadow = '0 0 10px var(--high)';
                     return;
                 }
 
-                // Sort by date descending (Newest first)
                 unifiedData.sort((a, b) => new Date(b.date) - new Date(a.date));
-                globalThreatData = unifiedData.slice(0, 100); // Expanded cap slightly to accommodate filtering
+                globalThreatData = unifiedData.slice(0, 100); 
                 
                 document.getElementById('status-text').innerText = "Enterprise data mesh fully synchronized.";
                 document.getElementById('status-light').style.backgroundColor = 'var(--low)';
@@ -272,11 +345,10 @@
                 console.error("Critical processing breakdown:", error);
                 document.getElementById('status-text').innerText = "Mesh mapping error.";
                 document.getElementById('status-light').style.backgroundColor = 'var(--crit)';
-                document.getElementById('status-light').style.boxShadow = '0 0 10px var(--crit)';
             }
         }
 
-        // Handles Live Search and Filtering 
+        // Live Search and Filtering 
         function filterAndRenderData() {
             const searchQuery = document.getElementById('search-input').value.toLowerCase().trim();
             const severityFilter = document.getElementById('severity-filter').value;
@@ -284,7 +356,7 @@
 
             if (!globalThreatData) return;
 
-            const filteredData = globalThreatData.filter(threat => {
+            currentFilteredData = globalThreatData.filter(threat => {
                 const matchesSearch = 
                     (threat.id && threat.id.toLowerCase().includes(searchQuery)) ||
                     (threat.product && threat.product.toLowerCase().includes(searchQuery)) ||
@@ -307,10 +379,9 @@
                 return matchesSearch && matchesSeverity && matchesSource;
             });
 
-            renderTableRows(filteredData);
+            renderTableRows(currentFilteredData);
         }
 
-        // Draws the DOM elements dynamically
         function renderTableRows(dataToRender) {
             let exploitedCount = 0;
             let highCount = 0;
@@ -345,12 +416,11 @@
             document.getElementById('kpi-recent').innerText = highCount;
         }
 
-        // Wrapper function to trigger initial data load
         function updateDashboard() {
             filterAndRenderData();
         }
 
-        // Side Panel details handler
+        // Feature: Show and Close Details Panel
         function showDetails(threat) {
             if (!threat) return;
             
@@ -372,7 +442,43 @@
             else sevEl.classList.add('bg-med');
         }
 
-        // Initialize Fetch
+        function closeDetails() {
+            document.getElementById('remediation-panel').classList.remove('active');
+        }
+
+        // Feature: Export to CSV
+        function exportToCSV() {
+            if (!currentFilteredData || currentFilteredData.length === 0) {
+                alert("No data available to export.");
+                return;
+            }
+
+            let csvContent = "data:text/csv;charset=utf-8,";
+            csvContent += "Vulnerability ID,Severity,Affected Asset,Date Logged,OSINT Source\n";
+
+            currentFilteredData.forEach(t => {
+                // Escape quotes and commas in strings to prevent CSV format breaking
+                let safeProduct = (t.product || "").replace(/"/g, '""');
+                let safeSource = (t.source || "").replace(/"/g, '""');
+                
+                let row = `"${t.id}","${t.severity}","${safeProduct}","${t.date}","${safeSource}"`;
+                csvContent += row + "\r\n";
+            });
+
+            const encodedUri = encodeURI(csvContent);
+            const link = document.createElement("a");
+            link.setAttribute("href", encodedUri);
+            
+            // Add a timestamp to the filename
+            const dateStr = new Date().toISOString().split('T')[0];
+            link.setAttribute("download", `Threat_Intel_Report_${dateStr}.csv`);
+            
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        // Initialize
         fetchFeeds();
     </script>
 </body>
