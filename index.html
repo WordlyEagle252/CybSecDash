@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enterprise OSINT Cyber Risk Dashboard</title>
+    <title>Scout | OSINT Threat Platform</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,5 89,27.5 89,72.5 50,95 11,72.5 11,27.5' fill='none' stroke='%233b82f6' stroke-width='5'/><circle cx='50' cy='50' r='24' fill='none' stroke='%23334155' stroke-width='2'/><circle cx='50' cy='50' r='16' fill='none' stroke='%233b82f6' stroke-width='2' stroke-dasharray='4 4'/><polygon points='50,16 56,44 84,50 56,56 50,84 44,56 16,50 44,44' fill='%2322c55e'/><circle cx='50' cy='50' r='5' fill='%230f172a'/></svg>" type="image/svg+xml">
     <style>
         :root {
             --bg-base: #0f172a;
@@ -32,7 +33,6 @@
 
         /* Top Navigation & KPIs */
         .header { background-color: var(--bg-panel); padding: 15px 30px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
-        .header h1 { margin: 0; font-size: 1.5rem; display: flex; align-items: center; gap: 10px; }
         .live-indicator { width: 10px; height: 10px; background-color: var(--low); border-radius: 50%; box-shadow: 0 0 10px var(--low); animation: pulse 2s infinite; }
         @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
 
@@ -46,7 +46,6 @@
         /* Main Workspace & Panels */
         .workspace { display: flex; flex: 1; overflow: hidden; padding: 0 30px 30px 30px; gap: 20px; }
         
-        /* Asset Inventory Panel */
         .asset-panel { flex: 0.8; background: var(--bg-panel); border: 1px solid var(--border); border-radius: 8px; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; }
         .asset-card { background: rgba(0,0,0,0.2); padding: 12px; border-radius: 6px; border-left: 3px solid var(--med); display: flex; justify-content: space-between; align-items: center; }
         .asset-card.critical { border-left-color: var(--crit); }
@@ -54,7 +53,6 @@
         .asset-name { font-size: 0.9rem; font-weight: bold; }
         .asset-count { color: var(--text-muted); font-size: 0.8rem; margin-top: 3px; }
 
-        /* Data Grid */
         .data-grid-container { flex: 2.5; display: flex; flex-direction: column; overflow: hidden; }
         
         .filter-bar { display: flex; gap: 15px; margin-bottom: 15px; flex-wrap: wrap; }
@@ -77,11 +75,9 @@
         .bg-low { background-color: rgba(34, 197, 94, 0.2); color: var(--low); border: 1px solid var(--low); }
         .bg-osint { background-color: rgba(59, 130, 246, 0.2); color: var(--accent); border: 1px solid var(--accent); }
 
-        /* Side Panel (Remediation) */
         .side-panel { flex: 1; background: var(--bg-panel); border: 1px solid var(--border); border-radius: 8px; padding: 25px; overflow-y: auto; display: none; flex-direction: column; position: relative; }
         .side-panel.active { display: flex; }
         
-        /* Close Button */
         .close-btn { position: absolute; top: 20px; right: 20px; background: none; border: none; color: var(--text-muted); font-size: 1.8rem; cursor: pointer; line-height: 1; }
         .close-btn:hover { color: var(--text-main); }
 
@@ -91,30 +87,40 @@
         
         .remediation-box { background: rgba(34, 197, 94, 0.1); border-left: 4px solid var(--low); padding: 15px; margin-top: 15px; border-radius: 0 6px 6px 0; line-height: 1.5; font-family: monospace; }
         .loader { text-align: center; padding: 40px; color: var(--text-muted); font-style: italic; }
+
+        /* AskScout Chatbot Styles */
+        .chat-widget { position: fixed; bottom: 30px; right: 30px; z-index: 100; display: flex; flex-direction: column; align-items: flex-end; }
+        .chat-btn { background: var(--accent); color: white; border: none; border-radius: 50%; width: 60px; height: 60px; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.5); display: flex; justify-content: center; align-items: center; transition: transform 0.2s; }
+        .chat-btn:hover { transform: scale(1.05); }
+        .chat-window { width: 350px; height: 450px; background: var(--bg-panel); border: 1px solid var(--border); border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); display: none; flex-direction: column; margin-bottom: 15px; overflow: hidden; transform-origin: bottom right; animation: popUp 0.3s ease; }
+        @keyframes popUp { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+        .chat-window.active { display: flex; }
+        .chat-header { background: var(--bg-base); padding: 15px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+        .chat-header h3 { margin: 0; font-size: 1rem; display: flex; align-items: center; gap: 8px; }
+        .chat-close { background: none; border: none; color: var(--text-muted); cursor: pointer; font-size: 1.2rem; }
+        .chat-messages { flex: 1; padding: 15px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; }
+        .msg { max-width: 80%; padding: 10px 14px; border-radius: 8px; font-size: 0.9rem; line-height: 1.4; }
+        .msg.bot { background: rgba(59, 130, 246, 0.1); border-left: 3px solid var(--accent); align-self: flex-start; }
+        .msg.user { background: var(--bg-hover); align-self: flex-end; }
+        .chat-input-area { padding: 15px; background: var(--bg-base); border-top: 1px solid var(--border); display: flex; gap: 10px; }
+        .chat-input-area input { flex: 1; padding: 10px; border-radius: 20px; border: 1px solid var(--border); background: var(--bg-panel); color: white; outline: none; }
+        .chat-input-area button { background: var(--accent); color: white; border: none; border-radius: 50%; width: 35px; height: 35px; cursor: pointer; }
     </style>
 </head>
 <body>
 
     <div class="header">
         <h1 style="display: flex; align-items: center; gap: 12px; margin: 0; font-size: 1.5rem; letter-spacing: 0.5px;">
-    <!-- Scout SVG Logo -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="36" height="36" style="filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.4));">
-        <!-- Outer Cyber Hexagon -->
-        <polygon points="50,5 89,27.5 89,72.5 50,95 11,72.5 11,27.5" fill="none" stroke="#3b82f6" stroke-width="5" />
-        <!-- Inner Sonar/Radar Rings -->
-        <circle cx="50" cy="50" r="24" fill="none" stroke="#334155" stroke-width="2" />
-        <circle cx="50" cy="50" r="16" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="4 4" />
-        <!-- Compass/Scout Star -->
-        <polygon points="50,16 56,44 84,50 56,56 50,84 44,56 16,50 44,44" fill="#22c55e" />
-        <!-- Center Node -->
-        <circle cx="50" cy="50" r="5" fill="#0f172a" />
-    </svg>
-    
-    Scout - The Cyber OSINT Threat Aggregator <span style="color: var(--text-muted); font-weight: 400; font-size: 1.2rem;">| OSINT Platform</span>
-    
-    <!-- Relocated Live Status Indicator -->
-    <div class="live-indicator" id="status-light" style="margin-left: 10px; width: 8px; height: 8px;"></div>
-</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="36" height="36" style="filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.4));">
+                <polygon points="50,5 89,27.5 89,72.5 50,95 11,72.5 11,27.5" fill="none" stroke="#3b82f6" stroke-width="5" />
+                <circle cx="50" cy="50" r="24" fill="none" stroke="#334155" stroke-width="2" />
+                <circle cx="50" cy="50" r="16" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="4 4" />
+                <polygon points="50,16 56,44 84,50 56,56 50,84 44,56 16,50 44,44" fill="#22c55e" />
+                <circle cx="50" cy="50" r="5" fill="#0f172a" />
+            </svg>
+            SCOUT <span style="color: var(--text-muted); font-weight: 400; font-size: 1.2rem;">| OSINT Platform</span>
+            <div class="live-indicator" id="status-light" style="margin-left: 10px; width: 8px; height: 8px;"></div>
+        </h1>
         <div id="status-text" style="color: var(--text-muted); font-size: 0.9rem;">Initializing data pipeline...</div>
     </div>
 
@@ -134,73 +140,37 @@
     </div>
 
     <div class="workspace">
-        
-        <!-- NEW: Asset Inventory Module -->
         <div class="asset-panel">
             <h3 style="margin-top: 0; border-bottom: 1px solid var(--border); padding-bottom: 10px;">Asset Inventory</h3>
-            
             <div class="asset-card critical">
-                <div>
-                    <div class="asset-name">Windows Servers (AD/Exchange)</div>
-                    <div class="asset-count">24 Instances</div>
-                </div>
-                <span class="badge bg-crit">3 Vuln</span>
+                <div><div class="asset-name">Windows Servers (AD/Exchange)</div><div class="asset-count">24 Instances</div></div><span class="badge bg-crit">3 Vuln</span>
             </div>
-
             <div class="asset-card healthy">
-                <div>
-                    <div class="asset-name">Linux Endpoints (Ubuntu/RHEL)</div>
-                    <div class="asset-count">85 Instances</div>
-                </div>
-                <span class="badge bg-low">Secure</span>
+                <div><div class="asset-name">Linux Endpoints (Ubuntu/RHEL)</div><div class="asset-count">85 Instances</div></div><span class="badge bg-low">Secure</span>
             </div>
-
             <div class="asset-card">
-                <div>
-                    <div class="asset-name">Cisco Edge Routers</div>
-                    <div class="asset-count">6 Devices</div>
-                </div>
-                <span class="badge bg-high">1 Vuln</span>
+                <div><div class="asset-name">Cisco Edge Routers</div><div class="asset-count">6 Devices</div></div><span class="badge bg-high">1 Vuln</span>
             </div>
-
             <div class="asset-card healthy">
-                <div>
-                    <div class="asset-name">Layer 3 Switches</div>
-                    <div class="asset-count">18 Devices</div>
-                </div>
-                <span class="badge bg-low">Secure</span>
+                <div><div class="asset-name">Layer 3 Switches</div><div class="asset-count">18 Devices</div></div><span class="badge bg-low">Secure</span>
             </div>
-
             <div class="asset-card critical">
-                <div>
-                    <div class="asset-name">Enterprise Laptops</div>
-                    <div class="asset-count">142 Devices</div>
-                </div>
-                <span class="badge bg-crit">7 Vuln</span>
+                <div><div class="asset-name">Enterprise Laptops</div><div class="asset-count">142 Devices</div></div><span class="badge bg-crit">7 Vuln</span>
             </div>
-
             <div class="asset-card">
-                <div>
-                    <div class="asset-name">Network Printers / MFPs</div>
-                    <div class="asset-count">12 Devices</div>
-                </div>
-                <span class="badge bg-med">2 Vuln</span>
+                <div><div class="asset-name">Network Printers / MFPs</div><div class="asset-count">12 Devices</div></div><span class="badge bg-med">2 Vuln</span>
             </div>
         </div>
 
         <div class="data-grid-container">
-            
-            <!-- Search, Filter, and Export Console -->
             <div class="filter-bar">
                 <input type="text" id="search-input" placeholder="Search CVE ID, product, or keywords..." oninput="filterAndRenderData()">
-                
                 <select id="severity-filter" onchange="filterAndRenderData()">
                     <option value="ALL">All Severities</option>
                     <option value="CRITICAL">Critical Only</option>
                     <option value="HIGH">High & Above</option>
                     <option value="MEDIUM">Medium</option>
                 </select>
-
                 <select id="source-filter" onchange="filterAndRenderData()">
                     <option value="ALL">All Sources</option>
                     <option value="CISA KEV">CISA KEV</option>
@@ -210,50 +180,57 @@
                     <option value="AlienVault">AlienVault OTX</option>
                     <option value="VirusTotal">VirusTotal</option>
                 </select>
-
-                <!-- NEW: CSV Export Feature -->
                 <button class="btn-export" onclick="exportToCSV()">Export CSV</button>
             </div>
 
             <div class="table-wrap">
                 <table>
-                    <thead>
-                        <tr>
-                            <th>Vulnerability / Threat ID</th>
-                            <th>Severity</th>
-                            <th>Affected Asset / Product</th>
-                            <th>Date Logged</th>
-                            <th>OSINT Source</th>
-                        </tr>
-                    </thead>
-                    <tbody id="feed-table-body">
-                        <tr><td colspan="5" class="loader">Fetching integrated datasets from repository...</td></tr>
-                    </tbody>
+                    <thead><tr><th>Vulnerability / Threat ID</th><th>Severity</th><th>Affected Asset / Product</th><th>Date Logged</th><th>OSINT Source</th></tr></thead>
+                    <tbody id="feed-table-body"><tr><td colspan="5" class="loader">Fetching integrated datasets from repository...</td></tr></tbody>
                 </table>
             </div>
         </div>
 
         <div class="side-panel" id="remediation-panel">
-            <!-- NEW: Close Button -->
             <button class="close-btn" onclick="closeDetails()" title="Close details panel">&times;</button>
-            
             <h2 id="panel-cve" style="margin-top: 0; padding-right: 30px;">Select a Threat</h2>
             <div><span id="panel-severity" class="badge bg-crit">CRITICAL</span></div>
-            
             <div class="panel-meta">
                 <p><strong>Published:</strong> <span id="panel-date">-</span></p>
                 <p><strong>Target Context:</strong> <span id="panel-product">-</span></p>
                 <p><strong>Intelligence Source:</strong> <span id="panel-source">-</span></p>
             </div>
-
             <h3 style="border-bottom: 1px solid var(--border); padding-bottom: 8px;">Technical Description</h3>
             <p id="panel-desc" style="line-height: 1.6; color: var(--text-muted);">-</p>
-
             <h3 style="border-bottom: 1px solid var(--border); padding-bottom: 8px; margin-top: 30px;">Recommended Action Plan</h3>
-            <div class="remediation-box" id="panel-remediation">
-                -
+            <div class="remediation-box" id="panel-remediation">-</div>
+        </div>
+    </div>
+
+    <div class="chat-widget">
+        <div class="chat-window" id="askscout-window">
+            <div class="chat-header">
+                <h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="20" height="20">
+                        <polygon points="50,16 56,44 84,50 56,56 50,84 44,56 16,50 44,44" fill="#3b82f6" />
+                    </svg>
+                    AskScout AI
+                </h3>
+                <button class="chat-close" onclick="toggleChat()">&times;</button>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="msg bot">Hello! I am AskScout. I am monitoring the current threat matrix. How can I assist you with CVEs, endpoints, or remediation today?</div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Ask about threats..." onkeypress="handleChatKeyPress(event)">
+                <button onclick="sendChatMessage()">&#11162;</button>
             </div>
         </div>
+        <button class="chat-btn" onclick="toggleChat()" title="Open AskScout AI">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+        </button>
     </div>
 
     <script>
@@ -262,7 +239,7 @@
         const AUTH_INTEL_URL = "./data/auth_intel.json"; 
 
         let globalThreatData = [];
-        let currentFilteredData = []; // Keeps track of exactly what is on the screen for CSV export
+        let currentFilteredData = [];
 
         async function fetchFeeds() {
             try {
@@ -366,7 +343,6 @@
             }
         }
 
-        // Live Search and Filtering 
         function filterAndRenderData() {
             const searchQuery = document.getElementById('search-input').value.toLowerCase().trim();
             const severityFilter = document.getElementById('severity-filter').value;
@@ -403,7 +379,6 @@
         function renderTableRows(dataToRender) {
             let exploitedCount = 0;
             let highCount = 0;
-
             const tbody = document.getElementById('feed-table-body');
             tbody.innerHTML = '';
 
@@ -434,14 +409,10 @@
             document.getElementById('kpi-recent').innerText = highCount;
         }
 
-        function updateDashboard() {
-            filterAndRenderData();
-        }
+        function updateDashboard() { filterAndRenderData(); }
 
-        // Feature: Show and Close Details Panel
         function showDetails(threat) {
             if (!threat) return;
-            
             const panel = document.getElementById('remediation-panel');
             panel.classList.add('active');
             
@@ -460,43 +431,80 @@
             else sevEl.classList.add('bg-med');
         }
 
-        function closeDetails() {
-            document.getElementById('remediation-panel').classList.remove('active');
-        }
+        function closeDetails() { document.getElementById('remediation-panel').classList.remove('active'); }
 
-        // Feature: Export to CSV
         function exportToCSV() {
             if (!currentFilteredData || currentFilteredData.length === 0) {
-                alert("No data available to export.");
-                return;
+                alert("No data available to export."); return;
             }
-
             let csvContent = "data:text/csv;charset=utf-8,";
             csvContent += "Vulnerability ID,Severity,Affected Asset,Date Logged,OSINT Source\n";
-
             currentFilteredData.forEach(t => {
-                // Escape quotes and commas in strings to prevent CSV format breaking
                 let safeProduct = (t.product || "").replace(/"/g, '""');
                 let safeSource = (t.source || "").replace(/"/g, '""');
-                
                 let row = `"${t.id}","${t.severity}","${safeProduct}","${t.date}","${safeSource}"`;
                 csvContent += row + "\r\n";
             });
-
             const encodedUri = encodeURI(csvContent);
             const link = document.createElement("a");
             link.setAttribute("href", encodedUri);
-            
-            // Add a timestamp to the filename
-            const dateStr = new Date().toISOString().split('T')[0];
-            link.setAttribute("download", `Threat_Intel_Report_${dateStr}.csv`);
-            
+            link.setAttribute("download", `Scout_Report_${new Date().toISOString().split('T')[0]}.csv`);
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
         }
 
-        // Initialize
+        // --- AskScout Chatbot Logic ---
+        function toggleChat() {
+            const chatWindow = document.getElementById('askscout-window');
+            chatWindow.classList.toggle('active');
+        }
+
+        function handleChatKeyPress(event) {
+            if (event.key === 'Enter') sendChatMessage();
+        }
+
+        function sendChatMessage() {
+            const inputField = document.getElementById('chat-input');
+            const message = inputField.value.trim();
+            if (!message) return;
+
+            appendMessage(message, 'user');
+            inputField.value = '';
+
+            // Simulate AI processing delay
+            setTimeout(() => {
+                const response = generateBotResponse(message.toLowerCase());
+                appendMessage(response, 'bot');
+            }, 600);
+        }
+
+        function appendMessage(text, sender) {
+            const messageBox = document.getElementById('chat-messages');
+            const msgDiv = document.createElement('div');
+            msgDiv.className = `msg ${sender}`;
+            msgDiv.innerText = text;
+            messageBox.appendChild(msgDiv);
+            messageBox.scrollTop = messageBox.scrollHeight;
+        }
+
+        // Simulated AI Logic for Frontend prototype
+        function generateBotResponse(input) {
+            if (input.includes('windows') || input.includes('ad') || input.includes('exchange')) {
+                return "Checking the Asset Inventory... We currently have 24 Windows Server instances. 3 vulnerabilities are flagged as CRITICAL. I recommend filtering the matrix by 'Windows' to review specific CVE patches.";
+            } else if (input.includes('cve')) {
+                return "To investigate a specific CVE, type the ID into the search bar above the grid. Click on the row to open my Remediation Panel for actionable mitigation steps.";
+            } else if (input.includes('remediation') || input.includes('patch') || input.includes('fix')) {
+                return "Remediation strategies depend on the asset. Generally, CISA mandates patching KEVs within 15 days. If a patch isn't available, apply virtual patching at the firewall layer or isolate the impacted asset.";
+            } else if (input.includes('linux') || input.includes('ubuntu')) {
+                return "The Asset Inventory shows 85 Linux endpoints. Currently, they are showing as 'Secure' with no high-priority anomalies detected by our OSINT feeds.";
+            } else if (input.includes('export') || input.includes('report')) {
+                return "You can generate a compliance report anytime by adjusting your filters and clicking the blue 'Export CSV' button in the control console.";
+            } else {
+                return "I am analyzing your request against the OSINT Threat Matrix. For precise answers, try asking about 'Windows', 'Linux', specific 'CVE' tracking, or 'Remediation' strategies.";
+            }
+        }
+
         fetchFeeds();
     </script>
 </body>
