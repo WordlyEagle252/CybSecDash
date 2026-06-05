@@ -96,7 +96,25 @@
 <body>
 
     <div class="header">
-        <h1><div class="live-indicator" id="status-light"></div> OSINT Threat Aggregation Matrix</h1>
+        <h1 style="display: flex; align-items: center; gap: 12px; margin: 0; font-size: 1.5rem; letter-spacing: 0.5px;">
+    <!-- Scout SVG Logo -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="36" height="36" style="filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.4));">
+        <!-- Outer Cyber Hexagon -->
+        <polygon points="50,5 89,27.5 89,72.5 50,95 11,72.5 11,27.5" fill="none" stroke="#3b82f6" stroke-width="5" />
+        <!-- Inner Sonar/Radar Rings -->
+        <circle cx="50" cy="50" r="24" fill="none" stroke="#334155" stroke-width="2" />
+        <circle cx="50" cy="50" r="16" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="4 4" />
+        <!-- Compass/Scout Star -->
+        <polygon points="50,16 56,44 84,50 56,56 50,84 44,56 16,50 44,44" fill="#22c55e" />
+        <!-- Center Node -->
+        <circle cx="50" cy="50" r="5" fill="#0f172a" />
+    </svg>
+    
+    Scout - The Cyber OSINT Threat Aggregator <span style="color: var(--text-muted); font-weight: 400; font-size: 1.2rem;">| OSINT Platform</span>
+    
+    <!-- Relocated Live Status Indicator -->
+    <div class="live-indicator" id="status-light" style="margin-left: 10px; width: 8px; height: 8px;"></div>
+</h1>
         <div id="status-text" style="color: var(--text-muted); font-size: 0.9rem;">Initializing data pipeline...</div>
     </div>
 
