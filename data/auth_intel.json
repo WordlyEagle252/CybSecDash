@@ -1,5 +1,23 @@
 [
     {
+        "id": "OTX-69fb57e6",
+        "severity": "HIGH",
+        "date": "2026-06-05",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Operation Silent Rotor: Rust-Based Malware Targets Eurasian Unmanned Aviation Sector Ahead of Moscow Summit",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-69fb1737",
+        "severity": "HIGH",
+        "date": "2026-06-05",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Malware Bypasses Browser Application-Bound Encryption Protections",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6a218446",
         "severity": "HIGH",
         "date": "2026-06-05",
@@ -72,111 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6a214311",
-        "severity": "HIGH",
-        "date": "2026-06-04",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Preinstall to persistence: Inside the npm Miasma credential-stealing campaign",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a20e718",
-        "severity": "HIGH",
-        "date": "2026-06-04",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Browser Spy-Ons: Threat Actor's Extension Hijack Your AI Conversations",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-i-14.55.",
+        "id": "VT-d-hdhtf.",
         "severity": "CRITICAL",
         "date": "2026-06-05",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Observed by Live Honey Feed (https://cognixsystem.com/honeyfeed)\nFirst seen: 2026-06-05 09:54:20 | Last seen: 2026-06-05...",
+        "desc": "malware and/or phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-50a842",
+        "id": "VT-f-5aef50",
         "severity": "CRITICAL",
         "date": "2026-06-05",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_UAC_Bypass_CMSTPLUA_COM_May21\nRULE_TYPE: VALHALLA rule feed only \u26a1\nR...",
+        "desc": "ELF DIGEST non-profit Sandbox:\n\nDomains: yukivela.duckdns.org\n\n Analysis Report: https://elfdigest.com/brief/5aef50d2d96...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-6fdb72",
+        "id": "VT-u-760264",
         "severity": "CRITICAL",
         "date": "2026-06-05",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Verdict: **Malware**\nScore: **100/100**\nThreat: **Family.NETWIRE**\n\n\n[b]File Report[/b]\nhttps://www.threat.rip/file/6fdb...",
+        "desc": "Joe Sandbox Analysis: \n\t\t\t\nVerdict: MAL\nScore: 100/100\nThreat Name: CAPTCHA Scam ClickFix, EtherHiding, Vidar\nMalware Co...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-8ce89d",
+        "id": "VT-f-fb1cfa",
         "severity": "CRITICAL",
         "date": "2026-06-05",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_ZombieBoy_Malware_Dec18_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_L...",
+        "desc": "Verdict: **Suspicious**\nScore: **34/100**\n\n\n[b]File Report[/b]\nhttps://www.threat.rip/file/fb1cfa1124bdbc56f816ccebabf56...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-8af823",
+        "id": "VT-f-a1c4d3",
         "severity": "CRITICAL",
         "date": "2026-06-05",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_AMSI_ETW_Combo_Jun23\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nR...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: PUA_SUSP_CoinMiner_Indicator_Jun21_1\nRULE_TYPE: VALHALLA rule feed only \u26a1...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-34.156",
+        "id": "VT-f-7f7da7",
         "severity": "CRITICAL",
         "date": "2026-06-05",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Observed by Live Honey Feed (https://cognixsystem.com/honeyfeed)\nFirst seen: 2026-06-05 09:54:40 | Last seen: 2026-06-05...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Monero_Mining_Pools_Oct21\nRULE_TYPE: THOR APT Scanner's rule set onl...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-083de5",
+        "id": "VT-f-10f4c1",
         "severity": "CRITICAL",
         "date": "2026-06-05",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: APT_MAL_CN_Sparkle_Payload_May19_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nR...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Credential_Stealer_Indicators_Jul23_2\nRULE_TYPE: THOR APT Scanner's ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-3972d7",
+        "id": "VT-f-10f4c1",
         "severity": "CRITICAL",
         "date": "2026-06-05",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#malware #AveMariaRAT\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/cd10daec52896e730f4b2cb586f432467a...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Stealer_Indicators_Mar25\nRULE_TYPE: THOR APT Scanner's rule set only...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-46.16.",
+        "id": "VT-f-1a9de6",
         "severity": "CRITICAL",
         "date": "2026-06-05",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Observed by Live Honey Feed (https://cognixsystem.com/honeyfeed)\nFirst seen: 2026-06-05 09:57:23 | Last seen: 2026-06-05...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_INDICATOR_RTF_MalVer_Objects\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-185.24",
+        "id": "VT-f-61f305",
         "severity": "CRITICAL",
         "date": "2026-06-05",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "IOC Type: IPv4\n\nThreat Type: T1190\n\nMITRE ATT&CK: T1190\n\nRelated Tags: malicious-ip, T1190\n\nAnalysis Summary:\nExternal s...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Enigma_Protector\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nRULE_...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
