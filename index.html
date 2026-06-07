@@ -464,75 +464,44 @@
             if (event.key === 'Enter') sendChatMessage();
         }
 
-        async function sendChatMessage() {
+        function sendChatMessage() {
             const inputField = document.getElementById('chat-input');
             const message = inputField.value.trim();
             if (!message) return;
 
-            // Display user message
             appendMessage(message, 'user');
             inputField.value = '';
 
-            // Create a temporary "typing" indicator
-            const typingId = 'typing-' + Date.now();
-            appendMessage("Analyzing global intelligence feeds...", 'bot', typingId);
-
-            // Fetch actual AI response
-            const response = await generateBotResponse(message);
-
-            // Remove typing indicator and append the real AI response
-            const typingElement = document.getElementById(typingId);
-            if (typingElement) typingElement.remove();
-            
-            // Basic formatting to handle bold text from the AI
-            const formattedResponse = response.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-            appendMessage(formattedResponse, 'bot');
+            // Simulate AI processing delay
+            setTimeout(() => {
+                const response = generateBotResponse(message.toLowerCase());
+                appendMessage(response, 'bot');
+            }, 600);
         }
 
-        function appendMessage(text, sender, id = null) {
+        function appendMessage(text, sender) {
             const messageBox = document.getElementById('chat-messages');
             const msgDiv = document.createElement('div');
             msgDiv.className = `msg ${sender}`;
-            if (id) msgDiv.id = id;
-            msgDiv.innerHTML = text; // Using innerHTML to render bolding
+            msgDiv.innerText = text;
             messageBox.appendChild(msgDiv);
             messageBox.scrollTop = messageBox.scrollHeight;
         }
 
-        // The Real Intelligence Engine (LLM API Call)
-        async function generateBotResponse(input) {
-            // PASTE YOUR GOOGLE GEMINI API KEY HERE
-            const apiKey = "YOUR_API_KEY_HERE";; 
-            
-            if (apiKey === "YOUR_API_KEY_HERE") {
-                return "Error: API key missing. Please insert your API key into the generateBotResponse function.";
-            }
-
-            const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
-
-            // This "System Prompt" forces the AI to act like a strict cybersecurity expert
-            const systemPrompt = `You are AskScout, an expert cybersecurity AI assistant embedded in a corporate OSINT Threat Dashboard. 
-            Your goal is to assist security analysts. 
-            The user is asking: "${input}"
-            Keep your answer concise, highly professional, and directly focused on CVEs, vulnerabilities, exploits, risk management, or remediation. Avoid long introductory filler.`;
-
-            try {
-                const response = await fetch(endpoint, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        contents: [{ parts: [{ text: systemPrompt }] }]
-                    })
-                });
-
-                if (!response.ok) throw new Error("Network response was not ok");
-                
-                const data = await response.json();
-                return data.candidates[0].content.parts[0].text;
-                
-            } catch (error) {
-                console.error("API Error:", error);
-                return "I'm currently experiencing a connection issue to the external intelligence matrix. Please verify network routing and API configuration.";
+        // Simulated AI Logic for Frontend prototype
+        function generateBotResponse(input) {
+            if (input.includes('windows') || input.includes('ad') || input.includes('exchange')) {
+                return "Checking the Asset Inventory... We currently have 24 Windows Server instances. 3 vulnerabilities are flagged as CRITICAL. I recommend filtering the matrix by 'Windows' to review specific CVE patches.";
+            } else if (input.includes('cve')) {
+                return "To investigate a specific CVE, type the ID into the search bar above the grid. Click on the row to open my Remediation Panel for actionable mitigation steps.";
+            } else if (input.includes('remediation') || input.includes('patch') || input.includes('fix')) {
+                return "Remediation strategies depend on the asset. Generally, CISA mandates patching KEVs within 15 days. If a patch isn't available, apply virtual patching at the firewall layer or isolate the impacted asset.";
+            } else if (input.includes('linux') || input.includes('ubuntu')) {
+                return "The Asset Inventory shows 85 Linux endpoints. Currently, they are showing as 'Secure' with no high-priority anomalies detected by our OSINT feeds.";
+            } else if (input.includes('export') || input.includes('report')) {
+                return "You can generate a compliance report anytime by adjusting your filters and clicking the blue 'Export CSV' button in the control console.";
+            } else {
+                return "I am analyzing your request against the OSINT Threat Matrix. For precise answers, try asking about 'Windows', 'Linux', specific 'CVE' tracking, or 'Remediation' strategies.";
             }
         }
 
