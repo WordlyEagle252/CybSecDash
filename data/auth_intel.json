@@ -1,5 +1,14 @@
 [
     {
+        "id": "OTX-69ff1751",
+        "severity": "HIGH",
+        "date": "2026-06-08",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Technical Advisory: Breach of Instructure Canvas LMS",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6a255457",
         "severity": "HIGH",
         "date": "2026-06-08",
@@ -81,102 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-69fb97e4",
-        "severity": "HIGH",
-        "date": "2026-06-05",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "ClickFix campaign uses fake macOS utilities lures to deliver infostealers",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-2db4f9",
+        "id": "VT-d-fgov-m",
         "severity": "CRITICAL",
         "date": "2026-06-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: WannaCry_Ransomware\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://github.com/...",
+        "desc": "malware and/or phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-2db4f9",
+        "id": "VT-i-176.65",
         "severity": "CRITICAL",
         "date": "2026-06-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: WannaCry_Ransomware_Gen\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://github....",
+        "desc": "ThreatHive Honeypot Report | SSH brute-force attack detected | 4610 attacks in 24h | 242 unique usernames, 382 unique pa...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-372f19",
+        "id": "VT-f-08b666",
         "severity": "CRITICAL",
         "date": "2026-06-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#malware #remcos\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/0ef427c176199a1b7c447d0ac3ea4752e4714fc...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: PUA_ConnectWise_ScreenConnect_Mar23\nRULE_TYPE: VALHALLA rule feed only \u26a1\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-543228",
+        "id": "VT-f-cff5c5",
         "severity": "CRITICAL",
         "date": "2026-06-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#malware #FormBook\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/ffa8915f52d50f521ed789501228b4ae5b198...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Monero_Mining_Pools_Oct21\nRULE_TYPE: THOR APT Scanner's rule set onl...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-ff9fec",
+        "id": "VT-f-def210",
         "severity": "CRITICAL",
         "date": "2026-06-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Verdict: **Clean**\nScore: **1/100**\n\n\n[b]File Report[/b]\nhttps://www.threat.rip/file/ff9fec21462635ec8cef5b8f800e8051937...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_OBFUSC_JS_FromCharCode_Oct25\nRULE_TYPE: THOR APT Scanner's rule set ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-75aff0",
+        "id": "VT-f-7a362d",
         "severity": "CRITICAL",
         "date": "2026-06-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Verdict: **Malware**\nScore: **100/100**\nThreat: **Family.DARKTORTILLA**\n\n\n[b]File Report[/b]\nhttps://www.threat.rip/file...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Go_OBFUSC_Pattern_Jan23_2\nRULE_TYPE: THOR APT Scanner's rule set onl...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-09b357",
+        "id": "VT-i-182.93",
         "severity": "CRITICAL",
         "date": "2026-06-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#malware #xworm\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/1855d5c29b31d76e899745943710a929813a4e42...",
+        "desc": "Observed by Live Honey Feed (https://cognixsystem.com/honeyfeed)\nFirst seen: 2026-05-23 05:50:07 | Last seen: 2026-06-08...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-b79e36",
+        "id": "VT-i-143.22",
         "severity": "CRITICAL",
         "date": "2026-06-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Verdict: **Malware**\nScore: **100/100**\nThreat: **Family.DARKCLOUD**\n\n\n[b]File Report[/b]\nhttps://www.threat.rip/file/b7...",
+        "desc": "ThreatHive Honeypot Report | SSH brute-force attack detected | 4644 attacks in 24h | Country: ? | Reported by ThreatHive...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-317241",
+        "id": "VT-d-eservi",
         "severity": "CRITICAL",
         "date": "2026-06-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_PE_PetitPotam_MS_EFSRPC_Jul21_1\nRULE_TYPE: VALHALLA rule feed only \u26a1...",
+        "desc": "malware and/or phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-317241",
+        "id": "VT-d-outcam",
         "severity": "CRITICAL",
         "date": "2026-06-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_HKTL_Process_Dump_Indicators_Feb25\nRULE_TYPE: THOR APT Scanner's rul...",
+        "desc": "malware and/or phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
