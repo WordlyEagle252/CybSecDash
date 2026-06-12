@@ -1,5 +1,14 @@
 [
     {
+        "id": "OTX-6a043fa8",
+        "severity": "HIGH",
+        "date": "2026-06-12",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "LBIOC-20260071 - The Gentlemens Leak",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6a2aa0fe",
         "severity": "HIGH",
         "date": "2026-06-11",
@@ -81,102 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6a294321",
-        "severity": "HIGH",
-        "date": "2026-06-10",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "PHISH ALERT: Press Play for Compromise \u2014 Voicemail Phishing Kit Bundles SSO Hijacking, Credential Theft, and RMM Delivery",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-i-197.63",
+        "id": "VT-u-df3fc8",
         "severity": "CRITICAL",
         "date": "2026-06-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "IOC Type: IPv4\n\nThreat Type: T1595\n\nMITRE ATT&CK: T1595\n\nRelated Tags: malicious-ip, T1595\n\nAnalysis Summary:\nExternal p...",
+        "desc": "This website:\n1.\tReproduces the \u201c1XBET\u201d trademarks in full, creating the false impression of an official 1XBET platform ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-197.63",
+        "id": "VT-f-109b82",
         "severity": "CRITICAL",
         "date": "2026-06-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udccc IOC Type: IPv4\n\ud83d\udd39 Associated Rule Name: PURE7 - Reconnaissance - T1595 - External SMB Recon Detection\n\ud83d\udd39 MITRE ATT&CK: T...",
+        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\n2026-06-12_e25cc8dad19370bfe96a614c46be1285_amadey_coinminer_elex_glassworm_hijacklo...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-2b0795",
+        "id": "VT-f-4df39f",
         "severity": "CRITICAL",
         "date": "2026-06-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udd0d ScanMalware.com AI Security Verdict: LOW_RISK - Risk: 2/10\n\nView full report: https://scanmalware.com/scan/c8565393-c2...",
+        "desc": "**File found on MalwareBazaar**\n\n**File Name (as uploaded):** fivemcmds.exe\n**File Type:** exe\n**Reporter:** burger403\n*...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-28d391",
+        "id": "VT-i-37.143",
         "severity": "CRITICAL",
         "date": "2026-06-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_EtwEventWrite_Import_Aug21_1\nRULE_TYPE: THOR APT Scanner's rule set ...",
+        "desc": "#StagedC2 config observed at Fri Jun 12 10:13:19 2026 UTC, located at https://pastebin.com/raw/4BHHLzF8 C2: lofyuvbyme.l...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-102.13",
+        "id": "VT-f-fdfb4b",
         "severity": "CRITICAL",
         "date": "2026-06-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ThreatHive Honeypot Report | Firewall probe / distributed scan detected | 717 attacks in 24h | Country: SC | Source devi...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: IMPLANT_4_v7\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://github.com/Neo23x0...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-9bcf2e",
+        "id": "VT-d-lofyuv",
         "severity": "CRITICAL",
         "date": "2026-06-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_JS_Remote_Download_Mar23_2\nRULE_TYPE: THOR APT Scanner's rule set on...",
+        "desc": "#StagedC2 config observed at Fri Jun 12 10:13:19 2026 UTC, located at https://pastebin.com/raw/4BHHLzF8 C2: lofyuvbyme.l...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-102.13",
+        "id": "VT-f-ac9d5a",
         "severity": "CRITICAL",
         "date": "2026-06-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ThreatHive Honeypot Report | Firewall probe / distributed scan detected | 718 attacks in 24h | Country: SC | Source devi...",
+        "desc": "Verdict: **Malware**\nScore: **100/100**\nThreat: **Family.NETWIRE**\n\n\n[b]File Report[/b]\nhttps://www.threat.rip/file/ac9d...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-534c09",
+        "id": "VT-f-edb20b",
         "severity": "CRITICAL",
         "date": "2026-06-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_CryptoObfuscator_Feb19\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28...",
+        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\n2026-06-12_e2f78554378e3ef7248997967663153f_cobalt-strike_icedid_luca-stealer_njrat_...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-b20977",
+        "id": "VT-f-d306d7",
         "severity": "CRITICAL",
         "date": "2026-06-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_EtwEventWrite_Import_Aug21_1\nRULE_TYPE: THOR APT Scanner's rule set ...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_PUPKIN_Malware_Oct22\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-4d5c43",
+        "id": "VT-f-509b96",
         "severity": "CRITICAL",
         "date": "2026-06-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Verdict: **Malware**\nScore: **100/100**\nThreat: **Family.RATONRAT**\n\n\n[b]File Report[/b]\nhttps://www.threat.rip/file/4d5...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_PUPKIN_Malware_Oct22\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
