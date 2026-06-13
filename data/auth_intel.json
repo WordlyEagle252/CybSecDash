@@ -90,93 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "VT-f-b92411",
+        "id": "VT-f-75b10e",
         "severity": "CRITICAL",
         "date": "2026-06-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "FileScan.IO Analysis:\n\nVerdict: MALICIOUS\nConfidence: 100/100\nTags: anti-debug,base64,crypto,evasive,keylogger,packed,re...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: PUA_ConnectWise_ScreenConnect_Mar23\nRULE_TYPE: VALHALLA rule feed only \u26a1\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-77.91.",
+        "id": "VT-i-51.75.",
         "severity": "CRITICAL",
         "date": "2026-06-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ThreatHive Honeypot Report | Firewall probe / distributed scan detected | 678 attacks in 24h | Country: DE | Source devi...",
+        "desc": "IOC Type: IPv4\n\nThreat Type: T1595\n\nMITRE ATT&CK: T1595\n\nRelated Tags: malicious-ip, T1595\n\nAnalysis Summary:\nExternal h...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-179.43",
+        "id": "VT-i-51.75.",
         "severity": "CRITICAL",
         "date": "2026-06-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udcacIOC Context: IOC-description:CC=CH ASN=AS51852 private layer inc\n\ud83d\udcc3Title:Threat Brief: Active Exploitation of PAN-OS CVE...",
+        "desc": "\ud83d\udccc IOC Type: IPv4\n\ud83d\udd39 Associated Rule Name: PURE7 - Reconnaissance - T1595 - External SSH Recon Detection\n\ud83d\udd39 MITRE ATT&CK: T...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-187.32",
+        "id": "VT-f-7994ec",
         "severity": "CRITICAL",
         "date": "2026-06-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Port Scanning",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Xred_Backdoor_Mar24\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: h...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-87.251",
+        "id": "VT-i-54.174",
         "severity": "CRITICAL",
         "date": "2026-06-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ThreatHive Honeypot Report | Firewall probe / distributed scan detected | 679 attacks in 24h | Country: PL | Reported by...",
+        "desc": "IOC Type: IPv4\n\nThreat Type: T1595\n\nMITRE ATT&CK: T1595\n\nRelated Tags: malicious-ip, T1595\n\nAnalysis Summary:\nHigh-volum...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-24d55e",
+        "id": "VT-i-54.174",
         "severity": "CRITICAL",
         "date": "2026-06-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Go_OBFUSC_Pattern_Jan23_2\nRULE_TYPE: THOR APT Scanner's rule set onl...",
+        "desc": "\ud83d\udccc IOC Type: IPv4\n\ud83d\udd39 Associated Rule Name: PURE7 - Reconnaissance - T1595 - Port Scan Detection\n\ud83d\udd39 MITRE ATT&CK: T1595 (Rec...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-23.128",
+        "id": "VT-i-62.28.",
         "severity": "CRITICAL",
         "date": "2026-06-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udcacIOC Context: IOC-description:CC=US ASN=ASNone\n\ud83d\udcc3Title:Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257\n\n\ud83d\udcc5Date:2...",
+        "desc": "IOC Type: IPv4\n\nThreat Type: T1595\n\nMITRE ATT&CK: T1595\n\nRelated Tags: malicious-ip, T1595\n\nAnalysis Summary:\nExternal p...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-2b82d3",
+        "id": "VT-i-62.28.",
         "severity": "CRITICAL",
         "date": "2026-06-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxp://110.36.80.170:35527/i\n**Threat:** malware_download\n**Host Country:** Pakistan\n...",
+        "desc": "\ud83d\udccc IOC Type: IPv4\n\ud83d\udd39 Associated Rule Name: PURE7 - Reconnaissance - T1595 - External SMB Recon Detection\n\ud83d\udd39 MITRE ATT&CK: T...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-193.8.",
+        "id": "VT-f-ebcd0b",
         "severity": "CRITICAL",
         "date": "2026-06-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ThreatHive Honeypot Report | Firewall probe / distributed scan detected | 680 attacks in 24h | Country: GB | Source devi...",
+        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\nDorAgroMash.pdf.hta\n\n[b]Threat Score:[/b]\n10/10\n\n[b]Family:[/b]\nN/A\n\n[b]File Report:...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-ce4dff",
+        "id": "VT-f-f41033",
         "severity": "CRITICAL",
         "date": "2026-06-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Captured in the wild by a strombus honeypot.\n#honeypot #malware #networkworm",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Xred_Backdoor_Mar24\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: h...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
