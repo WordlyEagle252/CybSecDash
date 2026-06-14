@@ -1,5 +1,14 @@
 [
     {
+        "id": "OTX-6a062c38",
+        "severity": "HIGH",
+        "date": "2026-06-13",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Ongoing exploitation of Cisco Catalyst SD-WAN vulnerabilities",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6a04a9a1",
         "severity": "HIGH",
         "date": "2026-06-12",
@@ -81,102 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6a295166",
-        "severity": "HIGH",
-        "date": "2026-06-10",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "SilabRAT, What's Your Power?",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-08987a",
+        "id": "VT-f-f3a941",
         "severity": "CRITICAL",
-        "date": "2026-06-13",
+        "date": "2026-06-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Common_Malware_Indicators_Nov25\nRULE_TYPE: THOR APT Scanner's rule s...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_P0wnedShell_Strings_Jan17\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-044ccc",
+        "id": "VT-f-f3a941",
         "severity": "CRITICAL",
-        "date": "2026-06-13",
+        "date": "2026-06-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udd0d ScanMalware.com AI Security Verdict: LEGITIMATE - Risk: 0/10\n\nView full report: https://scanmalware.com/scan/122f001c-...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_LNX_GenShell_Feb21_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK:...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-862ac2",
+        "id": "VT-i-185.2.",
         "severity": "CRITICAL",
-        "date": "2026-06-13",
+        "date": "2026-06-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Script_IP_Info_Combo_Aug24\nRULE_TYPE: THOR APT Scanner's rule set on...",
+        "desc": "ThreatHive Honeypot Report | SSH brute-force attack detected | 95 attacks in 24h | 1 unique usernames, 3 unique password...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-2026a1",
+        "id": "VT-f-f3a941",
         "severity": "CRITICAL",
-        "date": "2026-06-13",
+        "date": "2026-06-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_SchTasks_Create_OnLogon_Mar25\nRULE_TYPE: THOR APT Scanner's rule set...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_PS1_Shells_Indicators_Feb22_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nR...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-135.12",
+        "id": "VT-f-f3a941",
         "severity": "CRITICAL",
-        "date": "2026-06-13",
+        "date": "2026-06-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#ssh #bruteforce #scanner\n\nObserved automated SSH brute-force activity.\nAttempts: 5 | Failed password: 3 | Invalid user:...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: AppLocker_Rundll32_Bypass_Method\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRUL...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-62c761",
+        "id": "VT-f-f3a941",
         "severity": "CRITICAL",
-        "date": "2026-06-13",
+        "date": "2026-06-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_HKTL_Hacktool_Strings_Oct21_1\nRULE_TYPE: THOR APT Scanner's rule set...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: Hacktool_Strings_p0wnedShell\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://gi...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-92.223",
+        "id": "VT-i-115.24",
         "severity": "CRITICAL",
-        "date": "2026-06-13",
+        "date": "2026-06-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#ssh #bruteforce #scanner\n\nObserved automated SSH brute-force activity.\nAttempts: 3 | Failed password: 2 | Invalid user:...",
+        "desc": "ThreatHive Honeypot Report | SSH brute-force attack detected | 95 attacks in 24h | 19 unique usernames, 10 unique passwo...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-62c761",
+        "id": "VT-i-196.19",
         "severity": "CRITICAL",
-        "date": "2026-06-13",
+        "date": "2026-06-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: Generic_Exploit_Strings_Oct18\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_L...",
+        "desc": "ThreatHive Honeypot Report | SSH brute-force attack detected | 96 attacks in 24h | 17 unique usernames, 12 unique passwo...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-9e5be3",
+        "id": "VT-f-9bb727",
         "severity": "CRITICAL",
-        "date": "2026-06-13",
+        "date": "2026-06-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_LNK_File_PS1_Command_Dec24_1\nRULE_TYPE: THOR APT Scanner's rule set ...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_MSIL_NET_OBF_ConfuserEx_Constants_Jul23\nRULE_TYPE: THOR APT Scanner'...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-122483",
+        "id": "VT-i-43.164",
         "severity": "CRITICAL",
-        "date": "2026-06-13",
+        "date": "2026-06-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Antivirus_Evasion_Jan26\nRULE_TYPE: THOR APT Scanner's rule set only ...",
+        "desc": "ThreatHive Honeypot Report | SSH brute-force attack detected | 97 attacks in 24h | 17 unique usernames, 15 unique passwo...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
