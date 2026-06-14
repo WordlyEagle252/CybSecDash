@@ -1,5 +1,14 @@
 [
     {
+        "id": "OTX-6a073a73",
+        "severity": "HIGH",
+        "date": "2026-06-14",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Gremlin Stealer's Evolved Tactics: Hiding in Plain Sight With Resource Files",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6a062c38",
         "severity": "HIGH",
         "date": "2026-06-13",
@@ -81,102 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6a298f54",
-        "severity": "HIGH",
-        "date": "2026-06-11",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Fake Software Tutorials on TikTok Spread Vidar Stealer",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-ba3020",
+        "id": "VT-f-ae4cdb",
         "severity": "CRITICAL",
         "date": "2026-06-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Verdict: **Malware**\nScore: **100/100**\n\nValid certificate - Audio Endpoint Path Resolver (RedGate Systems Inc.)\n\n\n[b]Fi...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_BAT_Loader_Indicators_FromBase64_Double_Encoded_Sep25\nRULE_TYPE: THO...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-4d3125",
+        "id": "VT-f-ae4cdb",
         "severity": "CRITICAL",
         "date": "2026-06-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_LNX_Malware_Indicators_Aug23_2\nRULE_TYPE: THOR APT Scanner's rule se...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_PS1_FromBase64String_Content_Indicator_Jan20\nRULE_TYPE: THOR APT Sca...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-4d3125",
+        "id": "VT-f-97660a",
         "severity": "CRITICAL",
         "date": "2026-06-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Trojan_Ladvix_Jul24\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: h...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: PUA_ConnectWise_ScreenConnect_Mar23\nRULE_TYPE: VALHALLA rule feed only \u26a1\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-4d3125",
+        "id": "VT-f-5f580c",
         "severity": "CRITICAL",
         "date": "2026-06-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_LNX_Mirai_Variant_Jun25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LIN...",
+        "desc": "Verdict: **Malware**\nScore: **100/100**\nThreat: **Family.ASYNCRAT**\n\n\n[b]File Report[/b]\nhttps://www.threat.rip/file/5f5...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-63b3f4",
+        "id": "VT-f-049d48",
         "severity": "CRITICAL",
         "date": "2026-06-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Trojan_Ladvix_Jul24\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: h...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_NullSoftInst_Combo_Oct20_1\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https:/...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-a173f2",
+        "id": "VT-f-68640c",
         "severity": "CRITICAL",
         "date": "2026-06-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Trojan_Ladvix_Jul24\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: h...",
+        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\n68640c1c449d0e4eeca4f957bac695e2d155853db4dc14769b9f66f236a5f080\n\n[b]Threat Score:[/...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-30da9f",
+        "id": "VT-f-68640c",
         "severity": "CRITICAL",
         "date": "2026-06-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Trojan_Ladvix_Jul24\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: h...",
+        "desc": "UnpacMe Analysis\nReport: https://unpac.me/results/dea6a0f1-c2ba-4b53-99a6-44c3a39bbc03\nMalware Family: AsyncRAT\nC2s: \n -...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-813169",
+        "id": "VT-f-576cbb",
         "severity": "CRITICAL",
         "date": "2026-06-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Trojan_Ladvix_Jul24\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: h...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Dir_Ref_in_File_ProgramData\nRULE_TYPE: THOR APT Scanner's rule set o...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-8f7613",
+        "id": "VT-f-138e0e",
         "severity": "CRITICAL",
         "date": "2026-06-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Trojan_Ladvix_Jul24\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: h...",
+        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\n_138e0e01067740328b54dd80fb0f0e6c26e3392a5a0e7e84061120ebd5212dc6.exe\n\n[b]Threat Sco...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-239db9",
+        "id": "VT-f-3caa0d",
         "severity": "CRITICAL",
         "date": "2026-06-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Trojan_Ladvix_Jul24\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: h...",
+        "desc": "Verdict: **Malware**\nScore: **100/100**\nThreat: **Family.RATONRAT**\n\n\n[b]File Report[/b]\nhttps://www.threat.rip/file/3ca...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
