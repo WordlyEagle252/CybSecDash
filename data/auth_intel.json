@@ -1,5 +1,41 @@
 [
     {
+        "id": "OTX-6a30df44",
+        "severity": "HIGH",
+        "date": "2026-06-16",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Investigation of email-based attack delivering MediaFire ZIP file with execution chain analysis",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a305378",
+        "severity": "HIGH",
+        "date": "2026-06-16",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "How attackers are jailbreaking LLMs with CTF framing and how to catch them",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a305377",
+        "severity": "HIGH",
+        "date": "2026-06-16",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Public and Private Medical Community Targeted by Threat Actor Pursuing Artificial Intelligence, Cyber, Medical, and National Defense Research",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a30d0b4",
+        "severity": "HIGH",
+        "date": "2026-06-16",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "WebAssembly Malware Found in Trojanized Open VSX Extensions",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6a311c55",
         "severity": "HIGH",
         "date": "2026-06-16",
@@ -54,61 +90,43 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6a2b2414",
-        "severity": "HIGH",
-        "date": "2026-06-15",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Defending the Digital Pitch: World Cup 2026 Cyber Threats",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a2b2414",
-        "severity": "HIGH",
-        "date": "2026-06-15",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "World Cup 2026 Mobile Targeted Phishing: The Global Social Engineering Threat",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a2b2413",
-        "severity": "HIGH",
-        "date": "2026-06-15",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Targets Education Sector with Oracle PeopleSoft Exploit",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a2c3a96",
-        "severity": "HIGH",
-        "date": "2026-06-15",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "UNC1151/Ghostwriter phishing campaign targeting Gmail accounts",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-71302b",
+        "id": "VT-f-69ad80",
         "severity": "CRITICAL",
         "date": "2026-06-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\nmipsel.elf\n\n[b]Threat Score:[/b]\n10/10\n\n[b]Family:[/b]\n\u2022 gafgyt\n\n[b]File Report:[/b]...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_PS1_Cmdlet_Defender_Exclusion_Apr21_1\nRULE_TYPE: THOR APT Scanner's ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-9bca5c",
+        "id": "VT-f-85bb72",
         "severity": "CRITICAL",
         "date": "2026-06-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_LNX_Unknown_Nov24_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: h...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Unknown_Loader_Dec20_2\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-0d266a",
+        "id": "VT-f-733df7",
+        "severity": "CRITICAL",
+        "date": "2026-06-16",
+        "product": "Endpoint / System Artifact",
+        "source": "VirusTotal",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_VBA_Kernel32_Imports_Jun22_1\nRULE_TYPE: THOR APT Scanner's rule set ...",
+        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
+    },
+    {
+        "id": "VT-f-85bb72",
+        "severity": "CRITICAL",
+        "date": "2026-06-16",
+        "product": "Endpoint / System Artifact",
+        "source": "VirusTotal",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_ConsoleApp_ShellOpenCommand\nRULE_TYPE: THOR APT Scanner's rule set o...",
+        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
+    },
+    {
+        "id": "VT-f-6d68f9",
         "severity": "CRITICAL",
         "date": "2026-06-16",
         "product": "Endpoint / System Artifact",
@@ -117,66 +135,48 @@
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-e6a3bb",
+        "id": "VT-f-e59552",
         "severity": "CRITICAL",
         "date": "2026-06-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\narmv6l.elf\n\n[b]Threat Score:[/b]\n10/10\n\n[b]Family:[/b]\n\u2022 gafgyt\n\n[b]File Report:[/b]...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Base64AtEndOfFile_Jul21\nRULE_TYPE: THOR APT Scanner's rule set only ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-101589",
+        "id": "VT-f-1f2eee",
         "severity": "CRITICAL",
         "date": "2026-06-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "File submitted from a DShield Honeypot - https://github.com/DShield-ISC/dshield",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_OBFUSC_JS_FromCharCode_Oct25\nRULE_TYPE: THOR APT Scanner's rule set ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-506942",
+        "id": "VT-f-1d3992",
         "severity": "CRITICAL",
         "date": "2026-06-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**Malware Family Detected On MalwareBazaar**\n\n**Filename (as uploaded):** uni.site_1.je.ps1\n**Family/Signature:** Kimsuk...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_JS_IN_LNK_Mar25\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nRULE_L...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-882880",
+        "id": "VT-f-bf6c38",
         "severity": "CRITICAL",
         "date": "2026-06-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "File submitted from a DShield Honeypot - https://github.com/DShield-ISC/dshield",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_LNK_BatchScripting_Apr22_2\nRULE_TYPE: THOR APT Scanner's rule set on...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-4d2c60",
+        "id": "VT-f-2a0317",
         "severity": "CRITICAL",
         "date": "2026-06-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\nx86_64.elf\n\n[b]Threat Score:[/b]\n10/10\n\n[b]Family:[/b]\n\u2022 gafgyt\n\n[b]File Report:[/b]...",
-        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
-    },
-    {
-        "id": "VT-f-887897",
-        "severity": "CRITICAL",
-        "date": "2026-06-16",
-        "product": "Endpoint / System Artifact",
-        "source": "VirusTotal",
-        "desc": "**Malware Family Detected On MalwareBazaar**\n\n**Filename (as uploaded):** powerpc\n**Family/Signature:** Mirai\n**File Typ...",
-        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
-    },
-    {
-        "id": "VT-f-e6a3bb",
-        "severity": "CRITICAL",
-        "date": "2026-06-16",
-        "product": "Endpoint / System Artifact",
-        "source": "VirusTotal",
-        "desc": "**Malware Family Detected On MalwareBazaar**\n\n**Filename (as uploaded):** armv6l\n**Family/Signature:** Mirai\n**File Type...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_PS1_Encoded_Command_Aug19\nRULE_TYPE: THOR APT Scanner's rule set onl...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
