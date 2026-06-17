@@ -1,5 +1,23 @@
 [
     {
+        "id": "OTX-6a325eca",
+        "severity": "HIGH",
+        "date": "2026-06-17",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "New APT-Q-27 sample spotted",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a31dfc0",
+        "severity": "HIGH",
+        "date": "2026-06-17",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Bluekit Phishing as a Service (PhaaS)",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6a316151",
         "severity": "HIGH",
         "date": "2026-06-16",
@@ -72,111 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6a2add68",
-        "severity": "HIGH",
-        "date": "2026-06-15",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Cyber-Enabled Maritime Sanctions Evasion",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a2ae2e7",
-        "severity": "HIGH",
-        "date": "2026-06-15",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Threat Actors Target FIFA World Cup 2026",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-i-168.13",
+        "id": "VT-f-f4bf47",
         "severity": "CRITICAL",
         "date": "2026-06-17",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "IOC Type: IPv4\n\nThreat Type: T1190\n\nMITRE ATT&CK: T1190\n\nRelated Tags: malicious-ip, T1190\n\nAnalysis Summary:\nFirewall i...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Curl_Download_IP_Address_Oct21_1\nRULE_TYPE: THOR APT Scanner's rule ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-168.13",
+        "id": "VT-f-9d3eba",
         "severity": "CRITICAL",
         "date": "2026-06-17",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udccc IOC Type: IPv4\n\ud83d\udd39 Associated Rule Name: PURE7 - Initial Access - T1190 - Potential Exploit Scanner Detection via FW\n\ud83d\udd39 M...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Monero_Mining_Pools_Oct21\nRULE_TYPE: THOR APT Scanner's rule set onl...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-2542cf",
+        "id": "VT-f-f4bf47",
         "severity": "CRITICAL",
         "date": "2026-06-17",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ainstaller-8653h003.exe\n\n**Trojan/SilverFox.bm[lddel]**\nIOC (jun616.oss-cn-beijing.aliyuncs.com) (26nn.oss-cn-hangzhou.a...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_LNX_Malware_Indicators_Mar23_4\nRULE_TYPE: THOR APT Scanner's rule se...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-38.105",
+        "id": "VT-f-f4bf47",
         "severity": "CRITICAL",
         "date": "2026-06-17",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Port Scanning",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Curl_HTTP_IP_May24_1\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nR...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-57dd05",
+        "id": "VT-f-cd2b16",
         "severity": "CRITICAL",
         "date": "2026-06-17",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\nRelease1.3.21.zip\n\n[b]Threat Score:[/b]\n9/10\n\n[b]Family:[/b]\nN/A\n\n[b]File Report:[/b...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_LNX_Chmod_777_One_Liner_Aug24\nRULE_TYPE: THOR APT Scanner's rule set...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-gov-di",
+        "id": "VT-f-ddc342",
         "severity": "CRITICAL",
         "date": "2026-06-17",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#phishing\n#target_DVC_VN\n#Vietnam",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Common_Malware_Indicators_Nov25\nRULE_TYPE: THOR APT Scanner's rule s...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-7d48d7",
+        "id": "VT-f-cd2b16",
         "severity": "CRITICAL",
         "date": "2026-06-17",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: Sofacy_Jan18_1_PE_Info_Anomaly\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_LNX_Bot_Exploitation_Pattern_Dec21_1\nRULE_TYPE: THOR APT Scanner's r...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-b58dd8",
+        "id": "VT-f-f5e203",
         "severity": "CRITICAL",
         "date": "2026-06-17",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\n17062026_0433_Invoice_Details.pdf.lnk.zip\n\n[b]Threat Score:[/b]\n10/10\n\n[b]Family:[/b...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_BOF_Indicators_Proc_Eval_Apr26\nRULE_TYPE: THOR APT Scanner's rule se...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-gzipfk",
+        "id": "VT-f-cd2b16",
         "severity": "CRITICAL",
         "date": "2026-06-17",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**IOC found on ThreatFox**\n\n**IOC:** gzipfktz.mabanishimi.xyz\n**IOC Type:** domain\n**Threat Type:** payload_delivery\n**M...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Curl_Download_IP_Address_Oct21_1\nRULE_TYPE: THOR APT Scanner's rule ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-5ffec2",
+        "id": "VT-f-f4bf47",
         "severity": "CRITICAL",
         "date": "2026-06-17",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\nrun.exe\n\n[b]Threat Score:[/b]\n9/10\n\n[b]Family:[/b]\nN/A\n\n[b]File Report:[/b]\nhttps://...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_LNX_Chmod_777_One_Liner_Aug24\nRULE_TYPE: THOR APT Scanner's rule set...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
