@@ -1,182 +1,92 @@
 [
     {
-        "id": "OTX-6a0db1f4",
-        "severity": "HIGH",
-        "date": "2026-06-19",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Operation Dragon Whistle: UNG002 Targets Chinese Academia via Weaponized Institutional Lure",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a0daa32",
-        "severity": "HIGH",
-        "date": "2026-06-19",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Beyond Tax Returns: How Shared Malware Infrastructure Scales Brand Abuse In Indonesia",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a0d970e",
-        "severity": "HIGH",
-        "date": "2026-06-19",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Popular node-ipc npm Package Infected with Credential Stealer",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a3526fc",
-        "severity": "HIGH",
-        "date": "2026-06-19",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Operation Poisson \u2013 Analyzing a Cybercriminal\u2019s Entire Operation",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a3447ad",
-        "severity": "HIGH",
-        "date": "2026-06-19",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Popa: From Sourcing to Distribution",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a34874a",
-        "severity": "HIGH",
-        "date": "2026-06-19",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Operation FlutterBridge: The FlutterShell macOS Backdoor",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a34874a",
-        "severity": "HIGH",
-        "date": "2026-06-19",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "OXLOADER: new loader evading detection to drop infostealer",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a34c634",
-        "severity": "HIGH",
-        "date": "2026-06-19",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Analysis of Gamaredon campaign targeting Ukraine weaponizing CVE-2025-8088",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a0ce3b0",
-        "severity": "HIGH",
-        "date": "2026-06-18",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Latest PyPi Compromise",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a0ce3af",
-        "severity": "HIGH",
-        "date": "2026-06-18",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Inside Banana RAT: From Build Server to Banking Fraud",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-bad193",
+        "id": "VT-d-lordse",
         "severity": "CRITICAL",
         "date": "2026-06-20",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NetWired_Dec20_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: http...",
+        "desc": "malware and/or phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-1100e6",
+        "id": "VT-f-b9a62e",
         "severity": "CRITICAL",
         "date": "2026-06-20",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: Sofacy_Jan18_1_PE_Info_Anomaly\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: PY_Hack_SamRDump\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https://...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-330486",
+        "id": "VT-d-height",
         "severity": "CRITICAL",
         "date": "2026-06-20",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_Gost_Tunnel_May22\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ht...",
+        "desc": "malware and/or phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-1be14c",
+        "id": "VT-f-b9a62e",
         "severity": "CRITICAL",
         "date": "2026-06-20",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Verdict: **Malware**\nScore: **100/100**\nThreat: **Trojan.Win32.BypassUAC**\n\n\n[b]File Report[/b]\nhttps://www.threat.rip/f...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: PY_Hack_WmiQuery\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https://...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-6e0bda",
+        "id": "VT-d-moon-r",
         "severity": "CRITICAL",
         "date": "2026-06-20",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Unknown_Malware_May19_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LIN...",
+        "desc": "malware and/or phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-709852",
+        "id": "VT-d-action",
         "severity": "CRITICAL",
         "date": "2026-06-20",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Tofsee_Botnet_Mar23\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: h...",
+        "desc": "malware and/or phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-03629e",
+        "id": "VT-d-github",
         "severity": "CRITICAL",
         "date": "2026-06-20",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\nxspreayso.exe\n\n[b]Threat Score:[/b]\n10/10\n\n[b]Family:[/b]\nN/A\n\n[b]File Report:[/b]\nh...",
+        "desc": "malware and/or phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-51.15.",
+        "id": "VT-d-admin-",
         "severity": "CRITICAL",
         "date": "2026-06-20",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "We have classified this IP 51.15.134.12 as malicious.\n\nReason: Performing aggressive SSH login attempts on 2026-06-20T09...",
+        "desc": "malware and/or phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-lumina",
+        "id": "VT-f-05c5cf",
         "severity": "CRITICAL",
         "date": "2026-06-20",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "*** SPAM DOMAIN ***",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_Donut_ShellCode_Mar23_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LI...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-bd3b3d",
+        "id": "VT-f-05c5cf",
         "severity": "CRITICAL",
         "date": "2026-06-20",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Commands_Disabling_Windows_Firewall_Jul23\nRULE_TYPE: THOR APT Scanne...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_ShellCode_Loader_Dec23\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
