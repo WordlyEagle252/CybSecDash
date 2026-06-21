@@ -1,5 +1,14 @@
 [
     {
+        "id": "OTX-6a105530",
+        "severity": "HIGH",
+        "date": "2026-06-21",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Cloud Atlas activity in the second half of 2025 and early 2026: new tools and a new payload",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6a0f8f36",
         "severity": "HIGH",
         "date": "2026-06-20",
@@ -81,102 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6a3447ad",
-        "severity": "HIGH",
-        "date": "2026-06-19",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Popa: From Sourcing to Distribution",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-be3b3f",
+        "id": "VT-d-zqyzks",
         "severity": "CRITICAL",
         "date": "2026-06-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_AsyncRAT_Jan23\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https:...",
+        "desc": "malware and/or phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-be3b3f",
+        "id": "VT-d-lordse",
         "severity": "CRITICAL",
         "date": "2026-06-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_Snip3_AsyncRAT_May21\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LI...",
+        "desc": "malware and/or phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-e95fe2",
+        "id": "VT-d-lordse",
         "severity": "CRITICAL",
         "date": "2026-06-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udd0d ScanMalware.com AI Security Verdict: LOW_RISK - Risk: 2/10\n\nView full report: https://scanmalware.com/scan/6748dd09-30...",
+        "desc": "malware and/or phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-p-type",
+        "id": "VT-d-lordse",
         "severity": "CRITICAL",
         "date": "2026-06-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udcc3Title:From external espionage to domestic targeting\n\n\ud83d\udcc5Date:2026-06-11\n\n\ud83d\udd17References: \n\nhttps://www.welivesecurity.com/en...",
+        "desc": "malware and/or phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-e543dd",
+        "id": "VT-u-043184",
         "severity": "CRITICAL",
         "date": "2026-06-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: APT_MAL_CN_Chimera_CobaltStrike_Beacon_Jun20_1\nRULE_TYPE: VALHALLA rule f...",
+        "desc": "\ud83d\udd0d ScanMalware.com AI Security Verdict: LOW_RISK - Risk: 2/10\n\nView full report: https://scanmalware.com/scan/37330144-d5...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-e543dd",
+        "id": "VT-d-qviwzk",
         "severity": "CRITICAL",
         "date": "2026-06-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_MAL_CobaltStrike_Loader_Feb23_1\nRULE_TYPE: VALHALLA rule feed only \u26a1...",
+        "desc": "malware and/or phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-1847eb",
+        "id": "VT-f-e7921c",
         "severity": "CRITICAL",
         "date": "2026-06-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Verdict: **Suspicious**\nScore: **27/100**\n\nValid certificate - youarefinished (Google)\n\n\n[b]File Report[/b]\nhttps://www....",
+        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\nVenumWare Temp Spoofer (1).exe\n\n[b]Threat Score:[/b]\n10/10\n\n[b]Family:[/b]\n\u2022 xworm\n\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-102.21",
+        "id": "VT-d-fshggr",
         "severity": "CRITICAL",
         "date": "2026-06-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "SSH BruteForce detected by A.R.X.I.S. using QRX engine. Date: 2026-06-21 09:56:17 UTC. Username: gokul_unknown</F-USER>....",
+        "desc": "malware and/or phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-optnms",
+        "id": "VT-f-493aad",
         "severity": "CRITICAL",
         "date": "2026-06-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udcc3Title:From external espionage to domestic targeting\n\n\ud83d\udcc5Date:2026-06-11\n\n\ud83d\udd17References: \n\nhttps://www.welivesecurity.com/en...",
+        "desc": "ELF DIGEST non-profit Sandbox:\n\nDomains: last.galaxias.cc\n\n Analysis Report: https://elfdigest.com/brief/493aadab169b9a5...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-mtgvin",
+        "id": "VT-f-cb78bc",
         "severity": "CRITICAL",
         "date": "2026-06-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udcc3Title:From external espionage to domestic targeting\n\n\ud83d\udcc5Date:2026-06-11\n\n\ud83d\udd17References: \n\nhttps://www.welivesecurity.com/en...",
+        "desc": "#malware #nanocore\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/3c07c188933f6025ef54ddcf44aa66d152d71...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
