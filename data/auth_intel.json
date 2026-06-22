@@ -90,93 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "VT-f-11f4db",
+        "id": "VT-d-aaa.lo",
         "severity": "CRITICAL",
-        "date": "2026-06-21",
+        "date": "2026-06-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Salat_Stealer_Jan26\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: h...",
+        "desc": "\ud83d\udcc3Title:Interlock and Rhysida within the Ransomware Ecosystem\n\n\ud83d\udcc5Date:2026-06-12\n\n\ud83d\udd17References: \n\nhttps://www.ibm.com/think...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-11f4db",
+        "id": "VT-f-ff8d7b",
         "severity": "CRITICAL",
-        "date": "2026-06-21",
+        "date": "2026-06-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Credential_Stealer_Indicators_Jul23_2\nRULE_TYPE: THOR APT Scanner's ...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_AsyncRAT_Jan23\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https:...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-11f4db",
+        "id": "VT-f-ff8d7b",
         "severity": "CRITICAL",
-        "date": "2026-06-21",
+        "date": "2026-06-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Credential_Stealer_Indicators_Jul23_1\nRULE_TYPE: THOR APT Scanner's ...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_Quasar_Multi_Mar26\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-11f4db",
+        "id": "VT-f-31ce21",
         "severity": "CRITICAL",
-        "date": "2026-06-21",
+        "date": "2026-06-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Chrome_Stealer_Indicators_Oct24_1\nRULE_TYPE: THOR APT Scanner's rule...",
+        "desc": "Joe Sandbox Analysis: \n\t\t\t\nVerdict: MAL\nScore: 68/100\nHosts: 34.249.145.219 109.202.202.202 91.189.91.42 \n\nHTML Report: ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-ade62a",
+        "id": "VT-d-updt-m",
         "severity": "CRITICAL",
-        "date": "2026-06-21",
+        "date": "2026-06-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_B64_Atob_Aug23\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nRULE_LI...",
+        "desc": "\ud83d\udcc3Title:Interlock and Rhysida within the Ransomware Ecosystem\n\n\ud83d\udcc5Date:2026-06-12\n\n\ud83d\udd17References: \n\nhttps://www.ibm.com/think...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-11f4db",
+        "id": "VT-u-5aa137",
         "severity": "CRITICAL",
-        "date": "2026-06-21",
+        "date": "2026-06-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Go_Backdoor_Jun25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: htt...",
+        "desc": "**URL found on URLhaus**\n\n**URL:** hxxp://110.36.3.201:46819/i\n**Threat:** malware_download\n**Host Country:** Pakistan\n*...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-ade62a",
+        "id": "VT-d-updt-m",
         "severity": "CRITICAL",
-        "date": "2026-06-21",
+        "date": "2026-06-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_OBFUSC_Base64_Hex_Encoded_Apr19\nRULE_TYPE: THOR APT Scanner's rule s...",
+        "desc": "\ud83d\udcc3Title:Interlock and Rhysida within the Ransomware Ecosystem\n\n\ud83d\udcc5Date:2026-06-12\n\n\ud83d\udd17References: \n\nhttps://www.ibm.com/think...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-soselr",
+        "id": "VT-i-223.20",
         "severity": "CRITICAL",
-        "date": "2026-06-21",
+        "date": "2026-06-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "*** SPAM DOMAIN ***",
+        "desc": "Port Scanning",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-2ec526",
+        "id": "VT-d-updt-m",
         "severity": "CRITICAL",
-        "date": "2026-06-21",
+        "date": "2026-06-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_KernelModuleUnloader_CheatEngine_Oct21_1\nRULE_TYPE: THOR APT Scanner...",
+        "desc": "\ud83d\udcc3Title:Interlock and Rhysida within the Ransomware Ecosystem\n\n\ud83d\udcc5Date:2026-06-12\n\n\ud83d\udd17References: \n\nhttps://www.ibm.com/think...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-ccb05e",
+        "id": "VT-f-2ea382",
         "severity": "CRITICAL",
-        "date": "2026-06-21",
+        "date": "2026-06-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#malware #xmrig\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/44a70198ab671bd7435e0ab51641e14d965b141c...",
+        "desc": "Verdict: **Malware**\nScore: **100/100**\nThreat: **Family.MIRAI**\n\n\n[b]File Report[/b]\nhttps://www.threat.rip/file/2ea382...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
