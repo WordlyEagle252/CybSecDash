@@ -1,92 +1,182 @@
 [
     {
-        "id": "VT-f-bbf27e",
-        "severity": "CRITICAL",
+        "id": "OTX-6a3915ed",
+        "severity": "HIGH",
         "date": "2026-06-22",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "An unknown actor distributes malicious VBS scripts via WhatsApp",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a38d625",
+        "severity": "HIGH",
+        "date": "2026-06-22",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "3CXDesktopApp Intrusion Campaign Prevention",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a358eb8",
+        "severity": "HIGH",
+        "date": "2026-06-22",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Inside the FortiBleed Open Directory: A Technical Analysis of What the Attacker Left Behind",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a3551ce",
+        "severity": "HIGH",
+        "date": "2026-06-22",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Threat Actors Weaponizing RAR Archives to Target Thailand's Healthcare Sector",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a105530",
+        "severity": "HIGH",
+        "date": "2026-06-21",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Cloud Atlas activity in the second half of 2025 and early 2026: new tools and a new payload",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a0f8f36",
+        "severity": "HIGH",
+        "date": "2026-06-20",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Middle East Malicious Infrastructure Report: 1,350+ C2 Servers Mapped Across 98 Providers",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a0f8f35",
+        "severity": "HIGH",
+        "date": "2026-06-20",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "One Man, One AI, One Fake Persona: Inside the 5-Year Influence and Fraud 'Patriot Bait' Campaign",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a0f8f34",
+        "severity": "HIGH",
+        "date": "2026-06-20",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "The Gentleman Ransomware | Defense Evasion TTPs Uncovered",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a0d9716",
+        "severity": "HIGH",
+        "date": "2026-06-20",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "The Evolution of ClickFix: From Cleartext to Server Side Polymorphism",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a0f272c",
+        "severity": "HIGH",
+        "date": "2026-06-20",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "PureLogs: Delivery via PawsRunner Steganography",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "VT-u-78fc11",
+        "severity": "CRITICAL",
+        "date": "2026-06-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#malware #remcos\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/0ef427c176199a1b7c447d0ac3ea4752e4714fc...",
+        "desc": "Joe Sandbox Analysis: \n\t\t\t\nVerdict: MAL\nScore: 48/100\nDomains: cdn.webflow.com cdn.jsdelivr.net.cdn.cloudflare.net dv0f1...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-979e9a",
+        "id": "VT-f-1b4b4e",
         "severity": "CRITICAL",
-        "date": "2026-06-22",
+        "date": "2026-06-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_CredStealer_Indicators_Oct22_1\nRULE_TYPE: THOR APT Scanner's rule se...",
+        "desc": "#malware #asyncrat\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/5210884d2b3252071a08175a485fc294288cb...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-98967a",
+        "id": "VT-d-lourde",
         "severity": "CRITICAL",
-        "date": "2026-06-22",
+        "date": "2026-06-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_NET_Reactor_Protector_Native_May23\nRULE_TYPE: THOR APT Scanner's rul...",
+        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://lourdescathedralthrissur.com\nTargeted Brand: Cra...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-979e9a",
+        "id": "VT-d-lourde",
         "severity": "CRITICAL",
-        "date": "2026-06-22",
+        "date": "2026-06-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_DCRat_Feb25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https...",
+        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://lourdescathedralthrissur.com\nTargeted Brand: Cra...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-98967a",
+        "id": "VT-d-lourde",
         "severity": "CRITICAL",
-        "date": "2026-06-22",
+        "date": "2026-06-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_SUSP_Loader_Aug20_2\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ...",
+        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://lourdescathedralthrissur.com\nTargeted Brand: Cra...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-9819bb",
+        "id": "VT-f-48e3a0",
         "severity": "CRITICAL",
-        "date": "2026-06-22",
+        "date": "2026-06-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_SUSP_Loader_Aug20_2\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_xRAT_Jul20_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https://...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-979e9a",
+        "id": "VT-f-48e3a0",
         "severity": "CRITICAL",
-        "date": "2026-06-22",
+        "date": "2026-06-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_W32tm_StripChart_Cmdline_Oct22_1\nRULE_TYPE: THOR APT Scanner's rule ...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Stealer_Indicators_Jul23\nRULE_TYPE: THOR APT Scanner's rule set only...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-986730",
+        "id": "VT-f-48e3a0",
         "severity": "CRITICAL",
-        "date": "2026-06-22",
+        "date": "2026-06-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Simda_Stealer_Oct25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: h...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_AsyncRAT_Nov25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ht...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-987dd9",
+        "id": "VT-d-lourde",
         "severity": "CRITICAL",
-        "date": "2026-06-22",
+        "date": "2026-06-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_CN_Campaign_Malware_Aug19_2\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE...",
+        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://lourdescathedralthrissur.com\nTargeted Brand: Cra...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-979e9a",
+        "id": "VT-d-lourde",
         "severity": "CRITICAL",
-        "date": "2026-06-22",
+        "date": "2026-06-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_DCRAT_Feb23\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https://v...",
+        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://lourdescathedralthrissur.com\nTargeted Brand: Cra...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
