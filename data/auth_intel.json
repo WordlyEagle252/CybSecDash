@@ -1,5 +1,14 @@
 [
     {
+        "id": "OTX-6a399937",
+        "severity": "HIGH",
+        "date": "2026-06-23",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Detecting the Klue supply chain attack in Salesforce instances",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6a3915ed",
         "severity": "HIGH",
         "date": "2026-06-22",
@@ -81,102 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6a0f272c",
-        "severity": "HIGH",
-        "date": "2026-06-20",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "PureLogs: Delivery via PawsRunner Steganography",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-u-78fc11",
+        "id": "VT-f-492377",
         "severity": "CRITICAL",
         "date": "2026-06-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Joe Sandbox Analysis: \n\t\t\t\nVerdict: MAL\nScore: 48/100\nDomains: cdn.webflow.com cdn.jsdelivr.net.cdn.cloudflare.net dv0f1...",
+        "desc": "Joe Sandbox Analysis: \n\t\t\t\nVerdict: SUS\nScore: 26/100\n\nHTML Report: https://www.joesandbox.com/analysis/1932471/0/html\t\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-1b4b4e",
+        "id": "VT-f-bc1f1d",
         "severity": "CRITICAL",
         "date": "2026-06-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#malware #asyncrat\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/5210884d2b3252071a08175a485fc294288cb...",
+        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\nAutoRynekByTopka.jar\n\n[b]Threat Score:[/b]\n10/10\n\n[b]Family:[/b]\n\u2022 weedhack\n\n[b]File...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-lourde",
+        "id": "VT-u-f86ad6",
         "severity": "CRITICAL",
         "date": "2026-06-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://lourdescathedralthrissur.com\nTargeted Brand: Cra...",
+        "desc": "Joe Sandbox Analysis: \n\t\t\t\nVerdict: MAL\nScore: 60/100\nDomains: android.l.google.com dl.google.com edge-block-www-env.dro...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-lourde",
+        "id": "VT-f-2ceda2",
         "severity": "CRITICAL",
         "date": "2026-06-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://lourdescathedralthrissur.com\nTargeted Brand: Cra...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_NET_Reactor_Protector_Native_May23\nRULE_TYPE: THOR APT Scanner's rul...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-lourde",
+        "id": "VT-f-beef26",
         "severity": "CRITICAL",
         "date": "2026-06-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://lourdescathedralthrissur.com\nTargeted Brand: Cra...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_SUSP_Loader_Aug20_2\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-48e3a0",
+        "id": "VT-f-ba9869",
         "severity": "CRITICAL",
         "date": "2026-06-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_xRAT_Jul20_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https://...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_NET_Reactor_Protector_Native_May23\nRULE_TYPE: THOR APT Scanner's rul...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-48e3a0",
+        "id": "VT-f-148889",
         "severity": "CRITICAL",
         "date": "2026-06-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Stealer_Indicators_Jul23\nRULE_TYPE: THOR APT Scanner's rule set only...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_SUSP_Loader_Aug20_2\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-48e3a0",
+        "id": "VT-f-2ceda2",
         "severity": "CRITICAL",
         "date": "2026-06-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_AsyncRAT_Nov25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ht...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_SUSP_Loader_Aug20_2\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-lourde",
+        "id": "VT-f-beef26",
         "severity": "CRITICAL",
         "date": "2026-06-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://lourdescathedralthrissur.com\nTargeted Brand: Cra...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_NET_Reactor_Protector_Native_May23\nRULE_TYPE: THOR APT Scanner's rul...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-lourde",
+        "id": "VT-f-ba9869",
         "severity": "CRITICAL",
         "date": "2026-06-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://lourdescathedralthrissur.com\nTargeted Brand: Cra...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_SUSP_Loader_Aug20_2\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
