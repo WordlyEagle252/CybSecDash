@@ -1,92 +1,182 @@
 [
     {
-        "id": "VT-f-6db456",
-        "severity": "CRITICAL",
+        "id": "OTX-6a3ae5bf",
+        "severity": "HIGH",
         "date": "2026-06-23",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Observed phishing URLs delivering RMM payload",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a3ac3d8",
+        "severity": "HIGH",
+        "date": "2026-06-23",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "A Multi-Stage Steganographic Loader Campaign Deploying Diverse Payloads Globally",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a3add25",
+        "severity": "HIGH",
+        "date": "2026-06-23",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "The #APT36 cluster can't stop, won't stop",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a3ab4c9",
+        "severity": "HIGH",
+        "date": "2026-06-23",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Customer CRM Data Accessed in Supply Chain Incident",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a3ac05e",
+        "severity": "HIGH",
+        "date": "2026-06-23",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "From PostCSS Masquerading to Windows RAT",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a3a780e",
+        "severity": "HIGH",
+        "date": "2026-06-23",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Artifact scanner detects npm package 'node-fetch-utils' using external dependency resolution with remote tarball dependency from GitHub",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a3a7809",
+        "severity": "HIGH",
+        "date": "2026-06-23",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "PHISH ALERT: From a Simple Phishing Email to a Full Attack Arsenal: The Evolution of \"ClickFix\"",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a399937",
+        "severity": "HIGH",
+        "date": "2026-06-23",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Detecting the Klue supply chain attack in Salesforce instances",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a3915ed",
+        "severity": "HIGH",
+        "date": "2026-06-22",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "An unknown actor distributes malicious VBS scripts via WhatsApp",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a38d625",
+        "severity": "HIGH",
+        "date": "2026-06-22",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "3CXDesktopApp Intrusion Campaign Prevention",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "VT-d-bushui",
+        "severity": "CRITICAL",
+        "date": "2026-06-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_LNX_Chmod_777_One_Liner_Aug24\nRULE_TYPE: THOR APT Scanner's rule set...",
+        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://bushuiev.com\nTargeted Brand: Betgar\nOfficial Dom...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-96ee0c",
+        "id": "VT-d-bushui",
         "severity": "CRITICAL",
-        "date": "2026-06-23",
+        "date": "2026-06-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_SchTasks_Create_OnLogon_Mar25\nRULE_TYPE: THOR APT Scanner's rule set...",
+        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://bushuiev.com\nTargeted Brand: Betgar\nOfficial Dom...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-6db456",
+        "id": "VT-d-bushui",
         "severity": "CRITICAL",
-        "date": "2026-06-23",
+        "date": "2026-06-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Curl_HTTP_IP_May24_1\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nR...",
+        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://bushuiev.com\nTargeted Brand: Betgar\nOfficial Dom...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-6db456",
+        "id": "VT-d-lordif",
         "severity": "CRITICAL",
-        "date": "2026-06-23",
+        "date": "2026-06-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_LNX_Bot_Exploitation_Pattern_Dec21_1\nRULE_TYPE: THOR APT Scanner's r...",
+        "desc": "malware and/or phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-96ee0c",
+        "id": "VT-d-bushui",
         "severity": "CRITICAL",
-        "date": "2026-06-23",
+        "date": "2026-06-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_CurrentVersion_String_Sep22\nRULE_TYPE: THOR APT Scanner's rule set o...",
+        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://bushuiev.com\nTargeted Brand: Betgar\nOfficial Dom...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-20c8a2",
+        "id": "VT-d-killer",
         "severity": "CRITICAL",
-        "date": "2026-06-23",
+        "date": "2026-06-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_OBFUSC_Casing_Anomaly_Netsh_Exe\nRULE_TYPE: THOR APT Scanner's rule s...",
+        "desc": "malware and/or phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-065f36",
+        "id": "VT-i-1.39.1",
         "severity": "CRITICAL",
-        "date": "2026-06-23",
+        "date": "2026-06-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Trojan_Ladvix_Jul24\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: h...",
+        "desc": "Automated report : IP 1.39.163.19 is carrying out a Web Attack on wwww.eco-conscient.com at Wed, 24 Jun 2026 03:59:27 +0...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-6db456",
+        "id": "VT-i-36.93.",
         "severity": "CRITICAL",
-        "date": "2026-06-23",
+        "date": "2026-06-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Curl_Download_IP_Address_Oct21_1\nRULE_TYPE: THOR APT Scanner's rule ...",
+        "desc": "Port Scanning",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-3d25df",
+        "id": "VT-i-159.19",
         "severity": "CRITICAL",
-        "date": "2026-06-23",
+        "date": "2026-06-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_OBFUSC_NET_Reactor_JIT_Encryption_Feb25\nRULE_TYPE: THOR APT Scanner'...",
+        "desc": "Port Scanning",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-96ee0c",
+        "id": "VT-i-34.130",
         "severity": "CRITICAL",
-        "date": "2026-06-23",
+        "date": "2026-06-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Antivirus_Evasion_Jan26\nRULE_TYPE: THOR APT Scanner's rule set only ...",
+        "desc": "Port Scanning",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
