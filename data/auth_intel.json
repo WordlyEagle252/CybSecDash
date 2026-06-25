@@ -90,93 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "VT-f-e9c986",
+        "id": "VT-d-adfsa.",
         "severity": "CRITICAL",
         "date": "2026-06-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: Sality_Malware_Oct16\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://github.com...",
+        "desc": "malware and/or phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-07648d",
+        "id": "VT-d-anime-",
         "severity": "CRITICAL",
         "date": "2026-06-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Verdict: **Malware**\nScore: **100/100**\nThreat: **Family.GULOADER**\n\n\n[b]File Report[/b]\nhttps://www.threat.rip/file/076...",
+        "desc": "malware and/or phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-165.15",
+        "id": "VT-d-ton-te",
         "severity": "CRITICAL",
         "date": "2026-06-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "We have classified this IP 165.154.235.9 as malicious.\n\nReason: Performing aggressive SSH login attempts on 2026-06-25T0...",
+        "desc": "malware and/or phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-30e125",
+        "id": "VT-d-blogpr",
         "severity": "CRITICAL",
         "date": "2026-06-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Verdict: **Clean**\nScore: **0/100**\n\n\n[b]File Report[/b]\nhttps://www.threat.rip/file/30e1256fd4e7f1de05e52a3b9fbdaae0e3e...",
+        "desc": "malware and/or phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-6afac4",
+        "id": "VT-d-douter",
         "severity": "CRITICAL",
         "date": "2026-06-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: Generic_Strings_Hacktools\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK:...",
+        "desc": "malware and/or phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-c0693b",
+        "id": "VT-f-b91093",
         "severity": "CRITICAL",
         "date": "2026-06-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_KVC_Mar26\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https://va...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Emmenhtal_Indicator_Mar26\nRULE_TYPE: THOR APT Scanner's rule set onl...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-c0cf28",
+        "id": "VT-f-82d3b5",
         "severity": "CRITICAL",
         "date": "2026-06-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: Sality_Malware_Oct16\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://github.com...",
+        "desc": "**Malware Family Detected On MalwareBazaar**\n\n**Filename (as uploaded):** onie_mips\n**Family/Signature:** Mirai\n**File T...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-f9d7e7",
+        "id": "VT-u-bfc26f",
         "severity": "CRITICAL",
         "date": "2026-06-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_Snip3_AsyncRAT_May21\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LI...",
+        "desc": "Joe Sandbox Analysis: \n\t\t\t\nVerdict: CLEAN\nScore: 0/100\nDomains: android.l.google.com dl.google.com static.admaster.cc ww...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-f9d7e7",
+        "id": "VT-f-57aa95",
         "severity": "CRITICAL",
         "date": "2026-06-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_AsyncRAT_Nov25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ht...",
+        "desc": "Verdict: **Malware**\nScore: **100/100**\nThreat: **Backdoor.MSIL.XWorm**\n\n\n[b]File Report[/b]\nhttps://www.threat.rip/file...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-f9989c",
+        "id": "VT-f-6b7a6a",
         "severity": "CRITICAL",
         "date": "2026-06-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_CS_Meterpeter_Loader_Oct20_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRU...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Encoded_PS_NetNetworkCreds\nRULE_TYPE: THOR APT Scanner's rule set on...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
