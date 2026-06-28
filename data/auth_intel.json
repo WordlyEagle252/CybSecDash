@@ -1,5 +1,23 @@
 [
     {
+        "id": "OTX-6a19766c",
+        "severity": "HIGH",
+        "date": "2026-06-28",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Kimsuky's Advanced Attack Techniques: JSONPing, Webex Spoofing, and a New HttpSpy Variant",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a196f2f",
+        "severity": "HIGH",
+        "date": "2026-06-28",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Operation XENOFISCAL: SideCopy deploying persistent XenoRAT targeting the MoF, Afghanistan",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6a181e40",
         "severity": "HIGH",
         "date": "2026-06-27",
@@ -72,111 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6a3d76e5",
-        "severity": "HIGH",
-        "date": "2026-06-26",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "From San Pedro to Salinas: How a Chinese Framework \u201cDCloud Uni-App\u201d Powers a Global Scam Economy",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a3d76e5",
-        "severity": "HIGH",
-        "date": "2026-06-26",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Millenium: A RAT Rewritten, A Threat Multiplied",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-efb07b",
+        "id": "VT-f-6b72de",
         "severity": "CRITICAL",
         "date": "2026-06-28",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_Empire_Win_LNK_Macro_Dec19_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRU...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_LNX_Exploit_Indicators_Jul25\nRULE_TYPE: THOR APT Scanner's rule set ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-5d1fd9",
+        "id": "VT-i-20.55.",
         "severity": "CRITICAL",
         "date": "2026-06-28",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\nTrojanRAT.exe\n\n[b]Threat Score:[/b]\n10/10\n\n[b]Family:[/b]\n\u2022 asyncrat\n\n[b]Botnet:[/b]...",
+        "desc": "IOC Type: IPv4\n\nThreat Type: T1190\n\nMITRE ATT&CK: T1190\n\nRelated Tags: malicious-ip, T1190\n\nAnalysis Summary:\nFirewall i...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-c953fd",
+        "id": "VT-i-20.55.",
         "severity": "CRITICAL",
         "date": "2026-06-28",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_Empire_Win_LNK_Macro_Dec19_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRU...",
+        "desc": "\ud83d\udccc IOC Type: IPv4\n\ud83d\udd39 Associated Rule Name: PURE7 - Initial Access - T1190 - Potential Inbound Command Execution via FW\n\ud83d\udd39 M...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-ff0944",
+        "id": "VT-f-c1b64a",
         "severity": "CRITICAL",
         "date": "2026-06-28",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\n     ANY.RUN Sandbox Analysis:\n\n     Verdict: Malicious activity\n     Tags: github, xworm, violet, rat\n     C2: 2.tcp.c...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_BAT_OBFUSC_BOM_Override_Apr25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRU...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-76d142",
+        "id": "VT-i-190.81",
         "severity": "CRITICAL",
         "date": "2026-06-28",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\nhay88.exe\n\n[b]Threat Score:[/b]\n10/10\n\n[b]Family:[/b]\n\u2022 asyncrat\n\n[b]Botnet:[/b]\n\u2022 D...",
+        "desc": "#ssh #scanner\n\nObserved automated SSH scan activity.\nAttempts: 6 | Failed password: 6 | Invalid user: 0\nFirst seen: 2026...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-8a0b67",
+        "id": "VT-i-193.56",
         "severity": "CRITICAL",
         "date": "2026-06-28",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Verdict: **Suspicious**\nScore: **39/100**\n\n\n[b]File Report[/b]\nhttps://www.threat.rip/file/8a0b67ecffaffda1a0ab2d5d87510...",
+        "desc": "Unauthorised WordPress admin login attempted at 2026-06-28 23:56:25 +1000",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-76d142",
+        "id": "VT-f-a81a61",
         "severity": "CRITICAL",
         "date": "2026-06-28",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "UnpacMe Analysis\nReport: https://unpac.me/results/3962d412-abb0-4417-908d-3482e25126cb\nMalware Family: AsyncRAT\nC2s: \n -...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_RedLine_Stealer_Jan23\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK:...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-9df018",
+        "id": "VT-f-a81a61",
         "severity": "CRITICAL",
         "date": "2026-06-28",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_OBFUSC_Unicorn_PowerShell_Indicator_Oct19_1\nRULE_TYPE: VALHALLA rule...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Redline_Stealer_Mar22_2\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LIN...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-59.178",
+        "id": "VT-f-a81a61",
         "severity": "CRITICAL",
         "date": "2026-06-28",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Unauthorised WordPress admin login attempted at 2026-06-28 19:16:34 +1000",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_MSIL_NET_Redline_Stealer_Jul23\nRULE_TYPE: VALHALLA rule feed only \u26a1\nR...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-5d1fd9",
+        "id": "VT-f-3b2b16",
         "severity": "CRITICAL",
         "date": "2026-06-28",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "UnpacMe Analysis\nReport: https://unpac.me/results/98ca86e4-4f45-41e1-b63a-0aaca803d268\nMalware Family: AsyncRAT\nC2s: \n -...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_Snip3_AsyncRAT_May21\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LI...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
