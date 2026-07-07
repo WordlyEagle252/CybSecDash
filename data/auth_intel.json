@@ -90,93 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "VT-f-dd3981",
+        "id": "VT-f-86a71c",
         "severity": "CRITICAL",
-        "date": "2026-07-06",
+        "date": "2026-07-07",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_PE_Image_Stenography_Apr25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_...",
+        "desc": "VMRay Analysis Verdict: Malicious\n\nThreat Names: AgentTesla.v4, AgentTesla, DonutLoader\nClassifications: Backdoor, Downl...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-df8cbc",
+        "id": "VT-f-73f520",
         "severity": "CRITICAL",
-        "date": "2026-07-06",
+        "date": "2026-07-07",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Verdict: **Malware**\nScore: **74/100**\n\n\n[b]File Report[/b]\nhttps://www.threat.rip/file/df8cbcaee29bb72fff35742a0b223f0e...",
+        "desc": "#malware #Sliver\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/e8001586dc7b88bc856cd71fcb002fe6811c2cb...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-faa58d",
+        "id": "VT-f-720a3c",
         "severity": "CRITICAL",
-        "date": "2026-07-06",
+        "date": "2026-07-07",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: Scriptlet_Suspicious_Indicators_Schtasks_Run\nRULE_TYPE: VALHALLA rule fee...",
+        "desc": "VMRay Analysis Verdict: Malicious\n\nThreat Name: Vidar\nClassification: Spyware\n\nAnalysis Report: https://www.vmray.com/an...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-474f6f",
+        "id": "VT-f-094bc9",
         "severity": "CRITICAL",
-        "date": "2026-07-06",
+        "date": "2026-07-07",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_AmsiBypass_Aug21_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: h...",
+        "desc": "Verdict: **Malicious**\nScore: **42/100**\n\n\n[b]File Report[/b]\nhttps://www.threat.rip/file/094bc9cce12a0be4ccd399a355cd34...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-4c972a",
+        "id": "VT-f-28b481",
         "severity": "CRITICAL",
-        "date": "2026-07-06",
+        "date": "2026-07-07",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_Process_Hollowing_Mar25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE...",
+        "desc": "VMRay Analysis Verdict: Malicious\n\nThreat Name: Floxif\nClassifications: Backdoor, Trojan\n\nAnalysis Report: https://www.v...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-1f3d46",
+        "id": "VT-u-79f4e9",
         "severity": "CRITICAL",
-        "date": "2026-07-06",
+        "date": "2026-07-07",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_Evilnginx2_Mar25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: htt...",
+        "desc": "Joe Sandbox Analysis: \n\t\t\t\nVerdict: CLEAN\nScore: 1/100\nDomains: obj.adman.gr.cdn.cloudflare.net mobile-gtalk.l.google.co...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-0f9e9e",
+        "id": "VT-f-cbb753",
         "severity": "CRITICAL",
-        "date": "2026-07-06",
+        "date": "2026-07-07",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File found on MalwareBazaar**\n\n**File Name (as uploaded):** Pivlex_CRM_API_Documentation.zip\n**File Type:** zip\n**Repo...",
+        "desc": "#malware #Redline\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/f6cb8976174a8e375963a0821b3a0a19205d9d...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-b111c4",
+        "id": "VT-f-4fc7c1",
         "severity": "CRITICAL",
-        "date": "2026-07-06",
+        "date": "2026-07-07",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "06JUL2026 - 14:03:18 Phishing SCAM URL(s) found in UCE spam email.",
+        "desc": "VMRay Analysis Verdict: Malicious\n\nThreat Name: CryptoLocker\nClassification: Ransomware\n\nAnalysis Report: https://www.vm...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-ae1939",
+        "id": "VT-f-72331c",
         "severity": "CRITICAL",
-        "date": "2026-07-06",
+        "date": "2026-07-07",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Unknown_Sept19_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: http...",
+        "desc": "#malware #NetWire\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/2853096e466909fad12bd3d5a5f339ca4766ec...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-ae1939",
+        "id": "VT-f-6310ed",
         "severity": "CRITICAL",
-        "date": "2026-07-06",
+        "date": "2026-07-07",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_ME_Unknown_Oct10_2\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ht...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: Sofacy_Jan18_1_PE_Info_Anomaly\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
