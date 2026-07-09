@@ -90,93 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "VT-f-5b36d0",
+        "id": "VT-f-dbb2af",
         "severity": "CRITICAL",
-        "date": "2026-07-08",
+        "date": "2026-07-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_DDOS_Amplification_Strings_Jun25\nRULE_TYPE: VALHALLA rule feed only \u26a1...",
+        "desc": "FileScan.IO Analysis:\n\nVerdict: MALICIOUS\nConfidence: 100/100\nTags: asyncrat,dcrat,venomrat,anti-debug,anti-vm,base64,co...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-14d31f",
+        "id": "VT-d-caijin",
         "severity": "CRITICAL",
-        "date": "2026-07-08",
+        "date": "2026-07-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_NET_Reactor_Protector_Native_May23\nRULE_TYPE: THOR APT Scanner's rul...",
+        "desc": "malware and/or phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-14d31f",
+        "id": "VT-d-fsmins",
         "severity": "CRITICAL",
-        "date": "2026-07-08",
+        "date": "2026-07-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_SUSP_Loader_Aug20_2\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ...",
+        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://fsmins.org\nTargeted Brand: Maxwin\nOfficial Domai...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-eb904c",
+        "id": "VT-d-fsmins",
         "severity": "CRITICAL",
-        "date": "2026-07-08",
+        "date": "2026-07-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Verdict: **Malware**\nScore: **100/100**\nThreat: **Family.MIRAI**\n\n\n[b]File Report[/b]\nhttps://www.threat.rip/file/eb904c...",
+        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://fsmins.org\nTargeted Brand: Maxwin\nOfficial Domai...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-b21ff6",
+        "id": "VT-d-dianwa",
         "severity": "CRITICAL",
-        "date": "2026-07-08",
+        "date": "2026-07-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Verdict: **Malware**\nScore: **100/100**\nThreat: **Family.ASYNCRAT**\n\n\n[b]File Report[/b]\nhttps://www.threat.rip/file/b21...",
+        "desc": "malware and/or phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-3e5210",
+        "id": "VT-d-fsmins",
         "severity": "CRITICAL",
-        "date": "2026-07-08",
+        "date": "2026-07-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udd0d ScanMalware.com AI Security Verdict: LOW_RISK - Risk: 2/10\n\nView full report: https://scanmalware.com/scan/3fb1a389-99...",
+        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://fsmins.org\nTargeted Brand: Maxwin\nOfficial Domai...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-13f71b",
+        "id": "VT-f-ea4cf9",
         "severity": "CRITICAL",
-        "date": "2026-07-08",
+        "date": "2026-07-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_ZombieBoy_Malware_Dec18_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_L...",
+        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\n2026-07-09_d6a746534b9478676b1a90d90375f203_cobalt-strike_elex_hijackloader_icedid_n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-5f50fe",
+        "id": "VT-d-fsmins",
         "severity": "CRITICAL",
-        "date": "2026-07-08",
+        "date": "2026-07-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_LNX_Mirai_Mar23_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: htt...",
+        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://fsmins.org\nTargeted Brand: Maxwin\nOfficial Domai...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-5f50fe",
+        "id": "VT-d-changh",
         "severity": "CRITICAL",
-        "date": "2026-07-08",
+        "date": "2026-07-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_ELF_LNX_Mirai_Oct10_2\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://githu...",
+        "desc": "malware and/or phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-140313",
+        "id": "VT-d-fsmins",
         "severity": "CRITICAL",
-        "date": "2026-07-08",
+        "date": "2026-07-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: APT_MAL_CN_Sparkle_Payload_May19_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nR...",
+        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://fsmins.org\nTargeted Brand: Maxwin\nOfficial Domai...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
