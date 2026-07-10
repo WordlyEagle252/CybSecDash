@@ -90,93 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "VT-f-49d230",
+        "id": "VT-i-177.53",
         "severity": "CRITICAL",
         "date": "2026-07-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_AsyncRAT_Nov25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ht...",
+        "desc": "SSH BruteForce detected by A.R.X.I.S. using QRX engine. Date: 2026-07-10 19:38:51 UTC. Username: admin_unknown</F-USER>....",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-b5a394",
+        "id": "VT-f-22cf91",
         "severity": "CRITICAL",
         "date": "2026-07-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_Gen_Pattern_Rust_Feb25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LIN...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Antivirus_Evasion_Jan26\nRULE_TYPE: THOR APT Scanner's rule set only ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-261b48",
+        "id": "VT-f-22411e",
         "severity": "CRITICAL",
         "date": "2026-07-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_AsyncRAT_Nov25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ht...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_NET_Reactor_Protector_Native_May23\nRULE_TYPE: THOR APT Scanner's rul...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-c9a872",
+        "id": "VT-f-23018c",
         "severity": "CRITICAL",
         "date": "2026-07-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_PS1_Loader_Characteristics_Sep25_2\nRULE_TYPE: VALHALLA rule feed onl...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NetWired_Dec20_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: http...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-0e0edf",
+        "id": "VT-f-5bfad4",
         "severity": "CRITICAL",
         "date": "2026-07-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_AsyncRAT_Nov25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ht...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_EtwEventWrite_Import_Aug21_1\nRULE_TYPE: THOR APT Scanner's rule set ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-0fe4f6",
+        "id": "VT-f-21d008",
         "severity": "CRITICAL",
         "date": "2026-07-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_AsyncRAT_Nov25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ht...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Antivirus_Evasion_Jan26\nRULE_TYPE: THOR APT Scanner's rule set only ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-3aeb1e",
+        "id": "VT-f-22cf91",
         "severity": "CRITICAL",
         "date": "2026-07-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_AsyncRAT_Nov25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ht...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Unsigned_GoogleUpdate\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://gith...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-8fbbdd",
+        "id": "VT-i-34.77.",
         "severity": "CRITICAL",
         "date": "2026-07-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Verdict: **Malware**\nScore: **66/100**\n\n\n[b]File Report[/b]\nhttps://www.threat.rip/file/8fbbdd726868a3c6b205c309d8617adc...",
+        "desc": "This IP address carried out 8 SSH credential attack (attempts) on 09-07-2026. For more information or to report interest...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-2c2c40",
+        "id": "VT-f-2203bf",
         "severity": "CRITICAL",
         "date": "2026-07-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_AsyncRAT_Nov25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ht...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Svchost_Variation\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nRULE...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-dc6c7c",
+        "id": "VT-f-21204b",
         "severity": "CRITICAL",
         "date": "2026-07-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Verdict: **Suspicious**\nScore: **25/100**\n\n\n[b]File Report[/b]\nhttps://www.threat.rip/file/dc6c7c2dabfb2954df34e9578cbcb...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: PUA_ConnectWise_ScreenConnect_Mar23\nRULE_TYPE: VALHALLA rule feed only \u26a1\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
