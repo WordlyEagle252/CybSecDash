@@ -1,5 +1,14 @@
 [
     {
+        "id": "OTX-6a295166",
+        "severity": "HIGH",
+        "date": "2026-07-10",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "SilabRAT, What's Your Power?",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6a4fdb50",
         "severity": "HIGH",
         "date": "2026-07-10",
@@ -81,102 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6a4f99c7",
-        "severity": "HIGH",
-        "date": "2026-07-10",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "GodDamn Ransomware: Latest Beast Rebrand Uses Malicious Driver to Disable Defenses",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-ccfbc7",
+        "id": "VT-f-49d230",
         "severity": "CRITICAL",
         "date": "2026-07-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\nccfbc7bd0a3dd9d251f4b4ca5b67d5eebf5b0846183b6b910088dd1aef0db955\n\n[b]Threat Score:[/...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_AsyncRAT_Nov25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ht...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-f6b62b",
+        "id": "VT-f-b5a394",
         "severity": "CRITICAL",
         "date": "2026-07-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udd0d ScanMalware.com AI Security Verdict: LOW_RISK - Risk: 2/10\n\nView full report: https://scanmalware.com/scan/6b97fe2a-e4...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_Gen_Pattern_Rust_Feb25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LIN...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-ccfbc7",
+        "id": "VT-f-261b48",
         "severity": "CRITICAL",
         "date": "2026-07-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\n     ANY.RUN Sandbox Analysis:\n\n     Verdict: Malicious activity\n     Tags: auto-reg, asyncrat, rat\n     C2: phimxxxhd....",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_AsyncRAT_Nov25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ht...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-a0cdf3",
+        "id": "VT-f-c9a872",
         "severity": "CRITICAL",
         "date": "2026-07-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_NET_Msil_Suspicious_Use_StrReverse\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK:...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_PS1_Loader_Characteristics_Sep25_2\nRULE_TYPE: VALHALLA rule feed onl...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-efc3f1",
+        "id": "VT-f-0e0edf",
         "severity": "CRITICAL",
         "date": "2026-07-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\n     ANY.RUN Sandbox Analysis:\n\n     Verdict: Malicious activity\n     Tags: auto-reg, asyncrat\n     C2: wolfcreeklubece...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_AsyncRAT_Nov25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ht...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-a19c69",
+        "id": "VT-f-0fe4f6",
         "severity": "CRITICAL",
         "date": "2026-07-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: PUA_ConnectWise_ScreenConnect_Mar23\nRULE_TYPE: VALHALLA rule feed only \u26a1\n...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_AsyncRAT_Nov25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ht...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-f8f276",
+        "id": "VT-f-3aeb1e",
         "severity": "CRITICAL",
         "date": "2026-07-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\n     ANY.RUN Sandbox Analysis:\n\n     Verdict: Malicious activity\n     Tags: auto-reg, asyncrat\n     C2: phimsexz.org,ww...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_AsyncRAT_Nov25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ht...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-853975",
+        "id": "VT-f-8fbbdd",
         "severity": "CRITICAL",
         "date": "2026-07-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\n8539755fe606bd90ab5b9345f8ccf4d5b84c4f05b33a80785214e26cdea7c7ea\n\n[b]Threat Score:[/...",
+        "desc": "Verdict: **Malware**\nScore: **66/100**\n\n\n[b]File Report[/b]\nhttps://www.threat.rip/file/8fbbdd726868a3c6b205c309d8617adc...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-2cc0c2",
+        "id": "VT-f-2c2c40",
         "severity": "CRITICAL",
         "date": "2026-07-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#malware #asyncrat\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/5210884d2b3252071a08175a485fc294288cb...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_AsyncRAT_Nov25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ht...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-22ffc8",
+        "id": "VT-f-dc6c7c",
         "severity": "CRITICAL",
         "date": "2026-07-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#malware #asyncrat\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/5210884d2b3252071a08175a485fc294288cb...",
+        "desc": "Verdict: **Suspicious**\nScore: **25/100**\n\n\n[b]File Report[/b]\nhttps://www.threat.rip/file/dc6c7c2dabfb2954df34e9578cbcb...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
