@@ -90,16 +90,7 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "VT-f-a8ebb7",
-        "severity": "CRITICAL",
-        "date": "2026-07-11",
-        "product": "Endpoint / System Artifact",
-        "source": "VirusTotal",
-        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\n2026-07-11_4ed43b43eb15a621f67d7b36c044a6e4_aspxspy_ezcob_glassworm_icedid_njrat_poi...",
-        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
-    },
-    {
-        "id": "VT-i-47.84.",
+        "id": "VT-i-8.209.",
         "severity": "CRITICAL",
         "date": "2026-07-11",
         "product": "Endpoint / System Artifact",
@@ -108,75 +99,84 @@
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-ad67b0",
+        "id": "VT-f-efc1cb",
         "severity": "CRITICAL",
         "date": "2026-07-11",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "This domain is suspected of engaging in deceptive activities by redirecting users to unauthorized gambling platforms and...",
+        "desc": "Verdict: **Malware**\nScore: **100/100**\nThreat: **Family.AGENTTESLA**\n\n\n[b]File Report[/b]\nhttps://www.threat.rip/file/e...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-defi.a",
+        "id": "VT-f-cc84d3",
         "severity": "CRITICAL",
         "date": "2026-07-11",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ThreatStop has coverage for this IOC.\nSee: https://check-ioc.threatstop.com/ioc/defi.appcontracts.network\nFirst convicte...",
+        "desc": "Verdict: **Malware**\nScore: **100/100**\nThreat: **Trojan.Python.Agent**\n\n\n[b]File Report[/b]\nhttps://www.threat.rip/file...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-ea030f",
+        "id": "VT-f-3766b6",
         "severity": "CRITICAL",
         "date": "2026-07-11",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\n2026-07-11_4e41faf8ad6f225dbb02e3199525c3d6_elex_virlock\n\n[b]Threat Score:[/b]\n10/10...",
+        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\n3766b6bc3d634ded11273c875e7ad7389537699d4b98e5f32714e5d5ea633196\n\n[b]Threat Score:[/...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-shein-",
+        "id": "VT-f-c5c7a9",
         "severity": "CRITICAL",
         "date": "2026-07-11",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ThreatStop has coverage for this IOC.\nSee: https://check-ioc.threatstop.com/ioc/shein-br.ru\nFirst convicted: 2016-09-21....",
+        "desc": "#malware #AgentTesla\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/0d757f885f9a5a94e382e8a6d0a2371659a...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-4z-mob",
+        "id": "VT-f-6376df",
         "severity": "CRITICAL",
         "date": "2026-07-11",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ThreatStop has coverage for this IOC.\nSee: https://check-ioc.threatstop.com/ioc/4z-mobily.co\nFirst convicted: 2018-06-13...",
+        "desc": "#malware #asyncrat\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/5210884d2b3252071a08175a485fc294288cb...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-custod",
+        "id": "VT-i-137.22",
         "severity": "CRITICAL",
         "date": "2026-07-11",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ThreatStop has coverage for this IOC.\nSee: https://check-ioc.threatstop.com/ioc/custodiahull.com\nFirst convicted: 2022-1...",
+        "desc": "Cobalt Strike Server Found\nC2: HTTPS @ 137[.]220[.]194[.]15:443\nC2 Server: r0[.]erloro[.]com,/ptj\nPOST URI: /submit[.]ph...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-airdro",
+        "id": "VT-f-5e3e1b",
         "severity": "CRITICAL",
         "date": "2026-07-11",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ThreatStop has coverage for this IOC.\nSee: https://check-ioc.threatstop.com/ioc/airdrop.pancakeapp-online.org\nFirst conv...",
+        "desc": "#malware #asyncrat\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/5210884d2b3252071a08175a485fc294288cb...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-downlo",
+        "id": "VT-f-cf38db",
         "severity": "CRITICAL",
         "date": "2026-07-11",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Malicious",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Trickler_Feb20_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: http...",
+        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
+    },
+    {
+        "id": "VT-f-ce2eb3",
+        "severity": "CRITICAL",
+        "date": "2026-07-11",
+        "product": "Endpoint / System Artifact",
+        "source": "VirusTotal",
+        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\nce2eb366a6e18c8c914cb1fa7245311734260872bdad41fe288cb0e3d6833c0e.exe\n\n[b]Threat Scor...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
