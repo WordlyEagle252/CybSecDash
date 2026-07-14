@@ -1,182 +1,92 @@
 [
     {
-        "id": "OTX-6a54bfc5",
-        "severity": "HIGH",
-        "date": "2026-07-13",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "One Misconfigured Server, Three Active Campaigns: Full exposure of three AiTM Phishing Operators",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a5414fa",
-        "severity": "HIGH",
-        "date": "2026-07-13",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Operation Capsule Vault: RokRAT Attack Chain Analysis Using EMBED_PAYLOAD_v2",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a52d7f2",
-        "severity": "HIGH",
-        "date": "2026-07-13",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "jscrambler npm Package Compromised in Supply Chain Attack",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a512b20",
-        "severity": "HIGH",
-        "date": "2026-07-13",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Sign here\u2026 and install an unwanted RMM",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a54b716",
-        "severity": "HIGH",
-        "date": "2026-07-13",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "How WP-SHELLSTORM Exposed 1.4M WordPress Sites",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a2c7a1d",
-        "severity": "HIGH",
-        "date": "2026-07-12",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Interlock and Rhysida within the Ransomware Ecosystem",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a2b2413",
-        "severity": "HIGH",
-        "date": "2026-07-11",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Targets Education Sector with Oracle PeopleSoft Exploit",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a2b2411",
-        "severity": "HIGH",
-        "date": "2026-07-11",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Affidavit in Support of Application for Criminal Complaint",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a2ae2e7",
-        "severity": "HIGH",
-        "date": "2026-07-11",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Threat Actors Target FIFA World Cup 2026",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a2ac312",
-        "severity": "HIGH",
-        "date": "2026-07-11",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "From external espionage to domestic targeting",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-a2219c",
+        "id": "VT-f-2310af",
         "severity": "CRITICAL",
-        "date": "2026-07-13",
+        "date": "2026-07-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#malware #asyncrat\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/5210884d2b3252071a08175a485fc294288cb...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_Snip3_AsyncRAT_May21\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LI...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-5a30b2",
+        "id": "VT-f-d1b224",
         "severity": "CRITICAL",
-        "date": "2026-07-13",
-        "product": "Endpoint / System Artifact",
-        "source": "VirusTotal",
-        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\n2026-07-13_6fb046f86880ff0dc61b61de96f4ff06_elex_redline-stealer_rhadamanthys_stop\n\n...",
-        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
-    },
-    {
-        "id": "VT-f-5eaddb",
-        "severity": "CRITICAL",
-        "date": "2026-07-13",
-        "product": "Endpoint / System Artifact",
-        "source": "VirusTotal",
-        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\n2026-07-13_6eccec643e40f3f244029ad7058badcb_amadey_cobalt-strike_elex_glassworm_hija...",
-        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
-    },
-    {
-        "id": "VT-f-00f253",
-        "severity": "CRITICAL",
-        "date": "2026-07-13",
+        "date": "2026-07-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
         "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_AsyncRAT_Jan23\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https:...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-f7107e",
+        "id": "VT-f-e03996",
         "severity": "CRITICAL",
-        "date": "2026-07-13",
+        "date": "2026-07-14",
+        "product": "Endpoint / System Artifact",
+        "source": "VirusTotal",
+        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\n2026-07-14_ef07a2d4657c4304fb0b2f49f3335546_agent-tesla_amadey_cobalt-strike_darkgat...",
+        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
+    },
+    {
+        "id": "VT-f-4ee998",
+        "severity": "CRITICAL",
+        "date": "2026-07-14",
+        "product": "Endpoint / System Artifact",
+        "source": "VirusTotal",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_AsyncRAT_Nov25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ht...",
+        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
+    },
+    {
+        "id": "VT-f-2310af",
+        "severity": "CRITICAL",
+        "date": "2026-07-14",
+        "product": "Endpoint / System Artifact",
+        "source": "VirusTotal",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_AsyncRAT_Nov25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ht...",
+        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
+    },
+    {
+        "id": "VT-f-bf00e1",
+        "severity": "CRITICAL",
+        "date": "2026-07-14",
+        "product": "Endpoint / System Artifact",
+        "source": "VirusTotal",
+        "desc": "#malware #AgentTesla\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/0d757f885f9a5a94e382e8a6d0a2371659a...",
+        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
+    },
+    {
+        "id": "VT-f-2310af",
+        "severity": "CRITICAL",
+        "date": "2026-07-14",
+        "product": "Endpoint / System Artifact",
+        "source": "VirusTotal",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_Quasar_Multi_Mar26\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK...",
+        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
+    },
+    {
+        "id": "VT-f-deb364",
+        "severity": "CRITICAL",
+        "date": "2026-07-14",
+        "product": "Endpoint / System Artifact",
+        "source": "VirusTotal",
+        "desc": "VMRay Analysis Verdict: Malicious\n\nAnalysis Report: https://www.vmray.com/analyses/_vt/deb364a2a057/report/overview.html...",
+        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
+    },
+    {
+        "id": "VT-f-2310af",
+        "severity": "CRITICAL",
+        "date": "2026-07-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
         "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_AsyncRAT_Jan23\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https:...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-00f253",
+        "id": "VT-f-6fdba1",
         "severity": "CRITICAL",
-        "date": "2026-07-13",
+        "date": "2026-07-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_Quasar_Multi_Mar26\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK...",
-        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
-    },
-    {
-        "id": "VT-f-f7107e",
-        "severity": "CRITICAL",
-        "date": "2026-07-13",
-        "product": "Endpoint / System Artifact",
-        "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_Quasar_Multi_Mar26\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK...",
-        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
-    },
-    {
-        "id": "VT-f-6d3d8c",
-        "severity": "CRITICAL",
-        "date": "2026-07-13",
-        "product": "Endpoint / System Artifact",
-        "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_DCRAT_Feb23\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https://v...",
-        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
-    },
-    {
-        "id": "VT-f-6d3d8c",
-        "severity": "CRITICAL",
-        "date": "2026-07-13",
-        "product": "Endpoint / System Artifact",
-        "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_DCRat_Feb25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https...",
-        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
-    },
-    {
-        "id": "VT-f-88c6b7",
-        "severity": "CRITICAL",
-        "date": "2026-07-13",
-        "product": "Endpoint / System Artifact",
-        "source": "VirusTotal",
-        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\n2026-07-13_6e6e0f293011be67df266d6f2c596f78_elex_wannacry\n\n[b]Threat Score:[/b]\n10/1...",
+        "desc": "[b]File Info:[/b]\n\n[b]Filename:[/b]\n2026-07-14_ee62fd815530f65ffa868eaad9ef888a_amadey_coinminer_cryptolocker_elex_glass...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
