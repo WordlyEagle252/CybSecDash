@@ -1,5 +1,41 @@
 [
     {
+        "id": "OTX-6a5f55d6",
+        "severity": "HIGH",
+        "date": "2026-07-22",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "New Project CAV3RN .NET Native AOT communication module",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a5e35e2",
+        "severity": "HIGH",
+        "date": "2026-07-22",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "NadMesh Botnet Analysis: Product-Level Threat in the AI Services Era",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a5f98b0",
+        "severity": "HIGH",
+        "date": "2026-07-22",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Portugal-focused phishing campaign delivers multistage malware",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a6015d8",
+        "severity": "HIGH",
+        "date": "2026-07-22",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Inside a Global Procurement-Themed AiTM Phishing Campaign",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6a5f5a54",
         "severity": "HIGH",
         "date": "2026-07-21",
@@ -54,129 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6a5b639c",
-        "severity": "HIGH",
-        "date": "2026-07-20",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Still Circling: Toolkit Keeps Evolving",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a5dec09",
-        "severity": "HIGH",
-        "date": "2026-07-20",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Unpacking \"Cruciferra\": An Analysis of a Sophisticated Crypter Service",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a50aa1c",
-        "severity": "HIGH",
-        "date": "2026-07-20",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Vishing actors target Entra passkey enrollment",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a358eb8",
-        "severity": "HIGH",
-        "date": "2026-07-19",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Inside the FortiBleed Open Directory: A Technical Analysis of What the Attacker Left Behind",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-4675b2",
+        "id": "VT-f-00ad2a",
         "severity": "CRITICAL",
         "date": "2026-07-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_OBFUSC_Unicorn_PowerShell_Indicator_Oct19_1\nRULE_TYPE: VALHALLA rule...",
+        "desc": "**Malware Family Detected On MalwareBazaar**\n\n**Filename (as uploaded):** ORDER_9036pdf.js\n**Family/Signature:** Phantom...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-60.48.",
+        "id": "VT-f-541bd1",
         "severity": "CRITICAL",
         "date": "2026-07-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Unauthorised WordPress admin login attempted at 2026-07-22 13:13:05 +1000",
+        "desc": "**File Info:**\n\n**Filename:**\n541bd1c347d9b204569739a9b0090df84544df22ba7b7832a73bdbd180025274\n\n**Threat Score:**\n10/10\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-35.187",
+        "id": "VT-f-944cd3",
         "severity": "CRITICAL",
         "date": "2026-07-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Port Scanning",
+        "desc": "**Malware Family Detected On MalwareBazaar**\n\n**Filename (as uploaded):** Info_New_Order_7132026 _PDF.shtml(~99 KB).JS\n*...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-mullus",
+        "id": "VT-f-abf004",
         "severity": "CRITICAL",
         "date": "2026-07-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ThreatStop has coverage for this IOC.\nSee: https://check-ioc.threatstop.com/ioc/mullus.online\nFirst convicted: 2022-01-1...",
+        "desc": "**File Info:**\n\n**Filename:**\nabf00491447feb2f529f2670cff80c18c1bfae9c465df11a61506a77a123b5e3\n\n**Threat Score:**\n10/10\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-60.48.",
+        "id": "VT-f-cf17bb",
         "severity": "CRITICAL",
         "date": "2026-07-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Unauthorised WordPress admin login attempted at 2026-07-22 13:12:55 +1000",
+        "desc": "#malware #asyncrat\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/5210884d2b3252071a08175a485fc294288cb...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-metron",
+        "id": "VT-f-e8bee7",
         "severity": "CRITICAL",
         "date": "2026-07-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ThreatStop has coverage for this IOC.\nSee: https://check-ioc.threatstop.com/ioc/metronix.ph\nFirst convicted: 2025-12-11....",
+        "desc": "**Malware Family Detected On MalwareBazaar**\n\n**Filename (as uploaded):** S\u0130PAR\u0130\u015e ONAYI-AMF2026125_xlsx.js\n**Family/Sign...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-60.48.",
+        "id": "VT-f-5f5a4d",
         "severity": "CRITICAL",
         "date": "2026-07-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Unauthorised WordPress admin login attempted at 2026-07-22 13:12:44 +1000",
+        "desc": "**File Info:**\n\n**Filename:**\n5f5a4db9aa888eb5aff45888f4ff4f207d4d439ebd329c77d81d2b759e7b95d0\n\n**Threat Score:**\n10/10\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-5e2cd4",
+        "id": "VT-u-8e16ea",
         "severity": "CRITICAL",
         "date": "2026-07-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_NET_Reactor_Protector_Native_May23\nRULE_TYPE: THOR APT Scanner's rul...",
+        "desc": "Joe Sandbox Analysis: \n\t\t\t\nVerdict: MAL\nScore: 64/100\nDomains: android.l.google.com n.sni.global.fastly.net a1967.dscr.a...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-5e2cd4",
+        "id": "VT-f-364fb9",
         "severity": "CRITICAL",
         "date": "2026-07-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_SUSP_Loader_Aug20_2\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ...",
+        "desc": "**File Info:**\n\n**Filename:**\n364fb9c28183ab99be4f6e87cd7e07c0af3c236c18337e16fbe25286f9c9a1f6\n\n**Threat Score:**\n10/10\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-60.48.",
+        "id": "VT-u-73820f",
         "severity": "CRITICAL",
         "date": "2026-07-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Unauthorised WordPress admin login attempted at 2026-07-22 13:12:33 +1000",
+        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://drive.google.com/uc?export=download&id=1_IQQEY7HAIOzTbbxSukTX35LyUH1i5xR\n**Th...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
