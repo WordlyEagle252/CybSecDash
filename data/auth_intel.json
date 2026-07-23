@@ -1,92 +1,182 @@
 [
     {
-        "id": "VT-f-e8c73c",
+        "id": "OTX-6a61203a",
+        "severity": "HIGH",
+        "date": "2026-07-22",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Dolphin X Stealer Targets 300+ Apps and Profiles Users with AI",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a612039",
+        "severity": "HIGH",
+        "date": "2026-07-22",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Inside a TrickBot Variant Using DNS Tunneling for C2",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a60df1c",
+        "severity": "HIGH",
+        "date": "2026-07-22",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Abusing Trusted Business Workflows: A Multi-Stage Phantom Stealer Campaign",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a399937",
+        "severity": "HIGH",
+        "date": "2026-07-22",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Detecting the Klue supply chain attack in Salesforce instances",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a3915ed",
+        "severity": "HIGH",
+        "date": "2026-07-22",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "An unknown actor distributes malicious VBS scripts via WhatsApp",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a5f55d6",
+        "severity": "HIGH",
+        "date": "2026-07-22",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "New Project CAV3RN .NET Native AOT communication module",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a5e35e2",
+        "severity": "HIGH",
+        "date": "2026-07-22",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "NadMesh Botnet Analysis: Product-Level Threat in the AI Services Era",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a5f98b0",
+        "severity": "HIGH",
+        "date": "2026-07-22",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Portugal-focused phishing campaign delivers multistage malware",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a6015d8",
+        "severity": "HIGH",
+        "date": "2026-07-22",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Inside a Global Procurement-Themed AiTM Phishing Campaign",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a5f5a54",
+        "severity": "HIGH",
+        "date": "2026-07-21",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Operation STANDOFF: A Campaign Hiding C2 Behind GitHub Redirects",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "VT-f-ea4534",
         "severity": "CRITICAL",
         "date": "2026-07-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: CobaltStrike_Sleeve_BeaconLoader_HA_x86_o_v4_3_v4_4_v4_5_and_v4_6\nRULE_TY...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_C2_Communication_Using_SOCKET_APIs_Sep25\nRULE_TYPE: THOR APT Scanner...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-3396dc",
+        "id": "VT-f-1532ef",
         "severity": "CRITICAL",
         "date": "2026-07-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_ARM_LNX_Mirai_Mar13_2022\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://gi...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_B64_Atob_Aug23\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nRULE_LI...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-suieiu",
+        "id": "VT-f-b29003",
         "severity": "CRITICAL",
         "date": "2026-07-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ThreatStop has coverage for this IOC.\nSee: https://check-ioc.threatstop.com/ioc/suieiusiueiuiuushgfl.com\nFirst convicted...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_C2_Communication_Using_SOCKET_APIs_Sep25\nRULE_TYPE: THOR APT Scanner...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-aaeiau",
+        "id": "VT-f-ea4534",
         "severity": "CRITICAL",
         "date": "2026-07-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ThreatStop has coverage for this IOC.\nSee: https://check-ioc.threatstop.com/ioc/aaeiauebfaneifuaeifl.com\nFirst convicted...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_ValleyRAT_Dec23\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-afaoun",
+        "id": "VT-f-08b8c8",
         "severity": "CRITICAL",
         "date": "2026-07-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ThreatStop has coverage for this IOC.\nSee: https://check-ioc.threatstop.com/ioc/afaounodouoeuueofuax.biz\nFirst convicted...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_OBFUSC_JS_FromCharCode_Oct25\nRULE_TYPE: THOR APT Scanner's rule set ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-aiehaz",
+        "id": "VT-d-admiss",
         "severity": "CRITICAL",
         "date": "2026-07-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ThreatStop has coverage for this IOC.\nSee: https://check-ioc.threatstop.com/ioc/aiehazegfageigfzgeif.su\nFirst convicted:...",
+        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://admissionbook.com\nTargeted Brand: Betwoon\nOffici...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-eniaeb",
+        "id": "VT-d-tr.gra",
         "severity": "CRITICAL",
         "date": "2026-07-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ThreatStop has coverage for this IOC.\nSee: https://check-ioc.threatstop.com/ioc/eniaebivaiebifaibefr.net\nFirst convicted...",
+        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://tr.grandpasha-bet2026.top/\nTargeted Brand: Grand...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-goauho",
+        "id": "VT-u-9450d5",
         "severity": "CRITICAL",
         "date": "2026-07-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ThreatStop has coverage for this IOC.\nSee: https://check-ioc.threatstop.com/ioc/goauhoednoaueouabbel.com\nFirst convicted...",
+        "desc": "**URL found on URLhaus**\n\n**URL:** hxxp://110.38.221.182:49247/bin.sh\n**Threat:** malware_download\n**Host Country:** Pak...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-orsoda",
+        "id": "VT-d-admiss",
         "severity": "CRITICAL",
         "date": "2026-07-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ThreatStop has coverage for this IOC.\nSee: https://check-ioc.threatstop.com/ioc/orsodaououaebufbeobx.biz\nFirst convicted...",
+        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://admissionbook.com\nTargeted Brand: Betwoon\nOffici...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-aiisia",
+        "id": "VT-d-tr.gra",
         "severity": "CRITICAL",
         "date": "2026-07-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ThreatStop has coverage for this IOC.\nSee: https://check-ioc.threatstop.com/ioc/aiisiaueuefiuhiehguu.info\nFirst convicte...",
+        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://tr.grandpasha-bet2026.top/\nTargeted Brand: Grand...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
