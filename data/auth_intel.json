@@ -90,93 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "VT-f-ea4534",
+        "id": "VT-f-9dfd55",
         "severity": "CRITICAL",
         "date": "2026-07-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_C2_Communication_Using_SOCKET_APIs_Sep25\nRULE_TYPE: THOR APT Scanner...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_Quasar_Multi_Mar26\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-1532ef",
+        "id": "VT-f-9dfd55",
         "severity": "CRITICAL",
         "date": "2026-07-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_B64_Atob_Aug23\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nRULE_LI...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_Snip3_AsyncRAT_May21\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LI...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-b29003",
+        "id": "VT-f-bee6cf",
         "severity": "CRITICAL",
         "date": "2026-07-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_C2_Communication_Using_SOCKET_APIs_Sep25\nRULE_TYPE: THOR APT Scanner...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_SUSP_Loader_Aug20_2\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-ea4534",
+        "id": "VT-f-9dfd55",
         "severity": "CRITICAL",
         "date": "2026-07-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_ValleyRAT_Dec23\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Antivirus_Evasion_Jan26\nRULE_TYPE: THOR APT Scanner's rule set only ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-08b8c8",
+        "id": "VT-f-bee6cf",
         "severity": "CRITICAL",
         "date": "2026-07-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_OBFUSC_JS_FromCharCode_Oct25\nRULE_TYPE: THOR APT Scanner's rule set ...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_NET_Reactor_Protector_Native_May23\nRULE_TYPE: THOR APT Scanner's rul...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-admiss",
+        "id": "VT-f-9dfd55",
         "severity": "CRITICAL",
         "date": "2026-07-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://admissionbook.com\nTargeted Brand: Betwoon\nOffici...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_SchTasks_Create_OnLogon_Mar25\nRULE_TYPE: THOR APT Scanner's rule set...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-tr.gra",
+        "id": "VT-u-cf8225",
         "severity": "CRITICAL",
         "date": "2026-07-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://tr.grandpasha-bet2026.top/\nTargeted Brand: Grand...",
+        "desc": "**IOC found on ThreatFox**\n\n**IOC:** hxxp://103.65.30.139:59145/Mozi.m\n**IOC Type:** url\n**Threat Type:** payload_delive...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-9450d5",
+        "id": "VT-f-9ca2fe",
         "severity": "CRITICAL",
         "date": "2026-07-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxp://110.38.221.182:49247/bin.sh\n**Threat:** malware_download\n**Host Country:** Pak...",
+        "desc": "**File Info:**\n\n**Filename:**\n9ca2fe27d6dec42e34cca72f8b139deb686f522cef6fafbcd160c02899a9c954\n\n**Threat Score:**\n10/10\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-admiss",
+        "id": "VT-f-0ee4c2",
         "severity": "CRITICAL",
         "date": "2026-07-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://admissionbook.com\nTargeted Brand: Betwoon\nOffici...",
+        "desc": "**File Info:**\n\n**Filename:**\nGoogle.exe\n\n**Threat Score:**\n9/10\n\n**Family:**\nN/A\n\n**File Report:**\nhttps://jaffacakes11...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-tr.gra",
+        "id": "VT-f-9c1fb6",
         "severity": "CRITICAL",
         "date": "2026-07-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "URGENT: TRADEMARK INFRINGEMENT & PHISHING REPORT\n\nReported URL: https://tr.grandpasha-bet2026.top/\nTargeted Brand: Grand...",
+        "desc": "Joe Sandbox Analysis: \n\t\t\t\nVerdict: MAL\nScore: 60/100\n\nHTML Report: https://www.joesandbox.com/analysis/1947134/0/html\t\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
