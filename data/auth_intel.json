@@ -1,5 +1,14 @@
 [
     {
+        "id": "OTX-6a3c6b94",
+        "severity": "HIGH",
+        "date": "2026-07-24",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "LokiBot After a Decade: An Analysis of a Recent LokiBot Campaign",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6a3c278c",
         "severity": "HIGH",
         "date": "2026-07-24",
@@ -81,102 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6a6241aa",
-        "severity": "HIGH",
-        "date": "2026-07-23",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Upgrades MaaS Ecosystem with Modular Tools",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-702c70",
+        "id": "VT-f-27ec1f",
         "severity": "CRITICAL",
-        "date": "2026-07-24",
+        "date": "2026-07-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#malware #asyncrat\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/5210884d2b3252071a08175a485fc294288cb...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-07-25_d70038958627f2fcf2a31c843a91e221_cryptolocker_elex\n\n**Threat Score:**\n10/10\n\n**...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-18f7c7",
+        "id": "VT-d-app.an",
         "severity": "CRITICAL",
-        "date": "2026-07-24",
+        "date": "2026-07-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-07-24_5c6a12650f054ce8df5182c3aca91b1d_akira_cobalt-strike_elex_neshta\n\n**Threat Scor...",
+        "desc": "ThreatStop has coverage for this IOC.\nSee: https://check-ioc.threatstop.com/ioc/app.antynewtraffic.ru\nFirst convicted: 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-579331",
+        "id": "VT-f-00597f",
         "severity": "CRITICAL",
-        "date": "2026-07-24",
+        "date": "2026-07-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**IOC found on ThreatFox**\n\n**IOC:** hxxp://144.202.28.97:1337/get/config\n**IOC Type:** url\n**Threat Type:** botnet_cc\n*...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-07-25_d67fbf1a58ad6a36307aed455b3b703b_amadey_cobalt-strike_conti_elex_hijackloader_v...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-51e8c4",
+        "id": "VT-d-jlwz.c",
         "severity": "CRITICAL",
-        "date": "2026-07-24",
+        "date": "2026-07-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ELF DIGEST non-profit Sandbox:\n\nDomains: c.root-servers.net\n\n Analysis Report: https://elfdigest.com/brief/51e8c44dc4ea5...",
+        "desc": "ThreatStop has coverage for this IOC.\nSee: https://check-ioc.threatstop.com/ioc/jlwz.cn\nFirst convicted: 2016-09-21.\nCla...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-412ebd",
+        "id": "VT-d-rem.he",
         "severity": "CRITICAL",
-        "date": "2026-07-24",
+        "date": "2026-07-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Salat_Stealer_Jan26\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: h...",
+        "desc": "ThreatStop has coverage for this IOC.\nSee: https://check-ioc.threatstop.com/ioc/rem.herbalsupplementss.com\nFirst convict...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-7bac68",
+        "id": "VT-d-100220",
         "severity": "CRITICAL",
-        "date": "2026-07-24",
+        "date": "2026-07-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_LNK_Raspberry_Robin_Jul22_1\nRULE_TYPE: THOR APT Scanner's rule set o...",
+        "desc": "ThreatStop has coverage for this IOC.\nSee: https://check-ioc.threatstop.com/ioc/10022020newfolder100231-service1022020.r...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-412ebd",
+        "id": "VT-d-sailbo",
         "severity": "CRITICAL",
-        "date": "2026-07-24",
+        "date": "2026-07-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Credential_Stealer_Indicators_Jul23_1\nRULE_TYPE: THOR APT Scanner's ...",
+        "desc": "ThreatStop has coverage for this IOC.\nSee: https://check-ioc.threatstop.com/ioc/sailboaterists.net\nFirst convicted: 2026...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-412ebd",
+        "id": "VT-d-ifasaf",
         "severity": "CRITICAL",
-        "date": "2026-07-24",
+        "date": "2026-07-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Credential_Stealer_Indicators_Jul23_2\nRULE_TYPE: THOR APT Scanner's ...",
+        "desc": "ThreatStop has coverage for this IOC.\nSee: https://check-ioc.threatstop.com/ioc/ifasafem.com\nFirst convicted: 2026-06-29...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-412ebd",
+        "id": "VT-d-100220",
         "severity": "CRITICAL",
-        "date": "2026-07-24",
+        "date": "2026-07-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Go_Backdoor_Jun25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: htt...",
+        "desc": "ThreatStop has coverage for this IOC.\nSee: https://check-ioc.threatstop.com/ioc/10022020test391-service1002012510022020....",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-fc50f2",
+        "id": "VT-f-6642e8",
         "severity": "CRITICAL",
-        "date": "2026-07-24",
+        "date": "2026-07-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\nfc50f29768426240de92c721489b4763b34c9d1b0425b767582298e538bcdc31\n\n**Threat Score:**\n10/10\n...",
+        "desc": "Detected as malware using SecuriteInfo.com's additional signatures for Cisco ClamAV antivirus",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
