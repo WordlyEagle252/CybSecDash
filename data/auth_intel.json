@@ -90,93 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "VT-u-f00b47",
+        "id": "VT-f-232240",
         "severity": "CRITICAL",
         "date": "2026-07-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxp://125.44.38.211:54876/bin.sh\n**Threat:** malware_download\n**Host Country:** Chin...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-07-26_0c66a293c65cef6ccdaa715a0401af0e_amadey_cobalt-strike_elex_hijackloader_vidar_w...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-22ef8a",
+        "id": "VT-f-d2c86b",
         "severity": "CRITICAL",
         "date": "2026-07-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-07-26_9258fcb29c8faa2ab14fbef101702059_amadey_darkgate_elex_redline-stealer_rhadamant...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_NET_Reactor_Protector_Native_May23\nRULE_TYPE: THOR APT Scanner's rul...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-emailm",
+        "id": "VT-f-b38590",
         "severity": "CRITICAL",
         "date": "2026-07-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "malware and/or phishing",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Monero_Mining_Pools_Oct21\nRULE_TYPE: THOR APT Scanner's rule set onl...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-emailn",
+        "id": "VT-f-0ec112",
         "severity": "CRITICAL",
         "date": "2026-07-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "malware and/or phishing",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_EXPL_Filename_Indicators_Dec25\nRULE_TYPE: THOR APT Scanner's rule se...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-fbcen.",
+        "id": "VT-f-d2c86b",
         "severity": "CRITICAL",
         "date": "2026-07-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "malware and/or phishing",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_SUSP_Loader_Aug20_2\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-5.165.",
+        "id": "VT-u-ead4ed",
         "severity": "CRITICAL",
         "date": "2026-07-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "IOC Type: IPv4\n\nThreat Type: T1190\n\nMITRE ATT&CK: T1190\n\nRelated Tags: malicious-ip, T1190\n\nAnalysis Summary:\nDetected a...",
+        "desc": "\ud83d\udd0d ScanMalware.com AI Security Verdict: LOW_RISK - Risk: 2/10\n\nView full report: https://scanmalware.com/scan/50c54f27-fd...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-sp5ct-",
+        "id": "VT-f-6631ae",
         "severity": "CRITICAL",
         "date": "2026-07-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Likely phishing - flagged by OpenPhish.\nScanned URL: hxxp://sp5ct-kurel-biz8-fonex-ramik[.]pages[.]dev/appeals/submit-ap...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_B64_Atob_Aug23\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nRULE_LI...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-5.165.",
+        "id": "VT-f-5eb381",
         "severity": "CRITICAL",
         "date": "2026-07-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udccc IOC Type: IPv4\n\ud83d\udd39 Associated Rule Name: PURE7 - Initial Access - T1190 - Single Port Scan 23 TELNET\n\ud83d\udd39 MITRE ATT&CK: T11...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Visel_Sample_May18_1\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://github...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-www.ho",
+        "id": "VT-f-bc8210",
         "severity": "CRITICAL",
         "date": "2026-07-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Likely phishing - flagged by OpenPhish.\nScanned URL: hxxp://www[.]hockeytalkontario[.]ca/\nScan time: 2026-07-26 13:30 UT...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Visel_Sample_May18_1\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://github...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-a99d0f",
+        "id": "VT-f-6631ae",
         "severity": "CRITICAL",
         "date": "2026-07-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "malware and/or phishing",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_OBFUSC_Base64_Hex_Encoded_Apr19\nRULE_TYPE: THOR APT Scanner's rule s...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
