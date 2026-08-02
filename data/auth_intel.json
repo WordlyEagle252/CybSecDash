@@ -1,5 +1,23 @@
 [
     {
+        "id": "OTX-6a47a77e",
+        "severity": "HIGH",
+        "date": "2026-08-02",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Armored Likho's new weapon: BusySnake Stealer",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a479507",
+        "severity": "HIGH",
+        "date": "2026-08-02",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Roblox, Minecraft, and the Insidious Internet for Children",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6a464b96",
         "severity": "HIGH",
         "date": "2026-08-01",
@@ -72,111 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6a6b24fc",
-        "severity": "HIGH",
-        "date": "2026-07-31",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "XMRig Covert Ops: The Cryptomining Campaign That Abuses Trusted Access and Deploys Forensic Smokescreens",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a6b1c3e",
-        "severity": "HIGH",
-        "date": "2026-07-31",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Toy Ghouls\u2019 new toy: the GenieLocker ransomware",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-70ff41",
+        "id": "VT-f-f2c06f",
         "severity": "CRITICAL",
         "date": "2026-08-02",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-08-02_836e3e9baf0ededb75794dd6b3debbe1_amadey_coinminer_cryptolocker_elex_smoke-loade...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: APT_MAL_Covenant_Backdoor_Loader_Feb26\nRULE_TYPE: VALHALLA rule feed only...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-757daf",
+        "id": "VT-f-1be7c2",
         "severity": "CRITICAL",
         "date": "2026-08-02",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#malware #asyncrat\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/5210884d2b3252071a08175a485fc294288cb...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_DDOS_Amplification_Strings_Jun25\nRULE_TYPE: VALHALLA rule feed only \u26a1...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-11eaee",
+        "id": "VT-f-1be7c2",
         "severity": "CRITICAL",
         "date": "2026-08-02",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#malware #\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/898f66cd2f3513bf3d63c703f447a9ca70c666ae449d1...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Mirai_Botent_Jun23\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ht...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-8d95c6",
+        "id": "VT-f-8bb268",
         "severity": "CRITICAL",
         "date": "2026-08-02",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\nlauncher.exe\n\n**Threat Score:**\n10/10\n\n**Family:**\nN/A\n\n**File Report:**\nhttps://jaffacake...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-08-02_e0459b263b30584e2ab4514db7adcb34_amadey_cobalt-strike_conti_elex_hijackloader_i...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-54ee3c",
+        "id": "VT-f-a1f66f",
         "severity": "CRITICAL",
         "date": "2026-08-02",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-08-02_8315714a64265a6b769ffed2f32b5405_amadey_cloudeye_cobalt-strike_coinminer_darkga...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-08-02_e2a19ee0687e847ae7ed08a1ec73094b_elex_remcos_wannacry\n\n**Threat Score:**\n10/10\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-3ffba6",
+        "id": "VT-f-7291d4",
         "severity": "CRITICAL",
         "date": "2026-08-02",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-08-02_8173dedb19e56f9258ebe899f49d79f0_amadey_elex_smoke-loader_stealc\n\n**Threat Scor...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_PS1_Shells_Indicators_Feb22_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nR...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-34.62.",
+        "id": "VT-f-189879",
         "severity": "CRITICAL",
         "date": "2026-08-02",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Port Scanning",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: APT_MAL_Covenant_Backdoor_Loader_Feb26\nRULE_TYPE: VALHALLA rule feed only...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-b890b6",
+        "id": "VT-f-e692a3",
         "severity": "CRITICAL",
         "date": "2026-08-02",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-08-02_82e7edd7b9a6b9b965f43c0ef9681be5_icedid_vidar\n\n**Threat Score:**\n10/10\n\n**Famil...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-08-02_dff0dbeaa487f1e0cf7e783bacb0f482_amadey_cobalt-strike_elex_hijackloader_vidar_w...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-f7321a",
+        "id": "VT-f-c55b8b",
         "severity": "CRITICAL",
         "date": "2026-08-02",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udd0d ScanMalware.com AI Security Verdict: LOW_RISK - Risk: 2/10\n\nView full report: https://scanmalware.com/scan/938b9d1f-7b...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-08-02_df86fba05f7ba23b28b747e988dbf734_amadey_darkgate_elex_redline-stealer_rhadamant...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-4a9a2a",
+        "id": "VT-f-806165",
         "severity": "CRITICAL",
         "date": "2026-08-02",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-08-02_8173c1982431efbf6f69c2f616bf56aa_elex_glassworm_wannacry\n\n**Threat Score:**\n10/...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_MAL_CobaltStrike_Loader_Feb23_1\nRULE_TYPE: VALHALLA rule feed only \u26a1...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
