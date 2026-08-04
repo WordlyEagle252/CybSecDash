@@ -1,5 +1,32 @@
 [
     {
+        "id": "OTX-6a71a6ac",
+        "severity": "HIGH",
+        "date": "2026-08-04",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "ClickFix-Themed Campaign Deploys Starland RAT and WLDR Framework",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a71aa48",
+        "severity": "HIGH",
+        "date": "2026-08-04",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "NightLedger Backdoor Deployed in Espionage Campaign Targeting the Middle East and Africa",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a71e43a",
+        "severity": "HIGH",
+        "date": "2026-08-04",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Almost Half of Malware Samples Communicate Direct to IP",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6a70c6f0",
         "severity": "HIGH",
         "date": "2026-08-04",
@@ -63,120 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6a7059cc",
-        "severity": "HIGH",
-        "date": "2026-08-03",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "A Deep Dive Into the Latest XCSSET Version",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a4828ea",
-        "severity": "HIGH",
-        "date": "2026-08-02",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "The Crown Prince, Nezha",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a47a77e",
-        "severity": "HIGH",
-        "date": "2026-08-02",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Armored Likho's new weapon: BusySnake Stealer",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-i-181.17",
+        "id": "VT-f-83dc12",
         "severity": "CRITICAL",
         "date": "2026-08-04",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "IOC Type: IPv4\n\nThreat Type: T1595.001\n\nMITRE ATT&CK: T1595\n\nRelated Tags: malicious-ip, T1595.001\n\nAnalysis Summary:\nFi...",
+        "desc": "**Malware Family Detected On MalwareBazaar**\n\n**Filename (as uploaded):** FLStudio2025_v64_Win.exe\n**Family/Signature:**...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-181.17",
+        "id": "VT-f-1b1482",
         "severity": "CRITICAL",
         "date": "2026-08-04",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udccc IOC Type: IPv4\n\ud83d\udd39 Associated Rule Name: PURE7 - Reconnaissance - T1595.001 - External Generic Port Scan Detected\n\ud83d\udd39 MITR...",
+        "desc": "Joe Sandbox Analysis: \n\t\t\t\nVerdict: CLEAN\nScore: 1/100\nDomains: android.l.google.com ax-0001.ax-dc-msedge.net prod.globa...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-063c0b",
+        "id": "VT-f-387676",
         "severity": "CRITICAL",
         "date": "2026-08-04",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-08-04_be003099c8d29aabf3c971b1698cc41f_coinminer_drokbk_elex_rhadamanthys_smoke-loade...",
+        "desc": "**Malware Family Detected On MalwareBazaar**\n\n**Filename (as uploaded):** mipsel\n**Family/Signature:** Mirai\n**File Type...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-18cb12",
+        "id": "VT-f-1138ea",
         "severity": "CRITICAL",
         "date": "2026-08-04",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#malware #asyncrat\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/5210884d2b3252071a08175a485fc294288cb...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-08-04_7a4a3a8989d36ae05789bf1f70794117_amadey_cobalt-strike_elex_hijackloader_vidar_w...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-567e4f",
+        "id": "VT-f-d988e5",
         "severity": "CRITICAL",
         "date": "2026-08-04",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#malware #ghostrat\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/e4d124718414c1037c9ed66a72e2482b25119...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: Sofacy_Jan18_1_PE_Info_Anomaly\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-007d52",
+        "id": "VT-f-d988e5",
         "severity": "CRITICAL",
         "date": "2026-08-04",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-08-04_bdbc5305490105e9667c4e4d35479a83_amadey_cobalt-strike_darkgate_elex_glassworm_h...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_MS_Copyright\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nRULE_LINK...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-f527d0",
+        "id": "VT-f-6948e6",
         "severity": "CRITICAL",
         "date": "2026-08-04",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#malware #mirai\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/82e054569417157ff24c4b042bea15437f9945e0...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_MS_Copyright\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nRULE_LINK...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-9f1afa",
+        "id": "VT-f-33ba09",
         "severity": "CRITICAL",
         "date": "2026-08-04",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxp://125.41.0.156:58056/i\n**Threat:** malware_download\n**Host Country:** China\n**Re...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_EXPL_JS_Exploit_Indicators_Jul20_1\nRULE_TYPE: THOR APT Scanner's rul...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-a844f1",
+        "id": "VT-f-c375cb",
         "severity": "CRITICAL",
         "date": "2026-08-04",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\na844f1e9aa2e959b831376a7442640ab24d0eb7b47909e34a4799a7f9a3164ac\n\n**Threat Score:**\n10/10\n...",
+        "desc": "Joe Sandbox Analysis: \n\t\t\t\nVerdict: MAL\nScore: 72/100\nThreat Name: REMUS Stealer\nMalware Config: see the report for the ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-29d5be",
+        "id": "VT-f-2b6e3e",
         "severity": "CRITICAL",
         "date": "2026-08-04",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-08-04_be5e6c85fcb4df9672864adffdd1c83d_elex_wannacry\n\n**Threat Score:**\n10/10\n\n**Fami...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_CobaltStrike_Beacon_Oct21_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRUL...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
