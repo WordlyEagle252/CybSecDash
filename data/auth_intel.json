@@ -1,5 +1,14 @@
 [
     {
+        "id": "OTX-6a4fdf50",
+        "severity": "HIGH",
+        "date": "2026-08-08",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Indonesian Banking Sector Threat Landscape",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6a4f858d",
         "severity": "HIGH",
         "date": "2026-08-08",
@@ -81,102 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6a75078f",
-        "severity": "HIGH",
-        "date": "2026-08-07",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Multi-Brand Vishing Extortion Targets Financial Services and Enterprise Cloud Environments",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-u-b477b5",
+        "id": "VT-f-ae23c3",
         "severity": "CRITICAL",
         "date": "2026-08-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxp://mail.zanyyewuh.pro/static/js/sdfjgnjsdf.arc\n**Threat:** malware_download\n**Hos...",
+        "desc": "#malware #ghostrat\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/e4d124718414c1037c9ed66a72e2482b25119...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-c160bd",
+        "id": "VT-f-e59e05",
         "severity": "CRITICAL",
         "date": "2026-08-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxp://windycreekbc.pro/bins/client_powerpc\n**Threat:** malware_download\n**Host Count...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_NET_Reactor_Protector_Native_May23\nRULE_TYPE: THOR APT Scanner's rul...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-25307e",
+        "id": "VT-f-e645d4",
         "severity": "CRITICAL",
         "date": "2026-08-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxp://bauble.cleverpondky.com/static/js/sdfjgnjsdf.i686\n**Threat:** malware_download...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Stealer_Indicators_Jul23\nRULE_TYPE: THOR APT Scanner's rule set only...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-488c70",
+        "id": "VT-f-e59e05",
         "severity": "CRITICAL",
         "date": "2026-08-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxp://mail.zanyyewuh.pro/static/js/sdfjgnjsdf.sh4\n**Threat:** malware_download\n**Hos...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_SUSP_Loader_Aug20_2\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-9d7320",
+        "id": "VT-f-68e977",
         "severity": "CRITICAL",
         "date": "2026-08-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: PUA_ConnectWise_ScreenConnect_Mar23\nRULE_TYPE: VALHALLA rule feed only \u26a1\n...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: PUA_SUSP_CoinMiner_Indicator_Jun21_1\nRULE_TYPE: VALHALLA rule feed only \u26a1...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-f77509",
+        "id": "VT-f-78ce74",
         "severity": "CRITICAL",
         "date": "2026-08-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxp://mail.windycreekbc.pro/bins/client_armv7l\n**Threat:** malware_download\n**Host C...",
+        "desc": "Detected as malware using SecuriteInfo.com's additional signatures for Cisco ClamAV antivirus",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-2fd5d5",
+        "id": "VT-f-c6ad17",
         "severity": "CRITICAL",
         "date": "2026-08-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxp://bauble.cleverpondky.com/bins/client_armv6l\n**Threat:** malware_download\n**Host...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Shellcode_Apr20_2\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nRULE...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-3fca36",
+        "id": "VT-f-c6ad17",
         "severity": "CRITICAL",
         "date": "2026-08-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxp://bauble.cleverpondky.com/bins/client\n**Threat:** malware_download\n**Host Countr...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_PE_Header_Anomaly_Oct20_1\nRULE_TYPE: THOR APT Scanner's rule set onl...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-f8b3a6",
+        "id": "VT-f-c6ad17",
         "severity": "CRITICAL",
         "date": "2026-08-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxp://zanyyewuh.pro/bins/client\n**Threat:** malware_download\n**Host Country:** The N...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_MAL_CobaltStrike_Loader_Feb23_1\nRULE_TYPE: VALHALLA rule feed only \u26a1...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-bb9136",
+        "id": "VT-f-c6ad17",
         "severity": "CRITICAL",
         "date": "2026-08-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File found on MalwareBazaar**\n\n**File Name (as uploaded):** wp2s-b54b35af.php\n**File Type:** php\n**Reporter:** bstnbuc...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_ShellCode_Jun22_1\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nRULE...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
