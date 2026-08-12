@@ -1,5 +1,32 @@
 [
     {
+        "id": "OTX-6a7c2827",
+        "severity": "HIGH",
+        "date": "2026-08-12",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Fake popular sites offer a free app, instead take over PCs",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a7c6340",
+        "severity": "HIGH",
+        "date": "2026-08-12",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Gone with the WindRelay: A New Malware Combo Behind a Growing Fraud Scheme",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a7c732c",
+        "severity": "HIGH",
+        "date": "2026-08-12",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Striking gold: Inside the GoldDigger Android malware",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6a54e01e",
         "severity": "HIGH",
         "date": "2026-08-12",
@@ -63,120 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6a7b8dab",
-        "severity": "HIGH",
-        "date": "2026-08-12",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Fake CCleaner installs GhostDesk Chrome spyware",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a7bdb05",
-        "severity": "HIGH",
-        "date": "2026-08-12",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "CaptiveCrunch: Midnight Blizzard Weaponizes Hotel Wi-Fi Captive Portals to Steal Microsoft 365 Credentials",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a7bdb41",
-        "severity": "HIGH",
-        "date": "2026-08-12",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Tracking Shai-Hulud: Inside the ChainDrop NPM Worm",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-a141e6",
+        "id": "VT-f-61701d",
         "severity": "CRITICAL",
         "date": "2026-08-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Trickler_Feb20_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: http...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Call_Delegate_PowerShell_Sep22\nRULE_TYPE: THOR APT Scanner's rule se...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-735047",
+        "id": "VT-f-61701d",
         "severity": "CRITICAL",
         "date": "2026-08-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-08-12_2424af95268f5f3ba96c6201b2a1752c_elex_wannacry\n\n**Threat Score:**\n10/10\n\n**Fami...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_AMSI_Bypass_Script_Nov22_2\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-0874ab",
+        "id": "VT-f-ee99b5",
         "severity": "CRITICAL",
         "date": "2026-08-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n0874ab5907cc49aa45282b168c5d33ac898b3140c7ed4000b87dec690d6e8b9f\n\n**Threat Score:**\n10/10\n...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_MinGW_Microsoft_Combo_Jul20_1\nRULE_TYPE: THOR APT Scanner's rule set...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-fc617f",
+        "id": "VT-d-tr.hol",
         "severity": "CRITICAL",
         "date": "2026-08-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\nfc617f4d70c0178c290bf18b50d9164ec92264b965abeab6dfb14108ab1a9e38\n\n**Threat Score:**\n10/10\n...",
+        "desc": "[ThreatShield automated abuse report]\nDomain: tr.holiganbet-resmi.app\nIP: 172.67.219.123\nClassification: phishing\nRisk s...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-092ec9",
+        "id": "VT-f-f10b0d",
         "severity": "CRITICAL",
         "date": "2026-08-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-08-12_2360db36bb075b64fc342ca5b648e62a_elex_remcos_wannacry\n\n**Threat Score:**\n10/10\n...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_MinGW_Microsoft_Combo_Jul20_1\nRULE_TYPE: THOR APT Scanner's rule set...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-accf01",
+        "id": "VT-f-92eeed",
         "severity": "CRITICAL",
         "date": "2026-08-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-08-12_242d77d3bf60c860a38e39bf4d44f00f_amadey_cobalt-strike_conti_elex_hijackloader_i...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Protector_Themida_Packed_Samples_Mar21_1\nRULE_TYPE: THOR APT Scanner...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-5aecad",
+        "id": "VT-f-381eaa",
         "severity": "CRITICAL",
         "date": "2026-08-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxp://joker.aec944b68370194a50.link:6556/k\n**Threat:** malware_download\n**Reporter:*...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-08-12_91b287cc72ac8b2013b04b6da6607d07_amadey_cobalt-strike_conti_elex_hijackloader_v...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-4ba0cf",
+        "id": "VT-f-0e89c9",
         "severity": "CRITICAL",
         "date": "2026-08-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\nQuantumEdge_AI_Platform_2026_v55.1.4_setup.exe\n\n**Threat Score:**\n10/10\n\n**Family:**\n\u2022 qua...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_PE_Themida_Packed_Nov22\nRULE_TYPE: THOR APT Scanner's rule set only ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-fa7512",
+        "id": "VT-f-0e89c9",
         "severity": "CRITICAL",
         "date": "2026-08-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-08-12_26dfdba785bd2ecc87f917ecbc06a0ff_amadey_darkgate_elex_redline-stealer_rhadamant...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Protector_Themida_Packed_Samples_Mar21_1\nRULE_TYPE: THOR APT Scanner...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-sugarm",
+        "id": "VT-f-2fd828",
         "severity": "CRITICAL",
         "date": "2026-08-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**IOC found on ThreatFox**\n\n**IOC:** sugarmuite.com\n**IOC Type:** domain\n**Threat Type:** payload_delivery\n**Malware:** ...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-08-12_9607ca3a710d4ff4cc73f201661e4a76_byakugan_cobalt-strike_coinminer_glassworm_ice...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
