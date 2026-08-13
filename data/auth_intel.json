@@ -1,5 +1,23 @@
 [
     {
+        "id": "OTX-6a566597",
+        "severity": "HIGH",
+        "date": "2026-08-13",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "\u200b\u200bKratos PhaaS Targets US and EU: How to Reduce Microsoft 365 Account Takeover Risk\u200b",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a7dc1fd",
+        "severity": "HIGH",
+        "date": "2026-08-13",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Recent Attack Activity Analysis Using North Korea-Related Lures",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6a7da6cb",
         "severity": "HIGH",
         "date": "2026-08-13",
@@ -72,111 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6a7d8d2b",
-        "severity": "HIGH",
-        "date": "2026-08-13",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Inside a Ukrainian IP Camera Toolkit",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a55a138",
-        "severity": "HIGH",
-        "date": "2026-08-13",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Defending SaaS-based applications against ShinyHunters OAuth abuse",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-68d029",
+        "id": "VT-u-cce81b",
         "severity": "CRITICAL",
         "date": "2026-08-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-08-13_46d443660fdfc5c60e1ad8de77df97e0_elex_remcos_wannacry\n\n**Threat Score:**\n10/10\n...",
+        "desc": "Cybercrime, carding, and financial fraud forum. #scam #carding #cybercrime #fraud",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-bb21eb",
+        "id": "VT-d-rubicx",
         "severity": "CRITICAL",
         "date": "2026-08-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: PUA_ConnectWise_ScreenConnect_Mar23\nRULE_TYPE: VALHALLA rule feed only \u26a1\n...",
+        "desc": "Counterfeit Rubic clone. crypto scam. AVOID. #brandimpersonation #scam #phishing Hosting provider contacted. 2K\" line be...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-c62127",
+        "id": "VT-i-91.199",
         "severity": "CRITICAL",
         "date": "2026-08-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\nc62127927db792b5c13a7f44af49560e346a35f8b0ed39a9afee5bb5c40ef1bd.bin\n\n**Threat Score:**\n10...",
+        "desc": "Automated report : IP 91.199.118.49 is carrying out a Web Attack on wwww.eco-conscient.com at Thu, 13 Aug 2026 19:06:32 ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-281072",
+        "id": "VT-f-162c83",
         "severity": "CRITICAL",
         "date": "2026-08-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Azov_Ransomware_Nov22\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK:...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_Disable_Tamper_Protection_Jul24\nRULE_TYPE: VALHALLA rule feed only \u26a1...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-bee1bb",
+        "id": "VT-i-134.12",
         "severity": "CRITICAL",
         "date": "2026-08-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Salat_Stealer_Jan26\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: h...",
+        "desc": "**IOC found on ThreatFox**\n\n**IOC:** 134.122.200.208:8088\n**IOC Type:** ip:port\n**Threat Type:** botnet_cc\n**Malware:** ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-bee1bb",
+        "id": "VT-i-183.60",
         "severity": "CRITICAL",
         "date": "2026-08-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Credential_Stealer_Indicators_Jul23_1\nRULE_TYPE: THOR APT Scanner's ...",
+        "desc": "**IOC found on ThreatFox**\n\n**IOC:** 183.60.226.2:33333\n**IOC Type:** ip:port\n**Threat Type:** botnet_cc\n**Malware:** Un...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-bee1bb",
+        "id": "VT-i-68.64.",
         "severity": "CRITICAL",
         "date": "2026-08-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Credential_Stealer_Indicators_Jul23_2\nRULE_TYPE: THOR APT Scanner's ...",
+        "desc": "**IOC found on ThreatFox**\n\n**IOC:** 68.64.182.169:110\n**IOC Type:** ip:port\n**Threat Type:** botnet_cc\n**Malware:** Cob...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-bee1bb",
+        "id": "VT-i-68.64.",
         "severity": "CRITICAL",
         "date": "2026-08-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Go_Backdoor_Jun25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: htt...",
+        "desc": "**IOC found on ThreatFox**\n\n**IOC:** 68.64.182.169:465\n**IOC Type:** ip:port\n**Threat Type:** botnet_cc\n**Malware:** Cob...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-0df17d",
+        "id": "VT-f-a62e92",
         "severity": "CRITICAL",
         "date": "2026-08-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Credential_Stealer_Indicators_Jul23_1\nRULE_TYPE: THOR APT Scanner's ...",
+        "desc": "#malware #asyncrat\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/5210884d2b3252071a08175a485fc294288cb...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-cfc8b9",
+        "id": "VT-u-2511be",
         "severity": "CRITICAL",
         "date": "2026-08-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Credential_Stealer_Indicators_Jul23_2\nRULE_TYPE: THOR APT Scanner's ...",
+        "desc": "Joe Reverser Analysis:\n\nVerdict: CLEAN\nScore: 3/100\nConfidence: 80/100\nManagement Summary: BigScoots portal ticket URL r...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
