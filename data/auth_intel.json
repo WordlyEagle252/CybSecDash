@@ -90,93 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "VT-f-bd30ab",
+        "id": "VT-f-e8035a",
         "severity": "CRITICAL",
         "date": "2026-08-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_WIN_Exploit_Keywords_Jun21_1\nRULE_TYPE: THOR APT Scanner's rule set ...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-08-14_7eb527819641cf70f94a0d9618761951_elex_remcos_wannacry\n\n**Threat Score:**\n10/10\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-b74f1e",
+        "id": "VT-f-2844aa",
         "severity": "CRITICAL",
         "date": "2026-08-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "VMRay Analysis Verdict: Malicious\n\nClassification: Spyware\n\nAnalysis Report: https://www.vmray.com/analyses/_vt/b74f1ea4...",
+        "desc": "#SilverFox",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-11bdf1",
+        "id": "VT-f-7a0e06",
         "severity": "CRITICAL",
         "date": "2026-08-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_WEBSHELL_PHP_Indicators_Jul26\nRULE_TYPE: VALHALLA rule feed only \u26a1\nR...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-08-14_7f289f7ca2f831ddbb6b86691c649dd9_coinminer_elex_wannacry\n\n**Threat Score:**\n10/...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-a2119c",
+        "id": "VT-f-ca4e9b",
         "severity": "CRITICAL",
         "date": "2026-08-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Base64_Encoded_GetEnvironmentVariable\nRULE_TYPE: THOR APT Scanner's ...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-08-14_7f0f5f3206911e39b6b15610a17db185_elex_wannacry\n\n**Threat Score:**\n10/10\n\n**Fami...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-8b0950",
+        "id": "VT-f-c40c9a",
         "severity": "CRITICAL",
         "date": "2026-08-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#malware #gandcrab\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/d691139a2dd36fe4d08f6fb5e0beb7b8ab47c...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Wextract_Anomaly_Unsigned_May23\nRULE_TYPE: THOR APT Scanner's rule s...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-4f9697",
+        "id": "VT-f-6d5fa9",
         "severity": "CRITICAL",
         "date": "2026-08-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_XWorm_Jul26\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Enigma_Protector\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nRULE_...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-74d153",
+        "id": "VT-i-78.197",
         "severity": "CRITICAL",
         "date": "2026-08-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udd0d ScanMalware.com AI Security Verdict: LEGITIMATE - Risk: 0/10\n\nView full report: https://scanmalware.com/scan/a7dbd985-...",
+        "desc": "This IP address carried out 1 SSH credential attack (attempts) on 13-08-2026. For more information or to report interest...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-c3ddf3",
+        "id": "VT-f-352c9a",
         "severity": "CRITICAL",
         "date": "2026-08-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#malware #asyncrat\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/5210884d2b3252071a08175a485fc294288cb...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-08-14_7f90c3afd1e05ac5d9e34b2059a7735c_elex_remcos_wannacry\n\n**Threat Score:**\n10/10\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-195.17",
+        "id": "VT-f-1dec99",
         "severity": "CRITICAL",
         "date": "2026-08-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**SSH BRUTE FORCE REPORT**\n* Source Attribution: CTI-Honeypot-Project\n* Detection: SSH bruteforce against my honeypot\n* ...",
+        "desc": "**File found on MalwareBazaar**\n\n**File Name (as uploaded):** SecuriteInfo.com.X97M.DownLoader.2343.18979.14492\n**File T...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-8b6a1a",
+        "id": "VT-f-c5fa46",
         "severity": "CRITICAL",
         "date": "2026-08-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**Malware Family Detected On MalwareBazaar**\n\n**Filename (as uploaded):** pryznet.arm\n**Family/Signature:** Mirai\n**File...",
+        "desc": "**File found on MalwareBazaar**\n\n**File Name (as uploaded):** SecuriteInfo.com.X97M.DownLoader.2343.20776.9017\n**File Ty...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
