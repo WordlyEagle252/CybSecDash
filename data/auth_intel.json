@@ -1,5 +1,23 @@
 [
     {
+        "id": "OTX-6a56a77a",
+        "severity": "HIGH",
+        "date": "2026-08-13",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Suspected Chinese Operators Use Claude Code and DeepSeek to Breach Government Systems Across Four Countries",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a56a779",
+        "severity": "HIGH",
+        "date": "2026-08-13",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "LabubaRAT: A Rust Based Remote Access Tool Masquerading as NVIDIA Software",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6a566597",
         "severity": "HIGH",
         "date": "2026-08-13",
@@ -72,111 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6a7ce26b",
-        "severity": "HIGH",
-        "date": "2026-08-13",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Inside Multi-Stage Phishing Redirection Chains",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a7d8cc2",
-        "severity": "HIGH",
-        "date": "2026-08-13",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Project CAV3RN uses Google Apps Script for stealthy C2 in Israel",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-u-cce81b",
+        "id": "VT-f-bd30ab",
         "severity": "CRITICAL",
-        "date": "2026-08-13",
+        "date": "2026-08-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Cybercrime, carding, and financial fraud forum. #scam #carding #cybercrime #fraud",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_WIN_Exploit_Keywords_Jun21_1\nRULE_TYPE: THOR APT Scanner's rule set ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-rubicx",
+        "id": "VT-f-b74f1e",
         "severity": "CRITICAL",
-        "date": "2026-08-13",
+        "date": "2026-08-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Counterfeit Rubic clone. crypto scam. AVOID. #brandimpersonation #scam #phishing Hosting provider contacted. 2K\" line be...",
+        "desc": "VMRay Analysis Verdict: Malicious\n\nClassification: Spyware\n\nAnalysis Report: https://www.vmray.com/analyses/_vt/b74f1ea4...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-91.199",
+        "id": "VT-f-11bdf1",
         "severity": "CRITICAL",
-        "date": "2026-08-13",
+        "date": "2026-08-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Automated report : IP 91.199.118.49 is carrying out a Web Attack on wwww.eco-conscient.com at Thu, 13 Aug 2026 19:06:32 ...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_WEBSHELL_PHP_Indicators_Jul26\nRULE_TYPE: VALHALLA rule feed only \u26a1\nR...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-162c83",
+        "id": "VT-f-a2119c",
         "severity": "CRITICAL",
-        "date": "2026-08-13",
+        "date": "2026-08-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_Disable_Tamper_Protection_Jul24\nRULE_TYPE: VALHALLA rule feed only \u26a1...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Base64_Encoded_GetEnvironmentVariable\nRULE_TYPE: THOR APT Scanner's ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-134.12",
+        "id": "VT-f-8b0950",
         "severity": "CRITICAL",
-        "date": "2026-08-13",
+        "date": "2026-08-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**IOC found on ThreatFox**\n\n**IOC:** 134.122.200.208:8088\n**IOC Type:** ip:port\n**Threat Type:** botnet_cc\n**Malware:** ...",
+        "desc": "#malware #gandcrab\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/d691139a2dd36fe4d08f6fb5e0beb7b8ab47c...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-183.60",
+        "id": "VT-f-4f9697",
         "severity": "CRITICAL",
-        "date": "2026-08-13",
+        "date": "2026-08-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**IOC found on ThreatFox**\n\n**IOC:** 183.60.226.2:33333\n**IOC Type:** ip:port\n**Threat Type:** botnet_cc\n**Malware:** Un...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_XWorm_Jul26\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-68.64.",
+        "id": "VT-u-74d153",
         "severity": "CRITICAL",
-        "date": "2026-08-13",
+        "date": "2026-08-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**IOC found on ThreatFox**\n\n**IOC:** 68.64.182.169:110\n**IOC Type:** ip:port\n**Threat Type:** botnet_cc\n**Malware:** Cob...",
+        "desc": "\ud83d\udd0d ScanMalware.com AI Security Verdict: LEGITIMATE - Risk: 0/10\n\nView full report: https://scanmalware.com/scan/a7dbd985-...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-68.64.",
+        "id": "VT-f-c3ddf3",
         "severity": "CRITICAL",
-        "date": "2026-08-13",
-        "product": "Endpoint / System Artifact",
-        "source": "VirusTotal",
-        "desc": "**IOC found on ThreatFox**\n\n**IOC:** 68.64.182.169:465\n**IOC Type:** ip:port\n**Threat Type:** botnet_cc\n**Malware:** Cob...",
-        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
-    },
-    {
-        "id": "VT-f-a62e92",
-        "severity": "CRITICAL",
-        "date": "2026-08-13",
+        "date": "2026-08-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
         "desc": "#malware #asyncrat\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/5210884d2b3252071a08175a485fc294288cb...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-2511be",
+        "id": "VT-i-195.17",
         "severity": "CRITICAL",
-        "date": "2026-08-13",
+        "date": "2026-08-14",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Joe Reverser Analysis:\n\nVerdict: CLEAN\nScore: 3/100\nConfidence: 80/100\nManagement Summary: BigScoots portal ticket URL r...",
+        "desc": "**SSH BRUTE FORCE REPORT**\n* Source Attribution: CTI-Honeypot-Project\n* Detection: SSH bruteforce against my honeypot\n* ...",
+        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
+    },
+    {
+        "id": "VT-f-8b6a1a",
+        "severity": "CRITICAL",
+        "date": "2026-08-14",
+        "product": "Endpoint / System Artifact",
+        "source": "VirusTotal",
+        "desc": "**Malware Family Detected On MalwareBazaar**\n\n**Filename (as uploaded):** pryznet.arm\n**Family/Signature:** Mirai\n**File...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
