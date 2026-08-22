@@ -90,93 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "VT-f-2a7153",
+        "id": "VT-f-febb60",
         "severity": "CRITICAL",
         "date": "2026-08-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "FileScan.IO Analysis:\n\nVerdict: SUSPICIOUS\nConfidence: 100/100\nTags: base64,vbs,vbs\nReport: https://www.filescan.io/repo...",
+        "desc": "**Loader Insight Agency Sighting**\n\nDistributed from URL: http[:]//192.162.199[.]246/pb7Ulzhaae3xpSNrEvJH5yqqyMyIbnNF/mK...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-157.24",
+        "id": "VT-f-2175ad",
         "severity": "CRITICAL",
         "date": "2026-08-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "This IP was observed performing malicious activity: ZMap Security Scanner. Detection: IPS signature triggered with Preve...",
+        "desc": "[b]Original filename[/b] : 2175ad055b1f55c2a614f2dee432c273b33c882572015203f4cb42b342d2c129\n\nComment added on 2026-08-22...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-60fcd1",
+        "id": "VT-f-a4f477",
         "severity": "CRITICAL",
         "date": "2026-08-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "FileScan.IO Analysis:\n\nVerdict: MALICIOUS\nConfidence: 100/100\nTags: obfuscated,aes,base64,conhost,crypto,evasive,lolbin,...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-08-21_bf9a5179bb89f9ed6553e96c85b19ac6_darkgate_elex_floxif_glassworm_remcos_stealc_s...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-7d2c2e",
+        "id": "VT-f-479e10",
         "severity": "CRITICAL",
         "date": "2026-08-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "FileScan.IO Analysis:\n\nVerdict: LIKELY_MALICIOUS\nConfidence: 100/100\nTags: downloader,base64,vbs,vbs\nReport: https://www...",
+        "desc": "[b]Original filename (SHA256)[/b] : 479e10ea835998d7f15f78e72a8cba544ac4553a4c3ab1f7b9a20756b6b057dc\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-33ee15",
+        "id": "VT-f-2a49f7",
         "severity": "CRITICAL",
         "date": "2026-08-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "FileScan.IO Analysis:\n\nVerdict: LIKELY_MALICIOUS\nConfidence: 100/100\nTags: downloader,vbs,vbs\nReport: https://www.filesc...",
+        "desc": "#malware #xworm\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/1855d5c29b31d76e899745943710a929813a4e42...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-48ed2e",
+        "id": "VT-f-aea838",
         "severity": "CRITICAL",
         "date": "2026-08-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "VMRay Analysis Verdict: Malicious\n\nThreat Name: Sneaky2FA.1\nClassification: Phishing\n\nAnalysis Report: https://www.vmray...",
+        "desc": "Fair catch on the DGA domains alexsci  I pulled the current Mozilla Public Suffix List directly from its source and chec...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-a14a7f",
+        "id": "VT-f-e99168",
         "severity": "CRITICAL",
         "date": "2026-08-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxp://115.49.210.219:38645/bin.sh\n**Threat:** malware_download\n**Host Country:** Chi...",
+        "desc": "[b]Original filename[/b] : e9916814942f81cdd62de6f08a3eba19c95da375547493577b3bc28e59e722de\n\nComment added on 2026-08-22...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-8ff566",
+        "id": "VT-f-0efc96",
         "severity": "CRITICAL",
         "date": "2026-08-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udd0d ScanMalware.com AI Security Verdict: HIGH_RISK - Risk: 8/10\n\nView full report: https://scanmalware.com/scan/d4f5b333-5...",
+        "desc": "[b]Original filename (SHA256)[/b] : 0efc96577defa4c41f940852922a9040f335cf7d19c2a60f7a8fa80ee9fd688e\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-a90956",
+        "id": "VT-f-b9866f",
         "severity": "CRITICAL",
         "date": "2026-08-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "FileScan.IO Analysis:\n\nVerdict: LIKELY_MALICIOUS\nConfidence: 100/100\nTags: encrypted,obfuscated,javascript,javascript,re...",
+        "desc": "[b]Original filename[/b] : b9866fee744fdca0b55cc6ebef85286611fe6ffc164c6f66e0e23f8a68d61231\n\nComment added on 2026-08-22...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-03d9b9",
+        "id": "VT-f-2783db",
         "severity": "CRITICAL",
         "date": "2026-08-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "FileScan.IO Analysis:\n\nVerdict: SUSPICIOUS\nConfidence: 100/100\nTags: vbs,vbs\nReport: https://www.filescan.io/reports/03d...",
+        "desc": "**Loader Insight Agency Sighting**\n\nDistributed from URL: https[:]//practisingcertificateprotection[.]com/Installer_9147...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
