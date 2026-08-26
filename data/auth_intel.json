@@ -90,93 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "VT-f-f8b943",
+        "id": "VT-f-b54deb",
         "severity": "CRITICAL",
         "date": "2026-08-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : f8b9435db435b7c4e0ec0898986a47979be48a9bc48e67a6f49d782e9590b80a\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Unknown_Malware_May19_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LIN...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-dbec50",
+        "id": "VT-f-d73148",
         "severity": "CRITICAL",
         "date": "2026-08-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : dbec50a1d01df44f6ed2d5f29e4c0119d07f58f31ecd9d8960be1ee1fa32ed03\n\nComment added on 2026-08-26...",
+        "desc": "#malware #\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/0e797626bc64cbcdb7d928f83d43abbfea42ad4bb3707...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-307433",
+        "id": "VT-f-157b5a",
         "severity": "CRITICAL",
         "date": "2026-08-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Azov_Ransomware_Nov22\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK:...",
+        "desc": "[b]Original filename (SHA256)[/b] : 157b5aaa36afd106c55504466fa017ca6198296ed801eb69a02acb401ed9f247\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-062585",
+        "id": "VT-f-b38d51",
         "severity": "CRITICAL",
         "date": "2026-08-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\nAsyncClient.exe\n\n**Threat Score:**\n10/10\n\n**Family:**\n\u2022 asyncrat\n\n**Botnet:**\n\u2022 Default\n\n*...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_DDOS_Amplification_Strings_Jun25\nRULE_TYPE: VALHALLA rule feed only \u26a1...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-dbe453",
+        "id": "VT-f-7089ac",
         "severity": "CRITICAL",
         "date": "2026-08-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : dbe453a844b738180f1b6a1325d096bff97d3ba5455d92120a760fabe4a426b2\n\nComment added on 2026-08-26...",
+        "desc": "VMRay Analysis Verdict: Malicious\n\nClassification: Keylogger\n\nAnalysis Report: https://www.vmray.com/analyses/_vt/7089ac...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-affb06",
+        "id": "VT-f-b38d51",
         "severity": "CRITICAL",
         "date": "2026-08-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "FileScan.IO Analysis:\n\nVerdict: NO_THREAT\nConfidence: 100/100\nTags: docx,docx\nReport: https://www.filescan.io/reports/af...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_LNX_Mirai_Variant_Jun25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LIN...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-e05d14",
+        "id": "VT-f-1828f5",
         "severity": "CRITICAL",
         "date": "2026-08-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : e05d148070e9387998a3e562ab0ab615aa43aef315adba6ae77801ec46c5019a\n\nComment added on 2...",
+        "desc": "**File Info:**\n\n**Filename:**\n3a8eebc4e4817ea92a4ecb8415997e80.exe\n\n**Threat Score:**\n10/10\n\n**Family:**\n\u2022 salatstealer\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-325de3",
+        "id": "VT-f-8c531e",
         "severity": "CRITICAL",
         "date": "2026-08-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_UAC_Bypass_CMSTPLUA_COM_May21\nRULE_TYPE: VALHALLA rule feed only \u26a1\nR...",
+        "desc": "**File found on MalwareBazaar**\n\n**File Name (as uploaded):** cryptedd.ps1\n**File Type:** ps1\n**Family/Signature:** Remc...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-0b84f1",
+        "id": "VT-f-7704f0",
         "severity": "CRITICAL",
         "date": "2026-08-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_OriginLogger_Sep22\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ht...",
+        "desc": "[b]Original filename (SHA256)[/b] : 7704f0bf9f1e6c09a9c65a9695dc81cf508361c4b0c1ebc677cdfaa7036693fd\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-dbd21e",
+        "id": "VT-f-a559aa",
         "severity": "CRITICAL",
         "date": "2026-08-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : dbd21eebfc287b231d01144f16abb67f8a073c914d8f3e24813f6d946dbf4cf4\n\nComment added on 2026-08-26...",
+        "desc": "FileScan.IO Analysis:\n\nVerdict: MALICIOUS\nConfidence: 100/100\nTags: anti-debug,evasive,fingerprint,packed,reconnaissance...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
