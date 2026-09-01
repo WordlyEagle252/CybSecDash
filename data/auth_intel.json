@@ -1,5 +1,41 @@
 [
     {
+        "id": "OTX-6a95a0ec",
+        "severity": "HIGH",
+        "date": "2026-09-01",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Anatomy of BraZetsu: How Cybercriminals Fuel the Underground Ecosystem",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a959d31",
+        "severity": "HIGH",
+        "date": "2026-09-01",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Shai-Hulud Trinitite Hits @7nohe/openapi-react-query-codegen",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a95df86",
+        "severity": "HIGH",
+        "date": "2026-09-01",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "13 Malicious Packagist Themes Deliver iOS Spyware That Steals Crypto Wallet Seeds",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a967944",
+        "severity": "HIGH",
+        "date": "2026-09-01",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Financially Motivated Threat Actor Targets Brazil",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6a95a02c",
         "severity": "HIGH",
         "date": "2026-08-31",
@@ -54,129 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6a9226b8",
-        "severity": "HIGH",
-        "date": "2026-08-31",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Still Circling: Inside the Operator Behind the GitHub Loader",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a94c765",
-        "severity": "HIGH",
-        "date": "2026-08-31",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Campaign deploys a reverse tunnel through multistage intrusion",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a9542b1",
-        "severity": "HIGH",
-        "date": "2026-08-31",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Real-time Open Source Software Supply Chain Security",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a6b1c3e",
-        "severity": "HIGH",
-        "date": "2026-08-29",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Toy Ghouls\u2019 new toy: the GenieLocker ransomware",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-884e6c",
+        "id": "VT-f-332889",
         "severity": "CRITICAL",
         "date": "2026-09-01",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 884e6c416a334044e6a77d3b17f2370e4cc765029ef2cee76eaaa2e7f3f9c84b\n\nComment added on 2...",
+        "desc": "**File Info:**\n\n**Filename:**\n3328894d95af58039f179a7e5dc9ba2cdc2292c19d5a5de2f37427297a3abc31\n\n**Threat Score:**\n10/10\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-5.206.",
+        "id": "VT-f-82f5b1",
         "severity": "CRITICAL",
         "date": "2026-09-01",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "IOC Type: IPv4\n\nThreat Type: T1595\n\nMITRE ATT&CK: T1595\n\nRelated Tags: malicious-ip, T1595\n\nAnalysis Summary:\nExternal h...",
+        "desc": "#malware #sality\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/7d89b96859fa31a73e4c808715d95dd3e4ae495...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-132.25",
+        "id": "VT-f-afaa18",
         "severity": "CRITICAL",
         "date": "2026-09-01",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "IOC Type: IPv4\n\nThreat Type: T1595\n\nMITRE ATT&CK: T1595\n\nRelated Tags: malicious-ip, T1595\n\nAnalysis Summary:\nExternal h...",
+        "desc": "[b]Original filename (SHA256)[/b] : afaa18049d67055d8ffa1dcbd762d76f7c99fc5802efc2d120de9d819b4b8e4d\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-5.206.",
+        "id": "VT-f-331cef",
         "severity": "CRITICAL",
         "date": "2026-09-01",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "IOC Type: IPv4\n\nThreat Type: T1595.001\n\nMITRE ATT&CK: T1595\n\nRelated Tags: malicious-ip, T1595.001\n\nAnalysis Summary:\nFi...",
+        "desc": "**File Info:**\n\n**Filename:**\n331cefff657cabbf85991007e66235dd7c0692a3f6693e920ab25e5b8cdd1193\n\n**Threat Score:**\n10/10\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-5.206.",
+        "id": "VT-f-b28f4c",
         "severity": "CRITICAL",
         "date": "2026-09-01",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udccc IOC Type: IPv4\n\ud83d\udd39 Associated Rule Name: PURE7 - Reconnaissance - T1595 - External SSH Recon Detection\n\ud83d\udd39 MITRE ATT&CK: T...",
+        "desc": "\u0445\u0443\u0439 \u0435\u0433\u043e \u0437\u043d\u0430\u0435\u0442 \u043e\u0442\u043a\u0443\u0434\u0430 \u043e\u043d\u0430 \u0432\u0437\u044f\u043b\u0430 \u044d\u0442\u043e\u0442 \u043f\u0430\u043a\u0435\u0442, \u043e\u043d \u0441\u0442\u0430\u0440\u043e\u0439 \u0432\u0435\u0440\u0441\u0438\u0438 \u0438 \u0445\u044d\u0448 \u043d\u0435 \u043f\u043e\u0434\u0445\u043e\u0434\u0438\u0442",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-132.25",
+        "id": "VT-f-c885c0",
         "severity": "CRITICAL",
         "date": "2026-09-01",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udccc IOC Type: IPv4\n\ud83d\udd39 Associated Rule Name: PURE7 - Reconnaissance - T1595 - External FTP Recon Detection\n\ud83d\udd39 MITRE ATT&CK: T...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: APT_WEBSHELL_ME_ASP_MuddyWater_Dec20_1\nRULE_TYPE: VALHALLA rule feed only...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-5.206.",
+        "id": "VT-f-c885c0",
         "severity": "CRITICAL",
         "date": "2026-09-01",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udccc IOC Type: IPv4\n\ud83d\udd39 Associated Rule Name: PURE7 - Reconnaissance - T1595.001 - External Generic Port Scan Detected\n\ud83d\udd39 MITR...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: Webshell_ASP_cmdexec\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: http...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-47534e",
+        "id": "VT-f-af340d",
         "severity": "CRITICAL",
         "date": "2026-09-01",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 47534e5163f6fcea1813e76300e32ff97402bb832ec173c98d851c7717882c1c\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: EXPL_ALPC_TaskSched_exploit\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LIN...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-fd11a5",
+        "id": "VT-f-a2dda6",
         "severity": "CRITICAL",
         "date": "2026-09-01",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-08-30_2a50af79d8ea53828d818a017edce4fa_elex_wannacry\n\n**Threat Score:**\n10/10\n\n**Fami...",
+        "desc": "[b]Original filename (SHA256)[/b] : a2dda630266a3a21c259c071ca527d3043606b1f6bed7ae92419747ea67057bd\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-d8f285",
+        "id": "VT-f-7c5827",
         "severity": "CRITICAL",
         "date": "2026-09-01",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udd0d ScanMalware.com AI Security Verdict: LOW_RISK - Risk: 2/10\n\nView full report: https://scanmalware.com/scan/d444dbb3-5e...",
+        "desc": "**File Info:**\n\n**Filename:**\n7c5827e89087afa757a551563855cb9a42c61a417bd9d79c8a4abce4a647fd4a\n\n**Threat Score:**\n10/10\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
