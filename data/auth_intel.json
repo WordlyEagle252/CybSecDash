@@ -90,93 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "VT-f-ee6043",
+        "id": "VT-i-47.84.",
         "severity": "CRITICAL",
-        "date": "2026-09-02",
+        "date": "2026-09-03",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : ee6043e65f3c67260353d1b69ddc228569bab2b237252517411931825f8c7629\n\nComment added on 2026-09-02...",
+        "desc": "Observed by TSEC T-Pot honeypot network.\nAttack type: Exploit Attempt.\nServices: brute-force, critical, ddos, exploited-...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-315c4c",
+        "id": "VT-i-35.195",
         "severity": "CRITICAL",
-        "date": "2026-09-02",
+        "date": "2026-09-03",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 315c4cfc46e503a485d7ac670c9e74579dfa330b990bf48f6d72bf4d907ab43d\n\nComment added on 2...",
+        "desc": "Observed by TSEC T-Pot honeypot network.\nAttack type: Ics Targeting.\nServices: brute-force, ftp, ftp-brute, hacking, iot...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-cde3fa",
+        "id": "VT-i-46.33.",
         "severity": "CRITICAL",
-        "date": "2026-09-02",
+        "date": "2026-09-03",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : cde3fa0f6d830c981e68f657eb076e1e904abdf268c777130c3987846316c7ba\n\nComment added on 2...",
+        "desc": "Observed by TSEC T-Pot honeypot network.\nAttack type: Exploit Attempt.\nServices: brute-force, ddos, exploited-host, hack...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-53dbb4",
+        "id": "VT-i-213.22",
         "severity": "CRITICAL",
-        "date": "2026-09-02",
+        "date": "2026-09-03",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Netsh_WLAN_Password_Dump_Jul26\nRULE_TYPE: THOR APT Scanner's rule se...",
+        "desc": "Observed by TSEC T-Pot honeypot network.\nAttack type: Exploit Attempt.\nServices: brute-force, critical, ddos, exploited-...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-53dbb4",
+        "id": "VT-i-143.10",
         "severity": "CRITICAL",
-        "date": "2026-09-02",
+        "date": "2026-09-03",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Credential_Stealer_Indicators_Jan26\nRULE_TYPE: THOR APT Scanner's ru...",
+        "desc": "Observed by TSEC T-Pot honeypot network.\nAttack type: Exploit Attempt.\nServices: brute-force, ddos, hacking, low, port-s...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-6bd739",
+        "id": "VT-i-196.21",
         "severity": "CRITICAL",
-        "date": "2026-09-02",
+        "date": "2026-09-03",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 6bd739d52acb3b7699c9ff478d203816cc227380dfabee3aeb1645379cbfb676\n\nComment added on 2...",
+        "desc": "Observed by TSEC T-Pot honeypot network.\nAttack type: Exploit Attempt.\nServices: brute-force, hacking, high, port-scan, ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-67f94b",
+        "id": "VT-i-76.39.",
         "severity": "CRITICAL",
-        "date": "2026-09-02",
+        "date": "2026-09-03",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : 67f94b5769098719a8a355f850259379a99cfab362039bd84d6eb072ca1ba3b8\n\nComment added on 2026-09-02...",
+        "desc": "Observed by TSEC T-Pot honeypot network.\nAttack type: Exploit Attempt.\nServices: brute-force, critical, hacking, iot-tar...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-3dca48",
+        "id": "VT-i-117.24",
         "severity": "CRITICAL",
-        "date": "2026-09-02",
+        "date": "2026-09-03",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#malware #\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/44a242f710c6247ab1641c4aca51f65d09469044a3c92...",
+        "desc": "Observed by TSEC T-Pot honeypot network.\nAttack type: Exploit Attempt.\nServices: brute-force, critical, ddos, exploited-...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-ac32b2",
+        "id": "VT-f-4dd89c",
         "severity": "CRITICAL",
-        "date": "2026-09-02",
+        "date": "2026-09-03",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : ac32b27d9d656b37f7e9f8dbd3aa39f86fa31cc71cedb860856793acb085f267\n\nComment added on 2026-09-02...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_RANSOM_Note_Indicator_Dec24\nRULE_TYPE: THOR APT Scanner's rule set o...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-14eaf3",
+        "id": "VT-i-85.234",
         "severity": "CRITICAL",
-        "date": "2026-09-02",
+        "date": "2026-09-03",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 14eaf3f3210f3e6f9ae1cd9d9bc6dd0876032dcf8db7ca11b589e37ec4a50af3\n\nComment added on 2...",
+        "desc": "Observed by TSEC T-Pot honeypot network.\nAttack type: Exploit Attempt.\nServices: brute-force, critical, ddos, exploited-...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
