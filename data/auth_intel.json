@@ -1,5 +1,23 @@
 [
     {
+        "id": "OTX-6a7e2be6",
+        "severity": "HIGH",
+        "date": "2026-09-12",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Multi-Functional Linux Botnet \"Evooo1Bot\"",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a7deb5e",
+        "severity": "HIGH",
+        "date": "2026-09-12",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "PATCHCORD: New malware cluster targets Afghan telecom and South Asian critical infrastructure",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6a7daa9c",
         "severity": "HIGH",
         "date": "2026-09-12",
@@ -72,111 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6aa37447",
-        "severity": "HIGH",
-        "date": "2026-09-11",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "From Fake DocuSign to ScreenConnect: Attack Blocked",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6aa32e18",
-        "severity": "HIGH",
-        "date": "2026-09-11",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Protecting organizations from AI-assisted executive impersonation and invoice fraud",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-d3e741",
+        "id": "VT-f-38f547",
         "severity": "CRITICAL",
         "date": "2026-09-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_PikaBot_Core_Feb23\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ht...",
+        "desc": "[b]Original filename[/b] : 38f547543da4d1a2e61d8ffbde17b19282b536547d2e5c144d1356693d9556f0\n\nComment added on 2026-09-12...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-5d882c",
+        "id": "VT-u-98ead2",
         "severity": "CRITICAL",
         "date": "2026-09-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 5d882c3468820b1eef31b1ae8b6e4247950976e91669f15e3151aaa7ad98c10c\n\nComment added on 2...",
+        "desc": "Observed by TSEC T-Pot honeypot network.\nAttack type: General Activity.\nMalware family: dropped.\nServices: ssh, telnet.\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-482b6f",
+        "id": "VT-u-c4b342",
         "severity": "CRITICAL",
         "date": "2026-09-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#malware #CobaltStrike\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/2441d3d0736ac4d8b411f5fd8fe7d7645...",
+        "desc": "Observed by TSEC T-Pot honeypot network.\nAttack type: General Activity.\nMalware family: dropped.\nServices: ssh, telnet.\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-2ea77d",
+        "id": "VT-i-70.184",
         "severity": "CRITICAL",
         "date": "2026-09-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Monero_Mining_Pools_Oct21\nRULE_TYPE: THOR APT Scanner's rule set onl...",
+        "desc": "Observed by TSEC T-Pot honeypot network.\nAttack type: Exploit Attempt.\nServices: brute-force, critical, ddos, exploited-...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-51617d",
+        "id": "VT-i-201.13",
         "severity": "CRITICAL",
         "date": "2026-09-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#Malware #HP new sample found in the wild, Uploaded with the use of VirusTotal-MultiFile-Uploader-Alma",
+        "desc": "Observed by TSEC T-Pot honeypot network.\nAttack type: Exploit Attempt.\nMalware family: dropped.\nServices: brute-force, e...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-8bd4cc",
+        "id": "VT-i-155.21",
         "severity": "CRITICAL",
         "date": "2026-09-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_B64_Atob_Aug23\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nRULE_LI...",
+        "desc": "Observed by TSEC T-Pot honeypot network.\nAttack type: Exploit Attempt.\nServices: brute-force, hacking, low, port-scan, w...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-262217",
+        "id": "VT-i-98.174",
         "severity": "CRITICAL",
         "date": "2026-09-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Script_IP_Info_Combo_Aug24\nRULE_TYPE: THOR APT Scanner's rule set on...",
+        "desc": "Observed by TSEC T-Pot honeypot network.\nAttack type: Exploit Attempt.\nServices: brute-force, critical, ddos, exploited-...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-1798a4",
+        "id": "VT-f-434ffe",
         "severity": "CRITICAL",
         "date": "2026-09-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_PY_OBFUSC_Berserker_Indicators_Dec22_1\nRULE_TYPE: THOR APT Scanner's...",
+        "desc": "**File found on MalwareBazaar**\n\n**File Name (as uploaded):** 472922.msi\n**File Type:** msi\n**Reporter:** BastianHein_\n*...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-61db9d",
+        "id": "VT-i-153.11",
         "severity": "CRITICAL",
         "date": "2026-09-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Svchost_Variation\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nRULE...",
+        "desc": "Observed by TSEC T-Pot honeypot network.\nAttack type: Exploit Attempt.\nMalware family: dropped.\nServices: brute-force, h...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-d52c08",
+        "id": "VT-f-205b5e",
         "severity": "CRITICAL",
         "date": "2026-09-12",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : d52c087c6f7ef7fb7dab7b4628af584d3ad738163b286aaa5855e07979dd52e7\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_ShellCode_Loader_OpCodes_Jun22_4\nRULE_TYPE: THOR APT Scanner's rule ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
