@@ -1,5 +1,14 @@
 [
     {
+        "id": "OTX-6a7eef66",
+        "severity": "HIGH",
+        "date": "2026-09-13",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "New Armored Likho tools target Telegram and eavesdropping",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6a7e2be6",
         "severity": "HIGH",
         "date": "2026-09-12",
@@ -81,102 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6aa3c334",
-        "severity": "HIGH",
-        "date": "2026-09-11",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Gray Rabbits and the Tale of a One-Click Backdoor",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-f328c9",
+        "id": "VT-f-83c94b",
         "severity": "CRITICAL",
         "date": "2026-09-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : f328c9daf0bcbb26007cf4cd092e5eec07419a24b5481c5dc3f2142e7adc2751\n\nComment added on 2...",
+        "desc": "install_s.8.09.exe\n\n**SilverFox**\nIOC (kgxzgh.net) (msi8s0.oss-cn-beijing.aliyuncs.com) (mm2027.oss-cn-hangzhou.aliyuncs...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-ad3207",
+        "id": "VT-f-dcc894",
         "severity": "CRITICAL",
         "date": "2026-09-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Azov_Ransomware_Nov22\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK:...",
+        "desc": "[b]Original filename (SHA256)[/b] : dcc8941b3180a860bc081270b8bb8ae95c6f03699ef8453c2b96ab0328452621\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-5fdd10",
+        "id": "VT-f-3a7003",
         "severity": "CRITICAL",
         "date": "2026-09-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_Disable_Tamper_Protection_Jul24\nRULE_TYPE: VALHALLA rule feed only \u26a1...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_CobaltStrike_Beacon_Loader_Aug26\nRULE_TYPE: VALHALLA rule feed only \u26a1...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-00029c",
+        "id": "VT-f-981a8a",
         "severity": "CRITICAL",
         "date": "2026-09-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_UAC_Bypass_CMSTPLUA_COM_May21\nRULE_TYPE: VALHALLA rule feed only \u26a1\nR...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_Defeat_Defender_Apr21_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LI...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-ad85d0",
+        "id": "VT-f-ce4219",
         "severity": "CRITICAL",
         "date": "2026-09-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxp://125.47.85.91:34593/bin.sh\n**Threat:** malware_download\n**Host Country:** China...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Salat_Stealer_Jan26\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: h...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-ce5bb4",
+        "id": "VT-u-1f2d2a",
         "severity": "CRITICAL",
         "date": "2026-09-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: Upatre_Downloader\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https:/...",
+        "desc": "\ud83d\udcc3Title:QuickFox Supply Chain Attack Used to Deploy FDMTP Implant\n\n\ud83d\udcc5Date:2026-08-04\n\n\ud83d\udd17References: \n\nhttps://www.fortinet....",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-ce5bb4",
+        "id": "VT-f-ef29c6",
         "severity": "CRITICAL",
         "date": "2026-09-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Nitol_Mar19_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https:/...",
+        "desc": "[b]Original filename (SHA256)[/b] : ef29c620a2c2ac7cddf8082d92a7fa2f440931b5179d9605c227f8d80c58709f\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-ce5bb4",
+        "id": "VT-f-c4057d",
         "severity": "CRITICAL",
         "date": "2026-09-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Nitol_Malware_Jan19_1\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://githu...",
+        "desc": "install_s.8.06.exe\n\n**SilverFox**\nIOC (pmgfqn.net) (msi8s0.oss-cn-beijing.aliyuncs.com) (mm2027.oss-cn-hangzhou.aliyuncs...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-302751",
+        "id": "VT-i-104.28",
         "severity": "CRITICAL",
         "date": "2026-09-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_UAC_Bypass_CMSTPLUA_COM_May21\nRULE_TYPE: VALHALLA rule feed only \u26a1\nR...",
+        "desc": "IOC Type: IPv4\n\nThreat Type: \n\nMITRE ATT&CK: \n\nRelated Tags: malicious-ip, \n\nAnalysis Summary:\nExternal sources probed F...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-ce5bb4",
+        "id": "VT-f-4da533",
         "severity": "CRITICAL",
         "date": "2026-09-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: ZxShell_Related_Malware_CN_Group_Jul17_2\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK...",
+        "desc": "[b]Original filename (SHA256)[/b] : 4da533bbfa40538653349fcc109405b2efb1490948b8dd3772eb2f53b3df04df\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
