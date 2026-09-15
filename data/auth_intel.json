@@ -1,182 +1,92 @@
 [
     {
-        "id": "OTX-6aa4409a",
-        "severity": "HIGH",
-        "date": "2026-09-14",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "KATARU: IoT Malware Adopts Public LPE Exploits",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6aa4432c",
-        "severity": "HIGH",
-        "date": "2026-09-14",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Malicious Twitch Browser Extension Exposes 30,000 Users' OAuth Tokens to Russian Bot Service",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a7f349e",
-        "severity": "HIGH",
-        "date": "2026-09-13",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "New Mirai-Based Linux Botnet 'Evooo1Bot' Turns Victims Into Proxies",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a7eef66",
-        "severity": "HIGH",
-        "date": "2026-09-13",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "New Armored Likho tools target Telegram and eavesdropping",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a7e2be6",
-        "severity": "HIGH",
-        "date": "2026-09-12",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Multi-Functional Linux Botnet \"Evooo1Bot\"",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a7deb5e",
-        "severity": "HIGH",
-        "date": "2026-09-12",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "PATCHCORD: New malware cluster targets Afghan telecom and South Asian critical infrastructure",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a7daa9c",
-        "severity": "HIGH",
-        "date": "2026-09-12",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Jewelbug: APT Group Runs Espionage and Crypto Fraud Operations Side by Side",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a7da6cc",
-        "severity": "HIGH",
-        "date": "2026-09-12",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "New Armored Likho tools target Telegram and eavesdropping",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a7da6cb",
-        "severity": "HIGH",
-        "date": "2026-09-12",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "China-based hackers-for-hire group staging espionage attacks alongside a cryptocurrency fraud business",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a7d8d2b",
-        "severity": "HIGH",
-        "date": "2026-09-12",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Inside a Ukrainian IP Camera Toolkit",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-639d9d",
+        "id": "VT-f-319b97",
         "severity": "CRITICAL",
         "date": "2026-09-15",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 639d9d733aee597a3196fe6926d81b0f9ab318fdc9deebd3dd9f1c2cae2195e0\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_JS_Info_Gather_Jun26\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nR...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-d0d79e",
+        "id": "VT-u-1913f8",
         "severity": "CRITICAL",
         "date": "2026-09-15",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-09-14_41cb472ef36a22e30ded2f3cc660550d_cobalt-strike_frostygoop_ghostlocker_glassworm...",
+        "desc": "\ud83d\udd0d ScanMalware.com AI Security Verdict: LOW_RISK - Risk: 2/10\n\nView full report: https://scanmalware.com/scan/1db49e31-34...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-5dacbc",
+        "id": "VT-f-aece2c",
         "severity": "CRITICAL",
         "date": "2026-09-15",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_NET_Reactor_Protector_Native_May23\nRULE_TYPE: THOR APT Scanner's rul...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Encoded_NewObject_NetWebclient\nRULE_TYPE: THOR APT Scanner's rule se...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-3eb1c0",
+        "id": "VT-f-aece2c",
         "severity": "CRITICAL",
         "date": "2026-09-15",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n3eb1c00ebb6dac8aa1a16e98cfb277d17940bf6e3fb99afa3ddca7cd60f5e57b\n\n**Threat Score:**\n10/10\n...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_PS1_SingleLiner_Jun22_1\nRULE_TYPE: THOR APT Scanner's rule set only ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-b84300",
+        "id": "VT-f-c0e054",
         "severity": "CRITICAL",
         "date": "2026-09-15",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : b843007ccc8a4e60b77638b0f9223ccf1d5da889391ca05bbbc811333b7a5601\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Script_IP_Info_Combo_Aug24\nRULE_TYPE: THOR APT Scanner's rule set on...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-c8f293",
+        "id": "VT-f-aece2c",
         "severity": "CRITICAL",
         "date": "2026-09-15",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_Defeat_Defender_Apr21_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LI...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Encoded_PS_DownloadFile\nRULE_TYPE: THOR APT Scanner's rule set only ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-248aeb",
+        "id": "VT-f-f5295e",
         "severity": "CRITICAL",
         "date": "2026-09-15",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Salat_Stealer_Jan26\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: h...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Monero_Mining_Pools_Oct21\nRULE_TYPE: THOR APT Scanner's rule set onl...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-c8f293",
+        "id": "VT-f-c0e054",
         "severity": "CRITICAL",
         "date": "2026-09-15",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: Sofacy_Jan18_1_PE_Info_Anomaly\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Credential_Stealer_Indicators_Jul23_2\nRULE_TYPE: THOR APT Scanner's ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-b74c3e",
+        "id": "VT-f-aece2c",
         "severity": "CRITICAL",
         "date": "2026-09-15",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-09-14_41ebb7c9136b02b7f3eaf9e2aefa2101_amadey_blankgrabber_darkgate_elex_glassworm_lu...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_PS1_Encoded_ETW_Amsi_Indicator_Aug22_1\nRULE_TYPE: THOR APT Scanner's...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-abb930",
+        "id": "VT-f-aece2c",
         "severity": "CRITICAL",
         "date": "2026-09-15",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : abb9307945d63b169052ffcfa26f5a5a6b705ad592653ae3ca391422ab348a7c\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Base64_Encoded_PS1_AMSI_Reference_Nov22_1\nRULE_TYPE: THOR APT Scanne...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
