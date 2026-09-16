@@ -1,5 +1,23 @@
 [
     {
+        "id": "OTX-6aaa401d",
+        "severity": "HIGH",
+        "date": "2026-09-16",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Mythic C2 Activity at Internet Scale",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6aaa6f52",
+        "severity": "HIGH",
+        "date": "2026-09-16",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "The extension you never installed: KREMLIN forges Chrome's own integrity checks to steal banking sessions",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6aa942ae",
         "severity": "HIGH",
         "date": "2026-09-15",
@@ -72,111 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6a7e2be6",
-        "severity": "HIGH",
-        "date": "2026-09-12",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Multi-Functional Linux Botnet \"Evooo1Bot\"",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a7deb5e",
-        "severity": "HIGH",
-        "date": "2026-09-12",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "PATCHCORD: New malware cluster targets Afghan telecom and South Asian critical infrastructure",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-u-e6a6fa",
+        "id": "VT-u-8f8ef9",
         "severity": "CRITICAL",
         "date": "2026-09-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\nThis domain is suspected of hosting phishing content targeting users. It should be investigated for potential abuse and...",
+        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://144.172.117.212/Bin/ScreenConnect.ClientSetup.exe\n**Threat:** malware_downloa...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-153.11",
+        "id": "VT-f-7236a8",
         "severity": "CRITICAL",
         "date": "2026-09-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Port Scanning",
+        "desc": "[b]Original filename (SHA256)[/b] : 7236a847c2606becf79402637e475cae019b33c8462d4d0cd52423b42b035c06\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-e8fc07",
+        "id": "VT-f-73cea4",
         "severity": "CRITICAL",
         "date": "2026-09-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_OBFUSC_Base64_Hex_Encoded_Apr19\nRULE_TYPE: THOR APT Scanner's rule s...",
+        "desc": "**File Info:**\n\n**Filename:**\n73cea42c82c5bccc1056d79ae11d0912f5002a73a4c72f7132c603d205c6d4de\n\n**Threat Score:**\n10/10\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-e8fc07",
+        "id": "VT-u-292e4a",
         "severity": "CRITICAL",
         "date": "2026-09-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_B64_Atob_Aug23\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nRULE_LI...",
+        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://144.172.117.212/bin/support.client.exe\n**Threat:** malware_download\n**Host Co...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-e8fc07",
+        "id": "VT-f-d3e204",
         "severity": "CRITICAL",
         "date": "2026-09-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Base64_Encoded_Hex_Encoded_Code\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: ht...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-09-16_870e70a5e3887d6b0ce9c6f159ac56d1_cobalt-strike_frostygoop_ghostlocker_glassworm...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-0e0100",
+        "id": "VT-f-451490",
         "severity": "CRITICAL",
         "date": "2026-09-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_BruteRatel_Badger_Jan24\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LI...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_AVKiller_Jan20_2\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: http...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-cbb8e1",
+        "id": "VT-f-5cf64c",
         "severity": "CRITICAL",
         "date": "2026-09-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ELF DIGEST non-profit Sandbox:\n\n\n Analysis Report: https://elfdigest.com/brief/cbb8e119b22c87d53d723aca0e687aac9d2a28daa...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_AVKiller_Jan20_2\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: http...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-178.17",
+        "id": "VT-f-f15b8a",
         "severity": "CRITICAL",
         "date": "2026-09-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Port Scanning",
+        "desc": "[b]Original filename (SHA256)[/b] : f15b8ad89b8cede4ab6477d9578f4a2dee597ce06f2587029a99df05aeb1b234\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-cd9ee5",
+        "id": "VT-f-380fbc",
         "severity": "CRITICAL",
         "date": "2026-09-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_CobaltStrike_PipeName_Feb21_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nR...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: Sofacy_Jan18_1_PE_Info_Anomaly\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-cd9ee5",
+        "id": "VT-f-40920b",
         "severity": "CRITICAL",
         "date": "2026-09-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_CobaltStrike_4_Beacon\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-09-16_872bcebf4c1de4ccb3c7e082d2dfe330_amadey_elex_redline-stealer_rhadamanthys_smoke...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
