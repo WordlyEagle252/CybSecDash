@@ -1,5 +1,77 @@
 [
     {
+        "id": "OTX-6a8322da",
+        "severity": "HIGH",
+        "date": "2026-09-16",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "C2Looper: A New Backdoor Likely Tied To Ransomware With GitHub C2",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a8322d9",
+        "severity": "HIGH",
+        "date": "2026-09-16",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Operation QUICSILVER: China-Nexus Actor Targets Myanmar Diplomats via VHD-Delivered Go Backdoor",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6aaa90c1",
+        "severity": "HIGH",
+        "date": "2026-09-16",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "GhostCode: Dissecting a Novel Device Code Phishing Kit",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6aaa8d44",
+        "severity": "HIGH",
+        "date": "2026-09-16",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Atomic macOS (AMOS) Stealer Activity",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6aaa8c12",
+        "severity": "HIGH",
+        "date": "2026-09-16",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "NightEagle targets Russian companies",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6aaa8c11",
+        "severity": "HIGH",
+        "date": "2026-09-16",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "How Money Laundering, Scams, and Espionage Hide in a Web Full of Casino Garbage",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6aaa6542",
+        "severity": "HIGH",
+        "date": "2026-09-16",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "The banana stand: brokering and managing infections across Asia using MQTT",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6aaa4253",
+        "severity": "HIGH",
+        "date": "2026-09-16",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "PIVOTPIPE: A New .NET-based Unofficial Beacon Payload",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6aaa401d",
         "severity": "HIGH",
         "date": "2026-09-16",
@@ -18,165 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6aa942ae",
-        "severity": "HIGH",
-        "date": "2026-09-15",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Red Heron exploits Gitea n-day flaw in multinational campaign, exposing new Linux rootkit",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6aa93d9f",
-        "severity": "HIGH",
-        "date": "2026-09-15",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Search results are sending people to fake Bitrefill checkouts",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6aa8feae",
-        "severity": "HIGH",
-        "date": "2026-09-15",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "GrelosGTM group abuses Google Tag Manager to attack e-commerce websites",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6aa84f43",
-        "severity": "HIGH",
-        "date": "2026-09-15",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Thai Broadband Provider Targeted via FortiGate SSL-VPN and MeshCentral Persistence",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6aa4409a",
-        "severity": "HIGH",
-        "date": "2026-09-14",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "KATARU: IoT Malware Adopts Public LPE Exploits",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6aa4432c",
-        "severity": "HIGH",
-        "date": "2026-09-14",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Malicious Twitch Browser Extension Exposes 30,000 Users' OAuth Tokens to Russian Bot Service",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a7f349e",
-        "severity": "HIGH",
-        "date": "2026-09-13",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "New Mirai-Based Linux Botnet 'Evooo1Bot' Turns Victims Into Proxies",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a7eef66",
-        "severity": "HIGH",
-        "date": "2026-09-13",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "New Armored Likho tools target Telegram and eavesdropping",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-u-8f8ef9",
+        "id": "VT-f-998ba5",
         "severity": "CRITICAL",
         "date": "2026-09-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://144.172.117.212/Bin/ScreenConnect.ClientSetup.exe\n**Threat:** malware_downloa...",
+        "desc": "[b]Original filename[/b] : 998ba5902f2ec813c7392a9a2aab7ecdecbd17998f50432cb28f6d025a13fc5c\n\nComment added on 2026-09-16...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-7236a8",
+        "id": "VT-f-9adf71",
         "severity": "CRITICAL",
         "date": "2026-09-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 7236a847c2606becf79402637e475cae019b33c8462d4d0cd52423b42b035c06\n\nComment added on 2...",
+        "desc": "The malware 9adf7106d7f140f27cb8c790743eaf459ad424e23c2664d9eff6997f484e8e13 is downloaded from https://95.182.114.179/m...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-73cea4",
+        "id": "VT-f-458094",
         "severity": "CRITICAL",
         "date": "2026-09-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n73cea42c82c5bccc1056d79ae11d0912f5002a73a4c72f7132c603d205c6d4de\n\n**Threat Score:**\n10/10\n...",
+        "desc": "[b]Original filename[/b] : 4580949ff25e40bc81dd4e150a0a4d686308f8b1a47e7c853b06e313804b749a\n\nComment added on 2026-09-16...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-292e4a",
+        "id": "VT-f-3d0815",
         "severity": "CRITICAL",
         "date": "2026-09-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://144.172.117.212/bin/support.client.exe\n**Threat:** malware_download\n**Host Co...",
+        "desc": "[b]Original filename (SHA256)[/b] : 3d08157e5549af09af8edc14568ff84b3625b1114d16c979159a96dde1575299\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-d3e204",
+        "id": "VT-f-b4dd34",
         "severity": "CRITICAL",
         "date": "2026-09-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-09-16_870e70a5e3887d6b0ce9c6f159ac56d1_cobalt-strike_frostygoop_ghostlocker_glassworm...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Envrial_Jan18_1\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://github.com/...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-451490",
+        "id": "VT-f-b4dd34",
         "severity": "CRITICAL",
         "date": "2026-09-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_AVKiller_Jan20_2\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: http...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: APT_MAL_SnakeKeylogger_Jun22_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-5cf64c",
+        "id": "VT-f-e05447",
         "severity": "CRITICAL",
         "date": "2026-09-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_AVKiller_Jan20_2\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: http...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-09-16_d9d767b7fb50c8ca4dc95319640baea8_coinminer_elex_rhadamanthys_smoke-loader_steal...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-f15b8a",
+        "id": "VT-f-8d4bcf",
         "severity": "CRITICAL",
         "date": "2026-09-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : f15b8ad89b8cede4ab6477d9578f4a2dee597ce06f2587029a99df05aeb1b234\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_KeyloggerGen_Nov18_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-380fbc",
+        "id": "VT-f-9a40a8",
         "severity": "CRITICAL",
         "date": "2026-09-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: Sofacy_Jan18_1_PE_Info_Anomaly\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_...",
+        "desc": "**Malware Family Detected On MalwareBazaar**\n\n**Filename (as uploaded):** zapret-discord.bat\n**Family/Signature:** Salat...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-40920b",
+        "id": "VT-f-9095ca",
         "severity": "CRITICAL",
         "date": "2026-09-16",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-09-16_872bcebf4c1de4ccb3c7e082d2dfe330_amadey_elex_redline-stealer_rhadamanthys_smoke...",
+        "desc": "[b]Original filename[/b] : 9095ca093e24e0aa01d5436165dcca8774f72375140dd424a0a02a15b51924b7\n\nComment added on 2026-09-16...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
