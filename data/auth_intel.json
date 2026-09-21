@@ -1,5 +1,23 @@
 [
     {
+        "id": "OTX-6ab11ae2",
+        "severity": "HIGH",
+        "date": "2026-09-21",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "PAYLOAD ransomware attacks through Active Directory GPO",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6ab14a3d",
+        "severity": "HIGH",
+        "date": "2026-09-21",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "From Registry-Stored PowerShell to In-Memory Cryptocurrency Mining: A Multi-Stage Infection Chain",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6aae4b5f",
         "severity": "HIGH",
         "date": "2026-09-21",
@@ -72,111 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6aad3a91",
-        "severity": "HIGH",
-        "date": "2026-09-18",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Private HTS programs that spread ransomware",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6aad397e",
-        "severity": "HIGH",
-        "date": "2026-09-18",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "EtherHiding Exposed: Inside a Blockchain-powered Malware Campaign Hiding in Plain Sight",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-7427b2",
+        "id": "VT-d-bookso",
         "severity": "CRITICAL",
         "date": "2026-09-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 7427b2494176d9f6b2326fdc213fe55d5668e750ee6cda9b5bb7e2933517301b\n\nComment added on 2...",
+        "desc": "**IOC found on ThreatFox**\n\n**IOC:** booksofparadise.net\n**IOC Type:** domain\n**Threat Type:** payload_delivery\n**Malwar...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-37d3dd",
+        "id": "VT-u-1b6c7e",
         "severity": "CRITICAL",
         "date": "2026-09-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-09-20_02f3aebfda26713369021eb9513df1f1_coinminer_elex_glassworm_hawkeye_icedid_luca-s...",
+        "desc": "Joe Sandbox Analysis: \n\t\t\t\nVerdict: MAL\nScore: 60/100\nThreat Name: Microsoft Phisher\nDomains: android.l.google.com dl.go...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-147.20",
+        "id": "VT-f-e93fd8",
         "severity": "CRITICAL",
         "date": "2026-09-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Source: SOCFortress Decoy. Observed interacting with SOCFortress Deception honeypots: 1 snmp events against decoy 'snmp-...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: Sofacy_Jan18_1_PE_Info_Anomaly\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-a4f85d",
+        "id": "VT-f-e87180",
         "severity": "CRITICAL",
         "date": "2026-09-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : a4f85d1610bbd2d2c8f5f0f68a016898b564bddf9a8b8db4d8fa97f8459214f8\n\nComment added on 2...",
+        "desc": "#malware #neshta\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/ce2bda52e79631b9834f37f5a48218d2bc26491...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-5f3921",
+        "id": "VT-f-e93fd8",
         "severity": "CRITICAL",
         "date": "2026-09-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 5f392182c5e6ce355efe379b05ccd927728860952395664d0897e9c0a669c2df\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_UAC_Bypass_Feb26\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nRULE_...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-205.21",
+        "id": "VT-d-brookl",
         "severity": "CRITICAL",
         "date": "2026-09-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Metasploit VxWorks WDB Agent Scanner Detection(56693)",
+        "desc": "**IOC found on ThreatFox**\n\n**IOC:** brooklynbooks.us\n**IOC Type:** domain\n**Threat Type:** payload_delivery\n**Malware:*...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-2b29d3",
+        "id": "VT-f-e93fd8",
         "severity": "CRITICAL",
         "date": "2026-09-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Base64_Encoded_Hex_Encoded_Code\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: ht...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: Destructive_Ransomware_Gen1\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://git...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-4ac7fa",
+        "id": "VT-f-6460f7",
         "severity": "CRITICAL",
         "date": "2026-09-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 4ac7fa7d16d5612fc9227bc190709497dc8084712897b2f4d8799d4e30074b1c\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_EnableContent_String_Gen\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://g...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-e2d23f",
+        "id": "VT-f-876996",
         "severity": "CRITICAL",
         "date": "2026-09-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-09-20_0316d61fa56323313c5e2e304db7834e_elex_wannacry\n\n**Threat Score:**\n10/10\n\n**Fami...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Hex_Encoded_OLE2Link\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nR...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-0d0122",
+        "id": "VT-d-chapar",
         "severity": "CRITICAL",
         "date": "2026-09-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Base64_Encoded_Hex_Encoded_Code\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: ht...",
+        "desc": "**IOC found on ThreatFox**\n\n**IOC:** chaparralbooks.com\n**IOC Type:** domain\n**Threat Type:** payload_delivery\n**Malware...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
