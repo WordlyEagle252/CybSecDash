@@ -90,93 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "VT-f-24fe03",
+        "id": "VT-f-9afd3d",
         "severity": "CRITICAL",
         "date": "2026-09-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 24fe0356ccfb072b1a9d048ffe55a60e2032cfe337ea71710a23072842e314e9\n\nComment added on 2...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-09-22_eaa6d1f8197cb50f7e7580afeeec5a3e_amadey_cobalt-strike_elex_floxif_play\n\n**Threa...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-cad85f",
+        "id": "VT-f-aa86f0",
         "severity": "CRITICAL",
         "date": "2026-09-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-09-21_9f3a084ee3b4cd7fbdb8c2bf3f929625_cryptolocker_elex\n\n**Threat Score:**\n10/10\n\n**...",
+        "desc": "[b]Original filename (SHA256)[/b] : aa86f002bd055097bea30136f0a4a8ac5726ff3a3ca20583dbb8ada552333593\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-4062e8",
+        "id": "VT-f-967b9f",
         "severity": "CRITICAL",
         "date": "2026-09-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : 4062e8f22b57f71d9e55012cd1ce5cf189863576061dd569264ee102228f90a7\n\nComment added on 2026-09-22...",
+        "desc": "**File Info:**\n\n**Filename:**\njaffacakes118_967b9ff7470e1de0780e38b05c7294ec123c878a5a62409d108062ab3e308353\n\n**Threat S...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-1115ab",
+        "id": "VT-f-bb6239",
         "severity": "CRITICAL",
         "date": "2026-09-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[SentinelDeepShark94ec#fbe6763a] Auto-scanned by VT Sentinel for OpenClaw",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_PE_Multiple_Exe_Packers_May25\nRULE_TYPE: THOR APT Scanner's rule set...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-a32c81",
+        "id": "VT-f-f2ad96",
         "severity": "CRITICAL",
         "date": "2026-09-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : a32c813ff6eefda7a6a9430fd0178b37dec59a2aba25b8642a8750e9ca7be77a\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_PUA_WinTun_Jan22\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: htt...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-196.20",
+        "id": "VT-f-2ba93d",
         "severity": "CRITICAL",
         "date": "2026-09-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "IOC Type: IPv4\n\nThreat Type: T1190\n\nMITRE ATT&CK: T1190\n\nRelated Tags: malicious-ip, T1190\n\nAnalysis Summary:\nSingle-por...",
+        "desc": "**File Info:**\n\n**Filename:**\narm6.elf\n\n**Threat Score:**\n9/10\n\n**Family:**\nN/A\n\n**File Report:**\nhttps://jaffacakes118....",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-196.20",
+        "id": "VT-f-5afbef",
         "severity": "CRITICAL",
         "date": "2026-09-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udccc IOC Type: IPv4\n\ud83d\udd39 Associated Rule Name: PURE7 - Initial Access - T1190 - Single Port Scan 445 SMB\n\ud83d\udd39 MITRE ATT&CK: T1190...",
+        "desc": "**File Info:**\n\n**Filename:**\n5afbef47b6b48cb5fac65a8f0f22383266aa0b4222b69353e6c517fab20325a2\n\n**Threat Score:**\n9/10\n\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-c5590d",
+        "id": "VT-i-149.11",
         "severity": "CRITICAL",
         "date": "2026-09-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\njaffacakes118_c5590d994671eb77dd736663776d3ded4446120da558b87b54ece2e7b09f1d2c.bin\n\n**Thre...",
+        "desc": "Malicious IP. Oracle doesn't respond to reporting of malicious activity from its network. ",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-00f539",
+        "id": "VT-f-609f2a",
         "severity": "CRITICAL",
         "date": "2026-09-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-09-21_9f7a233a457bb0b69c0cd3860c51eef6_coinminer_dosia_eternalromance_frostygoop_ghos...",
+        "desc": "Joe Sandbox Analysis: \n\t\t\t\nVerdict: MAL\nScore: 88/100\n\nHTML Report: https://www.joesandbox.com/analysis/1976301/0/html\t\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-cbe4cb",
+        "id": "VT-f-79c121",
         "severity": "CRITICAL",
         "date": "2026-09-22",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : cbe4cb95b5ea69a5e42e96bb5f8fb90ccef54a562d6fd7b36776f02e35a43465\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_PUA_WinTun_Jan22\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: htt...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
