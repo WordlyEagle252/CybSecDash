@@ -1,5 +1,14 @@
 [
     {
+        "id": "OTX-6a8dc2ed",
+        "severity": "HIGH",
+        "date": "2026-09-24",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "What the Source Leak Says About HookBot",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6ab4d79d",
         "severity": "HIGH",
         "date": "2026-09-24",
@@ -81,102 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6ab2681b",
-        "severity": "HIGH",
-        "date": "2026-09-23",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "The Closed Quorum: Inside the first reported autonomous AI C2 implant",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-019c49",
+        "id": "VT-f-c729b5",
         "severity": "CRITICAL",
         "date": "2026-09-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 019c49dc95f9a36f06f4a275bb70d8ad5646d598e8eae9cd10a2233515c519d8\n\nComment added on 2...",
+        "desc": "[b]Original filename[/b] : c729b5b0b7a82923aa5226e33ca01fa05d84001022de9ba4a122538999ac67b9\n\nComment added on 2026-09-24...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-dexuri",
+        "id": "VT-f-73a668",
         "severity": "CRITICAL",
         "date": "2026-09-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "final url in a phishing chain",
+        "desc": "**File Info:**\n\n**Filename:**\nAP Biology - Macromolecules.pptx\n\n**Threat Score:**\n10/10\n\n**Family:**\n\u2022 chaos\n\n**File Rep...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-ae54ad",
+        "id": "VT-f-c3203b",
         "severity": "CRITICAL",
         "date": "2026-09-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : ae54ad887c3a75ffbc49f7f5d4033bbdc3227be9634de50b5b6a9f1eab59a9d9\n\nComment added on 2...",
+        "desc": "**File Info:**\n\n**Filename:**\nnewsflow.io_new.exe\n\n**Threat Score:**\n10/10\n\n**Family:**\n\u2022 nanocore\n\n**File Report:**\nhtt...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-fb8f56",
+        "id": "VT-f-c89258",
         "severity": "CRITICAL",
         "date": "2026-09-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : fb8f5624b1cab4f14b0575849c9f4fa92f91e2bf3d4d440781154a6e69d09a84\n\nComment added on 2...",
+        "desc": "[b]Original filename[/b] : c892581e99bd106adcec0145933858642b79bb9a3b02e63f5d1d2a5f467e4370\n\nComment added on 2026-09-24...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-pinbah",
+        "id": "VT-f-8aac20",
         "severity": "CRITICAL",
         "date": "2026-09-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**IOC found on ThreatFox**\n\n**IOC:** pinbahis.page\n**IOC Type:** domain\n**Threat Type:** payload_delivery\n**Malware:** C...",
+        "desc": "**File found on MalwareBazaar**\n\n**File Name (as uploaded):** arm5\n**File Type:** elf\n**Reporter:** abuse_ch\n**MalwareBa...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-5df5f0",
+        "id": "VT-f-a84a01",
         "severity": "CRITICAL",
         "date": "2026-09-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 5df5f0a00cf8f5914785252f7c1d4cbd2a1fe69057871bcf6b645647864a325a\n\nComment added on 2...",
+        "desc": "**File Info:**\n\n**Filename:**\n24092026_1640_22092026_RFQ-DWG-769011.rar\n\n**Threat Score:**\n10/10\n\n**Family:**\n\u2022 remcos\n\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-036777",
+        "id": "VT-f-016715",
         "severity": "CRITICAL",
         "date": "2026-09-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 036777bb6390faf509cd0b106788a8020cd03fe29f20fab5c2d6696e3b33d28a\n\nComment added on 2...",
+        "desc": "[b]Original filename (SHA256)[/b] : 016715f179b51e4b94df1ef45dad7f63e861ad4ec9ba7f3485c561bf6c9fb183\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-076810",
+        "id": "VT-f-e7dddd",
         "severity": "CRITICAL",
         "date": "2026-09-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udd0d ScanMalware.com AI Security Verdict: LOW_RISK - Risk: 2/10\n\nView full report: https://scanmalware.com/scan/9c18579d-44...",
+        "desc": "**File found on MalwareBazaar**\n\n**File Name (as uploaded):** e7dddd19bcd12e238bae2e50bf3e7812c0007bf22a5f2de71a5f35ff79...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-db9d54",
+        "id": "VT-i-66.132",
         "severity": "CRITICAL",
         "date": "2026-09-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**Malware Family Detected On MalwareBazaar**\n\n**Filename (as uploaded):** db9d54bcb0fea54f8f62993744adc76440f424c1450b9f...",
+        "desc": "This source IP attempted to exploit a service on a monitored honeynet, with activity observed on 2026-09-24 16:45:05 UTC...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-7422bf",
+        "id": "VT-f-55fc2c",
         "severity": "CRITICAL",
         "date": "2026-09-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Base64_Encoded_Hex_Encoded_Code\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: ht...",
+        "desc": "[b]Original filename[/b] : 55fc2cfd7f6fdf311e164ffe13bc5f747949a60c246ae2a98901a0995a95a586\n\nComment added on 2026-09-24...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
