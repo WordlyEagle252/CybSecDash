@@ -1,5 +1,59 @@
 [
     {
+        "id": "OTX-6ab68af3",
+        "severity": "HIGH",
+        "date": "2026-09-25",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "The Psychedelic Stealer: When a CAPTCHA Becomes an Installer",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6ab68846",
+        "severity": "HIGH",
+        "date": "2026-09-25",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Uncovering a SectopRAT Variant Embedded in Legitimate Software",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6ab61e2e",
+        "severity": "HIGH",
+        "date": "2026-09-25",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Major vulnerability found in ancient TACACS+ networking protocol",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6ab59fab",
+        "severity": "HIGH",
+        "date": "2026-09-25",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Trust and the enticing consultancy offer",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6ab56154",
+        "severity": "HIGH",
+        "date": "2026-09-25",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "RemotePanel and BoundSiphon: A Dual-Payload Toolkit for Persistent Access and Browser Theft",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6ab56155",
+        "severity": "HIGH",
+        "date": "2026-09-25",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "The Not So Silent Miner: Threat Actor Compiles Cryptominer on the Endpoint",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6ab55966",
         "severity": "HIGH",
         "date": "2026-09-24",
@@ -36,147 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6ab51a6b",
-        "severity": "HIGH",
-        "date": "2026-09-24",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "TASK#STOMP PowerShell Backdoor Steals Business Documents and Maintains Persistent Remote Access",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6ab51a41",
-        "severity": "HIGH",
-        "date": "2026-09-24",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Galago Ransomware Emerges With Shared Infrastructure Ties to Panzer",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6ab5176a",
-        "severity": "HIGH",
-        "date": "2026-09-24",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "A new version of the MacSync macOS stealer targets crypto enthusiasts and developers",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a8dc2ed",
-        "severity": "HIGH",
-        "date": "2026-09-24",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "What the Source Leak Says About HookBot",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6ab4d79d",
-        "severity": "HIGH",
-        "date": "2026-09-24",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "CARBONATO: a botnet built around an AI agent",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6a8d406a",
-        "severity": "HIGH",
-        "date": "2026-09-24",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Tracking PavinLoader across ClickFix and fake download campaigns",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-3a358f",
+        "id": "VT-d-noonce",
         "severity": "CRITICAL",
         "date": "2026-09-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 3a358f89f9072039cc4e61506baead5152c090763039b98821316c9a32e21f70\n\nComment added on 2...",
+        "desc": "Lumu Report, **September 16, 2026** https://lumu.io/blog/shadowparasite-payment-fraud-investigation/",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-5f47c5",
+        "id": "VT-f-741ed3",
         "severity": "CRITICAL",
         "date": "2026-09-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : 5f47c555f399471e1d3a68fd321c5f30ba8655dd647c86a0b77adbd4dff2b532\n\nComment added on 2026-09-25...",
+        "desc": "[b]Original filename (SHA256)[/b] : 741ed3ba40fe7636d890175bd33d3899a148f1247463c5d9f2e2d2b058371bd8\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-4fdba4",
+        "id": "VT-f-e608c1",
         "severity": "CRITICAL",
         "date": "2026-09-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-09-24_3f55480d04b458e31428bec87feb807d_amadey_elex_floxif_karagany_rhadamanthys_smoke...",
+        "desc": "**File found on MalwareBazaar**\n\n**File Name (as uploaded):** service.bat\n**File Type:** bat\n**Reporter:** Alex_sev\n**Ma...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-842d68",
+        "id": "VT-f-50c688",
         "severity": "CRITICAL",
         "date": "2026-09-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 842d68032c2bcbf73326f6f8844b816e407be76b0314861ebd0284f2490630ec\n\nComment added on 2...",
+        "desc": "#malware #xmrig\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/44a70198ab671bd7435e0ab51641e14d965b141c...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-871d53",
+        "id": "VT-f-072d64",
         "severity": "CRITICAL",
         "date": "2026-09-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : 871d53b72344577bbb433961795badbc541caacd1fa08b0dbf836af28827daf6\n\nComment added on 2026-09-25...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-09-25_fc33a4b68c383e40c3082e5cb367861d_elex_emotet_maze\n\n**Threat Score:**\n10/10\n\n**F...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-513951",
+        "id": "VT-f-c090e8",
         "severity": "CRITICAL",
         "date": "2026-09-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 5139511245c9dc2306c7d49bc1e2cc8af53361492b42a42b0fe24bca5c0a83a0\n\nComment added on 2...",
+        "desc": "Joe Sandbox Analysis: \n\t\t\t\nVerdict: SUS\nScore: 23/100\nDomains: android.l.google.com chromewebstore.google.com plus.l.goo...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-046a7b",
+        "id": "VT-f-4b4d99",
         "severity": "CRITICAL",
         "date": "2026-09-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\n     ANY.RUN Sandbox Analysis:\n\n     Verdict: Malicious activity\n     Tags: arch-scr, auto, generic, xworm, donutloader...",
+        "desc": "[b]Original filename (SHA256)[/b] : 4b4d998beedb043417231de2a40cbf09320a6f21c8836feee0c660cb9dc91649\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-142d3f",
+        "id": "VT-d-movt4r",
         "severity": "CRITICAL",
         "date": "2026-09-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 142d3f82a8279e39e6100e277049d88adc6747e4ec162899ca556dd90762aa14\n\nComment added on 2...",
+        "desc": "Lumu Report, **September 16, 2026** https://lumu.io/blog/shadowparasite-payment-fraud-investigation/",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-fedafb",
+        "id": "VT-f-f82ad9",
         "severity": "CRITICAL",
         "date": "2026-09-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**Malware Family Detected On MalwareBazaar**\n\n**Filename (as uploaded):** bot.armv5l\n**Family/Signature:** Mirai\n**File ...",
+        "desc": "[b]Original filename (SHA256)[/b] : f82ad9bcf203e9b16a0c1968313c3677d70dd62443098e088dff3f29c43c1762\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-f9c9ce",
+        "id": "VT-d-movpay",
         "severity": "CRITICAL",
         "date": "2026-09-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**Malware Family Detected On MalwareBazaar**\n\n**Filename (as uploaded):** bot.armv6\n**Family/Signature:** Mirai\n**File T...",
+        "desc": "Lumu Report, **September 16, 2026** https://lumu.io/blog/shadowparasite-payment-fraud-investigation/",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
