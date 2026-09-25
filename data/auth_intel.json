@@ -90,93 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "VT-i-103.61",
+        "id": "VT-f-3a358f",
         "severity": "CRITICAL",
         "date": "2026-09-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "IOC Type: IPv4\n\nThreat Type: T1595.001\n\nMITRE ATT&CK: T1595\n\nRelated Tags: malicious-ip, T1595.001\n\nAnalysis Summary:\nFi...",
+        "desc": "[b]Original filename (SHA256)[/b] : 3a358f89f9072039cc4e61506baead5152c090763039b98821316c9a32e21f70\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-b6307c",
+        "id": "VT-f-5f47c5",
         "severity": "CRITICAL",
         "date": "2026-09-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**Malware Family Detected On MalwareBazaar**\n\n**Filename (as uploaded):** b6307cb3e0da1b5393cc002bdc02458d2a2604be5f12d1...",
+        "desc": "[b]Original filename[/b] : 5f47c555f399471e1d3a68fd321c5f30ba8655dd647c86a0b77adbd4dff2b532\n\nComment added on 2026-09-25...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-103.61",
+        "id": "VT-f-4fdba4",
         "severity": "CRITICAL",
         "date": "2026-09-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udccc IOC Type: IPv4\n\ud83d\udd39 Associated Rule Name: PURE7 - Reconnaissance - T1595.001 - External Generic Port Scan Detected\n\ud83d\udd39 MITR...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-09-24_3f55480d04b458e31428bec87feb807d_amadey_elex_floxif_karagany_rhadamanthys_smoke...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-2d2fdf",
+        "id": "VT-f-842d68",
         "severity": "CRITICAL",
         "date": "2026-09-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File found on MalwareBazaar**\n\n**File Name (as uploaded):** 2d2fdfc7b1dd18dfa690ca08b5e738ed3760866d5be2109915c4445502...",
+        "desc": "[b]Original filename (SHA256)[/b] : 842d68032c2bcbf73326f6f8844b816e407be76b0314861ebd0284f2490630ec\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-ffc982",
+        "id": "VT-f-871d53",
         "severity": "CRITICAL",
         "date": "2026-09-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : ffc9827f08315089bbd2cad651d83ffe752248baddfed92d42eb931269de9c68\n\nComment added on 2026-09-25...",
+        "desc": "[b]Original filename[/b] : 871d53b72344577bbb433961795badbc541caacd1fa08b0dbf836af28827daf6\n\nComment added on 2026-09-25...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-2bc0b6",
+        "id": "VT-f-513951",
         "severity": "CRITICAL",
         "date": "2026-09-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Dropper_Sample_Jul18_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK...",
+        "desc": "[b]Original filename (SHA256)[/b] : 5139511245c9dc2306c7d49bc1e2cc8af53361492b42a42b0fe24bca5c0a83a0\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-2bc0b6",
+        "id": "VT-f-046a7b",
         "severity": "CRITICAL",
         "date": "2026-09-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_PS1_CaseAnomaly_Encoded_WebClient_Aug22_1\nRULE_TYPE: THOR APT Scanne...",
+        "desc": "\n     ANY.RUN Sandbox Analysis:\n\n     Verdict: Malicious activity\n     Tags: arch-scr, auto, generic, xworm, donutloader...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-9e2f98",
+        "id": "VT-f-142d3f",
         "severity": "CRITICAL",
         "date": "2026-09-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 9e2f98359b3c604624edf8f1e38574572cb05dc46057dd1599eef9429f64d140\n\nComment added on 2...",
+        "desc": "[b]Original filename (SHA256)[/b] : 142d3f82a8279e39e6100e277049d88adc6747e4ec162899ca556dd90762aa14\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-b3d966",
+        "id": "VT-f-fedafb",
         "severity": "CRITICAL",
         "date": "2026-09-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_UAC_Bypass_CMSTPLUA_COM_May21\nRULE_TYPE: VALHALLA rule feed only \u26a1\nR...",
+        "desc": "**Malware Family Detected On MalwareBazaar**\n\n**Filename (as uploaded):** bot.armv5l\n**Family/Signature:** Mirai\n**File ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-db66dc",
+        "id": "VT-f-f9c9ce",
         "severity": "CRITICAL",
         "date": "2026-09-25",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Tiny_PowerShell_Execution_File\nRULE_TYPE: THOR APT Scanner's rule se...",
+        "desc": "**Malware Family Detected On MalwareBazaar**\n\n**Filename (as uploaded):** bot.armv6\n**Family/Signature:** Mirai\n**File T...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
