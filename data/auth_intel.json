@@ -90,93 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "VT-f-990e57",
+        "id": "VT-f-933cf6",
         "severity": "CRITICAL",
-        "date": "2026-09-25",
+        "date": "2026-09-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : 990e57896a0379910d581868e3b6c215521d36be692c6575cfce72b6bc5b8421\n\nComment added on 2026-09-25...",
+        "desc": "[b]Original filename[/b] : 933cf6e96c4e0be39954885b8ecdb47b7d7ef8bc98347fb6da7e17f0c3315c7f\n\nComment added on 2026-09-26...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-8451f7",
+        "id": "VT-f-5603ab",
         "severity": "CRITICAL",
-        "date": "2026-09-25",
+        "date": "2026-09-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n1c387299859f2cc736675f42df2646b47511de15e62f0dec8de05d58090ddf28.zip\n\n**Threat Score:**\n10...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-09-25_304ecccc7f978dc9a86f3193abb831f7_bkransomware_elex_hawkeye_maze_remcos\n\n**Threa...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-69a791",
+        "id": "VT-f-4eab4b",
         "severity": "CRITICAL",
-        "date": "2026-09-25",
+        "date": "2026-09-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 69a791a9385e15bee2c15b316273aa75f951b011c84971745bddc21e1a1db865\n\nComment added on 2...",
+        "desc": "[b]Original filename (SHA256)[/b] : 4eab4bfe5e0d75e58c6c73fec48c50b65ba6f492d0b186f261c9b93a91a32305\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-df049f",
+        "id": "VT-f-c6fd94",
         "severity": "CRITICAL",
-        "date": "2026-09-25",
+        "date": "2026-09-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Wget_IPLogger_Reference_Oct21_1\nRULE_TYPE: THOR APT Scanner's rule s...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_PS1_Small_GetBytes_Jun22_1\nRULE_TYPE: THOR APT Scanner's rule set on...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-e21a97",
+        "id": "VT-f-21dd0c",
         "severity": "CRITICAL",
-        "date": "2026-09-25",
+        "date": "2026-09-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\nf582baba774d3b64aba7444413342e59d641a55c68860c72c8615bd8494a20a6.zip\n\n**Threat Score:**\n10...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_PS1_Small_GetBytes_Jun22_1\nRULE_TYPE: THOR APT Scanner's rule set on...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-d72426",
+        "id": "VT-f-d6c1c8",
         "severity": "CRITICAL",
-        "date": "2026-09-25",
+        "date": "2026-09-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxp://59.96.143.134:38674/i\n**Threat:** malware_download\n**Host Country:** India\n**R...",
+        "desc": "[b]Original filename[/b] : d6c1c8f21cc0a138f6bf155fe22d64173a0b6b3d744723f41f36aafd49a83ff8\n\nComment added on 2026-09-26...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-eacd8c",
+        "id": "VT-f-dfdd50",
         "severity": "CRITICAL",
-        "date": "2026-09-25",
+        "date": "2026-09-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxp://175.167.46.88:48737/i\n**Threat:** malware_download\n**Host Country:** China\n**R...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_SUSP_Loader_Aug20_2\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-98e678",
+        "id": "VT-f-ee874a",
         "severity": "CRITICAL",
-        "date": "2026-09-25",
+        "date": "2026-09-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : 98e6789d7176bc14237819a6047d818ef0a0a43756863db61002af7079e82cfa\n\nComment added on 2026-09-25...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_SUSP_Loader_Aug20_2\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-276c3b",
+        "id": "VT-f-bdbe47",
         "severity": "CRITICAL",
-        "date": "2026-09-25",
+        "date": "2026-09-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxp://88.249.100.137:44353/bin.sh\n**Threat:** malware_download\n**Host Country:** T\u00fcr...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_NET_Reactor_Protector_Native_May23\nRULE_TYPE: THOR APT Scanner's rul...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-98d013",
+        "id": "VT-f-a887c3",
         "severity": "CRITICAL",
-        "date": "2026-09-25",
+        "date": "2026-09-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : 98d013d2e0b5c624814861d58f400edb53d5320acc1c1b51dff4c29727e31d80\n\nComment added on 2026-09-25...",
+        "desc": "FileScan.IO Analysis:\n\nVerdict: NO_THREAT\nTags: base64,masquerade,peexe,dotnet_pe,pedll,obfuscated\nReport: https://www.f...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
