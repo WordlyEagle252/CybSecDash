@@ -90,93 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "VT-d-lurspi",
+        "id": "VT-f-50d7c6",
         "severity": "CRITICAL",
         "date": "2026-09-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Synthient proxyware classifications:\n- Proxyware.Appsalt \u2014 Confirmed Tier 2 proxyware infrastructure.\n- Proxyware.Honeyg...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: Cobaltbaltstrike_RAW_Payload_http_stager_x86\nRULE_TYPE: Community \ud83d\udc65\nRULE_...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-mapore",
+        "id": "VT-f-24cda2",
         "severity": "CRITICAL",
         "date": "2026-09-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Synthient proxyware classifications:\n- Proxyware.Appsalt \u2014 Confirmed Tier 2 proxyware infrastructure.\n- Proxyware.Honeyg...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Nitol_Mar19_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https:/...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-lupivi",
+        "id": "VT-f-50d7c6",
         "severity": "CRITICAL",
         "date": "2026-09-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Synthient proxyware classifications:\n- Proxyware.Appsalt \u2014 Confirmed Tier 2 proxyware infrastructure.\n- Proxyware.Honeyg...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: CobaltStrike_Resources_Httpstager_Bin_v2_5_through_v4_x\nRULE_TYPE: Commun...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-lupint",
+        "id": "VT-f-1811cf",
         "severity": "CRITICAL",
         "date": "2026-09-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Synthient proxyware classifications:\n- Proxyware.Appsalt \u2014 Confirmed Tier 2 proxyware infrastructure.\n- Proxyware.Honeyg...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-09-26_b8f5f790d42c353908b86267ab6de1a5_amadey_coinminer_elex_glassworm_hawkeye_hijack...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-lunapi",
+        "id": "VT-f-78c53c",
         "severity": "CRITICAL",
         "date": "2026-09-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Synthient proxyware classifications:\n- Proxyware.Appsalt \u2014 Confirmed Tier 2 proxyware infrastructure.\n- Proxyware.Honeyg...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-09-26_b9b1b1a4a6d6c41fb284c8ae2c335724_amadey_elex_glassworm_hellokitty_icedid_ransom...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-loraps",
+        "id": "VT-f-24cda2",
         "severity": "CRITICAL",
         "date": "2026-09-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Synthient proxyware classifications:\n- Proxyware.Appsalt \u2014 Confirmed Tier 2 proxyware infrastructure.\n- Proxyware.Honeyg...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: ZxShell_Related_Malware_CN_Group_Jul17_2\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-lopove",
+        "id": "VT-f-24cda2",
         "severity": "CRITICAL",
         "date": "2026-09-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Synthient proxyware classifications:\n- Proxyware.Appsalt \u2014 Confirmed Tier 2 proxyware infrastructure.\n- Proxyware.Honeyg...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Nitol_Malware_Jan19_1\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://githu...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-lipond",
+        "id": "VT-f-cd56b2",
         "severity": "CRITICAL",
         "date": "2026-09-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Synthient proxyware classifications:\n- Proxyware.Appsalt \u2014 Confirmed Tier 2 proxyware infrastructure.\n- Proxyware.Honeyg...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_LPE_PrintNotifyPotato_Jun23_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nR...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-lipsti",
+        "id": "VT-f-50d7c6",
         "severity": "CRITICAL",
         "date": "2026-09-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Synthient proxyware classifications:\n- Proxyware.Appsalt \u2014 Confirmed Tier 2 proxyware infrastructure.\n- Proxyware.Honeyg...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_ShellCode_Dec24_1\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nRULE...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-limpog",
+        "id": "VT-f-24cda2",
         "severity": "CRITICAL",
         "date": "2026-09-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Synthient proxyware classifications:\n- Proxyware.Appsalt \u2014 Confirmed Tier 2 proxyware infrastructure.\n- Proxyware.Honeyg...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: Backdoor_Nitol_Jun17\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://github.com...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
