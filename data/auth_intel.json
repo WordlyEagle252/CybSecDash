@@ -1,5 +1,41 @@
 [
     {
+        "id": "OTX-6a90f19b",
+        "severity": "HIGH",
+        "date": "2026-09-27",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Open Directory Exposes Moobot Source Code and Ongoing Activity Post 2024 Court-Authorized Disruption",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a90b73a",
+        "severity": "HIGH",
+        "date": "2026-09-26",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Attacks on AI Infrastructure: 90-Day Honeypot Telemetry",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a90b738",
+        "severity": "HIGH",
+        "date": "2026-09-26",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Implants in the Supply Chain",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a90b738",
+        "severity": "HIGH",
+        "date": "2026-09-26",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Inside the AsyncAPI Supply Chain Compromise",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6a8fefa7",
         "severity": "HIGH",
         "date": "2026-09-26",
@@ -54,129 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6ab61e2e",
-        "severity": "HIGH",
-        "date": "2026-09-25",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Major vulnerability found in ancient TACACS+ networking protocol",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6ab59fab",
-        "severity": "HIGH",
-        "date": "2026-09-25",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Trust and the enticing consultancy offer",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6ab56154",
-        "severity": "HIGH",
-        "date": "2026-09-25",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "RemotePanel and BoundSiphon: A Dual-Payload Toolkit for Persistent Access and Browser Theft",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6ab56155",
-        "severity": "HIGH",
-        "date": "2026-09-25",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "The Not So Silent Miner: Threat Actor Compiles Cryptominer on the Endpoint",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-6582e8",
+        "id": "VT-i-121.18",
         "severity": "CRITICAL",
-        "date": "2026-09-26",
+        "date": "2026-09-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : 6582e8e2b2bb7471258191740e51d4a5bc2a05722155a1882e2ca4bfb6b29c7e\n\nComment added on 2026-09-26...",
+        "desc": "Synthient classification: Proxy.Korea. Reported at 100% confidence by AbuseIPDB within the last day. #proxy https://synt...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-0ae411",
+        "id": "VT-f-565e44",
         "severity": "CRITICAL",
-        "date": "2026-09-26",
+        "date": "2026-09-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 0ae4111719605f4bc583a1d0a1c6b87c4cf2ee58ac555ef92cf62582a966e1e3\n\nComment added on 2...",
+        "desc": "FileScan.IO Analysis:\n\nVerdict: NO_THREAT\nTags: expired-cert,peexe,dotnet_pe,pedll,signed\nReport: https://www.filescan.i...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-657174",
+        "id": "VT-f-b96931",
         "severity": "CRITICAL",
-        "date": "2026-09-26",
+        "date": "2026-09-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : 657174d2d3967cc046c9cf55a8203cb6b421498ef5e87b09691dd5c90d41ddd0\n\nComment added on 2026-09-26...",
+        "desc": "FileScan.IO Analysis:\n\nVerdict: NO_THREAT\nTags: txt\nReport: https://www.filescan.io/reports/b96931c258b3105b46b912050086...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-e631eb",
+        "id": "VT-f-b65b07",
         "severity": "CRITICAL",
-        "date": "2026-09-26",
+        "date": "2026-09-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : e631ebac5fcb9782857bcd54f4281fe2698b35fa2b780a9779f2bd99055a505a\n\nComment added on 2026-09-26...",
+        "desc": "FileScan.IO Analysis:\n\nVerdict: NO_THREAT\nTags: expired-cert,peexe,dotnet_pe,pedll,signed\nReport: https://www.filescan.i...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-5f6af4",
+        "id": "VT-i-121.18",
         "severity": "CRITICAL",
-        "date": "2026-09-26",
+        "date": "2026-09-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 5f6af4b06c115ed56564c237354abf8c09dbd445f8b3f2e7691aa6907818c8be\n\nComment added on 2...",
+        "desc": "Synthient classification: Proxy.Korea. Reported at 100% confidence by AbuseIPDB within the last day. #proxy https://synt...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-e77a01",
+        "id": "VT-f-013b90",
         "severity": "CRITICAL",
-        "date": "2026-09-26",
+        "date": "2026-09-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : e77a0121738e5a0f16716abdc3af912513530104614e5380b47aa83246d83658\n\nComment added on 2026-09-26...",
+        "desc": "ELF DIGEST non-profit Sandbox:\n\n\n Analysis Report: https://elfdigest.com/brief/013b903fdec970f73d89afed0f295f1a987d0b4bf...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-655ac6",
+        "id": "VT-i-121.18",
         "severity": "CRITICAL",
-        "date": "2026-09-26",
+        "date": "2026-09-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : 655ac6d617702a7e25ab95eb357a8eedf501ed3aad3f25be5b314cbe64ebf030\n\nComment added on 2026-09-26...",
+        "desc": "Synthient classification: Proxy.Korea. Reported at 100% confidence by AbuseIPDB within the last day. #proxy https://synt...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-131435",
+        "id": "VT-f-416cd4",
         "severity": "CRITICAL",
-        "date": "2026-09-26",
+        "date": "2026-09-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 13143505c6b933abd96bbcfe8944401c6b7221aa47ff3e12ec414af993e45122\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_OBFUSC_JS_Encoded_Pattern_Sep23\nRULE_TYPE: THOR APT Scanner's rule s...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-e7e853",
+        "id": "VT-i-121.18",
         "severity": "CRITICAL",
-        "date": "2026-09-26",
+        "date": "2026-09-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : e7e8534b30c80355be2b54b6c89e4402792b9ae6233c23cf7daeaa665108545f\n\nComment added on 2026-09-26...",
+        "desc": "Synthient classification: Proxy.Korea. Reported at 100% confidence by AbuseIPDB within the last day. #proxy https://synt...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-144.31",
+        "id": "VT-f-3e019d",
         "severity": "CRITICAL",
-        "date": "2026-09-26",
+        "date": "2026-09-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#StagedC2 config observed at Sat Sep 26 20:41:05 2026 UTC, located at https://pastebin.com/raw/zB0yHR7w C2: 144.31.223.1...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_OBFUSC_JS_Encoded_Pattern_Sep23\nRULE_TYPE: THOR APT Scanner's rule s...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
