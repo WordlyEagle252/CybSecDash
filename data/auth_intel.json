@@ -90,93 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "VT-i-121.18",
+        "id": "VT-i-2804:d",
         "severity": "CRITICAL",
         "date": "2026-09-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Synthient classification: Proxy.Korea. Reported at 100% confidence by AbuseIPDB within the last day. #proxy https://synt...",
+        "desc": "Unauthorised WordPress admin login attempted at 2026-09-27 21:44:00 +1000",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-565e44",
+        "id": "VT-f-8d10a6",
         "severity": "CRITICAL",
         "date": "2026-09-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "FileScan.IO Analysis:\n\nVerdict: NO_THREAT\nTags: expired-cert,peexe,dotnet_pe,pedll,signed\nReport: https://www.filescan.i...",
+        "desc": "[b]Original filename (SHA256)[/b] : 8d10a657c2aac60909c1f9003963058f9a48a24eb392c41409bc062a8561bb3f\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-b96931",
+        "id": "VT-f-00cba2",
         "severity": "CRITICAL",
         "date": "2026-09-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "FileScan.IO Analysis:\n\nVerdict: NO_THREAT\nTags: txt\nReport: https://www.filescan.io/reports/b96931c258b3105b46b912050086...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: PUA_ConnectWise_ScreenConnect_Mar23\nRULE_TYPE: VALHALLA rule feed only \u26a1\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-b65b07",
+        "id": "VT-f-9ca61e",
         "severity": "CRITICAL",
         "date": "2026-09-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "FileScan.IO Analysis:\n\nVerdict: NO_THREAT\nTags: expired-cert,peexe,dotnet_pe,pedll,signed\nReport: https://www.filescan.i...",
+        "desc": "[b]Original filename (SHA256)[/b] : 9ca61e1ff61548e98603b26d2b9e6e2afc88f9e0db7f3cb62b8b506db72f7f7c\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-121.18",
+        "id": "VT-f-f2776c",
         "severity": "CRITICAL",
         "date": "2026-09-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Synthient classification: Proxy.Korea. Reported at 100% confidence by AbuseIPDB within the last day. #proxy https://synt...",
+        "desc": "**File found on MalwareBazaar**\n\n**File Name (as uploaded):** file\n**File Type:** exe\n**Reporter:** Bitsight\n**MalwareBa...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-013b90",
+        "id": "VT-f-478b85",
         "severity": "CRITICAL",
         "date": "2026-09-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ELF DIGEST non-profit Sandbox:\n\n\n Analysis Report: https://elfdigest.com/brief/013b903fdec970f73d89afed0f295f1a987d0b4bf...",
+        "desc": "[b]Original filename (SHA256)[/b] : 478b853c4906fc75fa1e33a6aba3362b418c5b9e9cc251e89a851764f5e83d56\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-121.18",
+        "id": "VT-u-27565e",
         "severity": "CRITICAL",
         "date": "2026-09-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Synthient classification: Proxy.Korea. Reported at 100% confidence by AbuseIPDB within the last day. #proxy https://synt...",
+        "desc": "**URL found on URLhaus**\n\n**URL:** hxxp://94.154.43.120/iran.sh4\n**Threat:** malware_download\n**Host Country:** The Neth...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-416cd4",
+        "id": "VT-u-1dfdde",
         "severity": "CRITICAL",
         "date": "2026-09-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_OBFUSC_JS_Encoded_Pattern_Sep23\nRULE_TYPE: THOR APT Scanner's rule s...",
+        "desc": "**URL found on URLhaus**\n\n**URL:** hxxp://176.65.139.250/hero.mips\n**Threat:** malware_download\n**Host Country:** The Ne...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-121.18",
+        "id": "VT-u-ead138",
         "severity": "CRITICAL",
         "date": "2026-09-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Synthient classification: Proxy.Korea. Reported at 100% confidence by AbuseIPDB within the last day. #proxy https://synt...",
+        "desc": "**URL found on URLhaus**\n\n**URL:** hxxp://176.65.139.250/hero.mipsel\n**Threat:** malware_download\n**Host Country:** The ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-3e019d",
+        "id": "VT-f-3ca05d",
         "severity": "CRITICAL",
         "date": "2026-09-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_OBFUSC_JS_Encoded_Pattern_Sep23\nRULE_TYPE: THOR APT Scanner's rule s...",
+        "desc": "[b]Original filename (SHA256)[/b] : 3ca05d9d36b353feda0fe0af6436e49b66d3f57a63f1b016588670260ff5119c\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
