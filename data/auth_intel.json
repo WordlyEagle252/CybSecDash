@@ -1,5 +1,23 @@
 [
     {
+        "id": "OTX-6a996ed3",
+        "severity": "HIGH",
+        "date": "2026-10-03",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Node.js: Old Technique Makes a Comeback",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6a996bdb",
+        "severity": "HIGH",
+        "date": "2026-10-03",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Attackers Expose Ongoing AI Tool Use Targeting Organizations in Latin America",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6a992d01",
         "severity": "HIGH",
         "date": "2026-10-03",
@@ -72,111 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6abf599e",
-        "severity": "HIGH",
-        "date": "2026-10-02",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "$100k in Crypto Drained by the Underground Operation",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6abe7e46",
-        "severity": "HIGH",
-        "date": "2026-10-02",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Warlock Ransomware Attackers Hit Water and Telecom Operators",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-3a379c",
+        "id": "VT-f-a1c74c",
         "severity": "CRITICAL",
         "date": "2026-10-03",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 3a379c144128d1ec64f9b8c2d82385747155c97a2945c43394f1616a5202daa5\n\nComment added on 2...",
+        "desc": "[b]Original filename (SHA256)[/b] : a1c74ce12368e5c153a2aa322c4ca55ba673adec8018e07945d4d8554b6b901c\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-8e09a7",
+        "id": "VT-f-2e710d",
         "severity": "CRITICAL",
         "date": "2026-10-03",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "VMRay Analysis Verdict: Malicious\n\nAnalysis Report: https://www.vmray.com/analyses/_vt/d3f279abfd5e/report/overview.html...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-10-02_2404caa1639adb8b31a2f08f44075dcd_amadey_cobalt-strike_coinminer_glassworm_poet-...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-9c2196",
+        "id": "VT-f-3ff45f",
         "severity": "CRITICAL",
         "date": "2026-10-03",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Joe Sandbox Analysis: \n\t\t\t\nVerdict: MAL\nScore: 100/100\nThreat Name: ScreenConnect Tool\nDomains: android.l.google.com ipa...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_RPX_Backdoor_Client_Nov25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_L...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-13.63.",
+        "id": "VT-f-5f6abe",
         "severity": "CRITICAL",
         "date": "2026-10-03",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "IOC Type: IPv4\n\nThreat Type: T1498\n\nMITRE ATT&CK: T1498\n\nRelated Tags: malicious-ip, T1498\n\nAnalysis Summary:\nFirewall b...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_RPX_Backdoor_Client_Nov25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_L...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-64.226",
+        "id": "VT-f-8334e5",
         "severity": "CRITICAL",
         "date": "2026-10-03",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "IOC Type: IPv4\n\nThreat Type: T1498\n\nMITRE ATT&CK: T1498\n\nRelated Tags: malicious-ip, T1498\n\nAnalysis Summary:\nFirewall b...",
+        "desc": "[b]Original filename (SHA256)[/b] : 8334e54fb399be7bc50b3d9cf356fe6066760cce42ac28dc9c77b0fb19536b93\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-13.63.",
+        "id": "VT-f-3d1dce",
         "severity": "CRITICAL",
         "date": "2026-10-03",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udccc IOC Type: IPv4\n\ud83d\udd39 Associated Rule Name: PURE7 - Impact - T1498 - Anomalous Blocked Traffic Detection via FW\n\ud83d\udd39 MITRE ATT...",
+        "desc": "[b]Original filename (SHA256)[/b] : 3d1dced2f13075d9784107991254eefde310b7d902ccaf6e73f954c8669e7d31\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-64.226",
+        "id": "VT-f-8ef31f",
         "severity": "CRITICAL",
         "date": "2026-10-03",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udccc IOC Type: IPv4\n\ud83d\udd39 Associated Rule Name: PURE7 - Impact - T1498 - Anomalous Blocked Traffic Detection via FW\n\ud83d\udd39 MITRE ATT...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_RPX_Backdoor_Client_Nov25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_L...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-b9dae0",
+        "id": "VT-f-9c405e",
         "severity": "CRITICAL",
         "date": "2026-10-03",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#malware #Emotet\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/2c89b98649240dabf6568562bca0c1f2b9f7370...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_RPX_Backdoor_Client_Nov25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_L...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-3c4919",
+        "id": "VT-f-c82a61",
         "severity": "CRITICAL",
         "date": "2026-10-03",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 3c4919be0b8290ed760796e9cb004133c4c8687b72e0e555bce5e7de0700e72b\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_LNX_Mirai_Mar23_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: htt...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-db5a44",
+        "id": "VT-f-c5dbcd",
         "severity": "CRITICAL",
         "date": "2026-10-03",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : db5a448a3a21c4edbeec3e2977a8732053f3a5ba86b649851f9da3622a3295a4\n\nComment added on 2...",
+        "desc": "[b]Original filename (SHA256)[/b] : c5dbcd9d894744f8bbb05dc216f0fbe4e58f1dc7eaaae9b0409e5dcac184dae7\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
