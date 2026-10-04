@@ -1,5 +1,14 @@
 [
     {
+        "id": "OTX-6a9a78c9",
+        "severity": "HIGH",
+        "date": "2026-10-04",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Attack Cases in Korea Involving the Installation of Radmin and UltraVNC",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6a99efa1",
         "severity": "HIGH",
         "date": "2026-10-03",
@@ -81,102 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6abf5aa0",
-        "severity": "HIGH",
-        "date": "2026-10-02",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Determined Attacker Uploads Malicious Webshells to Parks and Rec Management Platform Servers",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-4c3846",
+        "id": "VT-f-7ec2eb",
         "severity": "CRITICAL",
         "date": "2026-10-04",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#malware #xmrig\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/44a70198ab671bd7435e0ab51641e14d965b141c...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-10-03_58b6642fadc006c59de2695b2614202a_amadey_coinminer_elex_smoke-loader_stop\n\n**Thr...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-a3189f",
+        "id": "VT-f-244ac0",
         "severity": "CRITICAL",
         "date": "2026-10-04",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-10-03_a857403772f01e5900005adb982a840b_coinminer_elex_rhadamanthys_smoke-loader_steal...",
+        "desc": "[b]Original filename (SHA256)[/b] : 244ac037663ad53d78688b9c00fb39973a1f57b9db2621ced0bb16a6cdd2629d\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-c1cdd9",
+        "id": "VT-f-f2e922",
         "severity": "CRITICAL",
         "date": "2026-10-04",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\ncakhia-tv.work_hyber.exe\n\n**Threat Score:**\n10/10\n\n**Family:**\nN/A\n\n**File Report:**\nhttps...",
+        "desc": "UnpacMe Analysis\nReport: https://unpac.me/results/6651c48a-48ae-41b5-b359-92b918790187\nMalware Family: Remus\nC2s: \n - C2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-8af80b",
+        "id": "VT-f-93c1c6",
         "severity": "CRITICAL",
         "date": "2026-10-04",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Summary: `workshop_dir.vpk` is a valid Valve VPK v2 directory/index file, only **114 bytes** in size. It is not the actu...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-10-03_58c44171b95251b7e03a4509aa8bec03_elex_wannacry\n\n**Threat Score:**\n10/10\n\n**Fami...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-5f06b7",
+        "id": "VT-f-3b9856",
         "severity": "CRITICAL",
         "date": "2026-10-04",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Hacktool_Authors_Mar25\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28...",
+        "desc": "[b]Original filename (SHA256)[/b] : 3b985658454da14dfa6096fd91af6edc9f3ab2e6a74a0fd74fe74c1486b548df\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-5f06b7",
+        "id": "VT-f-9eb953",
         "severity": "CRITICAL",
         "date": "2026-10-04",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Go_Binary_IP_Lookup_Indicators_Jan22_1\nRULE_TYPE: THOR APT Scanner's...",
+        "desc": "[b]Original filename[/b] : 9eb9534200da85daf04a805ff530bd81bbd4a40ca807176a21f90dd44665c5b8\n\nComment added on 2026-10-04...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-a3189f",
+        "id": "VT-f-db8559",
         "severity": "CRITICAL",
         "date": "2026-10-04",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : a3189f8e1a85da9d9c402ced68142a112f29a9ec579fb4710ecf32025a570451\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: CN_Actor_AmmyyAdmin\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://github.com/...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-e69ac0",
+        "id": "VT-f-db8559",
         "severity": "CRITICAL",
         "date": "2026-10-04",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-10-03_a93060f91b6cefb66ae553f528c357c6_amadey_cobalt-strike_coinminer_glassworm_poet-...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: CN_Actor_RA_Tool_Ammyy_mscorsvw\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https:/...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-13e783",
+        "id": "VT-f-dd92cb",
         "severity": "CRITICAL",
         "date": "2026-10-04",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_CobaltStrike_Beacon_Gen\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LI...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Base64_Encoded_Hex_Encoded_Code\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: ht...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-13e783",
+        "id": "VT-f-db8559",
         "severity": "CRITICAL",
         "date": "2026-10-04",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_CobaltStrike_Beacon_Oct21_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRUL...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: Ammyy_Admin_AA_v3\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://github.com/Ne...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
