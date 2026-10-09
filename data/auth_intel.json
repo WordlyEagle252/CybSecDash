@@ -1,5 +1,23 @@
 [
     {
+        "id": "OTX-6aa1c228",
+        "severity": "HIGH",
+        "date": "2026-10-09",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Active exploitation of Cisco Secure Firewall Management Center vulnerabilities",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6aa17d03",
+        "severity": "HIGH",
+        "date": "2026-10-09",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Agents Gone Wild: An AI-Orchestrated Global Campaign Against PaperCut NG/MF",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6ac89a6e",
         "severity": "HIGH",
         "date": "2026-10-09",
@@ -72,111 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6a9ef407",
-        "severity": "HIGH",
-        "date": "2026-10-09",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Bypassing the Gatekeepers: How a Global Phishing Campaign Turns Google's Infrastructure into a Trust Proxy",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6aa03edd",
-        "severity": "HIGH",
-        "date": "2026-10-08",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Redis Cryptomining Botnet Compromised 3,562 Servers, Exposed by the Operator's Own Files",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-4d0c07",
+        "id": "VT-f-576b7b",
         "severity": "CRITICAL",
         "date": "2026-10-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 4d0c07cc780b79e67ad5ef1132225cc30a622545b7e2ec40ed6485bcf5c005b3\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_B64_Atob_Aug23\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nRULE_LI...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-4039c3",
+        "id": "VT-f-f4ad6b",
         "severity": "CRITICAL",
         "date": "2026-10-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "UnpacMe Analysis\nReport: https://unpac.me/results/73459848-10be-4a5b-b304-aab36cb8d6b3\nMalware Family: AsyncRAT\nC2s: \n -...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_XMRIG_String\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://github.com/Ne...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-a6076d",
+        "id": "VT-f-576b7b",
         "severity": "CRITICAL",
         "date": "2026-10-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : a6076d1c3d532d38d2972e58e4f626bae8b63e3f27208591cfc23d3f77d6116d\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Base64_Encoded_Hex_Encoded_Code\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: ht...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-5ad888",
+        "id": "VT-f-576b7b",
         "severity": "CRITICAL",
         "date": "2026-10-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Xeno_RAT_Aug24\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https:...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_OBFUSC_Base64_Hex_Encoded_Apr19\nRULE_TYPE: THOR APT Scanner's rule s...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-1a120f",
+        "id": "VT-f-7c0902",
         "severity": "CRITICAL",
         "date": "2026-10-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 1a120f8d6dc8abb1962cfaa32f25bac0cd778ff1c97eb814d53be9edcc280458\n\nComment added on 2...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-10-08_01bb9333ca178f22f241136ab5f59664_coinminer_dosia_elex_glassworm_hive_poet-rat_q...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-84cbff",
+        "id": "VT-f-292810",
         "severity": "CRITICAL",
         "date": "2026-10-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#malware #Cerber\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/c5309fbaacd66939a58bc6a067765ab9b62338b...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_HKTL_Hacktool_Strings_Oct21_1\nRULE_TYPE: THOR APT Scanner's rule set...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-729ef8",
+        "id": "VT-f-c00df2",
         "severity": "CRITICAL",
         "date": "2026-10-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#malware #AgentTesla\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/0d757f885f9a5a94e382e8a6d0a2371659a...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_B64_Atob_Aug23\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nRULE_LI...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-b19eb6",
+        "id": "VT-f-14929f",
         "severity": "CRITICAL",
         "date": "2026-10-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : b19eb6beaa901a87b3a15895c73f2281f1958a6bd1e8fbb8a5b68e18a242ef89\n\nComment added on 2...",
+        "desc": "#malware #ModiLoader\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/da9613572087927f5f8a1fb4cfde372d086...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-dc6ccc",
+        "id": "VT-f-449d75",
         "severity": "CRITICAL",
         "date": "2026-10-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : dc6ccc76ec6d4128894000431e841a2b7a763719a0ffa3dcb2849b5f0045d821\n\nComment added on 2...",
+        "desc": "#malware #vobfus\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/cd6a0659d5076199e500198bf5362a452159afd...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-69e02d",
+        "id": "VT-f-c6bf49",
         "severity": "CRITICAL",
         "date": "2026-10-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-10-08_6853e95737f23a2525182c7a0af76ab2_amadey_darkgate_elex_rhadamanthys_smoke-loader...",
+        "desc": "#malware #mirai\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/82e054569417157ff24c4b042bea15437f9945e0...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
