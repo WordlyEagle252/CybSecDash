@@ -1,5 +1,14 @@
 [
     {
+        "id": "OTX-6aa2e892",
+        "severity": "HIGH",
+        "date": "2026-10-10",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Casbaneiro: A Banking Trojan with Distributed Data-Receiving Servers",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6aa2a776",
         "severity": "HIGH",
         "date": "2026-10-10",
@@ -81,102 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6ac7f943",
-        "severity": "HIGH",
-        "date": "2026-10-09",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Suspected TraderTraitor Group Uses Trojanized Terraform Provider to Deliver Cross-Platform Malware",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-100760",
+        "id": "VT-f-8d08d8",
         "severity": "CRITICAL",
         "date": "2026-10-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\njaffacakes118_Trojan-PSW.Win32.Coins.evk.2c0b16590333da4af38e56462f66094f\n\n**Threat Score:...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_CredentialStealer_Indicators_Nov21_1\nRULE_TYPE: THOR APT Scanner's r...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-9c7038",
+        "id": "VT-f-dc50e8",
         "severity": "CRITICAL",
         "date": "2026-10-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\njaffacakes118_Trojan-PSW.Win32.Coins.fdb.4ece7fc41172d3b2dd308f7e53517470\n\n**Threat Score:...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-10-10_f1c6348005c02a2f96889e1ee0aa18cc_amadey_darkgate_elex_rhadamanthys_smoke-loader...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-a75b65",
+        "id": "VT-f-1dda92",
         "severity": "CRITICAL",
         "date": "2026-10-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\njaffacakes118_Trojan-PSW.Win32.Coins.enx.be8a6aca11fba7acc301bd32aa574366\n\n**Threat Score:...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Monero_Mining_Pools_Oct21\nRULE_TYPE: THOR APT Scanner's rule set onl...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-691d3d",
+        "id": "VT-f-dcb441",
         "severity": "CRITICAL",
         "date": "2026-10-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 691d3dad3c9e0470e09a7472c394fb55ac5aa1511142441a732202764048ddfa\n\nComment added on 2...",
+        "desc": "[b]Original filename (SHA256)[/b] : dcb441f267b32c0285a9a57ca93b6f7a9b35e19b61f63f3a15308027d3487788\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-1013b1",
+        "id": "VT-f-5f4507",
         "severity": "CRITICAL",
         "date": "2026-10-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Base64_Encoded_Hex_Encoded_Code\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: ht...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Defender_Exclusion_Aug21\nRULE_TYPE: THOR APT Scanner's rule set only...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-243040",
+        "id": "VT-f-5f4507",
         "severity": "CRITICAL",
         "date": "2026-10-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 243040f8c8c4dbe560d05dbddafbb3e0348ce8dedf8751fbc800f00dd1b265b1\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Wmic_ShadowCopy_Delete_Oct24\nRULE_TYPE: THOR APT Scanner's rule set ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-26290e",
+        "id": "VT-f-5f4507",
         "severity": "CRITICAL",
         "date": "2026-10-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Base64_Encoded_Hex_Encoded_Code\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: ht...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_PS1_WMI_Delete_VolumeShadowCopies_Jun23_1\nRULE_TYPE: THOR APT Scanne...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-7bdffd",
+        "id": "VT-f-7b54b9",
         "severity": "CRITICAL",
         "date": "2026-10-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_ENV_Folder_Root_File_Jan23_1\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https...",
+        "desc": "[b]Original filename (SHA256)[/b] : 7b54b9e97083d3c09e96246e63cd0470abc4f668c49a3925f77bfb710c115128\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-43ee10",
+        "id": "VT-f-7c1181",
         "severity": "CRITICAL",
         "date": "2026-10-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udd0d ScanMalware.com AI Security Verdict: CONFIRMED_SCAM - Risk: 9/10\n\nView full report: https://scanmalware.com/scan/c42bc...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_NET_Reactor_Protector_Native_May23\nRULE_TYPE: THOR APT Scanner's rul...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-f878b9",
+        "id": "VT-f-c956ea",
         "severity": "CRITICAL",
         "date": "2026-10-10",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : f878b954abac17bcf4b3a18c7b4d6b1f44b254fe69da74a828a0cbf5d1253407\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_NET_Reactor_Protector_Native_May23\nRULE_TYPE: THOR APT Scanner's rul...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
