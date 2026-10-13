@@ -1,5 +1,23 @@
 [
     {
+        "id": "OTX-6accbe14",
+        "severity": "HIGH",
+        "date": "2026-10-13",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "The phone was compromised before the user turned it on: the rise of Midnight Mimosa",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6accfc98",
+        "severity": "HIGH",
+        "date": "2026-10-13",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "From WhatsApp to SYSTEM: Inside the VulcanRAT207.A Intrusion Chain",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6accdd88",
         "severity": "HIGH",
         "date": "2026-10-12",
@@ -72,111 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6aa32c68",
-        "severity": "HIGH",
-        "date": "2026-10-10",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Melofee: a look back at a Linux implant and its new variants",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6aa2e892",
-        "severity": "HIGH",
-        "date": "2026-10-10",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Casbaneiro: A Banking Trojan with Distributed Data-Receiving Servers",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-9f83aa",
+        "id": "VT-f-2d862d",
         "severity": "CRITICAL",
         "date": "2026-10-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 9f83aab345fae8d5b7eb8a03cb9ae29d0f5bebc58b8bcf3522f02fbc824f581b\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: CobaltStrike_Resources_Xor_Bin_v2_x_to_v4_x\nRULE_TYPE: Community \ud83d\udc65\nRULE_L...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-daffeb",
+        "id": "VT-f-ecee69",
         "severity": "CRITICAL",
         "date": "2026-10-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\njaffacakes118_HEUR.Trojan.Win32.Generic.1790334255491d4e36eeb\n\n**Threat Score:**\n10/10\n\n**...",
+        "desc": "[b]Original filename (SHA256)[/b] : ecee69fec61129f4cff11b18be09f8cc0c30e5b43f6fde0038fada13e3d34558\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-397bbf",
+        "id": "VT-f-05312d",
         "severity": "CRITICAL",
         "date": "2026-10-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Base64_Encoded_Hex_Encoded_Code\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: ht...",
+        "desc": "#malware #lockbit\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/209e23c5135a51755848a82df5c0cd523c0b29...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-d7af03",
+        "id": "VT-f-817c9b",
         "severity": "CRITICAL",
         "date": "2026-10-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Credential_Stealer_Indicators_Jul23_2\nRULE_TYPE: THOR APT Scanner's ...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: PUA_ConnectWise_ScreenConnect_Mar23\nRULE_TYPE: VALHALLA rule feed only \u26a1\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-f754ec",
+        "id": "VT-f-58c854",
         "severity": "CRITICAL",
         "date": "2026-10-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Base64_Encoded_Hex_Encoded_Code\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: ht...",
+        "desc": "#malware #\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/898f66cd2f3513bf3d63c703f447a9ca70c666ae449d1...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-40b060",
+        "id": "VT-f-c49df0",
         "severity": "CRITICAL",
         "date": "2026-10-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\njaffacakes118_HEUR.Trojan.Win32.Generic.13ad37e4648253e9e3c1316e72a076f7\n\n**Threat Score:*...",
+        "desc": "**File Info:**\n\n**Filename:**\njtxgold.my_hyber.exe\n\n**Threat Score:**\n10/10\n\n**Family:**\nN/A\n\n**File Report:**\nhttps://j...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-428467",
+        "id": "VT-f-23de7c",
         "severity": "CRITICAL",
         "date": "2026-10-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 428467f46764bf0e385440fface41de6c3c6c15b7b409dc1ff72983e46767a48\n\nComment added on 2...",
+        "desc": "#malware #xmrig\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/44a70198ab671bd7435e0ab51641e14d965b141c...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-2401df",
+        "id": "VT-f-2893ec",
         "severity": "CRITICAL",
         "date": "2026-10-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Base64_Encoded_Hex_Encoded_Code\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: ht...",
+        "desc": "#malware #remcos\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/0ef427c176199a1b7c447d0ac3ea4752e4714fc...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-fc572b",
+        "id": "VT-f-b8c96d",
         "severity": "CRITICAL",
         "date": "2026-10-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-10-11_37eb5ff289f1d7112194df119f911506_elex_wannacry\n\n**Threat Score:**\n10/10\n\n**Fami...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-10-13_427e711dbbcfcc8b1e51e616da71c75a_amadey_coinminer_elex_smoke-loader_stop\n\n**Thr...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-fdddf3",
+        "id": "VT-f-fa98b6",
         "severity": "CRITICAL",
         "date": "2026-10-13",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : fdddf3c7600845e9c767f0f975586c2d0573b1dbabb7c32c5ae18ca897c0c80c\n\nComment added on 2...",
+        "desc": "[b]Original filename (SHA256)[/b] : fa98b600d1f83168efa1db3c066d71e5eef38afaf49045a4a88d12273edfd375\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
