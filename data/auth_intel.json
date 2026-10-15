@@ -1,5 +1,32 @@
 [
     {
+        "id": "OTX-6ad0c303",
+        "severity": "HIGH",
+        "date": "2026-10-15",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Aoki: Infostealer Targets AI Coding Assistant Credentials",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6ad0c5a0",
+        "severity": "HIGH",
+        "date": "2026-10-15",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Exposing AdFection: How Discover-Tech Turned Targeted Ads Into a Pipeline for Zero-Click Mercenary Spyware",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6ad0dc1e",
+        "severity": "HIGH",
+        "date": "2026-10-15",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "DragonForce Ransomware Profile: From Affiliate Program to Cybercrime Cartel",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6acf8533",
         "severity": "HIGH",
         "date": "2026-10-15",
@@ -63,120 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6aa84f43",
-        "severity": "HIGH",
-        "date": "2026-10-14",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Thai Broadband Provider Targeted via FortiGate SSL-VPN and MeshCentral Persistence",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6acf82f3",
-        "severity": "HIGH",
-        "date": "2026-10-14",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Case of AgentTesla Malware Distribution Disguised as a Business Proposal Email",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6acf7922",
-        "severity": "HIGH",
-        "date": "2026-10-14",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "ClingSTUN Turns Vulnerable Edge Devices Into Attacker Infrastructure",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-e90e72",
+        "id": "VT-f-eaac64",
         "severity": "CRITICAL",
         "date": "2026-10-15",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_HKTL_Hacktool_Strings_Oct21_1\nRULE_TYPE: THOR APT Scanner's rule set...",
+        "desc": "Elysium Loader, this is malware DO NOT Download.",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-297fb0",
+        "id": "VT-f-fe42b3",
         "severity": "CRITICAL",
         "date": "2026-10-15",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 297fb05eb0ffc033a346879ad65265bc9a62c8169b13867758572d78e7de0ded\n\nComment added on 2...",
+        "desc": "[b]Original filename (SHA256)[/b] : fe42b31cedf22c76c6b5d80f0437a2e1e09d09575f09ed67cb367931a0a59949\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-965e3c",
+        "id": "VT-f-aed7dd",
         "severity": "CRITICAL",
         "date": "2026-10-15",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ELF DIGEST non-profit Sandbox:\n\n\n Analysis Report: https://elfdigest.com/brief/965e3c0a85daa83a38e5841a77fad2407f42b2887...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-10-13_324c5476f8bba3409df8c391aa755e80_amadey_cobalt-strike_coinminer_glassworm_poet-...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-5b3d19",
+        "id": "VT-f-217c50",
         "severity": "CRITICAL",
         "date": "2026-10-15",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 5b3d1947f17a00b1feca29296c514355ee1b53446ebf8b613dc1853e883591cc\n\nComment added on 2...",
+        "desc": "**File Info:**\n\n**Filename:**\n8080.exe\n\n**Threat Score:**\n10/10\n\n**Family:**\n\u2022 asyncrat\n\n**Botnet:**\n\u2022 null\n\n**C2:**\n\u2022 w...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-6ee138",
+        "id": "VT-f-9f1353",
         "severity": "CRITICAL",
         "date": "2026-10-15",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**IOC found on ThreatFox**\n\n**IOC:** hxxps://aj.7dewaslot.org/kl\n**IOC Type:** url\n**Threat Type:** botnet_cc\n**Malware:...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_ArphaDump_DLL_May25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: h...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-30a71c",
+        "id": "VT-f-652c44",
         "severity": "CRITICAL",
         "date": "2026-10-15",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "VMRay Analysis Verdict: Malicious\n\nThreat Names: CobaltStrike, Metasploit\nClassification: Hacktool\n\nAnalysis Report: htt...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Xeno_RAT_Aug24\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https:...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-a8729d",
+        "id": "VT-f-98ceac",
         "severity": "CRITICAL",
         "date": "2026-10-15",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : a8729db107f1350ef84e83140a8bb4a662946acecdab6cc796a50bdf221cb56c\n\nComment added on 2...",
+        "desc": "[b]Original filename (SHA256)[/b] : 98ceacaa2296d72e8bdbf37db631aec3899f811df63895e012302c16ba993cd8\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-2338de",
+        "id": "VT-u-f77288",
         "severity": "CRITICAL",
         "date": "2026-10-15",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: PUA_RMM_Meshagent_Nov24\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: h...",
+        "desc": "\ud83d\udd0d ScanMalware.com AI Security Verdict: LOW_RISK - Risk: 2/10\n\nView full report: https://scanmalware.com/scan/c87ac160-96...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-f1c4e0",
+        "id": "VT-f-6978a0",
         "severity": "CRITICAL",
         "date": "2026-10-15",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**IOC found on ThreatFox**\n\n**IOC:** hxxps://aj.7dewaslot.org/eds/\n**IOC Type:** url\n**Threat Type:** botnet_cc\n**Malwar...",
+        "desc": "**File Info:**\n\n**Filename:**\n4.exe\n\n**Threat Score:**\n10/10\n\n**Family:**\n\u2022 asyncrat\n\n**Botnet:**\n\u2022 null\n\n**C2:**\n\u2022 way2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-1a2977",
+        "id": "VT-f-96960e",
         "severity": "CRITICAL",
         "date": "2026-10-15",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-10-13_739fe1b5a6852775bd02854da4f57cef_amadey_coinminer_elex_smoke-loader_stop\n\n**Thr...",
+        "desc": "[b]Original filename (SHA256)[/b] : 96960ecc27e779ee6d66434f55963e29f7639d57ef66c7bf727076abf287f6b0\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
