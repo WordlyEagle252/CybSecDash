@@ -1,5 +1,23 @@
 [
     {
+        "id": "OTX-6ad63228",
+        "severity": "HIGH",
+        "date": "2026-10-19",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "AOMEI Backupper update servers hijacked to push malware: Check your PC",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6ad5b2c9",
+        "severity": "HIGH",
+        "date": "2026-10-19",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Plex vulnerabilities being exploited in the wild to drop a cryptominer",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6ad220cc",
         "severity": "HIGH",
         "date": "2026-10-19",
@@ -72,111 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6aadb1d9",
-        "severity": "HIGH",
-        "date": "2026-10-18",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "ChainScript: Tracing a Node.js RAT Through the Blockchain",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6aadad46",
-        "severity": "HIGH",
-        "date": "2026-10-18",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Lazarus luring employees with trojanized coding challenges: The case of a Spanish aerospace company",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-181b3f",
+        "id": "VT-f-eb08d1",
         "severity": "CRITICAL",
         "date": "2026-10-19",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "VMRay Analysis Verdict: Malicious\n\nThreat Name: QuasarRAT\nClassifications: Backdoor, Injector\n\nAnalysis Report: https://...",
+        "desc": "[b]Original filename (SHA256)[/b] : eb08d129adb0311faa94df5fb2785540dcdcc136892367230e5eaea72f414aee\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-cefaef",
+        "id": "VT-f-7a5706",
         "severity": "CRITICAL",
         "date": "2026-10-19",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : cefaef038ad2c55b5182679d98df84da287f6dda57552c8e2a3e61787058a54a\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Encoded_WscriptShell_Jun20\nRULE_TYPE: THOR APT Scanner's rule set on...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-d2a099",
+        "id": "VT-f-7a5706",
         "severity": "CRITICAL",
         "date": "2026-10-19",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#malware #masslogger\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/42242661b7e6752ffa4f939305ac8d2b5d8...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Encoded_DisableRealtimeMonitoring_Mar20\nRULE_TYPE: THOR APT Scanner'...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-9a6fb4",
+        "id": "VT-f-9e900a",
         "severity": "CRITICAL",
         "date": "2026-10-19",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Joe Sandbox Analysis: \n\t\t\t\nVerdict: MAL\nScore: 100/100\nDomains: lodir.tonnels.me \nHosts: 172.67.138.114 \n\nHTML Report: h...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_OBFUSC_Base64_Hex_Encoded_Apr19\nRULE_TYPE: THOR APT Scanner's rule s...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-8e264d",
+        "id": "VT-f-d4959d",
         "severity": "CRITICAL",
         "date": "2026-10-19",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "VMRay Analysis Verdict: Malicious\n\nThreat Name: MassLogger\nClassifications: Downloader, Spyware\n\nAnalysis Report: https:...",
+        "desc": "[b]Original filename (SHA256)[/b] : d4959d4efe8d21a22cef1c27ae4c80f243ae4bfe639f1fc515291f31765b246d\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-90847c",
+        "id": "VT-f-9e900a",
         "severity": "CRITICAL",
         "date": "2026-10-19",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-10-17_036ef3c945b8fa563dd515dbdebe93b0_elex_wannacry\n\n**Threat Score:**\n10/10\n\n**Fami...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Base64_Encoded_Hex_Encoded_Code\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: ht...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-04c45b",
+        "id": "VT-f-f1f176",
         "severity": "CRITICAL",
         "date": "2026-10-19",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 04c45b0524822c61abc7dbe7d0535d46e9f0b93a51648c1003c0809a552e6853\n\nComment added on 2...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-10-19_a980424073b4915f434edc619dea616d_elex_goldeneye_wannacry\n\n**Threat Score:**\n10/...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-16c31a",
+        "id": "VT-f-046a09",
         "severity": "CRITICAL",
         "date": "2026-10-19",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "VMRay Analysis Verdict: Malicious\n\nThreat Names: AgentTesla.v4, AgentTesla, GuLoader\nClassifications: Downloader, Spywar...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_FromBase64String_Payload_Combo_Nov19\nRULE_TYPE: THOR APT Scanner's r...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-42d899",
+        "id": "VT-f-c9dd3c",
         "severity": "CRITICAL",
         "date": "2026-10-19",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\ntravelchain.io_new.exe\n\n**Threat Score:**\n10/10\n\n**Family:**\n\u2022 nanocore\n\n**File Report:**\n...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_KeyloggerGen_Nov18_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-d1ea28",
+        "id": "VT-f-c9dd3c",
         "severity": "CRITICAL",
         "date": "2026-10-19",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\nbafybeibgc3snqi6qesnhskujhjcbduu7lfhju7eppumuqhymapuwvln6tq\n\n**Threat Score:**\n10/10\n\n**Fa...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Ransomware_Indicators_Dec20_1\nRULE_TYPE: THOR APT Scanner's rule set...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
