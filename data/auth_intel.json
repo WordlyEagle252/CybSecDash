@@ -1,5 +1,41 @@
 [
     {
+        "id": "OTX-6ad77e2e",
+        "severity": "HIGH",
+        "date": "2026-10-20",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Active Exploitation of CVE-2026-110936 in Siemens Software Center",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6ad74f34",
+        "severity": "HIGH",
+        "date": "2026-10-20",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Swallowtail: Russian Espionage Group Targets Defense Firms in Two NATO Countries",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6ad71c12",
+        "severity": "HIGH",
+        "date": "2026-10-20",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "CVE-2026-102764: Critical BeyondTrust Remote Support Authentication Bypass Exploited in the Wild",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6ad71b76",
+        "severity": "HIGH",
+        "date": "2026-10-20",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "NetScaler intrusions chaining CVE-2026-88771 and CVE-2026-88779",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6ad63228",
         "severity": "HIGH",
         "date": "2026-10-19",
@@ -54,129 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6ad1d339",
-        "severity": "HIGH",
-        "date": "2026-10-19",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "An Analysis of Suo5-Based Tunneling and Pivoting Attack Techniques Through Case Studies",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6ad1d242",
-        "severity": "HIGH",
-        "date": "2026-10-19",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Inside Help TDS: Hotejka, Cloudflare Pages and Predictive Detection",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6ad1d090",
-        "severity": "HIGH",
-        "date": "2026-10-19",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "BREAK THE SILENCE: Tracking Silent Lynx Through Exposed Infrastructure",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6aae4b5f",
-        "severity": "HIGH",
-        "date": "2026-10-19",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Don't Call Us, We'll Call Your APIs | TraderTraitor Backdoors Resurface on Victim With No Crypto Ties",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-u-0e19de",
+        "id": "VT-f-9139bd",
         "severity": "CRITICAL",
         "date": "2026-10-20",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Joe Sandbox Analysis: \n\t\t\t\nVerdict: MAL\nScore: 48/100\nDomains: github.com release-assets.githubusercontent.com pki-goog....",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-10-19_72b8687138a35d40e7d740d4a32c2035_elex_emotet_glassworm_icedid_remcos\n\n**Threat ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-b071da",
+        "id": "VT-f-d06213",
         "severity": "CRITICAL",
         "date": "2026-10-20",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**IOC found on ThreatFox**\n\n**IOC:** hxxps://uv.abangempayer.org/op/\n**IOC Type:** url\n**Threat Type:** botnet_cc\n**Malw...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_FromBase64_StartProcess_Combo_Mar21_1\nRULE_TYPE: THOR APT Scanner's ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-120841",
+        "id": "VT-f-7349a5",
         "severity": "CRITICAL",
         "date": "2026-10-20",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-10-19_a57c7cb286d70f9d6ecccf12679cb269_elex_floxif_hacktools_wannacry\n\n**Threat Score...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_ZIP_LNK_PhishAttachment_Pattern_Jun22_1\nRULE_TYPE: Community \ud83d\udc65\nRULE_...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-3865f3",
+        "id": "VT-f-d06213",
         "severity": "CRITICAL",
         "date": "2026-10-20",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: GoldenEyeRansomware_Dropper_MalformedZoomit\nRULE_TYPE: Community \ud83d\udc65\nRULE_L...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_FromBase64String_Payload_Combo_Nov19\nRULE_TYPE: THOR APT Scanner's r...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-4240c2",
+        "id": "VT-f-6fca63",
         "severity": "CRITICAL",
         "date": "2026-10-20",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-10-19_a588f3d1ee7c1235e910aa2bff9766a4_elex_wannacry\n\n**Threat Score:**\n10/10\n\n**Fami...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Encoded_GetProcAddress_Mar19\nRULE_TYPE: THOR APT Scanner's rule set ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-bc7366",
+        "id": "VT-u-bca13e",
         "severity": "CRITICAL",
         "date": "2026-10-20",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : bc736645e47c34b14309107532ff0b74315d1cb2ba0eca5b8b084c33ee6c36d2\n\nComment added on 2...",
+        "desc": "**IOC found on ThreatFox**\n\n**IOC:** hxxps://e.abbastoto.org/t4y/\n**IOC Type:** url\n**Threat Type:** botnet_cc\n**Malware...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-72709f",
+        "id": "VT-f-54e851",
         "severity": "CRITICAL",
         "date": "2026-10-20",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: GoldenEyeRansomware_Dropper_MalformedZoomit\nRULE_TYPE: Community \ud83d\udc65\nRULE_L...",
+        "desc": "[b]Original filename (SHA256)[/b] : 54e851590953a44a6d1b795e1e7ba5391564b6a78ba89e71f69f434602e0377c\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-3db183",
+        "id": "VT-f-d92bfb",
         "severity": "CRITICAL",
         "date": "2026-10-20",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: GoldenEyeRansomware_Dropper_MalformedZoomit\nRULE_TYPE: Community \ud83d\udc65\nRULE_L...",
+        "desc": "**File Info:**\n\n**Filename:**\nd92bfb0cf7a1343d185e93e6bb6c335171b31bea17274ac5270d4f8290507926\n\n**Threat Score:**\n10/10\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-a31a0a",
+        "id": "VT-f-220d5a",
         "severity": "CRITICAL",
         "date": "2026-10-20",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: GoldenEyeRansomware_Dropper_MalformedZoomit\nRULE_TYPE: Community \ud83d\udc65\nRULE_L...",
+        "desc": "VMRay Analysis Verdict: Malicious\n\nThreat Name: Vilsel\nClassification: Worm\n\nAnalysis Report: https://www.vmray.com/anal...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-fc864f",
+        "id": "VT-f-55e95b",
         "severity": "CRITICAL",
         "date": "2026-10-20",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: GoldenEyeRansomware_Dropper_MalformedZoomit\nRULE_TYPE: Community \ud83d\udc65\nRULE_L...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-10-19_72bcde033f376fa2cb0704a553d0ae18_elex_remcos_wannacry\n\n**Threat Score:**\n10/10\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
