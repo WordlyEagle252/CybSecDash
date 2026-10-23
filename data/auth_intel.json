@@ -90,93 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "VT-f-f5deeb",
+        "id": "VT-f-616845",
         "severity": "CRITICAL",
         "date": "2026-10-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "VMRay Analysis Verdict: Malicious\n\nThreat Name: XMRig\nClassifications: Injector, Miner, PUA\n\nAnalysis Report: https://ww...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Download_RawGithubUsercontent\nRULE_TYPE: THOR APT Scanner's rule set...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-7a06ae",
+        "id": "VT-f-b9e887",
         "severity": "CRITICAL",
         "date": "2026-10-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : 7a06ae32f91ebcde381a712f54cea45c7fca09e508f9ac8744cc4796ee91a678\n\nComment added on 2026-10-23...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_CMD_Force_Delete_Sep26\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-380be6",
+        "id": "VT-f-76ea01",
         "severity": "CRITICAL",
         "date": "2026-10-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://github.com/CpuJoninPalace/zapRETDiscORd/releases/download/1.9.9c/zapret-disco...",
+        "desc": "[b]Original filename[/b] : 76ea019f2f356db2d4d0dd867a6fb910790d2262efdc6a32b740a6ea30400998\n\nComment added on 2026-10-23...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-14a635",
+        "id": "VT-u-e77a3b",
         "severity": "CRITICAL",
         "date": "2026-10-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 14a635abbc62725b2d106c0d24dc053a9e8ddda3419d823bca6d8dc659f80e69\n\nComment added on 2...",
+        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://raw.githubusercontent.com/abhinavv22/3D-Portfolio/refs/heads/main/public/asse...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-146bf7",
+        "id": "VT-u-e6ff35",
         "severity": "CRITICAL",
         "date": "2026-10-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : 146bf75aade77b728dc55eb39db29d93ff12b0e3947659d5c53c48f7f0cac7be\n\nComment added on 2026-10-23...",
+        "desc": "VMRay Analysis Verdict: Malicious\n\nClassification: Phishing\n\nAnalysis Report: https://www.vmray.com/analyses/_vt/e6ff35f...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-f98324",
+        "id": "VT-f-13af4c",
         "severity": "CRITICAL",
         "date": "2026-10-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : f98324a09fae4329dd08d37dcf91a3e59dfd9bdef3327e4bbd82e62b2bcdddc0\n\nComment added on 2...",
+        "desc": "[b]Original filename (SHA256)[/b] : 13af4c9458417dfa64f2fa98d44ad8b72c0e76b8e375f0119822ac8a7ba80776\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-211e7b",
+        "id": "VT-f-223ec5",
         "severity": "CRITICAL",
         "date": "2026-10-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://raw.githubusercontent.com/omkargundle/Blog-Website/refs/heads/main/views/Blog...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: Webshell_GIF_Cloaked_PHP_Webshell\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRU...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-91.139",
+        "id": "VT-f-76e0a8",
         "severity": "CRITICAL",
         "date": "2026-10-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Source: SOCFortress Decoy. Observed interacting with SOCFortress Deception honeypots: 4 smtp events against decoy 'mail-...",
+        "desc": "[b]Original filename[/b] : 76e0a8c35b6cc1972f751c0a8cff5c4b8cd2153fadc965f661693099c7b8797e\n\nComment added on 2026-10-23...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-3596f4",
+        "id": "VT-f-63c825",
         "severity": "CRITICAL",
         "date": "2026-10-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : 3596f4fc8d521fee6ca04c70f40b7db1458fa20b6a10419df4a9ba04249355b4\n\nComment added on 2026-10-23...",
+        "desc": "VMRay Analysis Verdict: Malicious\n\nClassification: Downloader\n\nAnalysis Report: https://www.vmray.com/analyses/_vt/63c82...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-02bbbb",
+        "id": "VT-f-1d557c",
         "severity": "CRITICAL",
         "date": "2026-10-23",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 02bbbb0d77e1884d92a61f57849b2a35c2755e3665e1ce0324f76665fbbd0629\n\nComment added on 2...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-10-22_c695d6fc001418b8aa15ccae622db45a_destroyer_elex_glassworm_ngrbot_wannacry\n\n**Th...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
