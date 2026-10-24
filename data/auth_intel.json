@@ -90,93 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "VT-f-772153",
+        "id": "VT-f-475f25",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 772153e3192ec9aa1c6cbb1f2c9eb2ec248351c31e96e31b1f5f90f1ee23d737\n\nComment added on 2...",
+        "desc": "[b]Original filename (SHA256)[/b] : 475f25f533f9a29317dbd3ea94e6e9d2b88012655dba36caeed40e8f0a0b6d15\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-1715fc",
+        "id": "VT-u-330d4d",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: WannaCry_Ransomware\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://github.com/...",
+        "desc": "\ud83d\udd0d ScanMalware.com AI Security Verdict: HIGH_RISK - Risk: 7/10\n\nView full report: https://scanmalware.com/scan/7f25d6c6-5...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-0e0c28",
+        "id": "VT-u-d69291",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Generic_Loader_Jul26\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ...",
+        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://raw.githubusercontent.com/kabuuu999/saasa/refs/heads/main/__pycache__/saasa_2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-1715fc",
+        "id": "VT-f-82ed51",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: WannaCry_Ransomware_Gen\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://github....",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Imminent_RAT\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https://...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-18ed8d",
+        "id": "VT-f-a10712",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-10-22_665eacbb0fa4e7863a5afbd7f373c4d4_elex_stop\n\n**Threat Score:**\n10/10\n\n**Family:*...",
+        "desc": "Observed: 2026-10-24 15:37:51 UTC\nDelivery: download URL issued in an interactive session\nSource network: Triple T Broad...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-1544c2",
+        "id": "VT-f-c9972b",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://github.com/JoninFascinate/FixDiscord/releases/download/1.10.3/zapret-discord-...",
+        "desc": "[b]Original filename (SHA256)[/b] : c9972bf6d4f78f4b39d8b928ffc720cf9bd607317cab67994617dc3f9b823366\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-a30e2a",
+        "id": "VT-u-aa8370",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : a30e2a5c000d0d96a1121ec368734aeb8f7550c48c1c1fcb44862c4178fb1651\n\nComment added on 2...",
+        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://raw.githubusercontent.com/SabboRock/sabborock.github.io/refs/heads/main/Bunom...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-hackma",
+        "id": "VT-f-ad2f79",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "My personal blog / technical website.",
+        "desc": "[b]Original filename (SHA256)[/b] : ad2f79cbbf45c67b904702118880f936b15f611c9daf8057b1c5eb9fe17164f8\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-61a1e8",
+        "id": "VT-f-8d5885",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 61a1e8dae56bc33c6d2b052e14444c05162e0233199e7909a039e8da861e7b61\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_DCRAT_Feb23\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https://v...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-819697",
+        "id": "VT-f-8d5885",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://raw.githubusercontent.com/alexsander-souza-as/Portfolio/refs/heads/main/JS/Po...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_DCRat_Feb25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
