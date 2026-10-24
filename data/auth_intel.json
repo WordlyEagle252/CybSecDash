@@ -1,5 +1,23 @@
 [
     {
+        "id": "OTX-6ab56155",
+        "severity": "HIGH",
+        "date": "2026-10-24",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "The Not So Silent Miner: Threat Actor Compiles Cryptominer on the Endpoint",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6ab56154",
+        "severity": "HIGH",
+        "date": "2026-10-24",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "RemotePanel and BoundSiphon: A Dual-Payload Toolkit for Persistent Access and Browser Theft",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6ab4d79d",
         "severity": "HIGH",
         "date": "2026-10-24",
@@ -72,111 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6ab3c34b",
-        "severity": "HIGH",
-        "date": "2026-10-23",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Mind the (Patch) Gap, Part 2: Fake Websites Used to Deploy Chrome & Windows 0-Day Exploits",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6ab3c34a",
-        "severity": "HIGH",
-        "date": "2026-10-23",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Disposable Domains, Durable Hosting",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-475f25",
+        "id": "VT-f-bf8278",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 475f25f533f9a29317dbd3ea94e6e9d2b88012655dba36caeed40e8f0a0b6d15\n\nComment added on 2...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-10-22_18a78a8acf84d1481c718728636d0c4c_amadey_elex_manuscrypt_redline-stealer_rhadama...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-330d4d",
+        "id": "VT-f-9490bf",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udd0d ScanMalware.com AI Security Verdict: HIGH_RISK - Risk: 7/10\n\nView full report: https://scanmalware.com/scan/7f25d6c6-5...",
+        "desc": "[b]Original filename[/b] : 9490bfaba58ca70fd876bcc7bf65bf87a41b6098843da2d9df12bd404f6f8a17\n\nComment added on 2026-10-24...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-d69291",
+        "id": "VT-f-321e03",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://raw.githubusercontent.com/kabuuu999/saasa/refs/heads/main/__pycache__/saasa_2...",
+        "desc": "[b]Original filename (SHA256)[/b] : 321e0348ed87ee594013b5da7be3acedd84befb66f73a1a7a0a1c8e1b7dbd64d\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-82ed51",
+        "id": "VT-f-0653c8",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Imminent_RAT\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https://...",
+        "desc": "VMRay Analysis Verdict: Malicious\n\nThreat Names: Stealc, Stealc.v2\nClassifications: Injector, Spyware\n\nAnalysis Report: ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-a10712",
+        "id": "VT-f-1c0f55",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Observed: 2026-10-24 15:37:51 UTC\nDelivery: download URL issued in an interactive session\nSource network: Triple T Broad...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Remcos_RAT_Aug18_2\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ht...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-c9972b",
+        "id": "VT-f-819096",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : c9972bf6d4f78f4b39d8b928ffc720cf9bd607317cab67994617dc3f9b823366\n\nComment added on 2...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-10-22_18a3ed1768036bee558bd4d9561bbd05_elex_remcos_wannacry\n\n**Threat Score:**\n10/10\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-aa8370",
+        "id": "VT-f-134ba5",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://raw.githubusercontent.com/SabboRock/sabborock.github.io/refs/heads/main/Bunom...",
+        "desc": "**File Info:**\n\n**Filename:**\n134ba58ad366c63128d61254b65edf1dda0251513dbf77c69b0a742fdb58a00d\n\n**Threat Score:**\n10/10\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-ad2f79",
+        "id": "VT-f-28f66e",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : ad2f79cbbf45c67b904702118880f936b15f611c9daf8057b1c5eb9fe17164f8\n\nComment added on 2...",
+        "desc": "**File Info:**\n\n**Filename:**\nwww.mxh4h.com_sample.bin\n\n**Threat Score:**\n10/10\n\n**Family:**\nN/A\n\n**File Report:**\nhttps...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-8d5885",
+        "id": "VT-f-808e70",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_DCRAT_Feb23\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https://v...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_KeyloggerGen_Nov18_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-8d5885",
+        "id": "VT-f-d434d5",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_DCRat_Feb25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https...",
+        "desc": "[b]Original filename (SHA256)[/b] : d434d5a736fddc90ca572a0bcd758a578549333824f1bc17108b84b173a9afa0\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
