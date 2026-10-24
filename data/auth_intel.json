@@ -1,5 +1,14 @@
 [
     {
+        "id": "OTX-6ab4d79d",
+        "severity": "HIGH",
+        "date": "2026-10-24",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "CARBONATO: a botnet built around an AI agent",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6ab51a43",
         "severity": "HIGH",
         "date": "2026-10-24",
@@ -81,102 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6ab26916",
-        "severity": "HIGH",
-        "date": "2026-10-23",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Open Season on Kapibala: Attacker Steals Over 18,000 Government Records Through WordPress Exploitation",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-fe819d",
+        "id": "VT-f-772153",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_GoLang_Vidar_Loader_Jul26\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_L...",
+        "desc": "[b]Original filename (SHA256)[/b] : 772153e3192ec9aa1c6cbb1f2c9eb2ec248351c31e96e31b1f5f90f1ee23d737\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-e1999a",
+        "id": "VT-f-1715fc",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Double_Base64_Encoded_Strings_Dec20_File\nRULE_TYPE: THOR APT Scanner...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: WannaCry_Ransomware\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://github.com/...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-03e3dd",
+        "id": "VT-f-0e0c28",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_NET_Reactor_Protector_Native_May23\nRULE_TYPE: THOR APT Scanner's rul...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Generic_Loader_Jul26\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-c43576",
+        "id": "VT-f-1715fc",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : c435765fb7fa4a948bb25994bb8628993b7143354049c7b61fdf618b3528cfeb\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: WannaCry_Ransomware_Gen\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://github....",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-77b082",
+        "id": "VT-f-18ed8d",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_LNX_CS_Beacon_Sep26\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: h...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-10-22_665eacbb0fa4e7863a5afbd7f373c4d4_elex_stop\n\n**Threat Score:**\n10/10\n\n**Family:*...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-f80bbf",
+        "id": "VT-u-1544c2",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : f80bbfca98b6b4864c6ce19e5846808adb3f61e86430901a6659d189c3f0929b\n\nComment added on 2...",
+        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://github.com/JoninFascinate/FixDiscord/releases/download/1.10.3/zapret-discord-...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-f4b1f4",
+        "id": "VT-f-a30e2a",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "VMRay Analysis Verdict: Malicious\n\nThreat Name: KeyBase\nClassifications: Injector, Spyware\n\nAnalysis Report: https://www...",
+        "desc": "[b]Original filename (SHA256)[/b] : a30e2a5c000d0d96a1121ec368734aeb8f7550c48c1c1fcb44862c4178fb1651\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-8c379c",
+        "id": "VT-d-hackma",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-10-22_96e148b2e2e94a9650a38c20475a4539_amadey_cobalt-strike_coinminer_glassworm_poet-...",
+        "desc": "My personal blog / technical website.",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-97f044",
+        "id": "VT-f-61a1e8",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-10-22_96db89066fbd959e2217e0220e456a73_cobalt-strike_elex_luca-stealer_njrat_remcos_s...",
+        "desc": "[b]Original filename (SHA256)[/b] : 61a1e8dae56bc33c6d2b052e14444c05162e0233199e7909a039e8da861e7b61\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-5fda93",
+        "id": "VT-u-819697",
         "severity": "CRITICAL",
         "date": "2026-10-24",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-10-22_96d502d724ccc6eda23bb0d320db1797_amadey_cobalt-strike_darkgate_elex_glassworm_h...",
+        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://raw.githubusercontent.com/alexsander-souza-as/Portfolio/refs/heads/main/JS/Po...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
