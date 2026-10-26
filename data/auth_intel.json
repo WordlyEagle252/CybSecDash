@@ -1,5 +1,59 @@
 [
     {
+        "id": "OTX-6ade9b49",
+        "severity": "HIGH",
+        "date": "2026-10-26",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Gheist: Attempted Scaled Abuse of Stolen GitHub Tokens Stumbles",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6add9cbb",
+        "severity": "HIGH",
+        "date": "2026-10-26",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "deepveindrilling.com: Magento CMS block loader hits 953 stores",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6adc07f4",
+        "severity": "HIGH",
+        "date": "2026-10-26",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6adbc908",
+        "severity": "HIGH",
+        "date": "2026-10-26",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6adb86a0",
+        "severity": "HIGH",
+        "date": "2026-10-26",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Infostealer riding the AI Train",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6ab77878",
+        "severity": "HIGH",
+        "date": "2026-10-26",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "ShinyHunters Renewed Mass Exploitation Campaign Targeting Oracle PeopleSoft",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6ab69627",
         "severity": "HIGH",
         "date": "2026-10-25",
@@ -36,124 +90,61 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6ab4d79d",
-        "severity": "HIGH",
-        "date": "2026-10-24",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "CARBONATO: a botnet built around an AI agent",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6ab51a43",
-        "severity": "HIGH",
-        "date": "2026-10-24",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Konni Hackers Target Ukraine With Malicious LNK Files and VelvetCake PowerShell Malware",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6adb52fd",
-        "severity": "HIGH",
-        "date": "2026-10-23",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "VeloCloud Orchestrator SQL Injection Vulnerability",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6ada6051",
-        "severity": "HIGH",
-        "date": "2026-10-23",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "SEO Poisoning Campaign Delivers New Armorsteal Malware",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6ada5f1e",
-        "severity": "HIGH",
-        "date": "2026-10-23",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "StealC Is Back, and This Time It's a RAT",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6ada5f20",
-        "severity": "HIGH",
-        "date": "2026-10-23",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Beyond the Sandbox: Leveraging Android Intrusion Logs to Expose Advanced Threats",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-cdfde4",
+        "id": "VT-f-ad0db9",
         "severity": "CRITICAL",
         "date": "2026-10-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : cdfde4893c50b9e0bded1b6376c54a6c6d367597fd7dd2d2fe7430c55a0230f6\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: IMPLANT_4_v7\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://github.com/Neo23x0...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-57.152",
+        "id": "VT-f-df3790",
         "severity": "CRITICAL",
         "date": "2026-10-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Observed by Apache HTTP Server 2.4.25 + PHP 7.1.27 honeypot located in New Zealand\nSessions: 1 session between 2026-10-2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: Destructive_Ransomware_Gen1\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://git...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-027434",
+        "id": "VT-f-53e5ec",
         "severity": "CRITICAL",
         "date": "2026-10-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxp://123.5.153.31:53142/bin.sh\n**Threat:** malware_download\n**Host Country:** China...",
+        "desc": "[b]Original filename (SHA256)[/b] : 53e5ecc3ddb58f91a9bbecd61c97fd9590a78c42f3a9a7d0a94f0bf65898938a\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-3ae09b",
+        "id": "VT-i-185.11",
         "severity": "CRITICAL",
         "date": "2026-10-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Joe Sandbox Analysis: \n\t\t\t\nVerdict: MAL\nScore: 100/100\nThreat Name: Salat Stealer\nMalware Config: see the report for the...",
+        "desc": "IOC Type: IPv4\n\nThreat Type: T1190\n\nMITRE ATT&CK: T1190\n\nRelated Tags: malicious-ip, T1190\n\nAnalysis Summary:\nSingle-por...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-40.124",
+        "id": "VT-i-185.11",
         "severity": "CRITICAL",
         "date": "2026-10-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Observed by Apache HTTP Server 2.4.25 + PHP 7.1.27 honeypot located in New Zealand\nSessions: 1 session between 2026-10-2...",
+        "desc": "\ud83d\udccc IOC Type: IPv4\n\ud83d\udd39 Associated Rule Name: PURE7 - Initial Access - T1190 - Single Port Scan 445 SMB\n\ud83d\udd39 MITRE ATT&CK: T1190...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-1ae3fb",
+        "id": "VT-u-a2996e",
         "severity": "CRITICAL",
         "date": "2026-10-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 1ae3fb6c79f66e094646b300dae238f5b7dd90a877a3ada941eb190734493036\n\nComment added on 2...",
+        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://raw.githubusercontent.com/leeoohaann/Web.MRaihan/main/inosinic/Web.MRaihan.zi...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-dafnef",
-        "severity": "CRITICAL",
-        "date": "2026-10-26",
-        "product": "Endpoint / System Artifact",
-        "source": "VirusTotal",
-        "desc": "https://x.com/BitsOfBinary/status/1337330286787518464\n\n#Lazarus #Manuscrypt",
-        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
-    },
-    {
-        "id": "VT-f-ccb175",
+        "id": "VT-f-6e99c3",
         "severity": "CRITICAL",
         "date": "2026-10-26",
         "product": "Endpoint / System Artifact",
@@ -162,21 +153,30 @@
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-fc50a8",
+        "id": "VT-f-d2f9d4",
         "severity": "CRITICAL",
         "date": "2026-10-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "FileScan.IO Analysis:\n\nVerdict: MALICIOUS\nTags: exploit,packed,peexe\nReport: https://www.filescan.io/reports/fc50a86dfab...",
+        "desc": "[b]Original filename (SHA256)[/b] : d2f9d4e2219f1841870fd779b927ea7ba44ee5962e0d9199de18ce8443cec758\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-186.94",
+        "id": "VT-f-9481b7",
         "severity": "CRITICAL",
         "date": "2026-10-26",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Observed by Apache HTTP Server 2.4.25 + PHP 7.1.27 honeypot located in New Zealand\nSessions: 1 session between 2026-10-2...",
+        "desc": "**File Info:**\n\n**Filename:**\nNEW ORDER.xls\n\n**Threat Score:**\n10/10\n\n**Family:**\nN/A\n\n**File Report:**\nhttps://jaffacak...",
+        "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
+    },
+    {
+        "id": "VT-i-40.124",
+        "severity": "CRITICAL",
+        "date": "2026-10-26",
+        "product": "Endpoint / System Artifact",
+        "source": "VirusTotal",
+        "desc": "Metasploit VxWorks WDB Agent Scanner Detection(56693)",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
