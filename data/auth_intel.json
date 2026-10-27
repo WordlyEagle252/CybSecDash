@@ -90,93 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "VT-f-4dd462",
+        "id": "VT-f-cc8ed6",
         "severity": "CRITICAL",
         "date": "2026-10-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_LNX_Xored_Wordlist_Jun25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LI...",
+        "desc": "Joe Sandbox Analysis: \n\t\t\t\nVerdict: MAL\nScore: 100/100\nThreat Name: Salat Stealer\nMalware Config: see the report for the...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-ade-ap",
+        "id": "VT-d-m.jmyq",
         "severity": "CRITICAL",
         "date": "2026-10-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**IOC found on ThreatFox**\n\n**IOC:** ade-app.dev\n**IOC Type:** domain\n**Threat Type:** payload_delivery\n**Malware:** Unk...",
+        "desc": "Phishing",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-369f60",
+        "id": "VT-f-0403af",
         "severity": "CRITICAL",
         "date": "2026-10-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_SUSP_Loader_Aug20_2\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-10-26_9209e872522794dda2d79725c5163357_amadey_darkgate_elex_redline-stealer_rhadamant...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-369f60",
+        "id": "VT-f-326983",
         "severity": "CRITICAL",
         "date": "2026-10-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_NET_Reactor_Protector_Native_May23\nRULE_TYPE: THOR APT Scanner's rul...",
+        "desc": "[b]Original filename (SHA256)[/b] : 326983809f815b4178221f816efeb43b2c4f1474a6dbc3b38ac2090a7ef13c01\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-97b39e",
+        "id": "VT-f-358d17",
         "severity": "CRITICAL",
         "date": "2026-10-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: WiltedTulip_ReflectiveLoader\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://gi...",
+        "desc": "Joe Sandbox Analysis: \n\t\t\t\nVerdict: MAL\nScore: 100/100\nThreat Name: Salat Stealer\nMalware Config: see the report for the...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-adfn02",
+        "id": "VT-f-60d6c7",
         "severity": "CRITICAL",
         "date": "2026-10-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**IOC found on ThreatFox**\n\n**IOC:** adfn02u.top\n**IOC Type:** domain\n**Threat Type:** payload_delivery\n**Malware:** Unk...",
+        "desc": "[b]Original filename (SHA256)[/b] : 60d6c77d6ee40d3fda29d78768f79d0ee63c2b19d05955979a449a59465719f6\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-adfxex",
+        "id": "VT-f-fb105e",
         "severity": "CRITICAL",
         "date": "2026-10-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**IOC found on ThreatFox**\n\n**IOC:** adfxex.com\n**IOC Type:** domain\n**Threat Type:** payload_delivery\n**Malware:** Unkn...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NetWired_Dec20_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: http...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-adfxma",
+        "id": "VT-f-1fd70c",
         "severity": "CRITICAL",
         "date": "2026-10-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**IOC found on ThreatFox**\n\n**IOC:** adfxmax.cc\n**IOC Type:** domain\n**Threat Type:** payload_delivery\n**Malware:** Unkn...",
+        "desc": "**File Info:**\n\n**Filename:**\nubjca590ix7iaovg.exe\n\n**Threat Score:**\n10/10\n\n**Family:**\n\u2022 gomorat\n\n**Botnet:**\n\u2022 t.me/j...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-260afe",
+        "id": "VT-f-18426b",
         "severity": "CRITICAL",
         "date": "2026-10-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "VMRay Analysis Verdict: Malicious\n\nThreat Names: KeyBase, MailPassView, WebBrowserPassView\nClassifications: Injector, Sp...",
+        "desc": "[b]Original filename (SHA256)[/b] : 18426bff8dc72ed3fc48b2c339bc48f71eebcdd3c91eb905d4ed51b759675272\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-adfxma",
+        "id": "VT-d-seller",
         "severity": "CRITICAL",
         "date": "2026-10-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**IOC found on ThreatFox**\n\n**IOC:** adfxmax.com\n**IOC Type:** domain\n**Threat Type:** payload_delivery\n**Malware:** Unk...",
+        "desc": "This domain was flagged as suspicious by Cybereinforce Threat Intelligence.",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
