@@ -90,93 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "VT-u-fd335e",
+        "id": "VT-f-4dd462",
         "severity": "CRITICAL",
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://raw.githubusercontent.com/Modulekyocock/discord-zapret-19.9.0/refs/heads/main...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_LNX_Xored_Wordlist_Jun25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LI...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-ee1151",
+        "id": "VT-d-ade-ap",
         "severity": "CRITICAL",
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_FromBase64String_Payload_Combo_Nov19\nRULE_TYPE: THOR APT Scanner's r...",
+        "desc": "**IOC found on ThreatFox**\n\n**IOC:** ade-app.dev\n**IOC Type:** domain\n**Threat Type:** payload_delivery\n**Malware:** Unk...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-fb29d6",
+        "id": "VT-f-369f60",
         "severity": "CRITICAL",
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://raw.githubusercontent.com/SplendorSheikh/DiscordZapret-2026/refs/heads/main/g...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_SUSP_Loader_Aug20_2\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-cf71c1",
+        "id": "VT-f-369f60",
         "severity": "CRITICAL",
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://raw.githubusercontent.com/HeartBearDirect7/youtubezapret/refs/heads/main/serv...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_NET_Reactor_Protector_Native_May23\nRULE_TYPE: THOR APT Scanner's rul...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-d83062",
+        "id": "VT-f-97b39e",
         "severity": "CRITICAL",
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : d83062b353bd1c8c1a055e182693efe426ca868013b51c41afb5a5f17d5e0d4c\n\nComment added on 2026-10-26...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: WiltedTulip_ReflectiveLoader\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://gi...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-b7d4eb",
+        "id": "VT-d-adfn02",
         "severity": "CRITICAL",
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : b7d4ebf89d043ffb5690a5476546e80d2568969cfc151817dfe2717ff20bf5aa\n\nComment added on 2...",
+        "desc": "**IOC found on ThreatFox**\n\n**IOC:** adfn02u.top\n**IOC Type:** domain\n**Threat Type:** payload_delivery\n**Malware:** Unk...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-9459cc",
+        "id": "VT-d-adfxex",
         "severity": "CRITICAL",
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://raw.githubusercontent.com/Senseiracairn/github-discord/refs/heads/main/servic...",
+        "desc": "**IOC found on ThreatFox**\n\n**IOC:** adfxex.com\n**IOC Type:** domain\n**Threat Type:** payload_delivery\n**Malware:** Unkn...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-dfa517",
+        "id": "VT-d-adfxma",
         "severity": "CRITICAL",
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://raw.githubusercontent.com/Restrictionarphase19/zapret-discord-youtube-1.9.9d/...",
+        "desc": "**IOC found on ThreatFox**\n\n**IOC:** adfxmax.cc\n**IOC Type:** domain\n**Threat Type:** payload_delivery\n**Malware:** Unkn...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-9a39d5",
+        "id": "VT-f-260afe",
         "severity": "CRITICAL",
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-10-25_7f8020e9f193e92df8d45fcf8a2d39f5_amadey_elex_ramnit_redline-stealer_rhadamanthy...",
+        "desc": "VMRay Analysis Verdict: Malicious\n\nThreat Names: KeyBase, MailPassView, WebBrowserPassView\nClassifications: Injector, Sp...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-bdc2c4",
+        "id": "VT-d-adfxma",
         "severity": "CRITICAL",
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Base64_Encoded_Hex_Encoded_Code\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: ht...",
+        "desc": "**IOC found on ThreatFox**\n\n**IOC:** adfxmax.com\n**IOC Type:** domain\n**Threat Type:** payload_delivery\n**Malware:** Unk...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
