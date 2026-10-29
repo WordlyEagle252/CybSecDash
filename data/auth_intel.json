@@ -1,5 +1,14 @@
 [
     {
+        "id": "OTX-6ae0b154",
+        "severity": "HIGH",
+        "date": "2026-10-29",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "PHP2Shell: Exploitation Attempts and Remediation Trends",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6abb0c55",
         "severity": "HIGH",
         "date": "2026-10-29",
@@ -81,102 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6ae1c2df",
-        "severity": "HIGH",
-        "date": "2026-10-28",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Inside \"MR ROBOT\" - Anatomy of a Malware-as-a-Service Operation Targeting Indian Bank Customers",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-280666",
+        "id": "VT-f-2f2782",
         "severity": "CRITICAL",
         "date": "2026-10-29",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: PUA_Crypto_Mining_CommandLine_Indicators_Oct21\nRULE_TYPE: Community \ud83d\udc65\nRUL...",
+        "desc": "[b]Original filename (SHA256)[/b] : 2f2782a10a4d3a334e2741612e434f1e24b4543e17dffa190b217e0b14077590\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-78ab3b",
+        "id": "VT-u-c23d71",
         "severity": "CRITICAL",
         "date": "2026-10-29",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_PS1_Code_Combos_Aug25\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\n...",
+        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://github.com/ClientTransformer/happ-windows/releases/download/happ/happ_windows...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-627f90",
+        "id": "VT-u-a3011d",
         "severity": "CRITICAL",
         "date": "2026-10-29",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: PUA_Crypto_Mining_CommandLine_Indicators_Oct21\nRULE_TYPE: Community \ud83d\udc65\nRUL...",
+        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://github.com/Breakuaanvil/happ-win64/releases/download/happ-win64/happ_windows_...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-caa51c",
+        "id": "VT-i-80.82.",
         "severity": "CRITICAL",
         "date": "2026-10-29",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: PUA_Crypto_Mining_CommandLine_Indicators_Oct21\nRULE_TYPE: Community \ud83d\udc65\nRUL...",
+        "desc": "#ssh #scanner\n\nRepeated SSH connections that never attempted authentication (pre-auth probing) recorded by a honeypot se...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-duthuy",
+        "id": "VT-u-ac5b87",
         "severity": "CRITICAL",
         "date": "2026-10-29",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**IOC found on ThreatFox**\n\n**IOC:** duthuyenbaoanh.com\n**IOC Type:** domain\n**Threat Type:** payload_delivery\n**Malware...",
+        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://github.com/BitPropagate/happ-proxy/releases/download/happ-proxy/happ_windows_...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-ecoamb",
+        "id": "VT-u-362dd0",
         "severity": "CRITICAL",
         "date": "2026-10-29",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**IOC found on ThreatFox**\n\n**IOC:** ecoambiental.info\n**IOC Type:** domain\n**Threat Type:** payload_delivery\n**Malware:...",
+        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://github.com/Brandbetweenstar/happ-win64/releases/download/happ-win64/happ_wind...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-el-tow",
+        "id": "VT-u-d5f23c",
         "severity": "CRITICAL",
         "date": "2026-10-29",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**IOC found on ThreatFox**\n\n**IOC:** el-town.ru\n**IOC Type:** domain\n**Threat Type:** payload_delivery\n**Malware:** Clea...",
+        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://github.com/CrewCashier54/happ-vpn/releases/download/happ-vpn/happ_windows_arm...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-ebafos",
+        "id": "VT-u-ace693",
         "severity": "CRITICAL",
         "date": "2026-10-29",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**IOC found on ThreatFox**\n\n**IOC:** ebafosa.org\n**IOC Type:** domain\n**Threat Type:** payload_delivery\n**Malware:** Cle...",
+        "desc": "**IOC found on ThreatFox**\n\n**IOC:** hxxps://md.airbet.org/or/\n**IOC Type:** url\n**Threat Type:** botnet_cc\n**Malware:**...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-d-energy",
+        "id": "VT-u-efb795",
         "severity": "CRITICAL",
         "date": "2026-10-29",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**IOC found on ThreatFox**\n\n**IOC:** energyincentives.services\n**IOC Type:** domain\n**Threat Type:** payload_delivery\n**...",
+        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://github.com/ClientTransformer/happ/releases/download/happ/happ_windows_7_32bit...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-c05e2c",
+        "id": "VT-u-306a72",
         "severity": "CRITICAL",
         "date": "2026-10-29",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_PS1_Code_Combos_Aug25\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\n...",
+        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://github.com/CavernDeerCreate/happ-windows/releases/download/happ-windows/happ_...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
