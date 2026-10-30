@@ -1,5 +1,32 @@
 [
     {
+        "id": "OTX-6abd5b43",
+        "severity": "HIGH",
+        "date": "2026-10-30",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Star Blizzard refines phishing and malware delivery with the RedFlick technique",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6abd500c",
+        "severity": "HIGH",
+        "date": "2026-10-30",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "2CLoader: A New Malware Loader Delivering Vidar and Remus",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6abd4fc3",
+        "severity": "HIGH",
+        "date": "2026-10-30",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Unauthenticated command injection on internet-facing mail servers: tracking CVE-2026-73570",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6ae45373",
         "severity": "HIGH",
         "date": "2026-10-30",
@@ -63,120 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6ae38643",
-        "severity": "HIGH",
-        "date": "2026-10-30",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Aurora ransomware targets ESXi abuses Cursor Agent for exploitation",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6ae38be9",
-        "severity": "HIGH",
-        "date": "2026-10-30",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "SEO Poisoning Campaign Targets DeepSeek Users: Chinese Threat Actor Deploys Kong RAT via Multi-Stage Attacks",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6ae38bc5",
-        "severity": "HIGH",
-        "date": "2026-10-30",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Node2Shell (CVE-2026-111497): Brotli RCE Exploited",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-7c00a5",
+        "id": "VT-f-c220f0",
         "severity": "CRITICAL",
         "date": "2026-10-30",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_AsyncRAT_Feb23\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https:...",
+        "desc": "[b]Original filename[/b] : c220f0ea8d5a08e5d4010d6bfaf32de90020c1572b27275d7e239f83cee5c1bb\n\nComment added on 2026-10-30...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-2fa5c4",
+        "id": "VT-f-19a489",
         "severity": "CRITICAL",
         "date": "2026-10-30",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_PS1_Code_Combos_Aug25\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\n...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_Defeat_Defender_Apr21_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LI...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-f56fc1",
+        "id": "VT-f-19a489",
         "severity": "CRITICAL",
         "date": "2026-10-30",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_Snip3_AsyncRAT_May21\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LI...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: Sofacy_Jan18_1_PE_Info_Anomaly\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-1d39a4",
+        "id": "VT-u-1e10fc",
         "severity": "CRITICAL",
         "date": "2026-10-30",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_NET_NAME_RevengeRAT_Stub_CSsharp\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: h...",
+        "desc": "#ClickFix #Mal",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-79b2ba",
+        "id": "VT-f-5c53ce",
         "severity": "CRITICAL",
         "date": "2026-10-30",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Nitol_Mar19_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https:/...",
+        "desc": "[b]Original filename (SHA256)[/b] : 5c53ce628fc39fa8535b8e49b04630ab12deff83ea78fe274d7ba09fc79c0ee7\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-8101db",
+        "id": "VT-f-d67159",
         "severity": "CRITICAL",
         "date": "2026-10-30",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_PS1_Code_Combos_Aug25\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\n...",
+        "desc": "[b]Original filename[/b] : d67159311013ffcfd8a513adea3b024dd094da807f4e99cc216e98b0bf690356\n\nComment added on 2026-10-30...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-1d39a4",
+        "id": "VT-f-c1eca3",
         "severity": "CRITICAL",
         "date": "2026-10-30",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: APT_MAL_Snip3_Crypter_RAT_May21_3\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRU...",
+        "desc": "[b]Original filename[/b] : c1eca3cddb1290596748d65def318eac8388b2c965bc30ae81c736ed2759f4e2\n\nComment added on 2026-10-30...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-f56fc1",
+        "id": "VT-i-136.70",
         "severity": "CRITICAL",
         "date": "2026-10-30",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_AsyncRAT_Jan23\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https:...",
+        "desc": "Automated report : IP 136.70.174.82 is carrying out a Web Attack on wwww.eco-conscient.com at Fri, 30 Oct 2026 22:04:20 ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-c96ffb",
+        "id": "VT-u-d63dc0",
         "severity": "CRITICAL",
         "date": "2026-10-30",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_PS1_Code_Combos_Aug25\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\n...",
+        "desc": "**URL found on URLhaus**\n\n**URL:** hxxp://112.198.178.17:55334/i\n**Threat:** malware_download\n**Host Country:** Philippi...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-8f7bbb",
+        "id": "VT-f-f8f0a4",
         "severity": "CRITICAL",
         "date": "2026-10-30",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_PS1_Code_Combos_Aug25\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\n...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_PUPKIN_Malware_Oct22\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
