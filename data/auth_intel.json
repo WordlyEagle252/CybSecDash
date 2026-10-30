@@ -1,11 +1,47 @@
 [
     {
-        "id": "OTX-6ae38be9",
+        "id": "OTX-6ae45373",
         "severity": "HIGH",
         "date": "2026-10-30",
         "product": "Enterprise Infrastructure",
         "source": "AlienVault OTX",
-        "desc": "SEO Poisoning Campaign Targets DeepSeek Users: Chinese Threat Actor Deploys Kong RAT via Multi-Stage Attacks",
+        "desc": "Inside Coruna and DarkSword Chains: From Web Lures to iOS Exploitation",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6ae4664d",
+        "severity": "HIGH",
+        "date": "2026-10-30",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Kairos Hold'em: Dissecting a New Go-Based DDoS Botnet",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6ae463fa",
+        "severity": "HIGH",
+        "date": "2026-10-30",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Trojanized Claude Code Extension Plants an SSH Backdoor",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6ae4564e",
+        "severity": "HIGH",
+        "date": "2026-10-30",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Polymarket Breach Alert: Wallet-Draining Code Found in a Third-Party Script",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6ae3cb79",
+        "severity": "HIGH",
+        "date": "2026-10-30",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "How Attackers Redirect Crypto Payments",
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
@@ -15,24 +51,6 @@
         "product": "Enterprise Infrastructure",
         "source": "AlienVault OTX",
         "desc": "Inside Coruna and DarkSword Chains: From Web Lures to iOS Exploitation",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6ae38bc5",
-        "severity": "HIGH",
-        "date": "2026-10-30",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Node2Shell (CVE-2026-111497): Brotli RCE Exploited",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6ae38bc5",
-        "severity": "HIGH",
-        "date": "2026-10-30",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Investigating Abuse of Remote Desktop and Bulk Mailing Apps",
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
@@ -54,129 +72,111 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6ae3706f",
+        "id": "OTX-6ae38be9",
         "severity": "HIGH",
-        "date": "2026-10-29",
+        "date": "2026-10-30",
         "product": "Enterprise Infrastructure",
         "source": "AlienVault OTX",
-        "desc": "From Hijacked Pbx To Stolen Trunk Inj3ctor3s Campaign",
+        "desc": "SEO Poisoning Campaign Targets DeepSeek Users: Chinese Threat Actor Deploys Kong RAT via Multi-Stage Attacks",
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6ae34b93",
+        "id": "OTX-6ae38bc5",
         "severity": "HIGH",
-        "date": "2026-10-29",
+        "date": "2026-10-30",
         "product": "Enterprise Infrastructure",
         "source": "AlienVault OTX",
-        "desc": "MadApe: The Code That Opens the Door",
+        "desc": "Node2Shell (CVE-2026-111497): Brotli RCE Exploited",
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6ae346b2",
-        "severity": "HIGH",
-        "date": "2026-10-29",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Sandbox Flipped to 'Danger-Full-Access': Unauthorized AI Relays Create Risk for Organizations",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6ae346b1",
-        "severity": "HIGH",
-        "date": "2026-10-29",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "NIK C2: The new AI-enabled command-and-control framework",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-u-e5c80a",
+        "id": "VT-f-7c00a5",
         "severity": "CRITICAL",
         "date": "2026-10-30",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://github.com/Ultimatepochamber28/HapP_WiNdoWs/releases/download/1.9.6/happ.zip\n...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_AsyncRAT_Feb23\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https:...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-f28826",
+        "id": "VT-f-2fa5c4",
         "severity": "CRITICAL",
         "date": "2026-10-30",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://github.com/TrackerCrowRenew/AdgUArD_VPN/releases/download/1.11.6/adguardvpn.z...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_PS1_Code_Combos_Aug25\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-bb5daf",
+        "id": "VT-f-f56fc1",
         "severity": "CRITICAL",
         "date": "2026-10-30",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_PE_Multiple_Exe_Packers_May25\nRULE_TYPE: THOR APT Scanner's rule set...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_Snip3_AsyncRAT_May21\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LI...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-1dc372",
+        "id": "VT-f-1d39a4",
         "severity": "CRITICAL",
         "date": "2026-10-30",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://github.com/UpgradeProsecutor20/vpnBOT/releases/download/v1.0.20/vpnbot.zip\n**...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_NET_NAME_RevengeRAT_Stub_CSsharp\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: h...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-65d85a",
+        "id": "VT-f-79b2ba",
         "severity": "CRITICAL",
         "date": "2026-10-30",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://github.com/Ultrawithinhold/PROtOn_VpN/releases/download/1.13.3/protonvpn.zip\n...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Nitol_Mar19_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https:/...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-dbca3a",
+        "id": "VT-f-8101db",
         "severity": "CRITICAL",
         "date": "2026-10-30",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : dbca3a1e1df5eed49ab3ab9194b40f39bc5cc9236207bd8e06fa50152d010fb9\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_PS1_Code_Combos_Aug25\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-92c4de",
+        "id": "VT-f-1d39a4",
         "severity": "CRITICAL",
         "date": "2026-10-30",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://github.com/Ultrawithinhold/WINDOw-vPN/releases/download/1.12.1/vpnwindow.zip\n...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: APT_MAL_Snip3_Crypter_RAT_May21_3\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRU...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-7eba14",
+        "id": "VT-f-f56fc1",
         "severity": "CRITICAL",
         "date": "2026-10-30",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : 7eba14a25261369d7221a25b639cef6edf9dc11d9c4998e7a7ac65113702f56b\n\nComment added on 2026-10-30...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_AsyncRAT_Jan23\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: https:...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-9ae35d",
+        "id": "VT-f-c96ffb",
         "severity": "CRITICAL",
         "date": "2026-10-30",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://github.com/VectorCommissioner/happ-vpn-free/releases/download/happ-vpn-free/h...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_PS1_Code_Combos_Aug25\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-35.210",
+        "id": "VT-f-8f7bbb",
         "severity": "CRITICAL",
         "date": "2026-10-30",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Observed by Cowrie SSH honeypot located in Australia\nSessions: 10 sessions between 2026-10-30 04:00 UTC and 2026-10-30 0...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_PS1_Code_Combos_Aug25\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
