@@ -90,93 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "VT-f-f21b9f",
+        "id": "VT-f-0b735d",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Bash_BackConnect_Pattern_Apr25\nRULE_TYPE: THOR APT Scanner's rule se...",
+        "desc": "Synthient classification: Proxyware.TraffMonetizer. Confirmed proxyware SDK artifact. #proxyware https://synthient.com/c...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-0ca2ad",
+        "id": "VT-f-31d4e6",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 0ca2ade8b8ded262c90fc8e1a9b5e17d5a0566ea720fef78607e29791d2138cd\n\nComment added on 2...",
+        "desc": "Synthient classification: Proxyware.TraffMonetizer. Confirmed proxyware SDK artifact. #proxyware https://synthient.com/c...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-20947a",
+        "id": "VT-f-c3a969",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udd0d ScanMalware.com AI Security Verdict: LOW_RISK - Risk: 3/10\n\nView full report: https://scanmalware.com/scan/5e5dcfd8-f2...",
+        "desc": "**File found on MalwareBazaar**\n\n**File Name (as uploaded):** TgWsProxy.exe\n**File Type:** exe\n**Reporter:** Alex_sev\n**...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-7d7b04",
+        "id": "VT-f-ff44eb",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-10-30_44c3700d3b12ac35d1d6ff505cf752ea_cobalt-strike_cryptbot_icedid_njrat_satacom_vi...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-10-31_b7a2d57ca46647e3bdf172cb48c86ee1_coinminer_elex_rhadamanthys_smoke-loader_steal...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-591baf",
+        "id": "VT-f-30f4e1",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_LNX_CS_Beacon_Sep26\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: h...",
+        "desc": "Synthient classification: Proxyware.TraffMonetizer. Confirmed proxyware SDK artifact. #proxyware https://synthient.com/c...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-2be877",
+        "id": "VT-f-1d4bde",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_NullSoftInst_Combo_Oct20_1\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https:/...",
+        "desc": "[b]Original filename (SHA256)[/b] : 1d4bdeb9221bbe8d78f01dafc30c8db47dbbdd5e43bbd2f6fa93d7e772a8748a\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-5c5dc9",
+        "id": "VT-f-98d563",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 5c5dc9893fad97a62f5dd8b4cf2ebcb8d9f014e44499153f6ddf467dfcd022d0\n\nComment added on 2...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-10-31_b7bcf1ece5a991879a8c410fbaef1194_cosmicduke_elex_redline-stealer_rhadamanthys_s...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-142.11",
+        "id": "VT-f-300f1f",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "IOC Type: IPv4\n\nThreat Type: T1190\n\nMITRE ATT&CK: T1190\n\nRelated Tags: malicious-ip, T1190\n\nAnalysis Summary:\nUnblocked ...",
+        "desc": "Synthient classification: Proxyware.TraffMonetizer. Confirmed proxyware SDK artifact. #proxyware https://synthient.com/c...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-142.11",
+        "id": "VT-f-2fce46",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udccc IOC Type: IPv4\n\ud83d\udd39 Associated Rule Name: PURE7 - Initial Access - T1190 - Command Injection Detection via WAF\n\ud83d\udd39 MITRE AT...",
+        "desc": "Synthient classification: Proxyware.TraffMonetizer. Confirmed proxyware SDK artifact. #proxyware https://synthient.com/c...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-211.18",
+        "id": "VT-f-2c510b",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "IOC Type: IPv4\n\nThreat Type: T1190\n\nMITRE ATT&CK: T1190\n\nRelated Tags: malicious-ip, T1190\n\nAnalysis Summary:\nDetected a...",
+        "desc": "Synthient classification: Proxyware.TraffMonetizer. Confirmed proxyware SDK artifact. #proxyware https://synthient.com/c...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
