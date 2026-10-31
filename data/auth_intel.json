@@ -90,93 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "VT-f-0b735d",
+        "id": "VT-i-151.24",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Synthient classification: Proxyware.TraffMonetizer. Confirmed proxyware SDK artifact. #proxyware https://synthient.com/c...",
+        "desc": "ARTEX Found\nC2: 151[.]242[.]170[.]22:8787\nCountry: Singapore (AS136557)\nASN: Host Universal Pty Ltd\n\n#c2 #ARTEX\n",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-31d4e6",
+        "id": "VT-i-43.173",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Synthient classification: Proxyware.TraffMonetizer. Confirmed proxyware SDK artifact. #proxyware https://synthient.com/c...",
+        "desc": "ARTEX Found\nC2: 43[.]173[.]39[.]73:8787\nCountry: Indonesia (AS132203)\nASN: Tencent Building, Kejizhongyi Avenue\n\n#c2 #AR...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-c3a969",
+        "id": "VT-f-bf89b6",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File found on MalwareBazaar**\n\n**File Name (as uploaded):** TgWsProxy.exe\n**File Type:** exe\n**Reporter:** Alex_sev\n**...",
+        "desc": "[b]Original filename (SHA256)[/b] : bf89b6f94a62ad3a6da8abcc0909b19d5df990f086bafe06ae04525109af62a0\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-ff44eb",
+        "id": "VT-i-207.18",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-10-31_b7a2d57ca46647e3bdf172cb48c86ee1_coinminer_elex_rhadamanthys_smoke-loader_steal...",
+        "desc": "ARTEX Found\nC2: 207[.]180[.]249[.]248:8787\nCountry: France (AS51167)\nASN: Contabo GmbH\n\n#c2 #ARTEX\n",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-30f4e1",
+        "id": "VT-i-95.133",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Synthient classification: Proxyware.TraffMonetizer. Confirmed proxyware SDK artifact. #proxyware https://synthient.com/c...",
+        "desc": "ARTEX Found\nC2: 95[.]133[.]167[.]226:8787\nCountry: Iceland (AS200651)\nASN: FlokiNET ehf\n\n#c2 #ARTEX\n",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-1d4bde",
+        "id": "VT-i-85.208",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 1d4bdeb9221bbe8d78f01dafc30c8db47dbbdd5e43bbd2f6fa93d7e772a8748a\n\nComment added on 2...",
+        "desc": "ARTEX Found\nC2: 85[.]208[.]9[.]33:8787\nCountry: The Netherlands (AS214677)\nASN: DELUXHOST\n\n#c2 #ARTEX\n",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-98d563",
+        "id": "VT-i-207.56",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-10-31_b7bcf1ece5a991879a8c410fbaef1194_cosmicduke_elex_redline-stealer_rhadamanthys_s...",
+        "desc": "ARTEX Found\nC2: 207[.]56[.]26[.]232:8787\nCountry: Hong Kong (AS18186)\nASN: Nebula Global LLC\n\n#c2 #ARTEX\n",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-300f1f",
+        "id": "VT-i-31.42.",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Synthient classification: Proxyware.TraffMonetizer. Confirmed proxyware SDK artifact. #proxyware https://synthient.com/c...",
+        "desc": "ARTEX Found\nC2: 31[.]42[.]188[.]139:8787\nCountry: The Netherlands (AS50673)\nASN: Serverius Holding B.V.\n\n#c2 #ARTEX\n",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-2fce46",
+        "id": "VT-f-87adc0",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Synthient classification: Proxyware.TraffMonetizer. Confirmed proxyware SDK artifact. #proxyware https://synthient.com/c...",
+        "desc": "**File Info:**\n\n**Filename:**\n3d18ae12b9d8edc29ee15d0cf72d854e.dll\n\n**Threat Score:**\n10/10\n\n**Family:**\n\u2022 wannacry\n\n**F...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-2c510b",
+        "id": "VT-f-cfd49a",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Synthient classification: Proxyware.TraffMonetizer. Confirmed proxyware SDK artifact. #proxyware https://synthient.com/c...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: Winnti_Malware_N_EAnalysis\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
