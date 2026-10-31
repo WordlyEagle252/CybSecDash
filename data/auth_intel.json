@@ -1,5 +1,14 @@
 [
     {
+        "id": "OTX-6abeceb3",
+        "severity": "HIGH",
+        "date": "2026-10-31",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "TIKTOUK: Tracing a WordPress Credential Collection Toolkit",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6abde7dd",
         "severity": "HIGH",
         "date": "2026-10-31",
@@ -81,102 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6ae4564e",
-        "severity": "HIGH",
-        "date": "2026-10-30",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Polymarket Breach Alert: Wallet-Draining Code Found in a Third-Party Script",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-i-151.24",
+        "id": "VT-f-826a72",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ARTEX Found\nC2: 151[.]242[.]170[.]22:8787\nCountry: Singapore (AS136557)\nASN: Host Universal Pty Ltd\n\n#c2 #ARTEX\n",
+        "desc": "Synthient classification: Proxyware.AppBandwidthMonetizer. Confirmed proxyware SDK artifact. #proxyware https://synthien...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-43.173",
+        "id": "VT-f-530c09",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ARTEX Found\nC2: 43[.]173[.]39[.]73:8787\nCountry: Indonesia (AS132203)\nASN: Tencent Building, Kejizhongyi Avenue\n\n#c2 #AR...",
+        "desc": "[b]Original filename[/b] : 530c0922b14dd5d9bb4b3b9dbef7ee2789cb83ceb9df74764e057ee98bb0fcf8\n\nComment added on 2026-10-31...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-bf89b6",
+        "id": "VT-f-dc454f",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : bf89b6f94a62ad3a6da8abcc0909b19d5df990f086bafe06ae04525109af62a0\n\nComment added on 2...",
+        "desc": "[b]Original filename (SHA256)[/b] : dc454f98b606a91640dbd59e2bfaa484830cd4d28ea52f76c715000069b427fb\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-207.18",
+        "id": "VT-f-66141d",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ARTEX Found\nC2: 207[.]180[.]249[.]248:8787\nCountry: France (AS51167)\nASN: Contabo GmbH\n\n#c2 #ARTEX\n",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Chrome_Stealer_Indicators_Oct24_1\nRULE_TYPE: THOR APT Scanner's rule...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-95.133",
+        "id": "VT-f-cf4e4b",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ARTEX Found\nC2: 95[.]133[.]167[.]226:8787\nCountry: Iceland (AS200651)\nASN: FlokiNET ehf\n\n#c2 #ARTEX\n",
+        "desc": "[b]Original filename (SHA256)[/b] : cf4e4bc550e1b3a3d98f315d4e2bfc7c179ab1e56d88fc9f4900c65828a31d67\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-85.208",
+        "id": "VT-f-53053a",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ARTEX Found\nC2: 85[.]208[.]9[.]33:8787\nCountry: The Netherlands (AS214677)\nASN: DELUXHOST\n\n#c2 #ARTEX\n",
+        "desc": "[b]Original filename[/b] : 53053a578ae44da09f15dccc93a4c5136aee09b7d0dc52b6fc6e6b331ba60fc5\n\nComment added on 2026-10-31...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-207.56",
+        "id": "VT-f-66e98f",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ARTEX Found\nC2: 207[.]56[.]26[.]232:8787\nCountry: Hong Kong (AS18186)\nASN: Nebula Global LLC\n\n#c2 #ARTEX\n",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Winnti_Sample_May18_1\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://githu...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-31.42.",
+        "id": "VT-f-603746",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "ARTEX Found\nC2: 31[.]42[.]188[.]139:8787\nCountry: The Netherlands (AS50673)\nASN: Serverius Holding B.V.\n\n#c2 #ARTEX\n",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_OBFUSC_BAT_Alt_Jan23_1\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-87adc0",
+        "id": "VT-f-dc803f",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n3d18ae12b9d8edc29ee15d0cf72d854e.dll\n\n**Threat Score:**\n10/10\n\n**Family:**\n\u2022 wannacry\n\n**F...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: Sofacy_Jan18_1_PE_Info_Anomaly\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-cfd49a",
+        "id": "VT-u-8b347a",
         "severity": "CRITICAL",
         "date": "2026-10-31",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: Winnti_Malware_N_EAnalysis\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK...",
+        "desc": "\ud83d\udd0d ScanMalware.com AI Security Verdict: LOW_RISK - Risk: 2/10\n\nView full report: https://scanmalware.com/scan/074d5940-06...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
