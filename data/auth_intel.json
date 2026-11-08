@@ -1,5 +1,23 @@
 [
     {
+        "id": "OTX-6ac8a462",
+        "severity": "HIGH",
+        "date": "2026-11-08",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "NEBULA: Seven Fake AI SDK Packages on npm Install a Windows RAT That Needs No DLL",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6ac8a22f",
+        "severity": "HIGH",
+        "date": "2026-11-08",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Unknown Threat Actor Uses AI-Driven ARTEX to Target South Korean Finance",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6ac84a16",
         "severity": "HIGH",
         "date": "2026-11-08",
@@ -72,111 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6aedb6df",
-        "severity": "HIGH",
-        "date": "2026-11-06",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Remcos RAT",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6ac679e7",
-        "severity": "HIGH",
-        "date": "2026-11-06",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "FortiBleed Operations Continue Targeting Exposed Systems Leading to Reports of Lockouts",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-3c56d2",
+        "id": "VT-f-e4e3c4",
         "severity": "CRITICAL",
         "date": "2026-11-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**Malware Family Detected On MalwareBazaar**\n\n**Filename (as uploaded):** 150b55e341a5e2f2d6f72e4398945c30.exe\n**Family/...",
+        "desc": "[b]Original filename (SHA256)[/b] : e4e3c4f9d948d9e3ac0dda2a863bfdd5f3be2c0974ae6b0e6c6b66d529125470\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-136.80",
+        "id": "VT-f-fdcaab",
         "severity": "CRITICAL",
         "date": "2026-11-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Automated detection: Werbe-E-Mail f\u00fcr ein Nahrungserg\u00e4nzungsmittel zur Gewichtsreduktion mit sensationellen Versprechung...",
+        "desc": "[b]Original filename (SHA256)[/b] : fdcaab5c2878f69e91257e3226871097084cf0db9c1d8cc3081a4e874b6fa0ed\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-795994",
+        "id": "VT-f-beeca4",
         "severity": "CRITICAL",
         "date": "2026-11-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 7959948e559ecd6ad66d8360bb10c428b5773159cdf86abb0a239efe38b501e7\n\nComment added on 2...",
+        "desc": "[b]Original filename (SHA256)[/b] : beeca4cd703794af362136885c48a169cad125c5519a63b33f73ab557c05c044\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-d964df",
+        "id": "VT-f-be5c1f",
         "severity": "CRITICAL",
         "date": "2026-11-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "VMRay Analysis Verdict: Malicious\n\nThreat Name: Zombie\nClassifications: Injector, Ransomware, Wiper\n\nAnalysis Report: ht...",
+        "desc": "[b]Original filename (SHA256)[/b] : be5c1f2f949fd5434d125ab4166edbb9164be0c4116407021130ae3c88ef4847\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-4071da",
+        "id": "VT-f-3b3a1f",
         "severity": "CRITICAL",
         "date": "2026-11-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_PowerShell_Disable_MicrosoftDefender_Features_Jan22_1\nRULE_TYPE: THO...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-11-07_76552b65d49b854591715b2abe608bd3_cobalt-strike_coinminer_cryptbot_elex_glasswor...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-4071da",
+        "id": "VT-i-62.83.",
         "severity": "CRITICAL",
         "date": "2026-11-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_UAC_Bypass_Feb26\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nRULE_...",
+        "desc": "ARTEX Found\nC2: 62[.]83[.]68[.]223:8091\nCountry: Germany (AS197540)\nASN: netcup GmbH\n\n#c2 #ARTEX\n",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-146ab6",
+        "id": "VT-f-6e5703",
         "severity": "CRITICAL",
         "date": "2026-11-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_BAT_Big_Jul23_1\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nRULE_L...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_Quasar_Multi_Mar26\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-146ab6",
+        "id": "VT-f-6e5703",
         "severity": "CRITICAL",
         "date": "2026-11-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Base64_Encoded_GetEnvironmentVariable\nRULE_TYPE: THOR APT Scanner's ...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_AsyncRAT_Nov25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ht...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-ae8d30",
+        "id": "VT-f-4e1382",
         "severity": "CRITICAL",
         "date": "2026-11-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**Loader Insight Agency Sighting**\n\nDistributed from URL: https[:]//digitalium[.]cl/google.exe\n\nDistributed by: Amatera\n...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_NET_AsyncRAT_Nov25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ht...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-33b2e8",
+        "id": "VT-f-4e1382",
         "severity": "CRITICAL",
         "date": "2026-11-08",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 33b2e840dbe0e8069c27bf92aaa8ae8ad080015351e2443bc0161d8c3bc2da9d\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Stealer_Indicators_Jul23\nRULE_TYPE: THOR APT Scanner's rule set only...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
