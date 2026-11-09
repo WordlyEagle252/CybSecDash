@@ -90,93 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "VT-f-fcca76",
+        "id": "VT-f-84c06d",
         "severity": "CRITICAL",
-        "date": "2026-11-08",
+        "date": "2026-11-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-11-08_ac2469273ca53cb0e3e3fe882373b881_elex_remcos_wannacry\n\n**Threat Score:**\n10/10\n...",
+        "desc": "[b]Original filename (SHA256)[/b] : 84c06d6d3cb1a0b6091c3932c396b37146e05dda211fb480fd70ec7ffa2fe5b0\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-e73250",
+        "id": "VT-f-7aec5b",
         "severity": "CRITICAL",
-        "date": "2026-11-08",
+        "date": "2026-11-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_HackBrowserData_Sep26\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK...",
+        "desc": "[b]Original filename[/b] : 7aec5ba99e675f4661eb01b558f93cf7acf8b09747da8b3cfb69ed6f8b806270\n\nComment added on 2026-11-09...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-dd77b7",
+        "id": "VT-f-ff4ffc",
         "severity": "CRITICAL",
-        "date": "2026-11-08",
+        "date": "2026-11-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Monero_Mining_Pools_Oct21\nRULE_TYPE: THOR APT Scanner's rule set onl...",
+        "desc": "[b]Original filename (SHA256)[/b] : ff4ffc64c59bc45ff4b9b0b5ab26f8e1df9d7a8536b499f2202f5f5512e25ffc\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-33340a",
+        "id": "VT-f-06d153",
         "severity": "CRITICAL",
-        "date": "2026-11-08",
+        "date": "2026-11-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Script_IP_Info_Combo_Aug24\nRULE_TYPE: THOR APT Scanner's rule set on...",
+        "desc": "[b]Original filename (SHA256)[/b] : 06d153d255d9f646664496194e191a2bcc3800a8ea524d9d9f58515a76dfda55\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-73fc89",
+        "id": "VT-f-4eed97",
         "severity": "CRITICAL",
-        "date": "2026-11-08",
+        "date": "2026-11-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_MPRESS_EXE_Packer_Inside_PE_Sep24\nRULE_TYPE: THOR APT Scanner's rule...",
+        "desc": "Joe Sandbox Analysis: \n\t\t\t\nVerdict: MAL\nScore: 56/100\nDomains: daisy.ubuntu.com \nHosts: 169.254.169.254 91.189.95.56 \n\nH...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-187.25",
+        "id": "VT-f-39b0a5",
         "severity": "CRITICAL",
-        "date": "2026-11-08",
+        "date": "2026-11-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "IOC Type: IPv4\n\nThreat Type: T1595\n\nMITRE ATT&CK: T1595\n\nRelated Tags: malicious-ip, T1595\n\nAnalysis Summary:\nMultiple e...",
+        "desc": "VMRay Analysis Verdict: Malicious\n\nThreat Names: Mallox, NanoCoreUltimate\nClassifications: Injector, Ransomware, Spyware...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-187.25",
+        "id": "VT-i-104.24",
         "severity": "CRITICAL",
-        "date": "2026-11-08",
+        "date": "2026-11-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "\ud83d\udccc IOC Type: IPv4\n\ud83d\udd39 Associated Rule Name: PURE7 - Reconnaissance - T1595 - Unauthorized SSH Access Detection\n\ud83d\udd39 MITRE ATT&...",
+        "desc": "CognixSystem | Live Honey Feed\n\nIP: 104.248.124.147\n\nActivity: SNMP Protocol Probe\nDetection: PROTOCOL-SNMP request tcp\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-7efd5f",
+        "id": "VT-f-dd6d8c",
         "severity": "CRITICAL",
-        "date": "2026-11-08",
+        "date": "2026-11-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "VMRay Analysis Verdict: Malicious\n\nClassification: Injector\n\nAnalysis Report: https://www.vmray.com/analyses/_vt/7efd5f1...",
+        "desc": "[b]Original filename (SHA256)[/b] : dd6d8c623a44910c31793b852c7ba8290c63280cf4cedd4d3d780c574ffa7b5f\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-e34f14",
+        "id": "VT-f-e321df",
         "severity": "CRITICAL",
-        "date": "2026-11-08",
+        "date": "2026-11-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-11-08_ac2b72e67d64d8a07de57e34a4a0c1d8_elex_stop_yuner\n\n**Threat Score:**\n10/10\n\n**Fa...",
+        "desc": "[b]Original filename[/b] : e321df061dd1c7bd8320d7c961ecf744ae113e1a7d8aa52a0cf75dc90b22f9aa\n\nComment added on 2026-11-09...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-u-cea882",
+        "id": "VT-f-8bfb88",
         "severity": "CRITICAL",
-        "date": "2026-11-08",
+        "date": "2026-11-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**URL found on URLhaus**\n\n**URL:** hxxps://github.com/Archivechemuse/V2rAYTun-wiNdoWs/releases/download/1.10.7/v2raytun....",
+        "desc": "**Malware Family Detected On MalwareBazaar**\n\n**Filename (as uploaded):** 8bfb8810b8674bbc4c8e116090b6ae150d6097d881c489...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
