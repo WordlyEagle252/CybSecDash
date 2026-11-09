@@ -1,5 +1,32 @@
 [
     {
+        "id": "OTX-6af1c04b",
+        "severity": "HIGH",
+        "date": "2026-11-09",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "The Industry Leader in Enterprise Brand Protection",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6aeeb5bc",
+        "severity": "HIGH",
+        "date": "2026-11-09",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "ARTEX abuse expands as cybercriminals target financial sector",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6af1bfe0",
+        "severity": "HIGH",
+        "date": "2026-11-09",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Shai-Hulud Descendant Surfaces in Malicious Ruby Gem That Steals Credentials and Poisons AI Tools",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6ac8a462",
         "severity": "HIGH",
         "date": "2026-11-08",
@@ -63,120 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6aeddff8",
-        "severity": "HIGH",
-        "date": "2026-11-06",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Armorsteal Unpacked: Breaking Down a Python Malware Kit That Steals Data and Mines Crypto",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6aedb6e0",
-        "severity": "HIGH",
-        "date": "2026-11-06",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Inside Help TDS: Hotejka, Cloudflare Pages and Predictive Detection",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6aedb6e1",
-        "severity": "HIGH",
-        "date": "2026-11-06",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Lookalike Domains Expose the iPhone Theft Economy",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-84c06d",
+        "id": "VT-f-d2d075",
         "severity": "CRITICAL",
         "date": "2026-11-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 84c06d6d3cb1a0b6091c3932c396b37146e05dda211fb480fd70ec7ffa2fe5b0\n\nComment added on 2...",
+        "desc": "[b]Original filename (SHA256)[/b] : d2d0752f236d2c644352c28b2f59b21c92d579148ed8c9d39b0fa16a3e079531\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-7aec5b",
+        "id": "VT-f-13232a",
         "severity": "CRITICAL",
         "date": "2026-11-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : 7aec5ba99e675f4661eb01b558f93cf7acf8b09747da8b3cfb69ed6f8b806270\n\nComment added on 2026-11-09...",
+        "desc": "Joe Sandbox Analysis: \n\t\t\t\nVerdict: MAL\nScore: 100/100\nThreat Name: Salat Stealer\nMalware Config: see the report for the...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-ff4ffc",
+        "id": "VT-f-95b7ba",
         "severity": "CRITICAL",
         "date": "2026-11-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : ff4ffc64c59bc45ff4b9b0b5ab26f8e1df9d7a8536b499f2202f5f5512e25ffc\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_Pypykatz_Dec222_1\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK: ht...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-06d153",
+        "id": "VT-f-95b7ba",
         "severity": "CRITICAL",
         "date": "2026-11-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 06d153d255d9f646664496194e191a2bcc3800a8ea524d9d9f58515a76dfda55\n\nComment added on 2...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: HKTL_PyPyKatz_Indicator_Jul24\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_L...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-4eed97",
+        "id": "VT-f-83e015",
         "severity": "CRITICAL",
         "date": "2026-11-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "Joe Sandbox Analysis: \n\t\t\t\nVerdict: MAL\nScore: 56/100\nDomains: daisy.ubuntu.com \nHosts: 169.254.169.254 91.189.95.56 \n\nH...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_OBFUSC_JS_Encoded_Pattern_Sep23\nRULE_TYPE: THOR APT Scanner's rule s...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-39b0a5",
+        "id": "VT-f-95b7ba",
         "severity": "CRITICAL",
         "date": "2026-11-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "VMRay Analysis Verdict: Malicious\n\nThreat Names: Mallox, NanoCoreUltimate\nClassifications: Injector, Ransomware, Spyware...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_PY_EXE_HKTL_Indicators_Dec22_1\nRULE_TYPE: THOR APT Scanner's rule se...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-i-104.24",
+        "id": "VT-f-ef7cdf",
         "severity": "CRITICAL",
         "date": "2026-11-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "CognixSystem | Live Honey Feed\n\nIP: 104.248.124.147\n\nActivity: SNMP Protocol Probe\nDetection: PROTOCOL-SNMP request tcp\n...",
+        "desc": "[b]Original filename (SHA256)[/b] : ef7cdf2345677b7a3eb95569bdc7eb295d5f15387025061ad483520ec314e421\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-dd6d8c",
+        "id": "VT-f-fcdb3a",
         "severity": "CRITICAL",
         "date": "2026-11-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : dd6d8c623a44910c31793b852c7ba8290c63280cf4cedd4d3d780c574ffa7b5f\n\nComment added on 2...",
+        "desc": "UnpacMe Analysis\nReport: https://unpac.me/results/cf9e1b11-ff1c-4baa-bf14-2df04ccce741\nMalware Family: Remcos\nC2s: \n - C...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-e321df",
+        "id": "VT-f-7f120a",
         "severity": "CRITICAL",
         "date": "2026-11-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : e321df061dd1c7bd8320d7c961ecf744ae113e1a7d8aa52a0cf75dc90b22f9aa\n\nComment added on 2026-11-09...",
+        "desc": "[b]Original filename (SHA256)[/b] : 7f120aa92f9f4e711dcc045b417249abe4fe3a2bd29f12387bce471ecf2f159e\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-8bfb88",
+        "id": "VT-f-3b9f0a",
         "severity": "CRITICAL",
         "date": "2026-11-09",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**Malware Family Detected On MalwareBazaar**\n\n**Filename (as uploaded):** 8bfb8810b8674bbc4c8e116090b6ae150d6097d881c489...",
+        "desc": "[b]Original filename (SHA256)[/b] : 3b9f0af6fc555755f3507d4678f6e748cbb1afb55347d2402511f5b9bccbc37b\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
