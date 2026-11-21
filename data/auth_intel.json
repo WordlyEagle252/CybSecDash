@@ -1,5 +1,23 @@
 [
     {
+        "id": "OTX-6ad96472",
+        "severity": "HIGH",
+        "date": "2026-11-21",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Inside a Global AI-Assisted Hacking Campaign",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
+        "id": "OTX-6ad8969b",
+        "severity": "HIGH",
+        "date": "2026-11-21",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Recent AI-Assisted Cyber Attacks in Japan: Investigating Attack Infrastructure and Techniques",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6ad91a62",
         "severity": "HIGH",
         "date": "2026-11-20",
@@ -72,111 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6b001df5",
-        "severity": "HIGH",
-        "date": "2026-11-20",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Inside the 'Party' Panel: How Fraudsters Rent Android Banking Trojans to Target Indian Bank Customers",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "OTX-6afd6e9a",
-        "severity": "HIGH",
-        "date": "2026-11-20",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Unsolicited audits: how AuditTeam masks ransomware",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-55ec05",
+        "id": "VT-f-4d2eed",
         "severity": "CRITICAL",
-        "date": "2026-11-20",
+        "date": "2026-11-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_LNK_SuspiciousCommands_Jan23_1\nRULE_TYPE: THOR APT Scanner's rule se...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_AdaptixC2_Agent_Oct25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRULE_LINK:...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-58453e",
+        "id": "VT-f-4d2eed",
         "severity": "CRITICAL",
-        "date": "2026-11-20",
+        "date": "2026-11-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Base64_Encoded_Hex_Encoded_Code\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: ht...",
+        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: MAL_Adaptixc2_Agent_Beacon_Sep25\nRULE_TYPE: VALHALLA rule feed only \u26a1\nRUL...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-b955ad",
+        "id": "VT-f-ed8582",
         "severity": "CRITICAL",
-        "date": "2026-11-20",
+        "date": "2026-11-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_LNK_SuspiciousCommands_Jan23_1\nRULE_TYPE: THOR APT Scanner's rule se...",
+        "desc": "[b]Original filename (SHA256)[/b] : ed85827191f9eb65e77b1a9cdcafa5dd67088339863a1f3def3e68aa3d658b37\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-58453e",
+        "id": "VT-f-94505d",
         "severity": "CRITICAL",
-        "date": "2026-11-20",
+        "date": "2026-11-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_B64_Atob_Aug23\nRULE_TYPE: THOR APT Scanner's rule set only \ud83d\udd28\nRULE_LI...",
+        "desc": "[b]Original filename (SHA256)[/b] : 94505d4f53da0a1170403537e640a281e033fd67cfda2f1875ae2f57ad58d068\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-f61cf5",
+        "id": "VT-f-29c56a",
         "severity": "CRITICAL",
-        "date": "2026-11-20",
+        "date": "2026-11-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_LNK_SuspiciousCommands_Jan23_1\nRULE_TYPE: THOR APT Scanner's rule se...",
+        "desc": "[b]Original filename (SHA256)[/b] : 29c56a46568aab14ca79780d111463ccf466ae63d769c0b3dc28bcf833dec361\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-f5db1c",
+        "id": "VT-f-a89cda",
         "severity": "CRITICAL",
-        "date": "2026-11-20",
+        "date": "2026-11-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_LNK_SuspiciousCommands_Jan23_1\nRULE_TYPE: THOR APT Scanner's rule se...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-11-20_f4c4299c2d52444c12e794d1be14ba01_cobalt-strike_coinminer_icedid_remcos_vidar\n\n*...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-649b87",
+        "id": "VT-f-cd3d01",
         "severity": "CRITICAL",
-        "date": "2026-11-20",
+        "date": "2026-11-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : 649b870efa110fbb3ce8235effd284fa5afefc4f2d11f4aef567a589895812e0\n\nComment added on 2...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-11-20_f458c58c480ed1297af5e3d0dd76002c_elex_emotet_glassworm_remcos_xiaoba\n\n**Threat ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-63bb4f",
+        "id": "VT-f-634971",
         "severity": "CRITICAL",
-        "date": "2026-11-20",
+        "date": "2026-11-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-11-19_356c732cd24edebbfa7a0fb022a2c35e_elex_wannacry\n\n**Threat Score:**\n10/10\n\n**Fami...",
+        "desc": "**File Info:**\n\n**Filename:**\n2026-11-20_f54d42291a4c14d4e9412a459a24231a_destroyer_elex_glassworm_ngrbot_wannacry\n\n**Th...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-e8f3ea",
+        "id": "VT-i-207.17",
         "severity": "CRITICAL",
-        "date": "2026-11-20",
+        "date": "2026-11-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : e8f3ea5a7b7adba75265b00c31d03ed979b3b449823ac17c362590cc1ca52c73\n\nComment added on 2026-11-21...",
+        "desc": "Synthient classification: Proxyware.ByteConnect. Inactive Tier 2 proxyware infrastructure; last confirmed active 2026-11...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-8af70f",
+        "id": "VT-f-456eb7",
         "severity": "CRITICAL",
-        "date": "2026-11-20",
+        "date": "2026-11-21",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "#malware #EvilQuest\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/f4c1ed9095a5408ccc9e4182052b98e6dc8a...",
+        "desc": "[b]Original filename (SHA256)[/b] : 456eb704415f81315a9fd336a7b12cd9e9510ced6bce6012774f8af682f3bd9a\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
