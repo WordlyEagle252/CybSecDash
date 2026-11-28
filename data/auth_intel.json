@@ -1,5 +1,14 @@
 [
     {
+        "id": "OTX-6ad9eb3e",
+        "severity": "HIGH",
+        "date": "2026-11-27",
+        "product": "Enterprise Infrastructure",
+        "source": "AlienVault OTX",
+        "desc": "Amazon Threat Intelligence identifies PHP2Shell exploitation prior to public disclosure in MadPot",
+        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
+    },
+    {
         "id": "OTX-6ae244fe",
         "severity": "HIGH",
         "date": "2026-11-27",
@@ -81,102 +90,93 @@
         "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
     },
     {
-        "id": "OTX-6b08442e",
-        "severity": "HIGH",
-        "date": "2026-11-26",
-        "product": "Enterprise Infrastructure",
-        "source": "AlienVault OTX",
-        "desc": "Silver Fox SEO Poisoning: How Fake Downloads Spread Gh0stRAT",
-        "remediation": "Deploy Indicators of Compromise (IOCs) to firewall perimeter. Block malicious outbound traffic."
-    },
-    {
-        "id": "VT-f-e31ebe",
+        "id": "VT-f-f87855",
         "severity": "CRITICAL",
-        "date": "2026-11-27",
+        "date": "2026-11-28",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : e31ebe1e8130babeaaf929a762bd0189c55b8fb5bf61a110cb5661874380ea96\n\nComment added on 2...",
+        "desc": "#malware #xmrig\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/44a70198ab671bd7435e0ab51641e14d965b141c...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-b5a566",
+        "id": "VT-f-01f39d",
         "severity": "CRITICAL",
-        "date": "2026-11-27",
+        "date": "2026-11-28",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : b5a5666db9b1f8c6b390131485dbb8e62c5a3301b1206c940ecc71ecddbd683f\n\nComment added on 2026-11-27...",
+        "desc": "[b]Original filename (SHA256)[/b] : 01f39dc599402169d7804c8818039b48d73887bd1d3e521c054a9e837265af2a\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-7a688e",
+        "id": "VT-f-509958",
         "severity": "CRITICAL",
-        "date": "2026-11-27",
+        "date": "2026-11-28",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "**File Info:**\n\n**Filename:**\n2026-11-25_3700b562cb51798982027cabc0df1eb2_elex_glassworm_wannacry\n\n**Threat Score:**\n10/...",
+        "desc": "#malware #xmrig\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/44a70198ab671bd7435e0ab51641e14d965b141c...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-4e7f51",
+        "id": "VT-f-0bd8f6",
         "severity": "CRITICAL",
-        "date": "2026-11-27",
+        "date": "2026-11-28",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_NET_MSIL_Export_Parsing_Mar23_1\nRULE_TYPE: THOR APT Scanner's rule s...",
+        "desc": "ELF DIGEST non-profit Sandbox:\n\nDomains: c.root-servers.net\n\n Analysis Report: https://elfdigest.com/brief/0bd8f6a680cb0...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-791c23",
+        "id": "VT-f-9b0218",
         "severity": "CRITICAL",
-        "date": "2026-11-27",
+        "date": "2026-11-28",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_HxD_Icon_Anomaly_May23_1\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://g...",
+        "desc": "**File Info:**\n\n**Filename:**\nChromeUpdate_486b1d2e.exe\n\n**Threat Score:**\n10/10\n\n**Family:**\n\u2022 asyncrat\n\n**Botnet:**\n\u2022 ...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-c414aa",
+        "id": "VT-f-5a7f25",
         "severity": "CRITICAL",
-        "date": "2026-11-27",
+        "date": "2026-11-28",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : c414aa6180fc47e869e2a3b5e3b0ea2a592da347e8191061356e7367b26c20f7\n\nComment added on 2...",
+        "desc": "#malware #xmrig\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/44a70198ab671bd7435e0ab51641e14d965b141c...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-e4eb03",
+        "id": "VT-f-4e4c01",
         "severity": "CRITICAL",
-        "date": "2026-11-27",
+        "date": "2026-11-28",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename (SHA256)[/b] : e4eb03babfd40e58ab1bce0d098f115b79c57641c63d6c665dad08faea166056\n\nComment added on 2...",
+        "desc": "[b]Original filename (SHA256)[/b] : 4e4c01cb85c1769d196d9aac31da05a0774a915e5408cb19bc6d1606b739bdbc\n\nComment added on 2...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-b59f8d",
+        "id": "VT-f-ddc7dc",
         "severity": "CRITICAL",
-        "date": "2026-11-27",
+        "date": "2026-11-28",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "[b]Original filename[/b] : b59f8d576d0d8df9292f801e8322e84ff3698134c2e5ad74b00b6d5c4fb22244\n\nComment added on 2026-11-27...",
+        "desc": "#malware #xmrig\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/44a70198ab671bd7435e0ab51641e14d965b141c...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-c76f58",
+        "id": "VT-f-c63b2a",
         "severity": "CRITICAL",
-        "date": "2026-11-27",
+        "date": "2026-11-28",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_NET_Reactor_Protector_Native_May23\nRULE_TYPE: THOR APT Scanner's rul...",
+        "desc": "**File Info:**\n\n**Filename:**\nc63b2a6b2f8d42e771dc93855afa38439a36141efbb073d4525ac5142b1dda09\n\n**Threat Score:**\n10/10\n...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     },
     {
-        "id": "VT-f-7b7027",
+        "id": "VT-f-1c1010",
         "severity": "CRITICAL",
-        "date": "2026-11-27",
+        "date": "2026-11-28",
         "product": "Endpoint / System Artifact",
         "source": "VirusTotal",
-        "desc": "YARA Signature Match - THOR APT Scanner\n\nRULE: SUSP_Unsigned_GoogleUpdate\nRULE_TYPE: Community \ud83d\udc65\nRULE_LINK: https://gith...",
+        "desc": "#malware #xmrig\n[b]VT Collection:[/b] https://www.virustotal.com/gui/collection/44a70198ab671bd7435e0ab51641e14d965b141c...",
         "remediation": "Isolate the host immediately. Run a comprehensive EDR artifact sweep for the associated hash identifier."
     }
 ]
